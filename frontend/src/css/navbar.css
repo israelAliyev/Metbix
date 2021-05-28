@@ -3,7 +3,7 @@
 .navbar {
     background-color: #0C2D48 !important;
 }
-.navbar li , .sub-navbar li{
+.navbar li {
 cursor: pointer;
 }
 
