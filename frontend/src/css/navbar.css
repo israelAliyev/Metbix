@@ -1,0 +1,448 @@
+
+ /*for navbars */
+.navbar {
+    background-color: #0C2D48 !important;
+}
+.navbar li , .sub-navbar li{
+cursor: pointer;
+}
+
+
+  /*for text in account form */
+.navbar-account-mymetbix-text{
+    font-size: small;
+    color: #ececec;
+}
+
+.for-overflow-dropdown-items{
+
+    max-height: 580px;
+    overflow-y:auto !important;
+    overflow-x:auto !important;
+
+}
+
+ /*for navbar site logo*/
+
+ .navbar-brand img {
+     height: 36px;
+ }
+
+ /*for navbar button in search form */
+ .navbar-search-form-button{
+     border :none;
+     font-size: medium;
+ }
+
+ /*for text input in search form */
+ .navbar-search-form-text-form{
+     border :none !important;
+     font-size: 18px;
+ }
+
+
+ .navbar-search-form-dropdown{
+     font-size: small;
+     box-shadow : none !important;
+ }
+
+  /*for setting width and border on navbar search form */
+.navbar-search-form{
+
+    width: 750px !important;
+    height: 45px;
+}
+.navbar-search-form-group{
+    width: 748px !important;
+}
+
+.navbar-for-search-form-border:focus-within{
+    border: 2px solid #f90;
+    border-radius: 0.40rem;
+}
+
+
+    /*for drop list of down on navbar languages currency*/
+.navbar-languages-currency ul{
+    min-width: 10rem !important;
+    margin-top: 10px !important;
+}
+.navbar-languages-currency, .dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+  /*for account tyes texts and languages-currency texts*/
+ .navbar-account-account-types-text , .navbar-languages-currency span{
+     font-family:Arial ,sans-serif ;
+     font-weight: bold;
+     font-size: 14px;
+ }
+ .navbar-languages-currency h6 {
+
+     color: #78838c;
+
+ }
+
+  /*for submenu of dropdown on languags currency form */
+ .navbar-languages-currency .dropdown-submenu {
+    position: relative;
+}
+
+ .navbar-languages-currency .dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+ .navbar-languages-currency .dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+ .navbar-languages-currency .dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+ .navbar-languages-currency .dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+ .navbar-languages-currency .dropdown-submenu.pull-left {
+    float: none;
+}
+
+ .navbar-languages-currency .dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+  /*for list of dropdown on account location country form*/
+.navbar-account-dropdown ul , .navbar-location-country ul{
+    margin-top: 5px !important;
+}
+
+.navbar-location-country-name{
+    font-family: Ayuthaya ,sans-serif ;
+    font-size: 15px;
+}
+
+.navbar-location-country img{
+
+    height: 22px;
+    margin-top: 0.8rem !important;
+}
+
+/*for navbar notifaction amimation and icons*/
+
+.navbar-notification span{
+
+    position: absolute;
+    background-color: red;
+    color: white;
+     top: -1px;
+    right: -5px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+ .navbar-notification .wrapper {
+    position: relative;
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    cursor:pointer;
+
+}
+ .navbar-notification .material-icons {
+    font-size: 45px;
+}
+ .navbar-notification .bell {
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+}
+ .navbar-notification .anchor {
+    transform-origin: center top;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+ .navbar-notification .layer-1 {
+    color: #ffffff;
+    z-index: 9;
+    animation: animation-layer-1  infinite;
+    opacity: 0;
+}
+ .navbar-notification .layer-2 {
+    color: #ffffff;
+    z-index: 8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animation-layer-2 infinite;
+}
+ .navbar-notification .layer-3 {
+    color: #ffffff;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animation-layer-3 infinite;
+}
+@keyframes animation-layer-1 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    8% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    12% {
+        transform: rotate(42deg);
+        opacity: 0.5;
+    }
+    16% {
+        transform: rotate(-35deg);
+        opacity: 0.4;
+    }
+    20% {
+        transform: rotate(0deg);
+        opacity: 0.1;
+    }
+    23% {
+        transform: rotate(28deg);
+        opacity: 0.3;
+    }
+    26% {
+        transform: rotate(-20deg);
+        opacity: 0.2;
+    }
+    29% {
+        transform: rotate(0deg);
+        opacity: 0.1;
+    }
+    31% {
+        transform: rotate(16deg);
+        opacity: 0;
+    }
+    33% {
+        transform: rotate(-12deg);
+        opacity: 0;
+    }
+    35% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    37% {
+        transform: rotate(-6deg);
+        opacity: 0;
+    }
+    39% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+}
+
+@keyframes animation-layer-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    8% {
+        transform: rotate(0deg);
+    }
+    12% {
+        transform: rotate(42deg);
+    }
+    16% {
+        transform: rotate(-35deg);
+    }
+    20% {
+        transform: rotate(0deg);
+    }
+    23% {
+        transform: rotate(28deg);
+    }
+    26% {
+        transform: rotate(-20deg);
+    }
+    29% {
+        transform: rotate(0deg);
+    }
+    31% {
+        transform: rotate(16deg);
+    }
+    33% {
+        transform: rotate(-12deg);
+    }
+    35% {
+        transform: rotate(0deg);
+    }
+    37% {
+        transform: rotate(-6deg);
+    }
+    39% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(6deg);
+    }
+    44% {
+        transform: rotate(-3deg);
+    }
+    49% {
+        transform: rotate(2deg);
+    }
+    55% {
+        transform: rotate(0deg);
+    }
+    62% {
+        transform: rotate(1deg);
+    }
+    70% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes animation-layer-3 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    8% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    12% {
+        transform: rotate(52deg);
+        opacity: 0.5;
+    }
+    16% {
+        transform: rotate(-48deg);
+        opacity: 0.4;
+    }
+    20% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    23% {
+        transform: rotate(42deg);
+        opacity: 0.3;
+    }
+    26% {
+        transform: rotate(-30deg);
+        opacity: 0.2;
+    }
+    29% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    31% {
+        transform: rotate(26deg);
+        opacity: 0.15;
+    }
+    33% {
+        transform: rotate(-18deg);
+        opacity: 1;
+    }
+    35% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    37% {
+        transform: rotate(-12deg);
+        opacity: 0.8;
+    }
+    40% {
+        transform: rotate(6deg);
+        opacity: 0;
+    }
+    44% {
+        transform: rotate(-3deg);
+        opacity: 0.8;
+    }
+    49% {
+        transform: rotate(2deg);
+        opacity: 1;
+    }
+    55% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    62% {
+        transform: rotate(1deg);
+        opacity: 1;
+    }
+    70% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+
+ /*for navbar basket */
+.navbar-basket{
+    position: relative;
+}
+
+.navbar-basket span{
+      position: absolute;
+        color: #f8a627;
+    top: 17px;
+    left: 12px;
+    font-weight: bold;
+}
+
+
+
+
+ .sub-navbar {
+     background-color: #ecc30e !important;
+     font-size: 2rem;
+     font-weight: bold;
+ }
+
+
+
+ .sub-navbar li:hover img , .sub-navbar li:hover a{
+     filter: brightness(0) invert(1) !important;
+     color: white !important;
+ }
+
+ .vbn{
+
+     height: 800px !important;
+
+ }
