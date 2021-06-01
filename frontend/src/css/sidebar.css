@@ -1,0 +1,375 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.sidebar-body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.sidebar{
+    height: 100%;
+    width: 290px;
+    background: whitesmoke;
+    padding: 6px 14px;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all 2s;
+
+}
+
+.active{
+    left: 0;
+    transition: all 700ms;
+}
+
+nav > div .sidebar-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s;
+
+}
+
+.sidebar .logo_content .logo{
+    color: black;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.sidebar .logo_content .logo  i{
+    font-size: 1.35rem;
+}
+
+.sidebar .logo_content .logo .logo_name{
+    font-size: 20px;
+    font-weight: 400;
+}
+.sidebar #btn{
+    position: absolute;
+    color: black;
+    left: 80%;
+    top: 6px;
+    font-size: 22px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+
+.sidebar > ul{
+    width: 80%;
+    padding-left: 0 !important;
+}
+
+.sidebar .first-menu li >  li > ul{
+    width: 100% !important;
+    margin-top: 1px!important;
+    background: whitesmoke;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    padding-top: 0 !important;
+    height: 410px;
+    border: 1px solid black !important;
+    overflow-y: auto;
+   overflow-x: hidden;
+}
+
+.sidebar .first-menu li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    list-style: none;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+
+.sidebar .first-menu li input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #d7d7d7;
+    padding-left: 50px;
+    font-size: 18px;
+    color: black;
+}
+
+.sidebar .first-menu li p{
+    color: black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    transition: all 0.1s ease;
+    border: 1px solid white;
+    padding: 0 0 0 0 !important;
+}
+.sidebar .first-menu li p:hover{
+    color: whitesmoke;
+    background: black;
+}
+
+.sidebar .first-menu li p::after{
+    content: none;
+}
+.sidebar .first-menu .departments p{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid black !important;
+}
+
+
+.sidebar .first-menu .languages p{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid black !important;
+}
+
+
+.sidebar .first-menu .languages >  li > ul{
+    width: 100% !important;
+    margin-top: 1px!important;
+    background: whitesmoke;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    padding-top: 0 !important;
+    height: 110px;
+    border: 1px solid black !important;
+}
+
+.sidebar .first-menu .languages >  li > ul > li{
+    height: 10px;
+}
+
+.sidebar ul li  i{
+    font-size: 18px;
+    font-weight: 400;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sidebar .secondary-menu{
+    margin-top: 40px;
+}
+
+.sidebar .secondary-menu  li{
+    list-style: none;
+}
+
+.sidebar .secondary-menu > li > li > p{
+
+    color: black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.1s ease;
+    border: 1px solid black;
+    padding: 0 0 0 0 !important;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.sidebar .secondary-menu > li > li > ul{
+
+    position: absolute;
+    z-index: 1000;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    top: 145px;
+    width: 210px !important;
+    background: whitesmoke;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    padding-top: 0 !important;
+    height: 500px;
+    border: 1px solid black !important;
+}
+.sidebar .secondary-menu > li > li > ul > div{
+    height: 425px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .secondary-menu ul li{
+    position: relative;
+    height: 2.5rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 2rem;
+    display: block;
+    padding: 0 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: whitesmoke;
+    border: 0;
+}
+
+.sidebar .secondary-menu ul li:hover{
+    background-color: #eaeaea;
+}
+
+.sidebar .secondary-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar .secondary-menu .input-item{
+    height: 2rem !important;
+}
+
+.sidebar .secondary-menu .input-item input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0px;
+    outline: none;
+    border: none;
+    background: #d7d7d7;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #565656;
+
+
+}
+
+.sidebar .links_name{
+    font-size: 15px;
+    font-weight: 400;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+
+
+.sidebar .profile_content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.sidebar .profile_content .profile{
+    position: relative;
+    padding: 8px 8px;
+    height: 60px;
+    background: #092034;
+    color: white;
+}
+
+
+.sidebar .profile_content .profile .profile_details{
+    display: flex;
+}
+
+.sidebar .profile .profile_details img{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 8px;
+    left: 3%;
+}
+.sidebar .profile .profile_details .name_job{
+    position: absolute;
+    left: 21%;
+}
+.sidebar .profile .profile_details .name{
+    font-size: 15px;
+    font-weight: 400;
+    color: whitesmoke;
+}
+.sidebar .profile .profile_details .job{
+    font-size: 12px;
+    color: whitesmoke;
+}
+.sidebar .profile #log_out{
+    position: absolute;
+    bottom: 5px;
+    left: 80%;
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 2.25rem;
+    border-radius: 12px;
+    color: whitesmoke;
+}
+
+
+
+/* CSSTransition classes */
+.menu-primary-enter {
+    position: absolute;
+    transform: translateX(-160%);
+}
+.menu-primary-enter-active {
+    transform: translateX(0%);
+}
+.menu-primary-exit {
+    position: absolute;
+}
+.menu-primary-exit-active {
+    transform: translateX(-160%);
+}
+
+
+.menu-secondary-enter {
+    transform: translateX(0%);
+}
+.menu-secondary-enter-active {
+    transform: translateX(0%);
+}
+.menu-secondary-exit {
+
+}
+.menu-secondary-exit-active {
+    transform: translateX(0%);
+}
+
+
+@media only screen and (max-width: 375px ){
+    .sidebar{
+        transition: all 900ms;
+    }
+
+    .sidebar .secondary-menu > li > li > ul{
+        height: 360px;
+    }
+
+    .sidebar .secondary-menu > li > li > ul > div{
+        height: 290px;
+    }
+}

@@ -1,5 +1,7 @@
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import Sidebar from "./components/footer/Sidebar";
+import React from "react";
 
 function App() {
   return (
@@ -10,9 +12,9 @@ function App() {
       </header>
 
 
-<div className="bg-white vbn">
+      {/*<Sidebar/>*/}
 
-</div>
+<div className="vbn"></div>
 
         <footer>
         <Footer/>

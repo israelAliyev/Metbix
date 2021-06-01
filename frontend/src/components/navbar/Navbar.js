@@ -6,35 +6,44 @@ class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            searchType: "All"
+            searchType: "All",
+            scroll_active : "",
+            show_sideBar: false,
         }
     }
 
+     changeNavbar = () => {
+        if (window.scrollY > 5){
+            this.setState({scroll_active : "scroll-active"})
+        }else{
+            this.setState({scroll_active : ""})
+        }
+       }
 
     render() {
+
+        window.addEventListener("scroll" , this.changeNavbar);
 
         return (
 
             <div>
 
                 {/*Main Navbar*/}
-                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav className={`main-navbar navbar navbar-expand-lg ${this.state.scroll_active !== ""  ? `scroll-active-navbar` : ``}`}>
+
                     <div className="container-fluid">
 
                         {/*Site logo on Navigation bar */}
-                        <a className="navbar-brand " href="#">
+                        <a className="navbar-brand" href="#">
                             <img className="img img-fluid " src="/images/logo.png"/>
                         </a>
 
-                        {/*Toglle button for responsive design*/}
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"/>
-                        </button>
+                        <li className="for-responsive-logo" href="#">
+                            <img width="140" className=" img img-fluid" src="/images/logo.png" alt="responsive-logo"/>
+                        </li>
 
                         {/*colapse items for responsive design*/}
-                        <div className="collapse navbar-collapse" id="navbarNav">
+                        <div className="collapse navbar-collapse " id="navbarNav">
 
 
                             <ul className="navbar-nav mb-2 mb-lg-0">
@@ -63,7 +72,7 @@ class Navbar extends Component {
                                 {/*search form that hase a drop search types down and yellow button*/}
                                 <div className="navbar-search-form">
 
-                                    <li className="nav-item navbar-search-form-group">
+                                    <li className="nav-item">
                                         <form className="form-inline mt-1 navbar-for-search-form-border">
                                             <div className="input-group">
 
@@ -92,7 +101,7 @@ class Navbar extends Component {
 
 
                                                 <input autoComplete="off" type="text" name="query" id="query"
-                                                       className="navbar-search-form-text-form form-control"/>
+                                                       className="form-control navbar-search-form-text-form"/>
 
                                                 <button className="btn btn-warning navbar-search-form-button"
                                                         type="button"
@@ -124,7 +133,7 @@ class Navbar extends Component {
 
                                         <ul className="dropdown-menu dropdown-menu-end"
                                             aria-labelledby="dropdownMenuButtonLanguagesAndCurrency">
-                                            <h6 className=" text-center">Languages</h6>
+                                            <h6 className="text-center">Languages</h6>
                                             <li>
                                                 <li className="dropdown-submenu">
                                                     <a className="dropdown-item" tabindex="-1" href="#"><img width="23"
@@ -139,10 +148,7 @@ class Navbar extends Component {
                                                         </li>
                                                         <div className="for-overflow-dropdown-items">
 
-                                                            <li className="dropdown-item"><img width="23"
-                                                                                               src="/images/aze.png"/> Second
-                                                                level
-                                                            </li>
+                                                            <li className="dropdown-item"><img width="23" src="/images/aze.png"/> Second level</li>
 
                                                         </div>
                                                     </ul>
@@ -164,9 +170,9 @@ class Navbar extends Component {
                                                         </li>
                                                         <div className="for-overflow-dropdown-items">
 
-                                                        <li className="dropdown-item">AZN</li>
-                                                        <li className="dropdown-item">USD</li>
-                                                        <li className="dropdown-item">ER</li>
+                                                            <li className="dropdown-item">AZN</li>
+                                                            <li className="dropdown-item">USD</li>
+                                                            <li className="dropdown-item">ER</li>
                                                         </div>
                                                     </ul>
                                                 </li>
@@ -219,6 +225,7 @@ class Navbar extends Component {
                                 </li>
 
 
+
                                 {/*Shopping cart or basket */}
                                 <li className="nav-item ms-4-5 navbar-basket">
                                     <img width="46" src="/images/shopping-basket2.png" className="img-fluid"/>
@@ -230,33 +237,29 @@ class Navbar extends Component {
                 </nav>
 
 
+                {/*subnavbar */}
                 <nav className="navbar sub-navbar navbar-expand-lg navbar-dark bg-dark">
                     <div className="container-fluid">
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#SubnavbarNav" aria-controls="SubnavbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"/>
-                        </button>
 
                         <div className="collapse navbar-collapse" id="SubnavbarNav">
                             <ul className="navbar-nav mb-2 mb-lg-0">
 
-                                <li className="nav-item me-3 mt-1 d-flex justify-content-center align-items-center">
+                                <li onClick={() => {this.setState({show_sideBar : true})}} className="nav-item d-flex justify-content-center align-items-center ms-2">
                                     <img width="29" src="/images/menu.png" alt=""/>
-                                    <a href="" className="nav-link">Departments</a>
+                                    <a className="nav-link">Menu</a>
                                 </li>
 
-                                <li className="nav-item me-3 mt-1 d-flex justify-content-center align-items-center">
+                                <li className="nav-item ms-3  d-flex justify-content-center align-items-center">
                                     <img width="39" src="/images/box1.png" alt=""/>
                                     <a href="" className="nav-link">Sell on Metbix</a>
                                 </li>
 
-                                <li className="nav-item me-3 mt-1 d-flex justify-content-center align-items-center">
+                                <li className="nav-item ms-3  d-flex justify-content-center align-items-center">
                                     <img width="34" src="/images/statistics.png" alt=""/>
                                     <a href="" className="nav-link">Finance</a>
                                 </li>
 
-                                <li className="nav-item me-3 mt-1 d-flex justify-content-center align-items-center" >
+                                <li className="nav-item ms-3  d-flex justify-content-center align-items-center">
                                     <img width="34" src="/images/question.png" alt=""/>
                                     <a href="" className="nav-link">Help</a>
                                 </li>
@@ -265,6 +268,30 @@ class Navbar extends Component {
 
                     </div>
                 </nav>
+
+
+               {/*search bar for responsive design */}
+                <nav className={`navbar search-bar d-none ${this.state.scroll_active !== "" && `scroll-active-searchbar`} `}>
+                    <div className="container-fluid">
+                        <form className="form-inline mt-1 navbar-for-search-form-border w-100">
+                            <div className="input-group">
+
+                                <input autoComplete="off" type="text" name="query" id="query"
+                                       className="form-control" placeholder="Search..."/>
+
+                                <button className="btn btn-warning navbar-search-form-button"
+                                        type="button"
+                                        id="button-addon1">
+                                    <img width="23" src="/images/loupe.png"/>
+                                </button>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </nav>
+
+
 
             </div>
         );
