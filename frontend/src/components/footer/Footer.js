@@ -1,10 +1,15 @@
 import React, {Component} from 'react';
 import '../../css/footer.css';
+import {connect} from "react-redux";
+import {show_sidebar} from "../../services/index";
+import Sidebar from "../sidebar/Sidebar";
 
 class Footer extends Component {
     render() {
         return (
             <div>
+
+                <section>
 
 
                 <footer className="footer">
@@ -72,9 +77,11 @@ class Footer extends Component {
                 </footer>
 
 
+
+
                 <div className="responsive-controlling d-flex justify-content-around bg-white d-lg-none shadow-lg">
 
-                    <div>
+                    <div onClick={() => {this.props.show_sidebar(true)}}>
                         <a>
                         <img width="25" src="/images/menu1.png"/>
                         <p className="mt-2">Menu</p>
@@ -111,10 +118,27 @@ class Footer extends Component {
                     </div>
                 </div>
 
+                </section>
 
+                <Sidebar/>
             </div>
         );
     }
 }
 
-export default Footer;
+
+
+
+const map_state_props = state => {
+    return {
+        show_sidebar_bool: state.show_sidebar
+    }
+};
+
+const map_dispatch_to_props = dispatch => {
+    return {
+        show_sidebar: (bool) => dispatch(show_sidebar(bool))
+    }
+};
+
+export default connect(map_state_props, map_dispatch_to_props)(Footer);

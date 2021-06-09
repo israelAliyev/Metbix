@@ -1,0 +1,224 @@
+
+.slider{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+
+@font-face {
+    font-family: 'PosterGothicRoundCondATF-Bold';
+    src:url('fonts/PosterGothicRoundCondATF-Bold.otf');
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src:url('fonts/TT Lakes Medium DEMO.otf');
+}
+
+.slide-item{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.slide-item > .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 6rem 0 0 8rem;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.slide-item > .content > h2{
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.05;
+    font-family: "PosterGothicRoundCondATF-Bold", sans-serif;
+    letter-spacing: 2px;
+    color: white;
+
+}
+
+.slide-item > .content > h2:first-child{
+    padding:  0 0 10px 0 !important;
+
+}
+.slide-item > .content > h5{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+    font-family: "TT Lakes Condensed",'sans-serif';
+    color: white;
+    font-weight: 600;
+}
+
+.slide-item > .content > h2 > span{
+    color: #FBB71C;
+}
+
+.slide-item .content .shop-button {
+    border: 0;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    font-family: "Open Sans", sans-serif;
+    color: #222222;
+    padding: 12px 60px 12px 60px ;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 1000;
+    transition: all 2s ease;
+    margin-top: 25px !important;
+}
+.slide-item .content .shop-button::after {
+    content: "'";
+    color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: #FBB71C;
+    transform: skew(-30deg);
+    -webkit-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -ms-transform: skew(-30deg);
+    transition: all 1s ease;
+}
+.slide-item .content .shop-button:hover:after{
+    text-decoration: none;
+    transform: skew(0deg);
+    -webkit-transform: skew(0deg);
+    -o-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+}
+
+.slide-item .content .shop-button:hover{
+    color: #222222;
+}
+
+.shipping {
+    position: absolute;
+    top: 78%;
+    width: 100%;
+}
+
+
+.slide-item video{
+    position: relative;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider> .control-icons{
+
+    position: absolute;
+    top: 38%;
+}
+
+.slider> .control-icons >  i {
+    font-size: 1.5rem;
+    color: white;
+    transition: all 700ms;
+}
+
+
+.slider> .control-icons >  i:first-child {
+    transform: translateX(-40px);
+}
+
+.slider:hover .control-icons >  i:first-child {
+    transform: translateX(20px);
+}
+
+.slider> .control-icons >  i:last-child {
+    transform: translateX(40px);
+}
+
+.slider:hover .control-icons >  i:last-child {
+    transform: translateX(-20px);
+}
+
+
+.slide-item{
+    transition: all 5s ease;
+    display: none;
+    opacity: 0;
+}
+
+.slide-active{
+    transition: all 5s ease;
+ display: block;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .slider{
+        margin-top: 3.60rem;
+    }
+    .slide-item > .content{
+        padding: 6rem 0 0 3rem;
+    }
+
+    .slide-item > .content > h2{
+        font-size: 50px;
+    }
+
+    .slide-item > .content > h5{
+        font-size: 15px;
+        width: 90%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 420px) {
+
+    .slider .shipping{
+        top: 100%;
+        background-color: white;
+        border: 2px solid #ebebeb;
+        width: 95%;
+        margin-top: 1rem;
+        left: 10px;
+    }
+    .slide-item > .content{
+        padding: 2rem 0 0 3rem;
+    }
+
+
+    .slider> .control-icons >  i:first-child {
+        transform: translateX(-0px);
+        opacity: 0;
+    }
+
+    .slider:hover .control-icons >  i:first-child {
+        transform: translateX(3px);
+        opacity: 1;
+    }
+
+    .slider> .control-icons >  i:last-child {
+        transform: translateX(0px);
+        opacity: 0;
+    }
+
+    .slider:hover .control-icons >  i:last-child {
+        transform: translateX(-3px);
+        opacity: 1;
+    }
+}

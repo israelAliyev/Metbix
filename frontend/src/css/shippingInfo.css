@@ -1,0 +1,104 @@
+
+
+.shipping-info{
+    background: transparent;
+    height: 130px;
+    z-index: 100;
+}
+
+.shipping-info .content > p:first-child {
+    font-size: 18px;
+    font-weight: 650;
+    padding: 0 0 2px 0;
+    margin: 0;
+    color: white;
+    font-family: Open Sans,sans-serif;
+}
+.shipping-info .content > p:last-child {
+    font-weight: 200;
+    font-size: 13px;
+    color: #888;
+    font-family: Open Sans,sans-serif;
+}
+
+.shipping-info > div > i{
+    font-size: 38px;
+    color: #fbb71c;
+}
+
+.shipping-info hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 1px;
+    background-color: white;
+    height:45%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .shipping-info > div > i{
+        font-size: 30px;
+        color: #fbb71c;
+    }
+    .shipping-info .content > p:first-child {
+        font-size: 13px;
+        font-weight: 650;
+        padding: 0 0 2px 0;
+        margin: 0;
+        color: white;
+        font-family: Open Sans,sans-serif;
+    }
+    .shipping-info .content > p:last-child {
+        font-weight: 200;
+        font-size: 8px;
+        color: #888;
+        font-family: Open Sans,sans-serif;
+    }
+
+    @media only screen and (max-width: 420px) {
+        .shipping-info{
+            background: transparent;
+            height: 350px;
+            z-index: 100;
+        }
+
+        .shipping-info hr:nth-child(4){
+            display: none;
+        }
+
+        .shipping-info hr{
+            display: none;
+        }
+
+        .shipping-info > div > i{
+            color: #3583de;
+            font-size: 45px;
+            margin-left: 0.8rem;
+        }
+
+        .shipping-info .content > p:first-child {
+        color: black;
+            margin-top: 0px;
+            font-size: 15px;
+        }
+        .shipping-info .content > p:last-child {
+        font-size: 12px;
+        }
+
+        .shipping-info > div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+        }
+
+        .shipping-info > div > div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        }
+    }

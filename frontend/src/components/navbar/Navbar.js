@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 import '../../css/navbar.css';
+import {createGlobalStyle} from "styled-components";
+import {connect} from "react-redux";
+import {show_sidebar} from "../../services/index";
+import Sidebar from "../sidebar/Sidebar";
 
 class Navbar extends Component {
 
@@ -7,29 +11,39 @@ class Navbar extends Component {
         super(props);
         this.state = {
             searchType: "All",
-            scroll_active : "",
-            show_sideBar: false,
+            scroll_active: ""
         }
     }
 
-     changeNavbar = () => {
-        if (window.scrollY > 5){
-            this.setState({scroll_active : "scroll-active"})
-        }else{
-            this.setState({scroll_active : ""})
+    changeNavbar = () => {
+        if (window.scrollY > 2) {
+            this.setState({scroll_active: "scroll-active"})
+        } else {
+            this.setState({scroll_active: ""})
         }
-       }
+    }
+
 
     render() {
 
-        window.addEventListener("scroll" , this.changeNavbar);
+        const GlobalStyle = createGlobalStyle`
+          :root {
+            overflow-x: hidden;
+            overflow-y: hidden;
+          }`
+
+
+
+        window.addEventListener("scroll", this.changeNavbar);
 
         return (
 
             <div>
 
+                {this.props.show_sidebar_bool.show_sidebar && <GlobalStyle/>}
+
                 {/*Main Navbar*/}
-                <nav className={`main-navbar navbar navbar-expand-lg ${this.state.scroll_active !== ""  ? `scroll-active-navbar` : ``}`}>
+                <nav className={`main-navbar navbar navbar-expand-lg ${this.state.scroll_active !== "" && `scroll-active-navbar`}`}>
 
                     <div className="container-fluid">
 
@@ -43,13 +57,11 @@ class Navbar extends Component {
                         </li>
 
                         {/*colapse items for responsive design*/}
-                        <div className="collapse navbar-collapse " id="navbarNav">
+                        <div className="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
 
-
-                            <ul className="navbar-nav mb-2 mb-lg-0">
 
                                 {/*Login and register form on navbar */}
-                                <li className="nav-item me-3 mt-1">
+                                <li className="nav-item mt-1">
                                     <div className="dropdown navbar-account-dropdown">
 
                                         <div className="d-flex flex-column text-white"
@@ -77,7 +89,7 @@ class Navbar extends Component {
                                             <div className="input-group">
 
                                                 <button
-                                                    className=" navbar-search-form-dropdown btn btn-silver dropdown-toggle"
+                                                    className={`navbar-search-form-dropdown btn btn-silver dropdown-toggle ${this.props.show_sidebar_bool.show_sidebar && `d-none`}`}
                                                     type="button"
                                                     id="dropdownMenuButton2" data-bs-toggle="dropdown"
                                                     aria-expanded="false">
@@ -103,7 +115,7 @@ class Navbar extends Component {
                                                 <input autoComplete="off" type="text" name="query" id="query"
                                                        className="form-control navbar-search-form-text-form"/>
 
-                                                <button className="btn btn-warning navbar-search-form-button"
+                                                <button className={`btn btn-warning navbar-search-form-button ${this.props.show_sidebar_bool.show_sidebar && `d-none`} `}
                                                         type="button"
                                                         id="button-addon1">
                                                     <img width="23" src="/images/loupe.png"/>
@@ -119,7 +131,7 @@ class Navbar extends Component {
 
                                 {/*changing currency 0f products and selecting laguages*/}
 
-                                <li className="nav-item ms-3 mt-2-5">
+                                <li className="nav-item mt-2-5">
 
                                     <div className="dropdown navbar-languages-currency">
 
@@ -148,7 +160,10 @@ class Navbar extends Component {
                                                         </li>
                                                         <div className="for-overflow-dropdown-items">
 
-                                                            <li className="dropdown-item"><img width="23" src="/images/aze.png"/> Second level</li>
+                                                            <li className="dropdown-item"><img width="23"
+                                                                                               src="/images/aze.png"/> Second
+                                                                level
+                                                            </li>
 
                                                         </div>
                                                     </ul>
@@ -184,7 +199,7 @@ class Navbar extends Component {
 
 
                                 {/*User's country or */}
-                                <li className="nav-item ms-3 mt-1 navbar-location-country">
+                                <li className="nav-item mt-1 navbar-location-country">
                                     <div className="dropdown">
                                         <div className="d-flex text-white" id="dropdownMenuButtonCountries"
                                              data-bs-toggle="dropdown"
@@ -207,7 +222,7 @@ class Navbar extends Component {
                                 </li>
 
                                 {/*notification with animation and count of messages*/}
-                                <li className="nav-item ms-4 navbar-notification">
+                                <li className="nav-item  navbar-notification">
                                     <div className="wrapper">
                                         <div className="bell">
                                             <div className="anchor material-icons layer-1">
@@ -225,13 +240,11 @@ class Navbar extends Component {
                                 </li>
 
 
-
                                 {/*Shopping cart or basket */}
-                                <li className="nav-item ms-4-5 navbar-basket">
+                                <li  className="nav-item navbar-basket">
                                     <img width="46" src="/images/shopping-basket2.png" className="img-fluid"/>
                                     <span>99</span>
                                 </li>
-                            </ul>
                         </div>
                     </div>
                 </nav>
@@ -241,37 +254,45 @@ class Navbar extends Component {
                 <nav className="navbar sub-navbar navbar-expand-lg navbar-dark bg-dark">
                     <div className="container-fluid">
 
-                        <div className="collapse navbar-collapse" id="SubnavbarNav">
-                            <ul className="navbar-nav mb-2 mb-lg-0">
+                        <div className="collapse navbar-collapse d-flex justify-content-around" id="SubnavbarNav">
 
-                                <li onClick={() => {this.setState({show_sideBar : true})}} className="nav-item d-flex justify-content-center align-items-center ms-2">
-                                    <img width="29" src="/images/menu.png" alt=""/>
-                                    <a className="nav-link">Menu</a>
+
+                                <li onClick={() => {
+                                    this.props.show_sidebar(true)
+                                }}
+                                    className="nav-item d-flex justify-content-center align-items-center cursor-pointer">
+                                    <img width="39" src="https://img.icons8.com/ios/500/000000/menu-squared-2--v1.png"/>
+                                    <a>Department</a>
                                 </li>
 
-                                <li className="nav-item ms-3  d-flex justify-content-center align-items-center">
-                                    <img width="39" src="/images/box1.png" alt=""/>
-                                    <a href="" className="nav-link">Sell on Metbix</a>
+                                <li className="nav-item  d-flex align-items-center cursor-pointer">
+                                    <img width="44" src="https://img.icons8.com/material/500/000000/opencart.png"/>
+                                    <a href="" >Sell on Metbix</a>
                                 </li>
 
-                                <li className="nav-item ms-3  d-flex justify-content-center align-items-center">
-                                    <img width="34" src="/images/statistics.png" alt=""/>
-                                    <a href="" className="nav-link">Finance</a>
+                                <li className="nav-item  d-flex justify-content-center align-items-center cursor-pointer">
+                                    <img width="41" src="https://img.icons8.com/ios/500/000000/flip-chart.png"/>
+                                    <a href="" >Finance</a>
                                 </li>
 
-                                <li className="nav-item ms-3  d-flex justify-content-center align-items-center">
-                                    <img width="34" src="/images/question.png" alt=""/>
-                                    <a href="" className="nav-link">Help</a>
+                                <li className="nav-item  d-flex justify-content-center align-items-center cursor-pointer">
+                                    <img width="42" src="https://img.icons8.com/wired/500/000000/paper-plane.png"/>
+                                    <a href="" >Shipping</a>
                                 </li>
-                            </ul>
+
+                                <li className="nav-item  d-flex justify-content-center align-items-center cursor-pointer">
+                                    <img width="39" src="https://img.icons8.com/ios/500/000000/info-squared.png"/>
+                                    <a href="">Help</a>
+                                </li>
                         </div>
 
                     </div>
                 </nav>
 
 
-               {/*search bar for responsive design */}
-                <nav className={`navbar search-bar d-none ${this.state.scroll_active !== "" && `scroll-active-searchbar`} `}>
+                {/*search bar for responsive design */}
+                <nav
+                    className={`navbar search-bar d-none ${this.state.scroll_active !== "" && `scroll-active-searchbar`} `}>
                     <div className="container-fluid">
                         <form className="form-inline mt-1 navbar-for-search-form-border w-100">
                             <div className="input-group">
@@ -292,10 +313,22 @@ class Navbar extends Component {
                 </nav>
 
 
-
             </div>
         );
     }
 }
 
-export default Navbar;
+
+const map_state_props  = state => {
+return {
+    show_sidebar_bool:state.show_sidebar
+}
+};
+
+const map_dispatch_to_props  = dispatch => {
+return {
+    show_sidebar : (bool) => dispatch(show_sidebar(bool))
+}
+};
+
+export default connect(map_state_props, map_dispatch_to_props)(Navbar);

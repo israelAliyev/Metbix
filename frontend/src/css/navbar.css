@@ -1,3 +1,22 @@
+
+*{
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+
+
+}
+input, input:before, input:after {
+    -webkit-user-select: initial;
+    -khtml-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+}
 /*for navbars */
 .main-navbar {
     background-color: #0C2D48;
@@ -6,6 +25,7 @@
 
 .main-navbar li {
     cursor: pointer;
+    list-style: none;
 }
 
 .for-responsive-logo {
@@ -43,6 +63,7 @@
 .navbar-search-form-text-form {
     border: none !important;
     font-size: 18px;
+    width: 100%;
 }
 
 
@@ -51,34 +72,18 @@
     box-shadow: none !important;
 }
 
-/*for setting width and border on navbar search form */
 .navbar-search-form {
-
-    width: 750px !important;
+    width: 720px !important;
     height: 45px;
 }
 
-@media (max-width: 767px) {
-    .navbar-search-form {
-        width: 734px !important;
-    }
-}
-
-@media (max-width: 574px) {
-    .navbar-search-form {
-        width: 540px !important;
-    }
-}
-
-@media (max-width: 360px) {
-    .navbar-search-form {
-        width: 330px !important;
-    }
-}
-
+/*for setting width and border on navbar search form */
 .navbar-for-search-form-border:focus-within {
     border: 2px solid #f90;
     border-radius: 0.40rem;
+}
+.navbar-for-search-form-border:focus-within .navbar-search-form-text-form{
+    font-size: 16px;
 }
 
 
@@ -180,8 +185,8 @@
     position: absolute;
     background-color: red;
     color: white;
-    top: -1px;
-    right: -5px;
+    top: 5%;
+    right: 0;
     border-radius: 50%;
     width: 18px;
     height: 18px;
@@ -227,27 +232,27 @@
 
 .navbar-notification .layer-1 {
     color: #ffffff;
-    z-index: 9;
-    animation: animation-layer-1 infinite;
+    /*z-index: 9;*/
+    animation: animation-layer-1 infinite 5000ms ;
     opacity: 0;
 }
 
 .navbar-notification .layer-2 {
     color: #ffffff;
-    z-index: 8;
+    /*z-index: 8;*/
     position: absolute;
     top: 0;
     left: 0;
-    animation: animation-layer-2 infinite;
+    animation: animation-layer-2 infinite 5000ms;
 }
 
 .navbar-notification .layer-3 {
     color: #ffffff;
-    z-index: 2;
+    /*z-index: 2;*/
     position: absolute;
     top: 0;
     left: 0;
-    animation: animation-layer-3 infinite;
+    animation: animation-layer-3 infinite 5000ms;
 }
 
 @keyframes animation-layer-1 {
@@ -449,22 +454,34 @@
 .navbar-basket span {
     position: absolute;
     color: #f8a627;
-    top: 17px;
-    left: 12px;
+    top: 40%;
+    left: 27%;
     font-weight: bold;
 }
 
+ /*sub navbar*/
 
 .sub-navbar {
-    background-color: #ecc30e !important;
+    background-color: #1b354a !important;
     font-size: 2rem;
     font-weight: bold;
 }
 
 
-.sub-navbar li:hover img, .sub-navbar li:hover a {
+
+.sub-navbar li img, .sub-navbar li:hover a {
+    color: #ffffff !important;
     filter: brightness(0) invert(1) !important;
-    color: white !important;
+}
+
+.sub-navbar li a {
+    color: #98A1A9 !important;
+    text-decoration: none;
+    padding: 0 0 0.5rem 0.5rem;
+}
+
+.sub-navbar li img {
+    padding: 0 0 0.5rem 0;
 }
 
 
@@ -477,8 +494,12 @@
         justify-content: center !important;
     }
 
-    .main-navbar .navbar-brand {
-        display: none;
+     .navbar-brand {
+        display: none !important;
+    }
+
+    .main-navbar > div > div li , .navbar-search-form{
+        display: none !important;
     }
 
     .main-navbar .for-responsive-logo {
@@ -489,7 +510,8 @@
         display: block !important;
         position: fixed;
         width: 100%;
-        background-color: #0C2D48;;
+        background-color: #0C2D48;
+        z-index: 2;
     }
 
     .scroll-active-navbar {
@@ -499,14 +521,32 @@
     .scroll-active-searchbar {
         position: fixed;
         width: 100%;
-
+       top: 0;
     }
 
 }
 
-
 .vbn {
-
     height: 800px !important;
-
+    background-color: #f3f5f6;
 }
+.App{
+
+    background-color: #f5f5f5;
+}
+
+
+/*.sidebar-overlay{*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    background: rgba(0, 0, 0, 0.5);*/
+/*    backdrop-filter: blur(2px);*/
+/*    opacity: 1;*/
+/*    visibility: visible;*/
+/*    transition: opacity 0.3s;*/
+
+/*}*/
+

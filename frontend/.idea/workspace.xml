@@ -2,21 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d960938-7682-49c8-9117-30510a72beb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/menu1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/recb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer/Sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/apparel.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/car.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/electronics.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/furniture.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/game.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/home.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/job.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/letter-m.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/m.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/m1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/software.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/Slider/ShippingInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/Slider/Slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/Slider/SliderData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sidebar/Sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/fonts/PosterGothicRoundCondATF-Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/fonts/TT Lakes Medium DEMO.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/shippingInfo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/13690.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/carpart-slider3_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/carpart-slider4_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/root-reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/sidebar/sidebar-actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/sidebar/sidebar-reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/sidebar/sidebar-types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/js/bootstrap.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/box1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/box4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/question.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/sell.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/statistics.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Sidebar.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,12 +127,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/src/videos" />
+      <recent name="$PROJECT_DIR$/src/css/fonts" />
       <recent name="$PROJECT_DIR$/src/images" />
-      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components/main/Slider" />
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/src/css" />
+      <recent name="$PROJECT_DIR$/fonts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -120,7 +178,22 @@
       <workItem from="1622346314647" duration="18980000" />
       <workItem from="1622436640489" duration="1673000" />
       <workItem from="1622448429809" duration="12360000" />
-      <workItem from="1622522762357" duration="15275000" />
+      <workItem from="1622522762357" duration="15692000" />
+      <workItem from="1622557326482" duration="11000" />
+      <workItem from="1622557502970" duration="256000" />
+      <workItem from="1622557911491" duration="6865000" />
+      <workItem from="1622600289699" duration="750000" />
+      <workItem from="1622604340078" duration="20040000" />
+      <workItem from="1622699750329" duration="9221000" />
+      <workItem from="1622782272108" duration="20031000" />
+      <workItem from="1622837778251" duration="1563000" />
+      <workItem from="1622887216823" duration="7808000" />
+      <workItem from="1622972435363" duration="1999000" />
+      <workItem from="1623034769133" duration="1444000" />
+      <workItem from="1623053596099" duration="6378000" />
+      <workItem from="1623127555133" duration="20349000" />
+      <workItem from="1623211245176" duration="193000" />
+      <workItem from="1623213389917" duration="8715000" />
     </task>
     <servers />
   </component>
