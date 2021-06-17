@@ -1,0 +1,180 @@
+
+
+.main-brands{
+    background-color: white;
+    padding:  2.5rem 3.5rem 2.5rem 3.5rem !important;
+}
+
+.main-brands .swiper-container {
+    position: relative;
+    padding:  1rem 0 3rem 0 !important;
+}
+
+.main-brands .swiper-container .swiper-pagination-bullet {
+    width: 9px !important;
+    height: 9px !important;
+}
+
+.main-brands .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.main-brands .responsive-brands .item .content{
+    position: absolute;
+    color: white;
+    top: 18%;
+    left: 10%;
+}
+
+.main-brands .responsive-brands .item .content span:first-child{
+    color: #f59e1d;
+}
+
+.main-brands .swiper-slide img {
+
+    object-fit: cover;
+    border-radius: 5px;
+    height: 100%;
+    width: 92%;
+
+}
+
+
+.main-brands .swiper-container .swiper-slide .item {
+    height: 189px;
+    position: relative;
+    width: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+
+.main-brands .brands .item{
+    height: 189px;
+    position: relative;
+    width: 27rem;
+    background-color: #ff9900;
+    border-radius: 2px;
+    cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+
+.main-brands .brands .item:nth-last-of-type(-n+2){
+    height: 189px;
+    position: relative;
+    width: 41rem;
+    background-color: #ff9900;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.main-brands .brands .item img{
+
+    object-fit: cover;
+    border-radius: 5px;
+    height: 189px;
+    width: 100%;
+}
+
+.main-brands .brands .item .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top:0;
+    left: 0;
+    padding:  2rem 0 0 2rem !important;
+}
+
+.main-brands .brands .item .content span:first-child{
+    color: #f59e1d;
+}
+
+.main-brands .brands .item:hover span, .brands .item:hover h3{
+    display: none;
+    transition: all 1s ease;
+}
+.main-brands .brands .item:hover .content{
+    background: rgba(0, 0, 0, 0.9);
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 0 !important;
+}
+
+.main-brands .brands .item:hover .content{
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease;
+}
+
+.main-brands .brands .item:hover .content i , .item:hover .content p, .item:hover .content img{
+
+    display: block !important;
+
+}
+
+.main-brands .brands .item:hover .content i{
+    color: white;
+    font-size: 5rem;
+}
+.main-brands .brands .item:hover .content img{
+    color: white;
+    width: 6rem;
+    height: 6rem;
+}
+.main-brands .brands .item:hover .content p{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+    .main-brands .brands .item{
+        display: none;
+    }
+
+    .main-brands .responsive-brands{
+        display: block !important;
+    }
+
+    .main-brands{
+        background-color: white;
+        padding:  0 0 0 0 !important;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .main-brands .swiper-slide img {
+        width: 85%;
+    }
+}

@@ -2,8 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d960938-7682-49c8-9117-30510a72beb8" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/public/images/arcelik.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Apple/pexels-photo-129208.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Apple/photo-1496917798719-b3d55924118d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Apple/photo-1523906639004-7dd5e8d4ec02.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Apple/photo-1553722189-7191c42de7d6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Apple/photo-1554412661-828c8d34bb9c.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Apple/photo-1563660908191-68938bf64b96.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Apple/photo-1566502548870-875212fb031d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Apple/photo-1576033897961-a9ee9479d78e.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Apple/photo-1578319080515-85e6f9f9427d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Apple/photo-1594666142806-c3930c9af459.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Arcelik/istockphoto-1096523200-612x612.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Arcelik/photo-1590164409291-450e859ccb87.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Arcelik/washing-machine-on-white-background-260nw-1686455497.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Arcelik/washing-machine-room-blank-wall-260nw-739684846.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Nike/photo-1515955656352-a1fa3ffcd111.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Nike/photo-1518656306295-aa28b28b2504.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Nike/photo-1524532787116-e70228437bbe.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Nike/photo-1547586877-0351a7143cbe.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Nike/photo-1596568359553-a56de6970068.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Nike/photo-1596568408389-429af9cb3fc9.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Nike/photo-1596644503782-fc9376910762.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/RestorationHardware/pexels-photo-3797991.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/RestorationHardware/pexels-photo-6438762.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/RestorationHardware/photo-1462212210333-335063b676bc.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/RestorationHardware/photo-1588432273887-7968301a3d2e.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/RestorationHardware/photo-1616627547584-bf28cee262db.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Tesla/photo-1536617621572-1d5f1e6269a0.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brands/Tesla/photo-1536882666204-4b33cd3cb518.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Apparel &amp; Fashion.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Arts &amp; Crafts-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Arts &amp; Crafts.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Automotive.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Beauty and Personal Care.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Electronics Accessories &amp; Supplies.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Health.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Household Appliances.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Immovable property and furniture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Industrial and Scientific.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Jobs.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Luggage &amp; Bags.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Movies &amp; Television-2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Movies &amp; Television.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Music.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Pets and Supplies.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Software.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Sports and Outdoors.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Tools and Home improvement.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Toys and Games.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/Video Games.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/departments/electronics.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons8-nike.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons8-tesla.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/nike.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/restoration-hardware.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds202.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test-ds27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/Department/Department.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/Products/Blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/Products/Brands.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/Products/TopLikedProducts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/Products/TopRequestedProducts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/department.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/fonts/AntipastoPro-Bold_trial.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/fonts/rbno2light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/toprequestedproducts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/airpod.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/Slider/SliderData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Slider/SliderData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/slider.css" afterDir="false" />
+>>>>>>> parent of 98751c0 (Revert "i completed departments and categories on main page")
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +94,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -56,21 +137,22 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/src/videos" />
+      <recent name="$PROJECT_DIR$/public/images/brands" />
       <recent name="$PROJECT_DIR$/src/css/fonts" />
+      <recent name="$PROJECT_DIR$/src/videos" />
       <recent name="$PROJECT_DIR$/src/images" />
-      <recent name="$PROJECT_DIR$/fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/main/Slider" />
-      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/src/css" />
+      <recent name="$PROJECT_DIR$/src/components/main/Slider" />
+      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/fonts" />
     </key>
   </component>
@@ -127,7 +209,16 @@
       <workItem from="1623053596099" duration="6378000" />
       <workItem from="1623127555133" duration="20349000" />
       <workItem from="1623211245176" duration="193000" />
-      <workItem from="1623213389917" duration="8715000" />
+      <workItem from="1623213389917" duration="10316000" />
+      <workItem from="1623258822939" duration="1400000" />
+      <workItem from="1623292972721" duration="9861000" />
+      <workItem from="1623429398315" duration="140000" />
+      <workItem from="1623485131173" duration="5322000" />
+      <workItem from="1623563221833" duration="11153000" />
+      <workItem from="1623634247348" duration="6854000" />
+      <workItem from="1623755649347" duration="1328000" />
+      <workItem from="1623814786258" duration="13147000" />
+      <workItem from="1623904304067" duration="9674000" />
     </task>
     <servers />
   </component>
