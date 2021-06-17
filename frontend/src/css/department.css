@@ -1,0 +1,155 @@
+
+.main-departments-categories .swiper-container {
+    position: relative;
+    margin-top: 5rem;
+    background-color: white;
+    padding: 2rem 0 4rem 0 !important;
+}
+
+.main-departments-categories .swiper-container .swiper-pagination-bullet {
+    width: 9px !important;
+    height: 9px !important;
+}
+
+.main-departments-categories .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: transparent;
+
+
+}
+
+.main-departments-categories .swiper-slide span {
+    position: absolute;
+    bottom: 9%;
+    color: black;
+    left: 7%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    width: 85%;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 550;
+    font-family: Rubik, sans-serif;
+    cursor: pointer;
+    transition: all 400ms ease;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.8px;
+    opacity: 1;
+}
+
+.main-departments-categories .swiper-slide:hover span {
+    color: white;
+    box-shadow: 0 0 0 rgb(0 0 0) !important;
+    background-color: #2574b5;
+    transition: all 400ms ease;
+    margin-top: 0 !important;
+}
+
+.main-departments-categories .swiper-slide img {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+    transition: all 600ms ease;
+    opacity: 0.8;
+}
+
+.main-departments-categories .swiper-slide:hover img {
+
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: all 400ms ease;
+}
+
+.main-departments-categories .swiper-container .swiper-slide .item {
+    position: relative;
+    width: 256px;
+    height: 256px;
+    cursor: pointer;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+
+.main-departments-categories .categories {
+    width: 95%;
+    margin: 0 auto;
+    /*background-color: white;*/
+}
+
+@font-face {
+    font-family: 'AntipastoPro-Bold_trial';
+    src: url('fonts/AntipastoPro-Bold_trial.ttf');
+}
+
+.main-departments-categories .categories .item {
+    border-radius: 20px;
+    background-color: white;
+    padding: 2rem 2rem 2.8rem 1.8rem !important;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "AntipastoPro-Bold_trial", sans-serif;
+    width: 175px;
+    height: auto;
+    text-align: center;
+    letter-spacing: 0.8px;
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    transition: all 400ms ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.main-departments-categories .categories .item:hover {
+    color: white;
+    box-shadow: 0 0 0 rgb(0 0 0) !important;
+    background-color: #2574b5;
+    transition: all 400ms ease;
+}
+
+
+.main-departments-categories .categories .item i {
+    font-size: 2.5rem;
+    color: #78838c;
+}
+
+.main-departments-categories .categories .item:hover i {
+    color: #cecfcf;
+}
+
+@media only screen and (max-width: 576px) {
+    .main-departments-categories {
+        margin-top: 25rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .main-departments-categories .categories .item {
+        width: 166px;
+        padding: 2rem 2rem 2rem 1.8rem !important;
+    }
+}

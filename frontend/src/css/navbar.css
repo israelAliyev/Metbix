@@ -533,20 +533,7 @@ input, input:before, input:after {
 .App{
 
     background-color: #f5f5f5;
+    overflow-x: hidden;
 }
 
-
-/*.sidebar-overlay{*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100vw;*/
-/*    height: 100vh;*/
-/*    background: rgba(0, 0, 0, 0.5);*/
-/*    backdrop-filter: blur(2px);*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*    transition: opacity 0.3s;*/
-
-/*}*/
 
