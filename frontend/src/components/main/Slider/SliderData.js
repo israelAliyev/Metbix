@@ -60,7 +60,7 @@ const sliderData= [
         video:"/images/software.mp4",
         content_1:"Find the ",
         content_2:"software",
-        content_3:"web, mobile and desktop software",
+        content_3:"backend, frontend and database etc.",
         content_4:"backend, frontend, ui, ux and database etc."
 
     },
