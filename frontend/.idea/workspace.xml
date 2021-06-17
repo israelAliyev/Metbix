@@ -2,79 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d960938-7682-49c8-9117-30510a72beb8" name="Default Changelist" comment="">
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/public/images/apparel.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/car.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/electronics.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/furniture.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/game.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/home.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/job.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/letter-m.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/m.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/m.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/m1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/software.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/test-ds25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/Slider/ShippingInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/Slider/Slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/Slider/SliderData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sidebar/Sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/PosterGothicRoundCondATF-Bold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/TT Lakes Medium DEMO.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/shippingInfo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/13690.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/carpart-slider3_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/carpart-slider4_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/root-reducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/sidebar/sidebar-actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/sidebar/sidebar-reducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/sidebar/sidebar-types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/js/bootstrap.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap-5.0.1-dist/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/box1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/box4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/question.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/sell.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/statistics.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
->>>>>>> parent of 7060107 (i completed departments and categories on main page)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
