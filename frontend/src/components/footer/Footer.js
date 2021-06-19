@@ -12,7 +12,14 @@ class Footer extends Component {
                 <section>
 
 
-                    <footer className="footer">
+                    <footer className="footer d-flex flex-column justify-content-center">
+                        
+                        <div className="signup">
+                            <input type="text" placeholder="Enter email.."/>
+                            <button>Signup</button>
+                        </div>
+                        <hr className="bg-white mb-5"/>
+
                         <div className="container">
                             <div className="row">
 

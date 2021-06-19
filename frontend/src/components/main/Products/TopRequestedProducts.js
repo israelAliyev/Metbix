@@ -8,47 +8,243 @@ class TopRequestedProducts extends Component {
 
                 <div className="top-requested-products mt-5">
 
-
-                    <div className="products-container">
-
-                        <div className="image"></div>
-
-                        <div className="review">
-                            <div className="stars">
-
-                                <span>Reviews:</span>
-
-                                <i className="fa fa-star" aria-hidden="true"></i>
-                                <i className="fa fa-star" aria-hidden="true"/>
-                                <i className="fa fa-star" aria-hidden="true"></i>
-                                <i className="fa fa-star" aria-hidden="true"></i>
-                                <i className="fa fa-star" aria-hidden="true"></i>
-
-                            </div>
-                            <h5>$ 100</h5>
+                    <div className="row-title d-flex justify-content-between align-items-center">
+                        <h4>Top Requested Products</h4>
+                        <div/>
                     </div>
 
-                        <h4 className="name">Indy earbuds</h4>
-                        <div className="detail">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas
-                                aliquam quam, at ullamcorper massa tincidunt nec. Integer diam justo, ultrices nec velit et,
-                                mattis finibus orci
-                            </p>
-                        </div>
+                    <div className="products d-flex justify-content-between flex-wrap mt-3">
 
-                        <div className="btn-box">
-                            <span className="like"> <i className="fa fa-heart-o"/> </span>
-
-                            <div className="btn">
-                                <p>Add to cart</p>
-                                <div className="cart-icon">
-                                    <li className="fa fa-shopping-cart"/>
-                                </div>
+                        <div className="item ">
+                            <div className="image">
+                                <img src="/images/nescafe.jpeg" alt=""/>
                             </div>
+
+                            <div className="details">
+                                <div className="review d-flex justify-content-between">
+                                    <div className="stars d-flex align-items-center">
+                                        <p>Reviews:</p>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                    </div>
+
+                                    <div className="price d-flex flex-column">
+                                        $1000
+                                    </div>
+
+                                </div>
+
+
+                                <div className="description cursor-pointer">
+                                    <h5>Apple Airpods</h5>
+
+                                    <p>We recommend that you continue to use your existing USB-A to Lightning cables,
+                                        power adap recomme</p>
+                                </div>
+
+                                <div className="operation-buttons d-flex align-items-center mt-4 mb-2">
+
+                                    <div className="request">
+                                        <i className="bi bi-heart"/>
+                                    </div>
+
+                                    <div className="cart d-flex justify-content-between align-items-center">
+                                        <p>Add to cart</p>
+                                        <i className="bi bi-cart-fill"/>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div><div className="item ">
+                            <div className="image">
+                                <img src="/images/airpod.jpeg" alt=""/>
+                            </div>
+
+                            <div className="details">
+                                <div className="review d-flex justify-content-between">
+                                    <div className="stars d-flex align-items-center">
+                                        <p>Reviews:</p>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                    </div>
+
+                                    <div className="price d-flex flex-column">
+                                        $1000
+                                    </div>
+
+                                </div>
+
+
+                                <div className="description cursor-pointer">
+                                    <h5>Apple Airpods</h5>
+
+                                    <p>We recommend that you continue to use your existing USB-A to Lightning cables,
+                                        power adapters continue ...</p>
+                                </div>
+
+                                <div className="operation-buttons d-flex align-items-center mt-4 mb-2">
+
+                                    <div className="request">
+                                        <i className="bi bi-heart"/>
+                                    </div>
+
+                                    <div className="cart d-flex justify-content-between align-items-center">
+                                        <p>Add to cart</p>
+                                        <i className="bi bi-cart-fill"/>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div><div className="item ">
+                            <div className="image">
+                                <img src="/images/airpod.jpeg" alt=""/>
+                            </div>
+
+                            <div className="details">
+                                <div className="review d-flex justify-content-between">
+                                    <div className="stars d-flex align-items-center">
+                                        <p>Reviews:</p>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                    </div>
+
+                                    <div className="price d-flex flex-column">
+                                        $1000
+                                    </div>
+
+                                </div>
+
+
+                                <div className="description cursor-pointer">
+                                    <h5>Apple Airpods</h5>
+
+                                    <p>We recommend that you continue to use your existing USB-A to Lightning cables,
+                                        power adapters continue ...</p>
+                                </div>
+
+                                <div className="operation-buttons d-flex align-items-center mt-4 mb-2">
+
+                                    <div className="request">
+                                        <i className="bi bi-heart"/>
+                                    </div>
+
+                                    <div className="cart d-flex justify-content-between align-items-center">
+                                        <p>Add to cart</p>
+                                        <i className="bi bi-cart-fill"/>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div><div className="item ">
+                            <div className="image">
+                                <img  src="/images/airpod.jpeg" alt=""/>
+                            </div>
+
+                            <div className="details">
+                                <div className="review d-flex justify-content-between">
+                                    <div className="stars d-flex align-items-center">
+                                        <p>Reviews:</p>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                    </div>
+
+                                    <div className="price d-flex flex-column">
+                                        $1000
+                                    </div>
+
+                                </div>
+
+
+                                <div className="description cursor-pointer">
+                                    <h5>Apple Airpods</h5>
+
+                                    <p>We recommend that you continue to use your existing USB-A to Lightning cables,
+                                        power adapters continue ...</p>
+                                </div>
+
+                                <div className="operation-buttons d-flex align-items-center mt-4 mb-2">
+
+                                    <div className="request">
+                                        <i className="bi bi-heart"/>
+                                    </div>
+
+                                    <div className="cart d-flex justify-content-between align-items-center">
+                                        <p>Add to cart</p>
+                                        <i className="bi bi-cart-fill"/>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div><div className="item ">
+                            <div className="image">
+                                <img src="/images/airpod.jpeg" alt=""/>
+                            </div>
+
+                            <div className="details">
+                                <div className="review d-flex justify-content-between">
+                                    <div className="stars d-flex align-items-center">
+                                        <p>Reviews:</p>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                    </div>
+
+                                    <div className="price d-flex flex-column">
+                                        $1000
+                                    </div>
+
+                                </div>
+
+
+                                <div className="description cursor-pointer">
+                                    <h5>Apple Airpods</h5>
+
+                                    <p>We recommend that you continue to use your existing USB-A to Lightning cables,
+                                        power adapters continue ...</p>
+                                </div>
+
+                                <div className="operation-buttons d-flex align-items-center mt-4 mb-2">
+
+                                    <div className="request">
+                                        <i className="bi bi-heart"/>
+                                    </div>
+
+                                    <div className="cart d-flex justify-content-between align-items-center">
+                                        <p>Add to cart</p>
+                                        <i className="bi bi-cart-fill"/>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
 
-                </div>
+
+                    </div>
+
                 </div>
 
             </>

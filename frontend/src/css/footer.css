@@ -1,25 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
-.footer  .container{
+.footer .container {
     max-width: 1170px;
 }
-.footer  .row{
+
+.footer .row {
     display: flex;
     flex-wrap: wrap;
 }
-.footer  ul{
+
+.footer ul {
     list-style: none;
 }
-.footer{
+
+.footer {
     background-color: #0C2D48;
-    padding: 70px 0;
+    padding: 50px 0;
 }
-.footer-col{
+
+.footer-col {
     width: 25%;
     padding: 0 15px;
 }
-.footer-col h4{
+
+.footer-col h4 {
     font-size: 18px;
     color: #ffc107;
     text-transform: capitalize;
@@ -27,20 +32,23 @@
     font-weight: 500;
     position: relative;
 }
-.footer-col h4::before{
+
+.footer-col h4::before {
     content: '';
     position: absolute;
-    left:0;
+    left: 0;
     bottom: -10px;
     background-color: #e91e63;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
 }
-.footer-col ul li:not(:last-child){
+
+.footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
 }
-.footer-col ul li a{
+
+.footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
     text-decoration: none;
@@ -49,28 +57,31 @@
     display: block;
     transition: all 0.3s ease;
 }
-.footer-col ul li a:hover{
+
+.footer-col ul li a:hover {
     color: #ffffff;
     padding-left: 8px;
 }
-.social-links a{
+
+.social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgba(255,255,255,0.2);
-    margin:0 10px 10px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
     color: #ffffff;
     transition: all 0.5s ease;
 }
-.social-links a:hover{
+
+.social-links a:hover {
     color: #24262b;
     background-color: #ffffff;
 }
 
-.footer-contact-us input{
+.footer-contact-us input {
     background-color: #10385a;
     color: #ffffff;
     height: 2rem;
@@ -95,34 +106,36 @@
     background-color: #e91e63 !important;
 }
 
-.social-links div div{
+.social-links div div {
 
     height: 40px;
 }
 
 
-.responsive-controlling i{
+.responsive-controlling i {
     font-size: 1.5rem;
 }
-.responsive-controlling div a p{
-font-size: 14px;
-color: #999;
-    font-family: "Poppins" , sans-serif;
+
+.responsive-controlling div a p {
+    font-size: 14px;
+    color: #999;
+    font-family: "Poppins", sans-serif;
 }
 
 
-.responsive-controlling div a{
+.responsive-controlling div a {
     padding: 10px 6px;
     display: block;
     text-align: center;
     line-height: 1;
-    cursor:pointer;
+    cursor: pointer;
     text-decoration: none;
     color: #151515;
 }
-.responsive-controlling{
+
+.responsive-controlling {
     height: 70px;
-    position:fixed;
+    position: fixed;
     bottom: 0;
     width: 100%;
     border-top-left-radius: 0.5rem;
@@ -130,38 +143,72 @@ color: #999;
     z-index: 99;
 }
 
+.footer .signup {
+    margin: 0 auto 2rem;
+}
+
+.footer .signup input {
+    width: 30rem;
+    height: 2.5rem;
+    border-radius: 3px;
+    border: 0;
+}
+
+.footer .signup button {
+    margin-left: 1rem;
+    background-color: #f8a627;
+    color: white;
+    border: 0;
+    height: 2rem;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    padding: 0.5rem 1rem 2rem 1rem !important;
+}
+
 /*responsive*/
-@media(max-width: 768px){
-    .footer-col{
+@media (max-width: 768px) {
+    .footer-col {
         width: 50%;
     }
-    .social-links .footer-col{
+
+    .social-links .footer-col {
         width: 100%;
     }
-    .footer{
+
+    .footer {
         margin-bottom: 70px !important;
     }
+
+    .footer .signup input {
+        width: 17rem;
+    }
+
 }
-@media(max-width: 576px){
-    .footer-col{
+
+@media (max-width: 576px) {
+    .footer-col {
         width: 50%;
     }
-    .social-links .footer-col{
+
+    .social-links .footer-col {
         width: 100%;
     }
-    .footer{
+
+    .footer {
         margin-bottom: 70px !important;
     }
 }
 
-@media(max-width: 360px){
-    .footer-col{
+@media (max-width: 360px) {
+    .footer-col {
         width: 100%;
     }
-    .social-links .footer-col{
+
+    .social-links .footer-col {
         width: 100%;
     }
-    .footer{
+
+    .footer {
         margin-bottom: 70px !important;
     }
 }
