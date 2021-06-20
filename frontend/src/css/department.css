@@ -153,3 +153,10 @@
         padding: 2rem 2rem 2rem 1.8rem !important;
     }
 }
+
+@media only screen and (max-width: 365px) {
+    .main-departments-categories .categories .item {
+        width: 150px;
+        padding: 1rem 2rem 1rem 1.8rem !important;
+    }
+}

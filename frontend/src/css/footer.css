@@ -213,6 +213,10 @@
     }
 }
 
-
+@media only screen and (max-width: 365px) {
+    .footer .signup input {
+        width: 14rem;
+    }
+}
 
 

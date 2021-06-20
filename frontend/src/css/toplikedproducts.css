@@ -47,7 +47,6 @@
 }
 .top-liked-products .products .item .image img{
     width: 100%;
-    border-radius: 0.8rem;
     object-fit: cover;
 }
 
@@ -229,3 +228,35 @@
     }
 }
 
+
+@media only screen and (max-width: 365px) {
+
+    .top-liked-products .products .item .details .review .price{
+        margin-left: 7px;
+    }
+    .top-liked-products .products .item .operation-buttons .cart{
+        margin-left: 1rem;
+    }
+
+    .top-liked-products .products .item .operation-buttons{
+        top: 170px;
+    }
+    .top-liked-products .products .item{
+        height: 345px;
+    }
+
+    .top-liked-products .row-title div{
+        width: 75%;
+        background: #DCDEE3;
+        border-radius: 10px;
+        height: 0.5rem;
+    }
+
+    .top-liked-products .products{
+        height: auto;
+    }
+
+    .top-liked-products .row-title {
+        display: none;
+    }
+}
