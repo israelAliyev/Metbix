@@ -72,6 +72,10 @@
     font-size: 12px;
     margin-top: 0.7rem;
     background-color: white;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .top-liked-products .products .item .operation-buttons .request{

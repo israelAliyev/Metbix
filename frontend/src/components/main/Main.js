@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import Slider from "./Slider/Slider";
-import Department from "./Department/Department";
-import Brands from "./Products/Brands";
-import TopRequestedProducts from "./Products/TopRequestedProducts";
-import TopLikedProducts from "./Products/TopLikedProducts";
+import Slider from "./slider/Slider";
+import Department from "./department/Department";
+import Brands from "./products/Brands";
+import TopRequestedProducts from "./products/TopRequestedProducts";
+import TopLikedProducts from "./products/TopLikedProducts";
 
 class Main extends Component {
     render() {

@@ -40,8 +40,11 @@ class TopLikedProducts extends Component {
                                 <div className="description cursor-pointer">
                                     <h5>Apple Airpods</h5>
 
-                                    <p>We recommend that you continue to use your existing USB-A to Lightning cables,
-                                        power adapters continue ...</p>
+                                    <p>continuewerewrreewrewrwrwrwrwrcontinuew
+                                        erewrreewrewrwrwrwrwrcontinuewerewrreewre
+                                        wrwrwrwrwrcontinuewerewrreewrewrwrwrwrwrcontinuewerewrreewrewrwrwrwrwrcont
+                                        inuewerewrreewrewrwrwrwrwrcontinuewerewrreewrewrwrwrwrwrcontinuewerewrre
+                                       </p>
                                 </div>
 
                                 <div className="operation-buttons d-flex align-items-center mt-4 mb-2">

@@ -1,0 +1,257 @@
+/*sub bar*/
+.products-and-options .top-bar {
+    padding: 0 2rem !important;
+    background-color: white;
+    height: 2.5rem;
+}
+
+.products-and-options .top-bar .options {
+    width: 60%;
+}
+
+.products-and-options .top-bar .text p {
+    font-weight: 550 !important;
+    font-style: normal !important;
+    text-transform: none !important;
+    text-decoration: none !important;
+    font-size: 15px;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    letter-spacing: 0.2px;
+    margin: auto 0;
+}
+
+.products-and-options .top-bar .text span {
+    color: #c45500 !important;
+}
+
+
+.products-and-options .top-bar .dropdown button {
+    background-color: #e7e9ec;
+    border: 1px solid transparent;
+    color: black;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem !important;
+    border-radius: 10px;
+}
+
+.products-and-options .top-bar .dropdown button:focus-within {
+    box-shadow: 0px 0px;
+}
+
+.products-and-options .top-bar .dropdown button::after {
+    display: none;
+}
+
+.products-and-options .top-bar .dropdown-menu {
+    font-size: 0.9rem;
+    padding: 5px 0 5px 0 !important;
+    width: auto;
+    top: 3px !important;
+    font-weight: 550;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 0;
+    max-height: 30rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.products-and-options .rating .dropdown-menu i {
+    color: #ff9900 !important;
+    margin-left: 1px;
+}
+
+/*end of sub bar*/
+
+
+/*side bar*/
+
+
+.products-and-options .side-bar {
+    height: auto;
+    width: 15rem;
+    background-color: white;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    padding: 1rem 2.1rem 1rem 1rem !important;
+}
+
+.products-and-options .side-bar input:focus {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+
+.products-and-options .side-bar hr{
+    color: #78838c;
+}
+
+.products-and-options .side-bar .title {
+    font-size: 0.85rem;
+    font-weight: 550;
+    color: #343434;
+    margin-bottom: 10px;
+}
+
+.products-and-options .side-bar .price .price-set input {
+    width: 37%;
+    height: 1.8rem;
+    background-color: #FAFAFA;
+    border: 1px solid #d9d8d8;
+    border-radius: 3px;
+    color: #78838c;
+    font-size: 0.8rem;
+}
+
+.products-and-options .side-bar .price .price-set input::placeholder {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+
+.products-and-options .side-bar .price .price-set i{
+    background-color: #ffb044;
+    border-radius: 3px;
+    padding:  0.2rem 0.6rem 0.1rem 0.5rem !important;
+    color: whitesmoke;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.products-and-options .side-bar .price .price-set span{
+    font-size: 0.8rem;
+    color: #78838c;
+    margin: auto 0.5rem;
+}
+
+
+.products-and-options .side-bar .price .price-range input[type="checkbox"]{
+    appearance: none;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 1.2rem;
+    height: 1.2rem;
+    outline: none;
+    border: 1px solid #cbccce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-and-options .side-bar .price .price-range input[type="checkbox"]:after {
+    content: "✓";
+    color: #292929;
+    font-weight: 500;
+    display: none;
+}
+.products-and-options .side-bar .price  .price-range input[type="checkbox"]:checked:after{
+
+    display: block;
+}
+
+.products-and-options .side-bar .price .price-range label{
+    font-size: 0.9rem;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.products-and-options .side-bar .price .price-range > input{
+    height: 1.8rem;
+    background-color: #FAFAFA;
+    border: 1px solid #d9d8d8;
+    border-radius: 3px;
+    color: #78838c;
+    width: 100%;
+    margin-bottom: 0.6rem;
+    padding: 0 0 0.1rem 1rem !important;
+}
+
+.products-and-options .side-bar .price .price-range>input::placeholder {
+    font-size: 0.85rem;
+    margin: auto 0;
+}
+
+/*colors*/
+.products-and-options .side-bar .colors .colors-range input[type="checkbox"]{
+    appearance: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-left: 7px;
+    margin-top: 8px;
+    outline: none;
+    transition: 0.2s all ease;
+}
+
+.products-and-options .side-bar .colors .colors-range input[type="checkbox"]:checked{
+
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+    transition: 0.2s all ease;
+}
+
+
+.products-and-options .side-bar .option   input[type="checkbox"]{
+    appearance: none;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 1.2rem;
+    height: 1.2rem;
+    outline: none;
+    border: 1px solid #cbccce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-and-options .side-bar .option  input[type="checkbox"]:after {
+    content: "✓";
+    color: #292929;
+    font-weight: 500;
+    display: none;
+}
+.products-and-options .side-bar .option  input[type="checkbox"]:checked:after{
+
+    display: block;
+}
+
+.products-and-options .side-bar .option label{
+  font-size: 0.9rem;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.products-and-options .side-bar .option > input{
+    height: 1.8rem;
+    background-color: #FAFAFA;
+    border: 1px solid #d9d8d8;
+    border-radius: 3px;
+    color: #78838c;
+    width: 100%;
+    margin-bottom: 0.6rem;
+    padding: 0 0 0.1rem 1rem !important;
+}
+
+.products-and-options .side-bar .option>input::placeholder {
+    font-size: 0.85rem;
+    margin: auto 0;
+}
+
+/*end of side bar*/
+
+
+/*products*/
+
+.products-and-options .products{
+
+    background-color: #0C2D48;
+}
+
+/*end of products*/
