@@ -1,0 +1,167 @@
+
+
+@media only screen and (max-width: 1025px) {
+
+    .product-info > .main {
+
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .product-info .main .photos {
+        height: 100%;
+        width: 98%;
+    }
+
+    .product-info .main .photos .mySwiper2 {
+        height: 850px;
+    }
+
+
+    .product-info .main .photos .mySwiper {
+        height: 130px;
+    }
+
+    .product-info .feedback .main .pie-wrapper {
+        margin-top: 2rem !important;
+    }
+
+    .product-info .feedback .sub .review-wrapper .review-section-r .photos {
+        margin-top: 1.5rem !important;
+        width: 95%;
+    }
+
+    .product-info .message .main {
+        padding: 0 0 0 1rem !important;
+    }
+
+    .product-info .message .text > textarea::placeholder {
+        font-size: 0.7rem !important;
+    }
+
+    .product-info .message .text > .balloon {
+        width: 17rem;
+        padding: 1rem 1rem 1.3rem 1.5rem;
+        font-size: 14px;
+    }
+
+    }
+
+
+@media only screen and (max-width: 576px) {
+
+    .product-info .main .photos .mySwiper2 {
+        height: 450px;
+    }
+
+
+    .product-info .main .photos .mySwiper {
+        height: 60px;
+    }
+
+    .product-info .main .operations .price {
+        width: 100%;
+    }
+
+    .product-info .main .operations .buttons .cart {
+        margin-left: 0;
+        margin-top: 1rem;
+        margin-right: 1.9rem;
+    }
+
+
+    .product-info .main .operations .buttons .store {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .product-info .sub .company .info {
+        height: auto;
+    }
+
+    .product-info .sub .company .info .review h1 {
+        font-size: 4rem !important;
+        color: #555555;
+    }
+
+    .product-info .sub .company .info .review .stars i {
+        margin-left: 5px;
+        color: #ffc800;
+        font-size: 0.88rem;
+    }
+
+    .product-info .sub .company .info .review p {
+        font-size: 0.7rem;
+    }
+
+    .product-info .sub .company .info .photo .image {
+        width: 9rem;
+        height: 6rem;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-top: 1rem;
+    }
+
+    .product-info .sub .company .info .photo p {
+        font-size: 0.8rem;
+    }
+
+    .product-info .sub .company .info .little-info {
+        margin-top: 1rem;
+    }
+
+    .product-info .about table > tbody > tr > td:first-child {
+        width: 60%;
+    }
+
+    .product-info .about table > tbody > tr > td:last-child {
+        width: 40%;
+    }
+
+    .product-info .feedback .main .header p {
+        font-size: 1.1rem;
+    }
+
+    .product-info .feedback .main .header button {
+        padding: 0.2rem 0.6rem;
+
+    }
+
+    .product-info .feedback .main {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-info .feedback .main .histogram .item .box {
+        width: 15rem !important;
+    }
+
+    .product-info .feedback .main > div:nth-last-of-type(-n+2) {
+        margin-left: 0;
+    }
+
+    .product-info .feedback .main > hr {
+
+        width: 100%;
+    }
+
+    .product-info .feedback .main .histogram {
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    .product-info .feedback .main .pie-wrapper {
+        width: 100%;
+    }
+
+    .product-info .feedback .sub .review-wrapper .review-section-r .photos img {
+        margin-top: 0.5rem;
+    }
+
+    .product-info .message .text > .balloon {
+        display: none;
+    }
+
+}

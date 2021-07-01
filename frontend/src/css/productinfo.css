@@ -1,0 +1,889 @@
+.product-info {
+    height: auto;
+}
+
+.product-info input:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+
+.product-info .main .operations > hr {
+    color: #78838c;
+    width: 100%;
+    height: 1px;
+    margin: 0 auto;
+}
+
+
+.product-info > .main {
+
+    width: 100%;
+    background-color: white;
+    border-radius: 7px;
+    height: 100%;
+}
+
+.product-info .main .photos {
+    height: 100%;
+    width: 45%;
+}
+
+.product-info .main .operations {
+    padding: 1rem 1rem 2.5rem 2rem !important;
+}
+
+.product-info .main .operations .description {
+    font-family: "Poppins", sans-serif;
+}
+
+.product-info .main .operations .description span {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.product-info .main .operations .description p {
+    font-weight: 300;
+    margin-top: 0.3rem;
+}
+
+.product-info .main .operations .review {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+.product-info .main .operations .review p {
+    color: #78838c;
+}
+
+.product-info .main .operations .review p:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.product-info .main .operations .review p > span {
+    color: #0a58ca;
+}
+
+.product-info .main .operations .review p > i {
+    color: #ffc800;
+    font-size: 13px;
+    margin-left: 2px;
+}
+
+
+.product-info .main .operations .price {
+    width: 48%;
+}
+
+.product-info .main .operations .price span {
+
+    color: #d21313;
+    border: 1px solid #d21313;
+    border-radius: 8px;
+    margin: 0 !important;
+    padding: 0 10px 0 10px !important;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+}
+
+.product-info .main .operations .price p {
+    margin: 0;
+}
+
+.product-info .main .operations .price .old-price {
+    color: #666666;
+    font-size: 2rem;
+    text-decoration: line-through;
+    font-family: Arial, sans-serif;
+}
+
+.product-info .main .operations .price p:last-of-type {
+    color: #f8a627;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.product-info .main .operations .options .count p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.product-info .main .operations .options .count i {
+    font-size: 1.3rem;
+    border-radius: 50%;
+    color: black;
+    background-color: #e9e9e9;
+    padding: 0 1px;
+}
+
+.product-info .main .operations .options .count input {
+    width: 3.5rem;
+    margin: 0 10px;
+    height: 1.5rem;
+    background-color: #f2f8ff;
+    border: 1px solid #d7d6d6;
+}
+
+.product-info .main .operations .options .count span {
+    font-size: 0.8rem;
+    color: #78838c;
+    margin-left: 0.5rem;
+}
+
+
+/*colors*/
+.product-info .main .operations .options .colors {
+    width: 80%;
+}
+
+.product-info .main .operations .options .colors p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.product-info .main .operations .options .colors input[type="checkbox"] {
+    appearance: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-left: 7px;
+    margin-top: 8px;
+    outline: none;
+    transition: 0.2s all ease;
+}
+
+.product-info .main .operations .options .colors input[type="checkbox"]:checked {
+
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+    transition: 0.2s all ease;
+}
+
+.product-info .main .operations .options .option {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-info .main .operations .options .option .title {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+
+}
+
+
+.product-info .main .operations .options .option .option-item span {
+    margin-left: 0.7rem;
+    border: 1px solid #919ca5;
+    border-radius: 3px;
+    padding: 0.15rem 0.7rem 0.15rem 0.7rem !important;
+    margin-top: 0.7rem;
+    text-align: center;
+    font-size: 0.85rem;
+    cursor: pointer;
+    font-weight: 350;
+
+}
+
+.product-info .main .operations .options .option .option-item span:hover {
+    border: 1px solid red;
+}
+
+
+.product-info .main .operations .buttons a {
+    width: auto;
+    border-radius: 7px;
+    color: #4a5258;
+    padding: 0.4rem 0.5rem 0.4rem 0.5rem !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 420;
+    background: #e0e5ec;
+
+}
+
+
+.product-info .main .operations .buttons a > i {
+    background-color: #acb2b8;
+    border-radius: 50%;
+    padding: 0.4rem 0.7rem;
+    margin-left: 0.8rem;
+    color: white;
+
+}
+
+.product-info .main .operations .buttons .request i {
+    color: #ff0000;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    background-color: #e0e5ec;
+}
+
+
+.product-info .main .operations .buttons .cart {
+    margin-left: 2rem;
+}
+
+.product-info .main .operations .buttons .cart i {
+    /*color: #0076d7;*/
+
+}
+
+.product-info .main .operations .buttons .store {
+    margin-left: 2rem;
+}
+
+.product-info .main .operations .buttons .store i {
+    /*color: #ffc800;*/
+
+}
+
+.product-info .main .operations .buttons .share {
+    margin-top: 2.2rem;
+    width: 100%;
+}
+
+.product-info .main .operations .buttons .share p {
+    margin: 0;
+    padding: 0;
+    color: #78838c;
+}
+
+.product-info .main .operations .buttons .share i {
+    margin-left: 1rem;
+    cursor: pointer;
+    color: #78838c;
+    font-size: 1.2rem;
+}
+
+.product-info .main .operations .buttons .share i:hover {
+    color: black;
+}
+
+
+/*sub*/
+
+/*company*/
+
+.product-info .sub p {
+    margin: 0 !important;
+    color: #8d8d8d;
+}
+
+.product-info .sub .company {
+    margin-top: 3rem;
+    border-radius: 7px;
+    background-color: white;
+    padding: 1rem 2rem 1rem 2rem !important;
+}
+
+.product-info .sub .company .title {
+    margin-top: 0.2rem !important;
+}
+
+.product-info .sub .company > p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    font-family: Roboto, "Helvetica Neue", Helvetica Neue, Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei";
+}
+
+.product-info .sub .company .info {
+    width: 100%;
+    height: 14rem;
+}
+
+.product-info .sub .company .info > div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.product-info .sub .company .info .review h1 {
+    font-size: 5rem !important;
+    color: #555555;
+}
+
+.product-info .sub .company .info .review .stars i {
+    margin-left: 5px;
+    color: #ffc800;
+    font-size: 1.25rem;
+}
+
+.product-info .sub .company .info .review p {
+    font-size: 0.84rem;
+}
+
+.product-info .sub .company .info .photo .image {
+    width: 13rem;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.product-info .sub .company .info .photo .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info .sub .company .info .photo p {
+    margin-top: 12px !important;
+    font-weight: 500;
+}
+
+.product-info .sub .company .info .photo:hover p {
+    text-decoration: underline;
+}
+
+.product-info .sub .company .info .little-info p {
+    font-size: 0.84rem;
+    color: #0c6fc3;
+    letter-spacing: 0.3px;
+}
+
+.product-info .sub .company .info .little-info {
+    line-height: 26px;
+}
+
+.product-info .sub .company .description p {
+
+    font-size: 0.8rem;
+    color: #606575;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+/*end of compnay*/
+
+
+/*about of product*/
+
+.product-info .about P {
+    margin: 0;
+}
+
+.product-info .about {
+    border-radius: 7px;
+    padding: 1rem 2rem 1.6rem 2rem !important;
+}
+
+.product-info .about .title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    font-family: Roboto, "Helvetica Neue", Helvetica Neue, Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei";
+
+}
+
+.product-info .about table .detail-title {
+    color: #333333;
+    font-weight: bold;
+    line-height: 1rem;
+    font-size: 1rem;
+    padding: 1rem 0 0.3rem 0 !important;
+}
+
+
+.product-info .about table {
+    width: 100%;
+}
+
+
+.product-info .about table > tbody > tr > td:first-child {
+    width: 40%;
+    font-size: 0.9rem;
+}
+
+.product-info .about table > tbody > tr > td:last-child {
+    width: 60%;
+    font-size: 0.9rem;
+}
+
+/*end of about product*/
+
+
+/*feedback*/
+
+
+.product-info .feedback p {
+    margin: 0;
+}
+
+.product-info .feedback {
+    background-color: white;
+    padding: 1rem 2rem 1.6rem 2rem !important;
+    border-radius: 7px;
+}
+
+/*main*/
+
+.product-info .feedback .main {
+    width: 100%;
+    margin-bottom: 2rem !important;
+}
+
+.product-info .feedback .main > div:nth-last-of-type(-n+2) {
+    margin-left: 7rem;
+}
+
+.product-info .feedback .main .header {
+    width: 100%;
+    margin-bottom: 0.7rem;
+}
+
+.product-info .feedback .main .header p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    font-family: Roboto, "Helvetica Neue", Helvetica Neue, Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei";
+}
+
+.product-info .feedback .main .header button {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f8f8f8));
+    border: 1px solid #ddd;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    color: #0a61e0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-info .feedback .main .header button:hover {
+    border: 1px solid #aeaeae;
+}
+
+.product-info .feedback .main > .number {
+    width: 8rem;
+}
+
+.product-info .feedback .main > .number .stars i {
+    margin-left: 5px;
+    color: #ffc800;
+    font-size: 1.25rem;
+}
+
+.product-info .feedback .main > .number h1 {
+    font-size: 5rem !important;
+    color: #555555;
+}
+
+.product-info .feedback .main > .number p {
+    font-size: 0.9rem;
+}
+
+.product-info .feedback .main .histogram {
+    font-size: 0.84rem;
+    width: 15.5rem;
+}
+
+.product-info .feedback .main .histogram .item .box {
+    width: 12rem !important;
+    height: 12px;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+}
+
+.product-info .feedback .main .histogram .item .box .color {
+    width: 80% !important;
+    background-color: #a5a5a5;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*pie*/
+.product-info .feedback .main .pie-wrapper {
+    /*background-color: #0a58ca;*/
+    width: 33rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-info .feedback .main .pie-wrapper > .item {
+    /*background-color: #f8a627;*/
+    width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-info .feedback .main .pie-wrapper > .item > .percent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8.4rem;
+}
+
+.product-info .feedback .main .pie-wrapper > .item > .percent svg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7.8rem;
+}
+
+.product-info .feedback .main .pie-wrapper > .item > .percent svg circle {
+
+    fill: none;
+    stroke: #000;
+    stroke-width: 7;
+    stroke-dasharray: 320;
+    stroke-dashoffset: 320;
+}
+
+.product-info .feedback .main .pie-wrapper > .item > .percent svg circle:nth-child(1) {
+    stroke-dashoffset: 0 !important;
+    stroke: navajowhite;
+}
+
+.product-info .feedback .main .pie-wrapper > .item > .percent svg circle:nth-child(2) {
+    stroke-dashoffset: 200;
+    stroke: #f8a627;
+}
+
+.product-info .feedback .main .pie-wrapper > .item > .percent .number {
+
+    position: absolute;
+    top: 14%;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555555 !important;
+}
+
+
+.product-info .feedback .main .pie-wrapper > .item > .percent .number h2 {
+    font-size: 1.7rem !important;
+
+}
+
+.product-info .feedback .main .pie-wrapper .item p {
+
+    color: #555555 !important;
+    font-size: 0.95rem;
+    margin: 0;
+    padding: 0 !important;
+    font-weight: 500;
+
+}
+
+/*end of pie*/
+
+/*end of main*/
+
+/*sub of feedback*/
+
+.product-info .feedback .sub > .title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #333;
+    font-family: Roboto, "Helvetica Neue", Helvetica Neue, Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei";
+    padding: 0 0 0.8rem 0 !important;
+}
+
+.product-info .feedback .sub .for-scroll {
+    /*max-height: 45rem;*/
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.product-info .feedback .sub .review-wrapper {
+    width: 100%;
+    margin-top: 2.5rem;
+
+}
+
+.product-info .feedback .sub .review-wrapper .review-section-l {
+    width: 20%;
+}
+
+.product-info .feedback .sub .review-wrapper .review-section-r {
+    /*background-color: #a7a7a7;*/
+    width: 80%;
+    height: auto;
+}
+
+.product-info .feedback .sub .review-wrapper .review-section-l .stars {
+    color: #f8a627;
+    font-size: 0.9rem;
+}
+
+.product-info .feedback .sub .review-wrapper .review-section-l .stars i:nth-last-of-type(-n+4) {
+    margin-left: 0.2rem;
+}
+
+.product-info .feedback .sub .review-wrapper .review-section-l p {
+    font-size: 0.9rem;
+}
+
+.product-info .feedback .sub .review-wrapper .review-section-l p > span {
+    color: #0a58ca;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.product-info .feedback .sub .review-wrapper .review-section-r > .title {
+    font-size: 1.4rem;
+    font-weight: 380;
+    color: black;
+}
+
+.product-info .feedback .sub .review-wrapper .review-section-r .content {
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 0.5rem !important;
+}
+
+.product-info .feedback .sub .review-wrapper .review-section-r .about {
+    padding: 0 !important;
+    font-size: 0.9rem;
+    margin-top: 0.3rem !important;
+}
+
+.product-info .feedback .sub .review-wrapper .review-section-r .photos {
+    margin-top: 1.5rem !important;
+    width: 60%;
+}
+
+.product-info .feedback .sub .review-wrapper .review-section-r .photos img {
+    width: 4.5rem;
+    height: 5rem;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+/*end of sub of feedback*/
+
+/*end of feedback  */
+
+
+/*questions*/
+
+.product-info .questions {
+    background-color: white;
+    padding: 1rem 2rem 1.6rem 2rem !important;
+    border-radius: 7px;
+    width: 100%;
+    max-height: 40rem;
+    margin-top: 3.5rem;
+
+}
+
+.product-info .questions>div{
+    overflow-y: auto;
+    max-height: 35.5rem;
+}
+
+.product-info .questions li {
+    list-style: none !important;
+    display: list-item;
+
+}
+
+.product-info .questions ul {
+    padding: 0 !important;
+
+}
+.product-info .questions hr{
+    color: #b5b4b4;
+}
+
+.product-info .questions p {
+    margin: 0;
+}
+
+.product-info .questions .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333;
+    font-family: Roboto, "Helvetica Neue", Helvetica Neue, Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei";
+    margin-bottom: 1.5rem !important;
+}
+
+.product-info .questions .ask-content {
+    -webkit-font-smoothing: antialiased;
+    font-size: 0.95rem;
+    font-weight: bold !important;
+    color: #333;
+    font-family: Open Sans, sans-serif;
+    margin-left: 0.7rem !important;
+}
+
+.product-info .questions .answer-item div {
+    margin-top: 0.7rem !important;
+    font-weight: bold;
+}
+
+.product-info .questions .answer-content {
+    font-size: 0.95rem;
+    color: #333;
+    font-family: Open Sans, sans-serif;
+    margin-left: 0.7rem !important;
+    font-weight: 380 !important;
+}
+
+
+/*end of questions*/
+
+
+/*message*/
+
+.product-info .message input:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+    -webkit-user-select: initial;
+    -khtml-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+}
+
+.product-info .message textarea:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+    -webkit-user-select: initial;
+    -khtml-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+}
+
+
+.product-info .message {
+    margin-top: 3rem;
+    background-color: white;
+    width: 100%;
+    border-radius: 7px;
+    padding: 1rem 2rem 1.6rem 2rem !important;
+
+}
+
+.product-info .message .main {
+    padding: 0 0 0 5rem !important;
+}
+
+.product-info .message p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.product-info .message .title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    font-family: Roboto, "Helvetica Neue", Helvetica Neue, Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei";
+}
+
+.product-info .message .supplier > p {
+    color: #808081;
+    margin-left: 2.8rem !important;
+}
+
+.product-info .message .supplier p > span {
+    color: #333;
+    margin-left: 0.8rem;
+}
+
+.product-info .message .text > p {
+    color: #808081;
+}
+
+.product-info .message .text > textarea {
+    resize: none;
+    border-radius: 2px;
+    border: 1px solid #8a8a8a;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.product-info .message .text > textarea::placeholder {
+    font-size: 0.9rem !important;
+}
+
+.product-info .message textarea:focus {
+    border: 1px solid #565656;
+}
+
+.product-info .message .text > .balloon {
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 1.2rem;
+    background-color: #e3e3e3;
+    border-radius: 2px;
+    color: black !important;
+    position: relative;
+    height: 7.4rem;
+    width: 13rem;
+    padding: 1.2rem 1rem 1.3rem 1.5rem;
+    font-family: Roboto, "Helvetica Neue", Helvetica Neue, Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei";
+
+    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
+}
+
+.product-info .message .text > .balloon p {
+    color: black;
+}
+
+.product-info .message .text > .balloon::before {
+    border: 15px solid transparent;
+    border-right-color: #e3e3e3;
+    content: '';
+    left: -30px;
+    position: absolute;
+    top: 0.5%;
+
+}
+
+
+.product-info .message .main > p {
+    margin-left: 5rem !important;
+    font-size: 0.9rem;
+}
+
+.product-info .message .main > button {
+    background-color: #0b52b8;
+    padding: 0.4rem 1.8rem 0.4rem 1.8rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    border: none;
+    margin-top: 2rem;
+    margin-left: 4rem !important;
+
+}
+
+
+/*end of message */
+
+/*end of sub*/
+
+

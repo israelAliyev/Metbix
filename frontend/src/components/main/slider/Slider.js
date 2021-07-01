@@ -1,5 +1,5 @@
 import React , {useState, useEffect}from 'react';
-import '../../../css/slider.css'
+import '../../../css/slidermainpage.css'
 import ShippingInfo from "./ShippingInfo";
 import SliderData from './SliderData';
 import {connect} from "react-redux";

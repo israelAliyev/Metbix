@@ -62,7 +62,8 @@ class TopLikedProducts extends Component {
 
                             </div>
 
-                        </div><div className="item ">
+                        </div>
+                        <div className="item ">
                         <div className="image">
                             <img src="/images/airpod.jpeg" alt=""/>
                         </div>

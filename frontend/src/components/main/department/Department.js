@@ -78,37 +78,10 @@ class Department extends Component {
 
                     <div className="categories d-flex mt-4 flex-wrap">
 
-                        <div className="item d-flex flex-column align-items-center ">
-                            <i className="bi bi-archive"/>
-                            <span>CHair Care</span>
-                        </div>
-                        <div className="item d-flex flex-column align-items-center ">
-                            <i className="bi bi-archive"/>
-                            <span>Control Tools</span>
-                        </div>
-                        <div className="item d-flex flex-column align-items-center ">
-                            <i className="bi bi-archive"/>
-                            <span>Control Tools</span>
-                        </div>
-                        <div className="item d-flex flex-column align-items-center ">
-                            <i className="bi bi-archive"/>
-                            <span>Control Tools</span>
-                        </div>
-                        <div className="item d-flex flex-column align-items-center ">
-                            <i className="bi bi-archive"/>
-                            <span>Control Tools</span>
-                        </div>
-                        <div className="item d-flex flex-column align-items-center ">
-                            <i className="bi bi-archive"/>
-                            <span>Control Tools</span>
-                        </div>
-                        <div className="item d-flex flex-column align-items-center ">
-                            <i className="bi bi-archive"/>
-                            <span>CHair Care</span>
-                        </div>
+
                         <div className="item d-flex flex-column align-items-center ">
                         <i className="bi bi-archive"/>
-                        <span>CHair Care</span>
+                        <span>CHair Care Tools</span>
                     </div>
                         <div className="item d-flex flex-column align-items-center ">
                             <i className="bi bi-archive"/>

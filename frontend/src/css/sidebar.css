@@ -203,7 +203,7 @@ padding:  0.45rem 0 0.25rem 1rem !important;
     display: none !important;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 992px){
     .sidebar{
         transition: all 900ms;
         width: 100%;

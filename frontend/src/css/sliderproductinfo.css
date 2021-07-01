@@ -1,0 +1,122 @@
+
+.product-info .main .photos .swiper-container {
+    width: 100%;
+    height: 100%;
+    background: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border-radius: 5px;
+
+
+}
+
+.product-info .main .photos .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1rem 0 0 1rem !important;
+}
+
+.product-info .main .photos .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+
+}
+
+.product-info .main .photos .swiper-container {
+    width: 100%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.product-info .main .photos .swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.product-info .main .photos .mySwiper2 {
+    height: 610px;
+    width: 100%;
+}
+
+.product-info .main .photos .mySwiper {
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.product-info .main .photos .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.product-info .main .photos .mySwiper .swiper-slide img {
+    border-radius: 5px;
+}
+
+.product-info .main .photos .mySwiper .swiper-slide-thumb-active img {
+    border: 2px solid #f6b249;
+}
+
+.product-info .main .photos .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-info .main .swiper-button-prev {
+    color: #ffa521;
+    transform: translateX(-50px);
+    transition: 0.5s all ease;
+    background-color: white;
+    border-radius: 2px;
+    padding: 1.5rem 1rem 1.5rem 1rem !important;
+}
+
+.product-info .main .swiper-button-next {
+    color: #ffa521;
+    transform: translateX(50px);
+    transition: 0.5s all ease;
+    background-color: white;
+    border-radius: 2px;
+    padding: 1.5rem 1rem 1.5rem 1rem !important;
+}
+
+.product-info .main .photos .swiper-container:hover .swiper-button-prev {
+    transform: translateX(15px);
+    transition: 0.5s all ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.product-info .main .photos .swiper-container:hover .swiper-button-next {
+    transform: translateX(0px);
+    transition: 0.5s all ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+

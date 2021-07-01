@@ -9,8 +9,7 @@ class Footer extends Component {
         return (
             <>
 
-                <section>
-
+                <section className="mt-4">
 
                     <footer className="footer d-flex flex-column justify-content-center">
                         

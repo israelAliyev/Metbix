@@ -1,0 +1,408 @@
+
+.evaluate {
+    padding: 0 10rem;
+    margin-bottom: 4rem;
+}
+
+.evaluate textarea:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+    -webkit-user-select: initial;
+    -khtml-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+}
+
+
+.evaluate p {
+    margin: 0;
+}
+
+.evaluate .header-product > img {
+
+    width: 11rem;
+    height: 12rem;
+    object-fit: contain;
+    border: 1px solid #d6d6d6;
+    background-color: white;
+}
+
+.evaluate .header-product .info {
+
+    margin-left: 2rem;
+}
+
+.evaluate .header-product .info > p {
+    text-transform: uppercase;
+    color: #4a4a4a;
+    font-size: 1.2rem;
+    font-weight: 350;
+    margin: 0 !important;
+}
+
+.evaluate .header-product .info > a {
+    color: #0654ba;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 121%;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    margin-top: 0.2rem;
+
+}
+
+.evaluate .header-product .info .rate h4 {
+    vertical-align: middle;
+    font-size: 20px;
+    color: #535353;
+    margin: 0 0 10px;
+    display: inline-block;
+    font-weight: 400;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-right: 1.2rem;
+}
+
+.evaluate .header-product .info .rate i {
+    color: #cbccce;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-left: 0.4rem;
+
+}
+
+.evaluate .header-product .info .rate p {
+    font-size: 0.9rem;
+    margin-left: 2rem;
+    margin-bottom: 0 !important;
+    display: none;
+}
+
+.evaluate .header-product .info .rate i:hover {
+    color: #f8a627;
+}
+
+.evaluate .header-product .info .rate i:hover ~ p {
+    display: block
+}
+
+
+.evaluate .forms {
+    width: 60%;
+    margin: 3rem auto 0;
+}
+
+.evaluate .forms .row-aspectQuestions .title {
+    font-size: 20px;
+    color: #535353;
+    margin: 0 0 10px;
+    display: inline-block;
+    font-weight: 400;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.evaluate .forms .row-aspectQuestions .fieldset {
+    border-radius: 5px;
+    border: 1px solid #cbccce;
+    padding: 2rem;
+}
+
+.evaluate .forms .row-aspectQuestions .fieldset p {
+    display: inline-block;
+    font-size: 15px;
+    color: #555;
+}
+
+.evaluate .forms .row-aspectQuestions .fieldset .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.evaluate .forms .row-aspectQuestions .fieldset .question .actions input[type="radio"] {
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all ease;
+}
+
+
+.evaluate .forms .row-aspectQuestions .fieldset .question .actions label {
+
+    display: inline-block;
+    padding: 8px 0;
+    text-align: center;
+    width: 80px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #333;
+    top: -2px;
+    left: -2px;
+    position: relative;
+    color: #333;
+    cursor: pointer;
+}
+
+.evaluate .forms .row-aspectQuestions .fieldset .question .actions label:first-of-type {
+    margin-right: 1rem;
+}
+
+
+.evaluate .forms .row-aspectQuestions .fieldset .question .actions input[type="radio"]:first-of-type:checked ~ label:first-of-type {
+    color: #fff;
+    text-decoration: none;
+    background-color: #0654bb;
+    border: solid 1px #0654bb;
+}
+
+.evaluate .forms .row-aspectQuestions .fieldset .question .actions input[type="radio"]:last-of-type:checked ~ label:last-of-type {
+    color: #fff;
+    text-decoration: none;
+    background-color: #0654bb;
+    border: solid 1px #0654bb;
+}
+
+.evaluate .forms .row-reviewContent .text > p {
+    font-size: 20px;
+    color: #535353;
+    display: inline-block;
+    font-weight: 400;
+    margin: 2rem 0 10px;
+}
+
+.evaluate .forms .row-reviewContent .text > span:first-of-type {
+
+    font-size: 0.8rem;
+}
+
+.evaluate .forms .row-reviewContent .text > span:last-of-type {
+    font-size: 0.8rem;
+}
+
+.evaluate .forms .row-reviewContent > textarea {
+    margin-top: 0.1rem;
+    resize: none;
+    width: 100%;
+    border: 1px solid #cbccce !important;
+    border-radius: 5px;
+    padding: 10px 0 0 1rem !important;
+    height: 3rem;
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+}
+
+.evaluate .forms .row-reviewContent > textarea:first-of-type:focus {
+    height: 10rem;
+    transition: all 0.5s ease;
+}
+
+.evaluate .forms .images-upload > p {
+    font-size: 20px;
+    color: #535353;
+    display: inline-block;
+    font-weight: 400;
+    margin: 2rem 0 10px;
+}
+
+.evaluate .forms .images-upload .uploader {
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: 1px solid #cbccce;
+}
+
+.evaluate .forms .images-upload .uploader .text {
+    margin-bottom: 0.8rem;
+    /*background-color: #0a58ca;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.evaluate .forms .images-upload .uploader .text p:first-of-type {
+    font-size: 0.8rem;
+    color: #545454;
+}
+
+.evaluate .forms .images-upload .uploader .text p:last-of-type {
+    font-size: 0.75rem;
+    color: #545454;
+}
+
+.evaluate .forms .images-upload .uploader img {
+    width: 7.5rem;
+    height: 7.5rem;
+    object-fit: contain;
+    border-radius: 3px;
+}
+
+.evaluate .forms .actions a:first-of-type {
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-right: 2rem;
+}
+
+.evaluate .forms .actions a:last-of-type {
+    text-decoration: none;
+    font-size: 0.85rem;
+    height: initial !important;
+    vertical-align: middle;
+    padding: .75rem 6.5rem;
+    background-color: #0654ba;
+    border-color: #0654ba;
+    border-radius: 4px;
+    color: white;
+}
+
+@media only screen and (max-width: 1025px) {
+
+    .evaluate {
+        padding: 0 2rem;
+    }
+
+    .evaluate .header-product .info .rate i:hover ~ p {
+        display: none;
+    }
+
+    .evaluate .forms {
+        width: 92%;
+        margin: 3rem auto 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .evaluate {
+        padding: 0 1rem;
+    }
+
+
+    .evaluate .header-product > img {
+        width: 7rem;
+        height: 8rem;
+    }
+
+
+    .evaluate .forms {
+        margin: 10rem auto 0;
+    }
+
+    .evaluate .header-product .info > p {
+        font-size: 0.9rem;
+    }
+
+    .evaluate .header-product .info > a {
+        font-size: 1rem;
+        width: 14rem;
+    }
+
+    .evaluate .header-product .info .rate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 21rem;
+        left: 20%;
+        position: absolute;
+    }
+
+
+    .evaluate .header-product .info .rate > div {
+
+        display: flex;
+    }
+
+    .evaluate .header-product .info .rate h4 {
+        vertical-align: middle;
+        font-size: 1rem;
+        margin: 0 1.2rem 10px 0;
+    }
+
+    .evaluate .forms .row-aspectQuestions .fieldset .question .actions label:last-of-type {
+        margin-top: 1rem;
+    }
+
+    .evaluate .forms .row-aspectQuestions .fieldset .question .actions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .evaluate .forms .row-aspectQuestions .fieldset .question .actions label:first-of-type {
+        margin-right: 0 !important;
+    }
+
+    .evaluate .forms .row-aspectQuestions .fieldset {
+        padding: 1rem;
+    }
+
+    .evaluate .forms .row-aspectQuestions .fieldset .question > p {
+        width: 63% !important;
+    }
+
+    .evaluate .forms .row-reviewContent > textarea:first-of-type {
+        height: 4rem;
+    }
+
+    .evaluate .forms .row-reviewContent > textarea:first-of-type {
+        height: 4rem;
+    }
+
+
+    .evaluate .forms .actions a:first-of-type {
+        text-decoration: none;
+        font-size: 0.85rem;
+        height: initial !important;
+        vertical-align: middle;
+        padding: .71rem 3rem;
+        background-color: white;
+        border: 1px solid #b3b1b1;
+        border-radius: 4px;
+        color: #9a9b9d;
+        margin-right: 1rem;
+        text-align: center;
+        width: 48%;
+    }
+
+    .evaluate .forms .actions a:last-of-type {
+        padding: .75rem 3rem;
+        width: 48%;
+        text-align: center;
+    }
+
+    .evaluate .forms .images-upload .uploader img {
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+    }
+
+    .evaluate .forms .images-upload .uploader .choose-images {
+        display: flex;
+        justify-content: start !important;
+    }
+
+    .evaluate .forms .images-upload .uploader .text p:first-of-type {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 376px) {
+    .evaluate .header-product .info > a {
+        font-size: 1rem;
+        width: 12rem;
+    }
+
+
+}

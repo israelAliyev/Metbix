@@ -33,7 +33,6 @@ class Navbar extends Component {
           }`
 
 
-
         window.addEventListener("scroll", this.changeNavbar);
 
         return (
@@ -43,7 +42,7 @@ class Navbar extends Component {
                 {this.props.show_sidebar_bool.show_sidebar && <GlobalStyle/>}
 
                 {/*Main Navbar*/}
-                <nav className={`main-navbar navbar navbar-expand-lg ${this.state.scroll_active !== "" && `scroll-active-navbar`}`}>
+                <nav className={`main-navbar navbar navbar-expand-lg `}>
 
                     <div className="container-fluid">
 
@@ -292,7 +291,7 @@ class Navbar extends Component {
 
                 {/*search bar for responsive design */}
                 <nav
-                    className={`navbar search-bar d-none ${this.state.scroll_active !== "" && `scroll-active-searchbar`} `}>
+                    className={`navbar search-bar d-none`}>
                     <div className="container-fluid">
                         <form className="form-inline mt-1 navbar-for-search-form-border w-100">
                             <div className="input-group">
