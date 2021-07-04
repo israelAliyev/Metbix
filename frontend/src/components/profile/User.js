@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import Overview from "./Overview";
 import ProductOverview from "./ProductOverview";
+import '../../css/profileuser.css'
 
 class User extends Component {
     render() {
         return (
             <>
 
-                <div className="profile-company p-5">
+                <div className="profile-user p-5">
 
                     <header>
 
@@ -122,7 +123,6 @@ class User extends Component {
 
                         </div>
 
-                        <Overview/>
 
                         <ProductOverview/>
 

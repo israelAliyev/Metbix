@@ -1,6 +1,6 @@
 
 
-.profile-company {
+.profile-user {
     height: auto;
     width: 100%;
     margin-top: 2rem;
@@ -8,11 +8,11 @@
     font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
 }
 
-.profile-company p {
+.profile-user p {
     margin: 0;
 }
 
-.profile-company header {
+.profile-user header {
     height: auto;
     width: 100%;
     position: relative;
@@ -23,7 +23,7 @@
 
 /*profile photo*/
 
-.profile-company header .pp-bp {
+.profile-user header .pp-bp {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -32,7 +32,7 @@
     border-top-left-radius: 8px;
 }
 
-.profile-company header .pp-bp img:first-of-type {
+.profile-user header .pp-bp img:first-of-type {
     position: absolute;
     top: 35%;
     left: 3%;
@@ -44,7 +44,7 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.profile-company header .pp-bp img:last-of-type {
+.profile-user header .pp-bp img:last-of-type {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -56,38 +56,38 @@
 
 /*info texts*/
 
-.profile-company header > div:last-of-type {
+.profile-user header > div:last-of-type {
     padding: 0.6rem 1.5rem 1.1rem 1.5rem !important;
 }
 
-.profile-company header > div > .texts > .info {
+.profile-user header > div > .texts > .info {
     width: 70%;
 }
 
-.profile-company header > div > .texts > .business-type {
+.profile-user header > div > .texts > .business-type {
     width: 30%;
 }
 
 
-.profile-company header > div > .texts > .info > h1 {
+.profile-user header > div > .texts > .info > h1 {
     font-size: 24px;
     color: #000000E6;
 }
 
 
-.profile-company header > div > .texts > .info > h6 {
+.profile-user header > div > .texts > .info > h6 {
     color: #000000E6;
     font-size: 16px;
     font-weight: 350;
 }
 
-.profile-company header > div > .texts > .info > p:first-of-type {
+.profile-user header > div > .texts > .info > p:first-of-type {
     color: #747475;
     font-size: 14px;
     font-weight: 350;
 }
 
-.profile-company header > div > .texts > .info > p:first-of-type > span {
+.profile-user header > div > .texts > .info > p:first-of-type > span {
     color: #0A66C2;
     font-size: 14px;
     font-weight: 550;
@@ -95,29 +95,29 @@
     margin-left: 0.3rem;
 }
 
-.profile-company header > div > .texts > .info > p:first-of-type > span:before {
+.profile-user header > div > .texts > .info > p:first-of-type > span:before {
     box-sizing: inherit;
     content: "\00B7";
     margin-right: 0.3rem;
     color: #747475;
 }
 
-.profile-company header > div > .texts > .info > p:first-of-type > span:hover {
+.profile-user header > div > .texts > .info > p:first-of-type > span:hover {
     text-decoration: underline;
 }
 
-.profile-company header > div > .texts > .info > p:first-of-type > span:hover::before {
+.profile-user header > div > .texts > .info > p:first-of-type > span:hover::before {
     text-decoration: none;
 }
 
-.profile-company header > div > .texts > .info > p:last-of-type {
+.profile-user header > div > .texts > .info > p:last-of-type {
     color: #545454;
     font-size: 14px;
     font-weight: 600;
     margin-top: 0.5rem;
 }
 
-.profile-company header > div > .texts > .info > p:last-of-type > span {
+.profile-user header > div > .texts > .info > p:last-of-type > span {
     color: #747475;
     font-size: 14px;
     font-weight: 400;
@@ -129,13 +129,13 @@
 
 /*texts bussines type */
 
-.profile-company header > div > .texts .business-type .item a {
+.profile-user header > div > .texts .business-type .item a {
     font-weight: bold;
     letter-spacing: 0.5px;
     margin-left: 0.3rem;
 }
 
-.profile-company header > div > .texts .business-type .item img {
+.profile-user header > div > .texts .business-type .item img {
     width: 1.5rem;
     height: 1.5rem;
     object-fit: cover;
@@ -147,11 +147,11 @@
 
 /*actions */
 
-.profile-company header > div > .actions .buttons button:not(:first-child) {
+.profile-user header > div > .actions .buttons button:not(:first-child) {
     margin-left: 1.5rem;
 }
 
-.profile-company header > div > .actions .buttons .follow {
+.profile-user header > div > .actions .buttons .follow {
     background-color: #0A66C2;
     border: 1px solid #0A66C2;
     color: white;
@@ -161,11 +161,11 @@
     padding: 0 1rem;
 }
 
-.profile-company header > div > .actions .buttons .follow:hover {
+.profile-user header > div > .actions .buttons .follow:hover {
     background-color: #074a8c;
 }
 
-.profile-company header > div > .actions .buttons .message {
+.profile-user header > div > .actions .buttons .message {
     background-color: white;
     border: 1px solid #5d5d5d;
     color: #747475;
@@ -175,7 +175,7 @@
     font-size: 0.9rem;
 }
 
-.profile-company header > div > .actions .buttons .message:hover {
+.profile-user header > div > .actions .buttons .message:hover {
     background-color: #eaeaea;
     border: 1.5px solid #545454;
     color: #646464;
@@ -183,7 +183,7 @@
 }
 
 
-.profile-company header > div > .actions .buttons .site {
+.profile-user header > div > .actions .buttons .site {
     background-color: white;
     border: 1.5px solid #0A66C2;
     color: #0A66C2;
@@ -193,14 +193,14 @@
     font-size: 0.9rem;
 }
 
-.profile-company header > div > .actions .buttons .site:hover {
+.profile-user header > div > .actions .buttons .site:hover {
     background-color: #d7e5f6;
     font-weight: 600;
     border: 2px solid #0A66C2;
     text-decoration: underline;
 }
 
-.profile-company header > div > .actions .buttons .share {
+.profile-user header > div > .actions .buttons .share {
     background-color: #0A66C2;
     border: 1px solid #0A66C2;
     color: white;
@@ -210,27 +210,27 @@
     font-size: 0.9rem;
 }
 
-.profile-company header > div > .actions .buttons .share:hover {
+.profile-user header > div > .actions .buttons .share:hover {
     background-color: #074a8c;
 }
 
-.profile-company header > div > .actions .review {
+.profile-user header > div > .actions .review {
     border-bottom: 2px solid #3EA6FF;
 
 }
 
-.profile-company header > div > .actions .review button {
+.profile-user header > div > .actions .review button {
     background-color: white;
     border: none;
     font-size: 1rem;
     color: #9f9e9e;
 }
 
-.profile-company header > div > .actions .review i {
+.profile-user header > div > .actions .review i {
     font-size: 1.4rem;
 }
 
-.profile-company header > div > .actions .review .like {
+.profile-user header > div > .actions .review .like {
     color: #2d89d7;
 }
 
@@ -244,43 +244,43 @@
 
 /*company description*/
 
-.profile-company .body{
+.profile-user .body{
 
     width: 100%;
 }
 
-.profile-company .body .description .title {
+.profile-user .body .description .title {
     width: 100%;
     font-size: 1.5rem;
 }
 
-.profile-company .body .description {
+.profile-user .body .description {
     border-radius: 8px;
     background-color: white;
     padding: 1rem 0.9rem 0.9rem 0.9rem !important;
     width: 100%;
 }
 
-.profile-company .body p {
+.profile-user .body p {
     width: 100%;
     font-size: 0.9rem;
     color: #565656;
 }
 
-.profile-company .body .description table{
+.profile-user .body .description table{
     width: 100%;
     font-weight: 600;
     font-size: 0.9rem;
     margin-top: 1.5rem;
 }
 
-.profile-company .body .description table tbody tr{
+.profile-user .body .description table tbody tr{
 
     margin-top: 5rem !important;
     line-height: 2rem;
 }
 
-.profile-company .body .description table tbody tr td:first-of-type{
+.profile-user .body .description table tbody tr td:first-of-type{
     width: 25%;
 }
 
@@ -289,44 +289,44 @@
 /*company overview */
 
 
-.profile-company .body .overview {
+.profile-user .body .overview {
     background-color: white;
     border-radius: 8px;
     height: auto;
     padding: 1rem 1.5rem 1.1rem 1.5rem !important;
 }
 
-.profile-company .body .overview > div{
+.profile-user .body .overview > div{
     margin-top: 2rem;
 }
 
-.profile-company .body .overview > .title{
+.profile-user .body .overview > .title{
     width: 100%;
     font-size: 1.5rem;
 }
 
-.profile-company .body .overview > .album{
+.profile-user .body .overview > .album{
     height: 17rem;
     /*background-color: #0a58ca;*/
 }
 
-.profile-company .body .overview > .album > p{
+.profile-user .body .overview > .album > p{
     color: #6e6e6e;
     width: 100%;
 }
-.profile-company .body .overview > .album > p >span{
+.profile-user .body .overview > .album > p >span{
     color: #c8c8c8;
     margin-left: 0.8rem;
 }
 
 
-.profile-company .body .overview .album .swiper-container {
+.profile-user .body .overview .album .swiper-container {
     width: 100%;
     height: 80%;
     margin-top: 1rem;
 }
 
-.profile-company .body .overview .album .swiper-slide {
+.profile-user .body .overview .album .swiper-slide {
     text-align: center;
     font-size: 18px;
 
@@ -346,13 +346,15 @@
     background-color: #f8a627;
     border-radius: 8px;
 }
-.profile-company .body .overview .album .swiper-slide img {
+.profile-user .body .overview .album .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-}.profile-company .body .overview .album .swiper-slide video {
+}
+
+.profile-user .body .overview .album .swiper-slide video {
      display: block;
      width: 100%;
      height: 100%;
@@ -361,62 +363,62 @@
  }
 
 
-.profile-company .body .overview > .info > p{
+.profile-user .body .overview > .info > p{
     color: #6e6e6e;
     width: 100%;
 }
-.profile-company .body .overview .info table{
+.profile-user .body .overview .info table{
     width: 50%;
     margin-top: 1rem;
     font-size: 0.85rem;
     font-family: Roboto,Helvetica Neue,Helvetica,Tahoma,Arial,PingFang SC,Microsoft YaHei;
 }
 
-.profile-company .body .overview > .info table tbody tr td{
+.profile-user .body .overview > .info table tbody tr td{
     border: 1px solid #d9d8d8;
     padding: 0 0 0 1rem !important;
 }
 
-.profile-company .body .overview > .info table tbody tr td:first-of-type{
+.profile-user .body .overview > .info table tbody tr td:first-of-type{
     width: 40%;
     line-height: 2rem;
     background-color: #FAFAFA;
 }
 
-.profile-company .body .overview > .info table tbody tr td:last-of-type{
+.profile-user .body .overview > .info table tbody tr td:last-of-type{
     color: #515151;
 }
 
 
-.profile-company .body .overview > .certification > p{
+.profile-user .body .overview > .certification > p{
     color: #6e6e6e;
     width: 100%;
 }
 
-.profile-company .body .overview > .certification > table{
+.profile-user .body .overview > .certification > table{
     margin-top: 1rem;
     border: 1px solid #d9d8d8;
 }
 
-.profile-company .body .overview > .certification > table th{
+.profile-user .body .overview > .certification > table th{
     padding:  0.1rem 2rem 0.1rem 0.5rem !important;
     font-size: 0.85rem;
     font-weight: 400;
     border: 1px solid #d9d8d8;
     background-color: #FAFAFA;
 }
-.profile-company .body .overview > .certification > table td{
+.profile-user .body .overview > .certification > table td{
     font-size: 0.85rem;
     font-weight: 400;
     /*border: 1px solid #d9d8d8;*/
 }
 
-.profile-company .body .overview > .certification > table td:not(:first-child){
+.profile-user .body .overview > .certification > table td:not(:first-child){
 
     padding:  0 0 0 0.5rem !important;
 }
 
-.profile-company .body .overview > .certification > table td img{
+.profile-user .body .overview > .certification > table td img{
     object-fit: contain;
     width: 5rem;
     height: 6rem;
@@ -428,20 +430,20 @@
 
 /*prducts overview of company*/
 
-.profile-company .product-overview .header{
+.profile-user .product-overview .header{
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     padding: 0 0 0 1rem !important;
 
 }
 
-.profile-company .product-overview .header input[type="radio"] {
+.profile-user .product-overview .header input[type="radio"] {
     appearance: none;
     outline: none;
     transition: 0.2s all ease;
 }
 
-.profile-company .product-overview .header label {
+.profile-user .product-overview .header label {
     display: inline-block;
     padding: 15px 5px;
     text-align: center;
@@ -452,16 +454,16 @@
     cursor: pointer;
 }
 
-.profile-company .product-overview .header label:first-of-type {
+.profile-user .product-overview .header label:first-of-type {
     border-bottom: 3px solid #ffba36;
 }
 
-.profile-company .product-overview .header label:not(:first-of-type){
+.profile-user .product-overview .header label:not(:first-of-type){
     margin-left: 1.5rem;
 }
 
 
-.profile-company .product-overview .products{
+.profile-user .product-overview .products{
     padding: 1.5rem 1.5rem 0 1.5rem;
     background-color: white;
     margin-top: 0.8rem;
@@ -469,15 +471,15 @@
     border-bottom-right-radius: 8px;
 }
 
-.profile-company .product-overview .products p{
+.profile-user .product-overview .products p{
     margin: 0;
 }
 
-.profile-company .product-overview .products .text{
+.profile-user .product-overview .products .text{
     width: 100%;
 }
 
-.profile-company .product-overview .products .item {
+.profile-user .product-overview .products .item {
     height: 410px;
     width: 23%;
     border-radius: 0.8rem;
@@ -492,35 +494,35 @@
     margin-right: 0.3rem;
 }
 
-.profile-company .product-overview .products .item .details {
+.profile-user .product-overview .products .item .details {
     padding: 0.8rem 1rem 0.6rem 1rem !important;
     position: relative;
 }
 
-.profile-company .product-overview .products .item .image {
+.profile-user .product-overview .products .item .image {
     width: 100%;
     overflow: hidden;
     height: 225px;
 }
 
-.profile-company .product-overview .products .item .image img {
+.profile-user .product-overview .products .item .image img {
     width: 100%;
     object-fit: cover;
     height: 100%;
 }
 
-.profile-company .product-overview .products .item .details .review .stars i {
+.profile-user .product-overview .products .item .details .review .stars i {
     color: #efc40c;
     font-size: 0.8rem;
 }
 
-.profile-company .product-overview .products .item .details .review .price {
+.profile-user .product-overview .products .item .details .review .price {
     font-weight: 500;
     font-size: 1.3rem;
     margin-bottom: 17px;
 }
 
-.profile-company .product-overview .products .item .details .description p {
+.profile-user .product-overview .products .item .details .description p {
     color: #a9a9a9;
     font-size: 12px;
     margin-top: 0.7rem;

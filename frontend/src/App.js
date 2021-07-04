@@ -22,8 +22,8 @@ function App() {
       {/*  <Overview/>*/}
       {/*  <Evaluate/>*/}
       {/*<Company/>*/}
+      {/*<User/>*/}
 
-      <User/>
         <footer>
         <Footer/>
         </footer>
