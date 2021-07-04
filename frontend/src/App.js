@@ -5,6 +5,8 @@ import Main from "./components/main/Main";
 import Products from "./components/products/Products";
 import ProductInfo from "./components/product-info/ProductInfo";
 import Evaluate from "./components/evaluate/Evaluate";
+import Company from "./components/profile/Company";
+import User from "./components/profile/User";
 
 
 function App() {
@@ -17,11 +19,11 @@ function App() {
 
       {/*<Main/>*/}
       {/*<Products/>*/}
-      {/*  <ProductInfo/>*/}
-        <Evaluate/>
+      {/*  <Overview/>*/}
+      {/*  <Evaluate/>*/}
+      {/*<Company/>*/}
 
-        {/*<div className="vbn"/>*/}
-
+      <User/>
         <footer>
         <Footer/>
         </footer>

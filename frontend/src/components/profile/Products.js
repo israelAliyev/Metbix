@@ -214,7 +214,6 @@ class Products extends Component {
                                 </div>
 
                             </div>
-
                             <div className="item">
                                 <div className="image">
                                     <img src="/images/pro9.png" alt=""/>

@@ -43,8 +43,8 @@ class Company extends Component {
                             <p>Adress: Sagdan 6 ci ev</p>
                             <p>Year Established: 2000</p>
                             <p>Employees: 97</p>
-                            <p>Filials: Azerbaijan, Turkey</p>
                             <p>Business type: Electronics</p>
+                            <p>Visit Company Site: Azerbaijan.com</p>
 
                         </div>
 
