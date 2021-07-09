@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../../css/sellproduct.css'
+import {Dropdown} from "react-bootstrap";
 
 class SellProduct extends Component {
     render() {
@@ -198,11 +199,12 @@ class SellProduct extends Component {
                                 <div className="little-pictures d-flex flex-column justify-content-between">
 
                                     <img src="/images/departments/Software.png" alt=""/>
-                                    <img src="/images/departments/Electronics%20Accessories%20&%20Supplies.jpeg" alt=""/>
-                                    <img src="/images/departments/Electronics%20Accessories%20&%20Supplies.jpeg" alt=""/>
-                                    <img src="/images/departments/Electronics%20Accessories%20&%20Supplies.jpeg" alt=""/>
-                                    <img src="/images/departments/Electronics%20Accessories%20&%20Supplies.jpeg" alt=""/>
-                                    <img src="/images/departments/Electronics%20Accessories%20&%20Supplies.jpeg" alt=""/>
+                                    <img src="/images/upload-img4.png" alt=""/>
+                                    <img src="/images/upload-img4.png" alt=""/>
+                                    <img src="/images/upload-img4.png" alt=""/>
+                                    <img src="/images/upload-img4.png" alt=""/>
+                                    <img src="/images/upload-img4.png" alt=""/>
+
 
                                 </div>
 
@@ -215,16 +217,16 @@ class SellProduct extends Component {
                         <hr/>
 
 
-                        <div className="price">
+                        <div className="price d-flex">
 
                             <p>Price</p>
 
-                            <div className="current">
+                            <div className="current d-flex flex-column">
                                 <span>Current Price</span>
                                 <input type="text"/>
                             </div>
 
-                            <div className="old">
+                            <div className="old d-flex flex-column">
                                 <span>Old Price</span>
                                 <input type="text"/>
                             </div>
@@ -267,34 +269,71 @@ class SellProduct extends Component {
                         </div>
 
 
-                        <div className="shipping">
+                        <div className="shipping d-flex mt-3">
 
                             <p>Shipping</p>
 
-                            <div className="current">
+                            <div className="domestic d-flex flex-column">
                                 <span>Domestic</span>
-                                <input type="text"/>
+                                <select>
+                                    <option value="0">Yes</option>
+                                    <option value="0">No</option>
+                                </select>
                             </div>
 
-                            <div className="old">
+                            <div className="international d-flex flex-column">
                                 <span>International</span>
-                                <input type="text"/>
+                                <select>
+                                    <option value="0">Yes</option>
+                                    <option value="0">No</option>
+                                </select>
                             </div>
 
                         </div>
 
 
-                        <div className="form production-year">
+                        <div className="form production-year mt-4">
                             <p>Production Year</p>
 
                             <input type="text" autoComplete="off" placeholder="yyyy"/>
                         </div>
 
-                        <div className="form phone">
+                        <div className="form phone mt-5 flex-wrap">
 
                             <p>Your Phone Number</p>
+
+
+                            <div className="d-flex align-items-center">
+
+                                <Dropdown alignRight>
+                                    <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                        <img width="22" src="/images/aze.png"/>
+                                        +994
+                                        <i className="bi bi-chevron-down"/>
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item href="#/action-1">
+                                            <img width="22" src="/images/aze.png"/>
+                                            +994
+                                        </Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                                <input type="text"/>
+                            </div>
+
+                        </div>
+
+                        <div className="form email mt-3 flex-wrap">
+
+                            <p>Your Email Address</p>
+
                             <input type="text"/>
 
+                        </div>
+
+                        <div className="button">
+                            <button>Submit</button>
                         </div>
 
                     </div>

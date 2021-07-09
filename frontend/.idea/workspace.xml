@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d960938-7682-49c8-9117-30510a72beb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/upload-img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/upload-img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/upload-img3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/account/Login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/account/Register/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sell-product/SellProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/sellproduct.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/upload-img4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/department/Department.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/department/Department.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/profile/Company.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/Company.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/profile/Overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/Overview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/profile/ProductOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/ProductOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/profilecompany.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/profilecompany.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/slidermainpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/slidermainpage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sell-product/SellProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sell-product/SellProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/sellproduct.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/sellproduct.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,6 +143,7 @@
       <workItem from="1623904304067" duration="9674000" />
       <workItem from="1625622517796" duration="16498000" />
       <workItem from="1625804560765" duration="9610000" />
+      <workItem from="1625835054342" duration="5691000" />
     </task>
     <servers />
   </component>

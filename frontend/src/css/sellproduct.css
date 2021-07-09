@@ -21,6 +21,7 @@
     margin-top: 1.5rem;
     padding: 1rem 2rem;
     border-radius: 3px;
+    width: 100%;
 }
 
 .sell-product .details > h4 {
@@ -46,7 +47,7 @@
     font-size: 0.9rem;
     font-weight: 300;
     padding: 0 0 0 0.5rem !important;
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: pointer;
     color: #434343;
     background: url(https://img.icons8.com/ios-glyphs/16/000000/sort-down.png) no-repeat right white;
@@ -59,6 +60,7 @@
     flex-direction: row;
     margin-top: 1rem;
     width: 100%;
+    align-items: center;
 }
 
 .sell-product .details .form p {
@@ -85,30 +87,30 @@
     transition: 0.2s all ease;
 }
 
-.sell-product .options .item p {
+.sell-product .details .options .item p {
     margin-bottom: 0.2rem;
     font-weight: 330;
     font-size: 0.9rem;
 }
 
-.sell-product .options .item select {
+.sell-product .details .options .item select {
     padding: 0.1rem 0 0.1rem 0.5rem !important;
     width: 6.5rem;
     border-radius: 2px;
 }
 
 
-.sell-product .options .item:not(:first-of-type) {
+.sell-product .details .options .item:not(:first-of-type) {
     margin-left: 1rem;
 }
 
 
-.sell-product .descriptions p {
+.sell-product .details .descriptions p {
     margin-bottom: 0.5rem !important;
     margin-top: 0.8rem;
 }
 
-.sell-product .descriptions .short input {
+.sell-product .details .descriptions .short input {
     margin-top: 0.5rem;
     border: 1px solid #cbccce;
     border-radius: 3px;
@@ -120,7 +122,7 @@
 }
 
 
-.sell-product .descriptions .long textarea {
+.sell-product .details .descriptions .long textarea {
     margin-top: 0.5rem;
     border: 1px solid #cbccce;
     border-radius: 3px;
@@ -131,41 +133,289 @@
 
 }
 
-.sell-product .upload-images .images-and-video{
+.sell-product .details .upload-images .images-and-video {
     width: 70%;
     margin: 0 auto;
 }
 
-.sell-product .upload-images .images-and-video .texts{
+.sell-product .details .upload-images .images-and-video .texts {
     width: 100%;
     font-size: 0.9rem;
     font-weight: 320;
 }
 
-.sell-product .upload-images .images-and-video .texts p:last-of-type{
+.sell-product .details .upload-images .images-and-video .texts p:last-of-type {
     color: #0a58ca;
     cursor: pointer;
 }
 
-.sell-product .upload-images .images-and-video .main-picture{
+.sell-product .details .upload-images .images-and-video .main-picture {
     position: relative;
     overflow: hidden;
     width: 84%;
     height: 40rem;
+    border: 1px solid #cbccce;
 }
 
-.sell-product .upload-images .images-and-video .main-picture img{
+.sell-product .details .upload-images .images-and-video .main-picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
-.sell-product .upload-images .images-and-video .little-pictures{
+
+.sell-product .details .upload-images .images-and-video .little-pictures {
     height: 40rem;
     width: 13.1%;
 }
 
-.sell-product .upload-images .images-and-video .little-pictures img{
-     width: 6rem;
+.sell-product .details .upload-images .images-and-video .little-pictures img {
+    width: 6rem;
     height: 6.2rem;
-    object-fit: cover;
+    object-fit: contain;
+    border: 1px solid #cbccce;
+    cursor: pointer;
+}
+
+.sell-product .details .price > p {
+    width: 40%;
+}
+
+.sell-product .details .price span {
+    margin-bottom: 0.2rem;
+    font-weight: 330;
+    font-size: 0.9rem;
+}
+
+.sell-product .details .price input {
+    border: 1px solid #cbccce;
+    background-color: whitesmoke;
+    line-height: 1.5rem;
+    color: #606060;
+    width: 6rem;
+}
+
+.sell-product .details .price .old {
+    margin-left: 3rem;
+}
+
+.sell-product .details .form input[type="text"] {
+    border: 1px solid #cbccce;
+    background-color: whitesmoke;
+    line-height: 1.5rem;
+    color: #606060;
+}
+
+.sell-product .details .shipping > p {
+    width: 40%;
+}
+
+
+.sell-product .details .shipping span {
+    margin-bottom: 0.2rem;
+    font-weight: 330;
+    font-size: 0.9rem;
+}
+
+.sell-product .details .shipping select {
+    padding: 0.1rem 0 0.1rem 0.5rem !important;
+    width: 6.5rem;
+    border-radius: 2px;
+}
+
+.sell-product .details .shipping .international {
+    margin-left: 3rem;
+}
+
+
+.sell-product .details .phone > div input {
+    color: #0a58ca !important;
+    background-color: white !important;
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
+    width: 12rem;
+    height: 2rem;
+    border: none !important;
+    border-radius: 2px;
+}
+
+
+.sell-product .details .phone > div input:focus {
+    border: 1px solid #0a58ca !important;
+}
+
+
+.sell-product .details .phone > div .dropdown-toggle {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.sell-product .details .phone > div .dropdown-toggle i {
+    margin-left: 0.2rem;
+}
+
+.sell-product .details .phone > div .dropdown-toggle img {
+    margin-right: 0.1rem;
+}
+
+.sell-product .details .phone > div .dropdown-toggle:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.sell-product .details .phone > div .dropdown-toggle::after {
+    content: "";
+    display: none;
+}
+
+.sell-product .details .phone > div .dropdown-menu {
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.sell-product .details .phone > div .dropdown-menu a {
+    display: flex;
+    align-items: center;
+}
+
+.sell-product .details .phone > div .dropdown-menu img {
+    margin-right: 0.5rem;
+}
+
+.sell-product .details .email input {
+    color: #0a58ca !important;
+    background-color: white !important;
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
+    width: 12rem;
+    height: 2rem;
+    border: none !important;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+
+.sell-product .details .email input:focus {
+    border: 1px solid #0a58ca !important;
+}
+
+.sell-product .details .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.sell-product .details .button button{
+
+    background-color: #1d5fbe;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 2.5rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+
+@media only screen and (max-width: 1025px){
+
+    .sell-product {
+        padding: 3rem 1rem 0 1rem !important;
+    }
+
+    .sell-product .details .colors > div{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sell-product .details .colors > div > input{
+     margin-top: 0.5rem;
+    }
+
+    .sell-product .details .options{
+        padding: 0.5rem 0 0.5rem 0;
+    }
+
+    .sell-product .details .upload-images .images-and-video .main-picture {
+        width: 84%;
+
+    }
+    .sell-product .details .upload-images .images-and-video {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    }
+
+
+@media only screen and (max-width: 576px) {
+    .sell-product {
+        padding: 3rem 0 0 0 !important;
+    }
+
+    .sell-product .details .form {
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .sell-product .details .form select{
+
+       height: 2rem;
+
+    }
+
+    .sell-product .details .colors{
+    display: flex;
+        align-items: start;
+
+    }
+
+    .sell-product .details .upload-images .images-and-video .main-picture {
+        width: 68%;
+    }
+
+    .sell-product .details .upload-images .images-and-video .little-pictures {
+        height: 40rem;
+        width: 10%;
+    }
+
+    .sell-product .details .upload-images .images-and-video {
+        width: 100%;
+        margin: 0 auto;
+        justify-content: start !important;
+    }
+
+    .sell-product .details .shipping .international {
+        margin-left: 2rem;
+    }
+
+    .sell-product .details .shipping .domestic {
+        margin-left: 1rem;
+    }
+
+    .sell-product .details .production-year{
+        margin-top: 2rem !important;
+    }
+
+    .sell-product .details .production-year input{
+        margin-left: 1.5rem !important;
+        width: 8rem;
+    }
+
+    .sell-product .details .phone >p {
+        width: 100%;
+    }
+
+    .sell-product .details .email >p {
+        width: 100%;
+    }
+
 }
