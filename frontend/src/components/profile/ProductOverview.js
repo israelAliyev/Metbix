@@ -74,8 +74,6 @@ class ProductOverview extends Component {
 
                         </div>
 
-
-
                     </div>
 
 

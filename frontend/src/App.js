@@ -7,29 +7,36 @@ import ProductInfo from "./components/product-info/ProductInfo";
 import Evaluate from "./components/evaluate/Evaluate";
 import Company from "./components/profile/Company";
 import User from "./components/profile/User";
-
+import Register from "./components/account/Register/Register";
+import Login from "./components/account/Login/Login";
+import SellProduct from "./components/sell-product/SellProduct";
 
 function App() {
-  return (
-    <div className="App">
+    return (
+        <div className="App">
 
-      <header>
-        <Navbar/>
-      </header>
+            <header>
+                <Navbar/>
+            </header>
 
-      {/*<Main/>*/}
-      {/*<Products/>*/}
-      {/*  <Overview/>*/}
-      {/*  <Evaluate/>*/}
-      {/*<Company/>*/}
-      {/*<User/>*/}
+            {/*<Main/>*/}
+            {/*<Products/>*/}
+            {/*<Overview/>*/}
+            {/*<Evaluate/>*/}
+            {/*<Company/>*/}
+            {/*<User/>*/}
+            {/*<ProductInfo/>*/}
+            {/*<Register/>*/}
+            {/*<Login/>*/}
+            <SellProduct/>
 
-        <footer>
-        <Footer/>
-        </footer>
 
-    </div>
-  );
+            <footer>
+                <Footer/>
+            </footer>
+
+        </div>
+    );
 }
 
 export default App;

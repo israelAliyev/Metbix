@@ -1,0 +1,171 @@
+.sell-product {
+    padding: 3rem 10rem 0 10rem !important;
+}
+
+.sell-product > h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 24px;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.sell-product .details {
+    background-color: white;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+}
+
+.sell-product .details > h4 {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.sell-product input:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+    -webkit-user-select: initial;
+    -khtml-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+}
+
+
+.sell-product select {
+    appearance: none;
+    border: 1px solid #b6b7b8;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0 0 0 0.5rem !important;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #434343;
+    background: url(https://img.icons8.com/ios-glyphs/16/000000/sort-down.png) no-repeat right white;
+    width: 10rem;
+}
+
+
+.sell-product .details .form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.sell-product .details .form p {
+    width: 40%;
+}
+
+.sell-product .details .colors > div input[type="checkbox"] {
+    appearance: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 1.9rem;
+    height: 1.9rem;
+    outline: none;
+    transition: 0.2s all ease;
+}
+
+.sell-product .details .colors > div input[type="checkbox"]:not(:first-of-type) {
+    margin-left: 6px;
+}
+
+.sell-product .details .colors > div input[type="checkbox"]:checked {
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+    transition: 0.2s all ease;
+}
+
+.sell-product .options .item p {
+    margin-bottom: 0.2rem;
+    font-weight: 330;
+    font-size: 0.9rem;
+}
+
+.sell-product .options .item select {
+    padding: 0.1rem 0 0.1rem 0.5rem !important;
+    width: 6.5rem;
+    border-radius: 2px;
+}
+
+
+.sell-product .options .item:not(:first-of-type) {
+    margin-left: 1rem;
+}
+
+
+.sell-product .descriptions p {
+    margin-bottom: 0.5rem !important;
+    margin-top: 0.8rem;
+}
+
+.sell-product .descriptions .short input {
+    margin-top: 0.5rem;
+    border: 1px solid #cbccce;
+    border-radius: 3px;
+    width: 80%;
+    background-color: #fafafa;
+    line-height: 2rem;
+    color: #565656;
+
+}
+
+
+.sell-product .descriptions .long textarea {
+    margin-top: 0.5rem;
+    border: 1px solid #cbccce;
+    border-radius: 3px;
+    width: 80%;
+    background-color: #fafafa;
+    color: #565656;
+    resize: none !important;
+
+}
+
+.sell-product .upload-images .images-and-video{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.sell-product .upload-images .images-and-video .texts{
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 320;
+}
+
+.sell-product .upload-images .images-and-video .texts p:last-of-type{
+    color: #0a58ca;
+    cursor: pointer;
+}
+
+.sell-product .upload-images .images-and-video .main-picture{
+    position: relative;
+    overflow: hidden;
+    width: 84%;
+    height: 40rem;
+}
+
+.sell-product .upload-images .images-and-video .main-picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sell-product .upload-images .images-and-video .little-pictures{
+    height: 40rem;
+    width: 13.1%;
+}
+
+.sell-product .upload-images .images-and-video .little-pictures img{
+     width: 6rem;
+    height: 6.2rem;
+    object-fit: cover;
+}

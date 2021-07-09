@@ -84,46 +84,6 @@ class Footer extends Component {
                     </footer>
 
 
-                    <div className="responsive-controlling d-flex justify-content-around bg-white d-lg-none shadow-lg">
-
-                        <div onClick={() => {
-                            this.props.show_sidebar(true)
-                        }}>
-                            <a>
-                                <img width="25" src="/images/menu1.png"/>
-                                <p className="mt-2">Menu</p>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="">
-                                <i className="bi bi-person"/>
-                                <p className="mt-2">Account</p>
-                            </a>
-                        </div>
-
-
-                        <div>
-                            <a href="">
-                                <i className="bi bi-house"/>
-                                <p className="mt-2">Home</p>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="">
-                                <i className="bi bi-app-indicator"/>
-                                <p className="mt-2">Notification</p>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="">
-                                <i className="bi bi-bag"/>
-                                <p className="mt-2">Cart</p>
-                            </a>
-                        </div>
-                    </div>
 
                 </section>
 

@@ -1,0 +1,156 @@
+.account-login {
+    background-color: white;
+    height: auto;
+    width: 39.5%;
+    margin: 5rem auto;
+    padding: 1rem 2rem;
+}
+
+.account-login p {
+    margin: 0;
+}
+
+.account-login .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #555;
+    margin-bottom: 8px;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    font-size: 2.5rem;
+}
+
+.account-login .forms .form {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.account-login .forms .form p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+
+.account-login .forms a {
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.account-login .forms .form input[type="text"] {
+    width: 100%;
+    border: 1px solid #cbccce;
+    border-radius: 2px;
+    background: #fafafa;
+    color: #666;
+    transition: all 0.4s ease;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 0 5px;
+}
+
+.account-login .forms .form input[type="text"]:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+    border: 1px solid #297fff;
+}
+
+.account-login .forms label {
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.account-login .forms .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.account-login .forms .buttons button {
+    width: 100%;
+    margin-bottom: 0.3rem;
+    background-color: #ef9302;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 0.1rem;
+}
+
+.account-login .forms .social-media p {
+    font-size: 0.9rem;
+}
+
+.account-login .forms .social-media i {
+    padding: 0.5rem;
+    color: white;
+    background-color: #094db0;
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+    cursor: pointer;
+}
+
+
+.account-login .forms .social-media .github {
+    background-color: #000000;
+}
+
+.account-login .forms .social-media .google {
+    background-color: darkred;
+}
+
+.account-login .forms .social-media .instagram {
+    background-color: orangered;
+}
+
+.account-login .forms .social-media .linkedin {
+    background-color: #1561cf;
+}
+
+.account-login .forms .social-media .microsoft {
+    background-color: darkgreen;
+}
+
+.account-login .forms .social-media .twitter {
+    background-color: #08a0e9;
+}
+
+
+@media only screen and (max-width: 1025px) {
+    .account-login {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .account-login {
+        width: 100%;
+    }
+    .account-login .forms .social-media{
+        flex-wrap: wrap;
+    }
+
+    .account-login .forms .social-media p {
+        width: 100%;
+    }
+
+    .account-login .forms .social-media i {
+        margin-top: 0.8rem;
+
+    }
+}

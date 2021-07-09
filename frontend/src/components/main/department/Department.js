@@ -21,8 +21,8 @@ class Department extends Component {
                 <div className="main-departments-categories">
 
                     <Swiper
-                        slidesPerView={phone ? 1: tablet ? 2 : 5}
                         spaceBetween={0}
+                        slidesPerView={phone ? 1: tablet ? 2 : 5}
                         slidesPerGroup={phone ? 1: tablet ? 2 : 5}
                         loop={true}
                         loopFillGroupWithBlank={true}

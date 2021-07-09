@@ -1,5 +1,4 @@
 
-
 .profile-company {
     height: auto;
     width: 100%;
@@ -210,13 +209,22 @@
     font-size: 0.9rem;
 }
 
+.profile-company header > div > .actions .buttons .share-2 {
+    background-color: #0A66C2;
+    border: 1px solid #0A66C2;
+    color: white;
+    font-weight: 650;
+    border-radius: 5px;
+    padding: 0 0 0 0.3rem !important;
+    font-size: 0.9rem;
+}
+
 .profile-company header > div > .actions .buttons .share:hover {
     background-color: #074a8c;
 }
 
 .profile-company header > div > .actions .review {
     border-bottom: 2px solid #3EA6FF;
-
 }
 
 .profile-company header > div > .actions .review button {
@@ -244,7 +252,7 @@
 
 /*company description*/
 
-.profile-company .body{
+.profile-company .body {
 
     width: 100%;
 }
@@ -267,26 +275,26 @@
     color: #565656;
 }
 
-.profile-company .body .description table{
+.profile-company .body .description table {
     width: 100%;
     font-weight: 600;
     font-size: 0.9rem;
     margin-top: 1.5rem;
 }
 
-.profile-company .body .description table tbody tr{
+.profile-company .body .description table tbody tr {
 
     margin-top: 5rem !important;
     line-height: 2rem;
 }
 
-.profile-company .body .description table tbody tr td:first-of-type{
+.profile-company .body .description table tbody tr td:first-of-type {
     width: 25%;
 }
 
 /* end of company description*/
 
- /*company overview */
+/*company overview */
 
 
 .profile-company .body .overview {
@@ -296,25 +304,26 @@
     padding: 1rem 1.5rem 1.1rem 1.5rem !important;
 }
 
-.profile-company .body .overview > div{
+.profile-company .body .overview > div {
     margin-top: 2rem;
 }
 
-.profile-company .body .overview > .title{
+.profile-company .body .overview > .title {
     width: 100%;
     font-size: 1.5rem;
 }
 
-.profile-company .body .overview > .album{
+.profile-company .body .overview > .album {
     height: 17rem;
     /*background-color: #0a58ca;*/
 }
 
-.profile-company .body .overview > .album > p{
+.profile-company .body .overview > .album > p {
     color: #6e6e6e;
     width: 100%;
 }
-.profile-company .body .overview > .album > p >span{
+
+.profile-company .body .overview > .album > p > span {
     color: #c8c8c8;
     margin-left: 0.8rem;
 }
@@ -346,13 +355,16 @@
     background-color: #f8a627;
     border-radius: 8px;
 }
+
 .profile-company .body .overview .album .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-}.profile-company .body .overview .album .swiper-slide video {
+}
+
+.profile-company .body .overview .album .swiper-slide video {
     display: block;
     width: 100%;
     height: 100%;
@@ -361,63 +373,65 @@
 }
 
 
-.profile-company .body .overview > .info > p{
+.profile-company .body .overview > .info > p {
     color: #6e6e6e;
     width: 100%;
 }
-.profile-company .body .overview .info table{
-   width: 50%;
+
+.profile-company .body .overview .info table {
+    width: 50%;
     margin-top: 1rem;
     font-size: 0.85rem;
-    font-family: Roboto,Helvetica Neue,Helvetica,Tahoma,Arial,PingFang SC,Microsoft YaHei;
+    font-family: Roboto, Helvetica Neue, Helvetica, Tahoma, Arial, PingFang SC, Microsoft YaHei;
 }
 
-.profile-company .body .overview > .info table tbody tr td{
+.profile-company .body .overview > .info table tbody tr td {
     border: 1px solid #d9d8d8;
     padding: 0 0 0 1rem !important;
 }
 
-.profile-company .body .overview > .info table tbody tr td:first-of-type{
+.profile-company .body .overview > .info table tbody tr td:first-of-type {
     width: 40%;
     line-height: 2rem;
     background-color: #FAFAFA;
 }
 
-.profile-company .body .overview > .info table tbody tr td:last-of-type{
-   color: #515151;
+.profile-company .body .overview > .info table tbody tr td:last-of-type {
+    color: #515151;
 }
 
 
-.profile-company .body .overview > .certification > p{
+.profile-company .body .overview > .certification > p {
     color: #6e6e6e;
     width: 100%;
 }
 
-.profile-company .body .overview > .certification > table{
+.profile-company .body .overview > .certification > table {
     margin-top: 1rem;
     border: 1px solid #d9d8d8;
 }
 
-.profile-company .body .overview > .certification > table th{
-    padding:  0.1rem 2rem 0.1rem 0.5rem !important;
+.profile-company .body .overview > .certification > table th {
+    padding: 0.1rem 2rem 0.1rem 0.5rem !important;
     font-size: 0.85rem;
     font-weight: 400;
     border: 1px solid #d9d8d8;
     background-color: #FAFAFA;
 }
-.profile-company .body .overview > .certification > table td{
+
+.profile-company .body .overview > .certification > table td {
     font-size: 0.85rem;
     font-weight: 400;
     /*border: 1px solid #d9d8d8;*/
 }
 
-.profile-company .body .overview > .certification > table td:not(:first-child){
+.profile-company .body .overview > .certification > table td:not(:first-child) {
 
-    padding:  0 0 0 0.5rem !important;
+    padding: 0 0 0 0.5rem !important;
 }
 
-.profile-company .body .overview > .certification > table td img{
-   object-fit: contain;
+.profile-company .body .overview > .certification > table td img {
+    object-fit: contain;
     width: 5rem;
     height: 6rem;
 }
@@ -428,11 +442,10 @@
 
 /*prducts overview of company*/
 
-.profile-company .product-overview .header{
+.profile-company .product-overview .header {
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     padding: 0 0 0 1rem !important;
-
 }
 
 .profile-company .product-overview .header input[type="radio"] {
@@ -456,12 +469,12 @@
     border-bottom: 3px solid #ffba36;
 }
 
-.profile-company .product-overview .header label:not(:first-of-type){
+.profile-company .product-overview .header label:not(:first-of-type) {
     margin-left: 1.5rem;
 }
 
 
-.profile-company .product-overview .products{
+.profile-company .product-overview .products {
     padding: 1.5rem 1.5rem 0 1.5rem;
     background-color: white;
     margin-top: 0.8rem;
@@ -469,11 +482,11 @@
     border-bottom-right-radius: 8px;
 }
 
-.profile-company .product-overview .products p{
+.profile-company .product-overview .products p {
     margin: 0;
 }
 
-.profile-company .product-overview .products .text{
+.profile-company .product-overview .products .text {
     width: 100%;
 }
 
@@ -532,7 +545,92 @@
 }
 
 
-
 /* end of prducts overview of company*/
 
 /*end of body*/
+
+
+@media only screen and (max-width: 1025px) {
+
+    .profile-company {
+        padding: 0 1rem !important;
+    }
+
+    .profile-company header > div > .actions .buttons .site {
+        display: none;
+    }
+
+    .profile-company .body .description table tbody tr td:first-of-type {
+        width: 35%;
+    }
+
+    .profile-company .product-overview .products .item {
+        width: 30.1%;
+    }
+
+    .profile-company .product-overview .products .item .details .review p {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .profile-company {
+        padding: 0 !important;
+        margin-top: 0 !important;
+
+    }
+
+    .profile-company header .pp-bp {
+        border-top-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+        height: 10rem;
+    }
+
+    .profile-company header .pp-bp img:first-of-type {
+        position: absolute;
+        top: 32%;
+        left: 3%;
+        width: 6rem;
+        height: 6rem;
+        border: 3px solid white;
+    }
+
+    .profile-company header > div > .texts .business-type {
+        display: none !important;
+    }
+
+    .profile-company header > div > .actions .buttons .share {
+        display: none;
+    }
+
+    .profile-company header > div > .actions .buttons .share-2 {
+        display: block !important;
+    }
+    .profile-company header > div > .actions .review {
+        margin-top: 2rem;
+    }
+
+    .profile-company .body .overview > .certification{
+
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .profile-company .product-overview .products .item {
+        width: 90%;
+        height: 430px;
+    }
+
+    .profile-company .product-overview .products .item .image {
+        height: 245px;
+    }
+
+    .profile-company .product-overview .header label:last-of-type{
+        margin-left: 0 !important;
+        margin-top: 0.5rem;
+    }
+
+}

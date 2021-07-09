@@ -6,6 +6,10 @@ import ProductOverview from "./ProductOverview";
 
 class Company extends Component {
     render() {
+
+        const tablet = window.innerWidth <= 1025;
+        const phone = window.innerWidth <= 576;
+
         return (
             <>
                 <div className="profile-company p-5">
@@ -46,7 +50,7 @@ class Company extends Component {
                             </div>
 
 
-                            <div className="actions d-flex justify-content-between mt-3">
+                            <div className="actions d-flex justify-content-between flex-wrap mt-3">
 
                                 <div className="buttons d-flex">
                                     <button className="follow">Follow This Supplier</button>
@@ -55,6 +59,7 @@ class Company extends Component {
                                     <button className="site">Visit Comapny Site <i
                                         className="bi bi-box-arrow-up-right ms-2"/></button>
                                     <button className="share"><i className="bi bi-share-fill me-2"/> Share</button>
+                                    <button className="share-2 d-none"><i className="bi bi-share-fill me-2"/></button>
                                 </div>
 
                                 <div className="review d-flex">

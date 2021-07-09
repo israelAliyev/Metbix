@@ -13,6 +13,8 @@ import SwiperCore, { Keyboard, Pagination, Navigation } from "swiper/core";
 class Overview extends Component {
     render() {
 
+        const tablet = window.innerWidth <= 1025;
+        const phone = window.innerWidth <= 576;
 
 // install Swiper modules
         SwiperCore.use([Keyboard, Pagination, Navigation]);
@@ -31,9 +33,9 @@ class Overview extends Component {
                             keyboard={{
                                 enabled: true
                             }}
-                            slidesPerView={3}
                             spaceBetween={15}
-                            slidesPerGroup={3}
+                            slidesPerView={phone ? 1: tablet ? 2 : 3}
+                            slidesPerGroup={phone ? 1: tablet ? 2 : 3}
                             freeMode={true}
                             navigation={true}
                             loopFillGroupWithBlank={true}
