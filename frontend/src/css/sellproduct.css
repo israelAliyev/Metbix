@@ -52,6 +52,7 @@
     color: #434343;
     background: url(https://img.icons8.com/ios-glyphs/16/000000/sort-down.png) no-repeat right white;
     width: 10rem;
+    height: 2rem;
 }
 
 
@@ -97,6 +98,7 @@
     padding: 0.1rem 0 0.1rem 0.5rem !important;
     width: 6.5rem;
     border-radius: 2px;
+    height: 1.5rem;
 }
 
 
@@ -220,6 +222,7 @@
     padding: 0.1rem 0 0.1rem 0.5rem !important;
     width: 6.5rem;
     border-radius: 2px;
+    height: 1.5rem;
 }
 
 .sell-product .details .shipping .international {
@@ -304,14 +307,14 @@
     border: 1px solid #0a58ca !important;
 }
 
-.sell-product .details .button{
+.sell-product .details .button {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 3rem;
 }
 
-.sell-product .details .button button{
+.sell-product .details .button button {
 
     background-color: #1d5fbe;
     color: white;
@@ -323,24 +326,24 @@
 }
 
 
-@media only screen and (max-width: 1025px){
+@media only screen and (max-width: 1025px) {
 
     .sell-product {
         padding: 3rem 1rem 0 1rem !important;
     }
 
-    .sell-product .details .colors > div{
+    .sell-product .details .colors > div {
         width: 60%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .sell-product .details .colors > div > input{
-     margin-top: 0.5rem;
+    .sell-product .details .colors > div > input {
+        margin-top: 0.5rem;
     }
 
-    .sell-product .details .options{
+    .sell-product .details .options {
         padding: 0.5rem 0 0.5rem 0;
     }
 
@@ -348,12 +351,13 @@
         width: 84%;
 
     }
+
     .sell-product .details .upload-images .images-and-video {
         width: 90%;
         margin: 0 auto;
     }
 
-    }
+}
 
 
 @media only screen and (max-width: 576px) {
@@ -366,14 +370,14 @@
         margin-top: 2rem;
     }
 
-    .sell-product .details .form select{
+    .sell-product .details .form select {
 
-       height: 2rem;
+        height: 2rem;
 
     }
 
-    .sell-product .details .colors{
-    display: flex;
+    .sell-product .details .colors {
+        display: flex;
         align-items: start;
 
     }
@@ -401,20 +405,20 @@
         margin-left: 1rem;
     }
 
-    .sell-product .details .production-year{
+    .sell-product .details .production-year {
         margin-top: 2rem !important;
     }
 
-    .sell-product .details .production-year input{
+    .sell-product .details .production-year input {
         margin-left: 1.5rem !important;
         width: 8rem;
     }
 
-    .sell-product .details .phone >p {
+    .sell-product .details .phone > p {
         width: 100%;
     }
 
-    .sell-product .details .email >p {
+    .sell-product .details .email > p {
         width: 100%;
     }
 
