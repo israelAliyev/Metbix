@@ -1,0 +1,134 @@
+@media only screen and (max-width: 1025px) {
+
+    .profile-settings {
+        padding: 3rem 1rem 0 1rem;
+    }
+
+    .profile-settings .operations .operation .forms .security .number input[type="checkbox"] {
+        height: 2rem;
+    }
+
+    .profile-settings .operations .operation .forms .security .number input[type="checkbox"]:before {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .profile-settings .operations .operation .forms .security .number input[type="checkbox"]:checked:before {
+        left: 62%;
+    }
+
+    .profile-settings .operations .operation .forms .security .number p {
+        font-size: 1.3rem;
+    }
+
+    .profile-settings .operations .operation .forms .location .continents {
+        margin-top: 1rem;
+    }
+
+    .profile-settings .operations .operation .forms .location .continents > div > label {
+        padding: 0.3rem 0.7rem !important;
+    }
+
+    .profile-settings .operations .operation .forms .industry .item:last-of-type {
+        margin-top: 1rem;
+    }
+
+    .profile-settings .operations .operation .forms .employees .item input {
+        width: 12rem;
+    }
+
+    .profile-settings .operations .operation .forms .description-pictures > div > textarea {
+        width: 90%;
+    }
+
+    .profile-settings .operations .operation .forms .description-pictures > .product-overview .products .item {
+        height: 450px;
+        width: 45%;
+        border-radius: 0.8rem;
+        margin-bottom: 2rem;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        border: 1px solid #c7c7c8;
+        margin-left: 1rem;
+        margin-right: 0.3rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    .profile-settings {
+        padding: 0;
+    }
+
+    .profile-settings .operations .title p:last-of-type {
+        font-size: 1rem;
+        font-weight: 350;
+        color: rgba(0, 0, 0, 0.6);
+        line-height: 1.3;
+
+    }
+
+    .profile-settings .pp-bp {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        height: 13rem;
+    }
+
+    .profile-settings .pp-bp img:first-of-type {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .profile-settings .operations .operation-title .texts {
+        width: 85%;
+    }
+
+    .profile-settings .operations .operation-title .texts p:last-of-type{
+        font-size: 0.9rem;
+    }
+
+    .profile-settings .operations .operation .forms .security .number p {
+        font-size: 1rem;
+    }
+
+    .profile-settings .operations .operation .forms .location .item {
+        margin-top: 1rem;
+    }
+
+    .profile-settings .operations .operation .forms .location .continents > div > label {
+        padding: 0.3rem 0.5rem !important;
+        margin-top: 0.5rem;
+    }
+
+    .profile-settings .operations .operation .forms .industry .item {
+        margin-top: 1rem;
+    }
+
+    .profile-settings .operations .operation .forms .employees .item {
+        margin-top: 1rem;
+    }
+
+    .profile-settings .operations .operation .forms .description-pictures > div > textarea {
+        width: 100%;
+    }
+
+    .profile-settings .operations .operation .forms .description-pictures > .product-overview .header label:last-of-type{
+
+        width: 48%;
+
+    }
+
+    .profile-settings .operations .operation .forms .description-pictures > .product-overview .products {
+        padding: 0;
+    }
+
+    .profile-settings .operations .operation .forms .description-pictures > .product-overview .products .item {
+        width: 100%;
+    }
+
+}

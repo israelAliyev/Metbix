@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper, SwiperSlide} from "swiper/react";
 
 // Import Swiper styles
 import "swiper/swiper.min.css";
@@ -8,7 +8,7 @@ import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css";
 
 // import Swiper core and required modules
-import SwiperCore, { Keyboard, Pagination, Navigation } from "swiper/core";
+import SwiperCore, {Keyboard, Pagination, Navigation} from "swiper/core";
 
 class Overview extends Component {
     render() {
@@ -26,7 +26,8 @@ class Overview extends Component {
                     <h3 className="title">Company Overview</h3>
 
                     <div className="album">
-                 <p>Company Album <span><i className="bi bi-image"/> 14</span> <span><i className="bi bi-play-circle"/> 1</span></p>
+                        <p>Company Album <span><i className="bi bi-image"/> 14</span> <span><i
+                            className="bi bi-play-circle"/> 1</span></p>
 
 
                         <Swiper
@@ -34,14 +35,16 @@ class Overview extends Component {
                                 enabled: true
                             }}
                             spaceBetween={15}
-                            slidesPerView={phone ? 1: tablet ? 2 : 3}
-                            slidesPerGroup={phone ? 1: tablet ? 2 : 3}
+                            slidesPerView={phone ? 1 : tablet ? 2 : 3}
+                            slidesPerGroup={phone ? 1 : tablet ? 2 : 3}
                             freeMode={true}
                             navigation={true}
                             loopFillGroupWithBlank={true}
                             className="mySwiper"
                         >
-                            <SwiperSlide><video autoPlay={true} controls={true} loop={true} src="/images/car.mp4" alt=""/></SwiperSlide>
+                            <SwiperSlide>
+                                <video autoPlay={true} controls={true} loop={true} src="/images/car.mp4" alt=""/>
+                            </SwiperSlide>
                             <SwiperSlide><img src="/images/departments/Automotive.jpeg" alt=""/></SwiperSlide>
                             <SwiperSlide><img src="/images/departments/Automotive.jpeg" alt=""/></SwiperSlide>
                             <SwiperSlide><img src="/images/departments/Automotive.jpeg" alt=""/></SwiperSlide>

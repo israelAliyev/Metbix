@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d960938-7682-49c8-9117-30510a72beb8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/profile-settings/ProfileSettings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile-settings/data/CompanyProfileSettingsData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile-settings/data/UserProfileSettingsData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile-settings/forms/Description.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile-settings/forms/Employees.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile-settings/forms/Industry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile-settings/forms/Location.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile-settings/forms/NameEmail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile-settings/forms/ProductOverview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile-settings/forms/Security.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/profilesettings.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/responsiveprofilesettings.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/sellproduct.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/sellproduct.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/Company.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/Company.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/Overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/Overview.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -42,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/profile-settings/forms" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -61,11 +76,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/profile-settings/forms" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/images/brands" />
       <recent name="$PROJECT_DIR$/src/css/fonts" />
       <recent name="$PROJECT_DIR$/src/videos" />
-      <recent name="$PROJECT_DIR$/src/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images" />
@@ -141,6 +156,8 @@
       <workItem from="1625622517796" duration="16498000" />
       <workItem from="1625804560765" duration="9610000" />
       <workItem from="1625835054342" duration="5902000" />
+      <workItem from="1625904066840" duration="9523000" />
+      <workItem from="1626065166488" duration="15429000" />
     </task>
     <servers />
   </component>

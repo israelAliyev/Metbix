@@ -7,9 +7,6 @@ import ProductOverview from "./ProductOverview";
 class Company extends Component {
     render() {
 
-        const tablet = window.innerWidth <= 1025;
-        const phone = window.innerWidth <= 576;
-
         return (
             <>
                 <div className="profile-company p-5">

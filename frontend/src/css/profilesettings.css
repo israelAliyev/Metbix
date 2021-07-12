@@ -1,0 +1,556 @@
+
+.profile-settings {
+    height: auto;
+    width: 100%;
+    padding: 3rem 12rem 0 12rem;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+}
+
+.profile-settings p {
+    margin: 0;
+}
+
+
+.profile-settings input:focus {
+    outline: none;
+}
+
+.profile-settings .pp-bp {
+    overflow: hidden;
+    height: 20rem;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    border: 1px solid #d9dadb;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.profile-settings .pp-bp img:first-of-type {
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    width: 11rem;
+    height: 11rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.profile-settings .pp-bp img:last-of-type {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.profile-settings .operations {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: white;
+    padding: 2rem 1.5rem !important;
+}
+
+.profile-settings .operations .title p:first-of-type {
+    font-size: 2.3rem;
+    line-height: 1.25;
+    font-weight: 340;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.profile-settings .operations .title p:last-of-type {
+    font-size: 1.1rem;
+    font-weight: 350;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.3;
+}
+
+.profile-settings .operations .operation-title .texts p:first-of-type {
+    font-size: 1.4rem;
+    line-height: 1.25;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.profile-settings .operations .operation-title .texts p:last-of-type {
+    font-size: 1.1rem;
+    font-weight: 350;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.3;
+}
+
+.profile-settings .operations .operation-title > i {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #606060;
+}
+
+.profile-settings .operations .operation .forms {
+    padding: 1rem;
+    border: 1px solid #cbccce;
+    border-radius: 5px;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+
+.profile-settings .operations .operation .forms .name-email .item {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-settings .operations .operation .forms .name-email .item:not(:nth-last-of-type(3) ,:nth-last-of-type(4)) {
+    margin-top: 2rem;
+}
+
+.profile-settings .operations .operation .forms .name-email .item label {
+    font-size: 0.9rem;
+    color: #6c6c6d;
+    text-transform: capitalize;
+    margin-bottom: 0.2rem;
+    font-weight: 330;
+}
+
+.profile-settings .operations .operation .forms .name-email .item input {
+    border-radius: 4px;
+    border: 1px solid #7e7d7d;
+    color: black;
+    padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+.profile-settings .operations .operation .forms .name-email .item input:focus {
+    border: 1px solid #0a58ca;
+}
+
+.profile-settings .operations .operation .forms .security .item {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-settings .operations .operation .forms .security .item:not(:nth-last-of-type(3) ,:nth-last-of-type(4)) {
+    margin-top: 2rem;
+}
+
+
+.profile-settings .operations .operation .forms .security .item label {
+    font-size: 0.9rem;
+    color: #6c6c6d;
+    text-transform: capitalize;
+    margin-bottom: 0.2rem;
+    font-weight: 330;
+}
+
+.profile-settings .operations .operation .forms .security .item input {
+    border-radius: 4px;
+    border: 1px solid #7e7d7d;
+    color: black;
+    padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+.profile-settings .operations .operation .forms .security .item input:focus {
+    border: 1px solid #0a58ca;
+}
+
+.profile-settings .operations .operation .forms .security .number {
+    margin-top: 2rem;
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-settings .operations .operation .forms .security .number input[type="checkbox"] {
+    appearance: none;
+    background-color: whitesmoke;
+    width: 5.5rem;
+    height: 2.4rem;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: .5s;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.profile-settings .operations .operation .forms .security .number input[type="checkbox"]:checked {
+    background-color: #03a9f4;
+}
+
+.profile-settings .operations .operation .forms .security .number input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: .5s;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.profile-settings .operations .operation .forms .security .number input[type="checkbox"]:checked:before {
+    left: 55%;
+}
+
+.profile-settings .operations .operation .forms .security .number label {
+    font-size: 0.9rem;
+    color: #6c6c6d;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    font-weight: 330;
+}
+
+.profile-settings .operations .operation .forms .security .number p {
+    font-size: 1.5rem;
+    color: #0a58ca;
+    margin-left: 1rem;
+}
+
+.profile-settings .operations .operation .forms .security .number p span {
+    color: #f8a627;
+}
+
+.profile-settings .operations .operation .forms .location .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-settings .operations .operation .forms .location .item label {
+    font-size: 0.9rem;
+    color: #6c6c6d;
+    text-transform: capitalize;
+    margin-bottom: 0.2rem;
+    font-weight: 330;
+}
+
+.profile-settings .operations .operation .forms .location .item input {
+    border-radius: 4px;
+    border: 1px solid #7e7d7d;
+    color: black;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+    width: 13rem;
+}
+
+.profile-settings .operations .operation .forms .location .item input:focus {
+    border: 1px solid #0a58ca;
+}
+
+.profile-settings .operations .operation .forms .location select {
+    appearance: none;
+    border: 1px solid #b6b7b8;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0 0 0 0.5rem !important;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #434343;
+    background: url(https://img.icons8.com/ios-glyphs/16/000000/sort-down.png) no-repeat right white;
+    width: 10rem;
+    height: 2rem;
+}
+
+.profile-settings .operations .operation .forms .location .continents > label {
+    font-size: 0.9rem;
+    color: #6c6c6d;
+    text-transform: capitalize;
+    margin-bottom: 0.2rem;
+    font-weight: 330;
+}
+
+.profile-settings .operations .operation .forms .location .continents > div > label {
+    color: #676767;
+    background-color: whitesmoke;
+    padding: 0.3rem 1rem !important;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0.5px solid #bcbbbb;
+}
+
+.profile-settings .operations .operation .forms .location .continents > div > label:hover {
+    color: #e29318;
+    border: 0.5px solid #f8a627;
+}
+
+.profile-settings .operations .operation .forms .location .continents > div > label:not(:first-of-type) {
+    margin-left: 2rem;
+}
+
+
+.profile-settings .operations .operation .forms .industry .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-settings .operations .operation .forms .industry .item label {
+    font-size: 0.9rem;
+    color: #6c6c6d;
+    text-transform: capitalize;
+    margin-bottom: 0.2rem;
+    font-weight: 330;
+}
+
+.profile-settings .operations .operation .forms .industry .item input {
+    border-radius: 4px;
+    border: 1px solid #7e7d7d;
+    color: black;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+    width: 13rem;
+}
+
+.profile-settings .operations .operation .forms .industry .item input:focus {
+    border: 1px solid #0a58ca;
+}
+
+.profile-settings .operations .operation .forms .industry select {
+    appearance: none;
+    border: 1px solid #b6b7b8;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0 0 0 0.5rem !important;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #434343;
+    background: url(https://img.icons8.com/ios-glyphs/16/000000/sort-down.png) no-repeat right white;
+    width: 10rem;
+    height: 2rem;
+}
+
+
+.profile-settings .operations .operation .forms .employees .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-settings .operations .operation .forms .employees .item label {
+    font-size: 0.9rem;
+    color: #6c6c6d;
+    text-transform: capitalize;
+    margin-bottom: 0.2rem;
+    font-weight: 330;
+}
+
+.profile-settings .operations .operation .forms .employees .item input {
+    border-radius: 4px;
+    border: 1px solid #7e7d7d;
+    color: black;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+    width: 15rem;
+}
+
+.profile-settings .operations .operation .forms .employees .item input:focus {
+    border: 1px solid #0a58ca;
+}
+
+
+.profile-settings .operations .operation .forms .description-pictures label {
+    font-size: 0.9rem;
+    color: #6c6c6d;
+    text-transform: capitalize;
+    margin-bottom: 0.7rem;
+    font-weight: 330;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > div > textarea {
+    resize: none;
+    width: 80%;
+    border-radius: 5px;
+}
+
+
+.profile-settings .operations .operation .forms .description-pictures > .pictures {
+    height: 17rem;
+}
+
+
+.profile-settings .operations .operation .forms .description-pictures > .pictures .swiper-container {
+    width: 100%;
+    height: 80%;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .pictures .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #f8a627;
+    border-radius: 8px;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .pictures .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .pictures .swiper-slide video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.profile-settings .operations .operation .forms .description-pictures > .certificates > table {
+    border: 1px solid #d9d8d8;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .certificates > table th {
+    padding: 0.1rem 2rem 0.1rem 0.5rem !important;
+    font-size: 0.85rem;
+    font-weight: 400;
+    border: 1px solid #d9d8d8;
+    background-color: #FAFAFA;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .certificates > table td {
+    font-size: 0.85rem;
+    font-weight: 400;
+    /*border: 1px solid #d9d8d8;*/
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .certificates > table td:not(:first-child) {
+
+    padding: 0 0 0 0.5rem !important;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .certificates > table td img {
+    object-fit: contain;
+    width: 5rem;
+    height: 6rem;
+}
+
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .header {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 0 0 0 1rem !important;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .header input[type="radio"] {
+    appearance: none;
+    outline: none;
+    transition: 0.2s all ease;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .header label {
+    display: inline-block;
+    padding: 15px 5px;
+    text-align: center;
+    width: auto;
+    text-decoration: none;
+    position: relative;
+    color: #333;
+    cursor: pointer;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .header label:first-of-type {
+    border-bottom: 3px solid #ffba36;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .header label:not(:first-of-type) {
+    margin-left: 1.5rem;
+}
+
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .products {
+    padding: 0 1.5rem 0 1.5rem;
+    background-color: white;
+    margin-top: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .products p {
+    margin: 0;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .products .text {
+    width: 100%;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .products .item {
+    height: 450px;
+    width: 30%;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border: 1px solid #c7c7c8;
+    margin-left: 1rem;
+    margin-right: 0.3rem;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .products .item .details {
+    padding: 0.8rem 1rem 0.6rem 1rem !important;
+    position: relative;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .products .item .image {
+    width: 100%;
+    overflow: hidden;
+    height: 265px;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .products .item .image img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .products .item .details .review .stars i {
+    color: #efc40c;
+    font-size: 0.8rem;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .products .item .details .review .price {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 17px;
+}
+
+.profile-settings .operations .operation .forms .description-pictures > .product-overview .products .item .details .description p {
+    color: #a9a9a9;
+    font-size: 12px;
+    margin-top: 0.7rem;
+    background-color: white;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
