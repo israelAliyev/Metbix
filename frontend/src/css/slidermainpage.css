@@ -166,10 +166,7 @@
     opacity: 1;
 }
 
-@media only screen and (max-width: 992px) {
-    .slider{
-        margin-top: 3.60rem;
-    }
+@media only screen and (max-width: 1025px) {
     .slide-item > .content{
         padding: 6rem 0 0 3rem;
     }

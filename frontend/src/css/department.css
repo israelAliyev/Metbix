@@ -147,7 +147,7 @@
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1025px) {
     .main-departments-categories .categories .item {
         width: 166px;
         padding: 2rem 2rem 2rem 1.8rem !important;

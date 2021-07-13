@@ -477,7 +477,7 @@
 /*end of pagination*/
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1025px) {
 
     .products-and-options .top-bar .options {
         width: 100%;

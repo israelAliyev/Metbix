@@ -485,7 +485,7 @@ input, input:before, input:after {
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 1025px) {
     .sub-navbar {
         display: none;
     }
