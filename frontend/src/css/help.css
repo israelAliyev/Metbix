@@ -2,28 +2,52 @@
 .help {
     width: 100%;
     height: 100%;
-    background-color: white;
-    padding: 0 12rem;
+    padding: 0 12rem 3rem 12rem;
+    background-color: #fefefe;
 }
 
 .help p {
     margin: 0;
 }
 
+.help label {
+    margin: 0;
+}
+
+.help hr {
+    margin: 0;
+    color: #a8a8ab;
+}
+
+.help h5 {
+    margin: 0;
+}
+
+.help a {
+    text-decoration: none;
+    color: black;
+}
+
+.help a:hover {
+    text-decoration: none;
+    color: black;
+}
+
 .help .search {
     width: 100%;
     height: auto;
     padding: 1rem 0;
+    border-bottom: 1px solid #dddada;
 }
 
-.help .search > h1{
+.help .search > h1 {
     font-size: 2rem;
     margin-right: auto;
     color: #262626;
     font-weight: 400;
 }
 
-.help .search input{
+.help .search input {
     width: 35rem;
     font-size: 14px;
     color: #333;
@@ -35,18 +59,224 @@
     outline: none;
     transition: all ease 0.3s;
 }
-.help .search input:focus-within{
+
+.help .search input:focus-within {
     border: 2px solid #ff9900;
 }
-.help .search > div{
+
+.help .search > div {
     position: relative;
 }
 
 .help .search i {
-   color: #ff9b00;
+    color: #ff9b00;
     font-size: 1.2rem;
     position: absolute;
     right: 15px;
     bottom: calc(50% - 8px);
     cursor: pointer;
+}
+
+
+.help .service > p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.help .service > div > .item {
+    width: 32%;
+    height: 6rem;
+    padding: 0.2rem;
+    border: 1.5px solid #e7e6e6;
+    border-radius: 4px;
+    margin-top: 1.2rem;
+}
+
+.help .service > div > .item:hover {
+    background-color: #f2f8ff;
+}
+
+.help .service > div > .item img {
+    object-fit: cover;
+    width: 4.2rem;
+    height: 4.2rem;
+}
+
+.help .service > div > .item .texts h5 {
+    font-weight: 400 !important;
+    font-style: normal !important;
+    text-transform: none !important;
+    text-decoration: none !important;
+    font-size: 18px;
+    line-height: 2rem;
+    text-rendering: optimizeLegibility;
+    display: block;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    color: #0F1111;
+}
+
+.help .service > div > .item .texts p {
+    color: #565959 !important;
+    word-wrap: break-word;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.help .questions .wrapper {
+    width: 80%;
+}
+
+.help .questions .menu {
+    padding: 0.6rem 0;
+    width: 16%;
+}
+
+.help .questions .menu label {
+    line-height: 1rem;
+    padding: 0.8rem 0;
+    font-size: 0.8rem;
+    color: #000;
+    display: block;
+    cursor: pointer;
+    font-weight: 350;
+    transition: .1s;
+}
+
+.help .questions .menu label:hover {
+    color: #ff9900;
+    transition: .1s;
+}
+
+.help .questions .content {
+    padding: 1.5rem 2.3rem;
+    border: 1px solid #dddddd;
+    background-color: white;
+    width: 100%;
+}
+
+.help .questions .content .title {
+    font-size: 1.3rem;
+    padding: 5px 0;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.help .questions .content .item .question {
+    background-color: #f6f6f6;
+    padding: 0 10px 0 20px;
+    min-height: 36px;
+    line-height: 36px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    z-index: 1;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.help .questions .content .item .question i {
+    font-size: 1.6rem;
+    color: #616262;
+}
+
+
+.help .questions .content .item .answer {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: #666;
+    line-height: 17px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    font-size: 13px;
+}
+
+.help .questions .content .item .answer p {
+    line-height: 2rem;
+}
+
+.help .questions .content .item .answer p:before {
+    content: "• ";
+    font-size: 1.1rem;
+}
+
+
+
+.help .contact {
+    width: 100%;
+    position: relative;
+    border: 1px solid #ededed;
+    background-color: #fdfdfd;
+    border-bottom: 5px solid #e1e1e3;
+    height: auto !important;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.help .contact h4{
+    font-size: 1.3rem;
+}
+
+.help .contact:hover h4{
+    text-decoration: underline;
+}
+
+.help .contact p{
+    font-size: 0.9rem;
+    color: #949393;
+}
+
+
+@media only screen and (max-width: 1025px){
+
+    .help {
+        padding: 0 2rem;
+    }
+
+    .help .service > div > .item {
+        height: auto;
+    }
+
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    .help .search {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .help .search input {
+        width: 20rem;
+    }
+
+    .help .service > div > .item {
+        width: 100%;
+        height: 6rem;
+        padding: 0.2rem;
+        border: 1.5px solid #e7e6e6;
+        border-radius: 4px;
+        margin-top: 1.2rem;
+    }
+
+    .help .questions .menu {
+        width: 100%;
+    }
+
+    .help .questions .wrapper {
+        width: 100%;
+    }
+
+    .help .questions .content {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .help .contact p:last-of-type{
+        display: none;
+    }
 }

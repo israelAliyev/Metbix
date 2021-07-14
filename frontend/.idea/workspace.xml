@@ -2,31 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d960938-7682-49c8-9117-30510a72beb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/help/icons8-add-user-male-80.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/help/icons8-buying-96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/help/icons8-location-80.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/help/icons8-man-with-beard-product-box-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/help/icons8-product-management-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/help/icons8-product-management-96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/help/icons8-security-configuration-80.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/help/icons8-sell-96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/help/icons8-test-account-80.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/help/product_help._CB660668735_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/help/Help.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/help.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/help/icons8-customer-support-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/help/HelpQuestionsData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/help/HelpSerivceData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/profile-settings/forms/ProductOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile-settings/forms/ProductOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/brands.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/brands.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/department.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/department.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/products.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/products.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/shippingInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/shippingInfo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/slidermainpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/slidermainpage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/toplikedproducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/toplikedproducts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/toprequestedproducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/toprequestedproducts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/help/Help.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/help/Help.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/help.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -167,6 +149,7 @@
       <workItem from="1625904066840" duration="9523000" />
       <workItem from="1626065166488" duration="15801000" />
       <workItem from="1626148824218" duration="3676000" />
+      <workItem from="1626238451780" duration="18204000" />
     </task>
     <servers />
   </component>
