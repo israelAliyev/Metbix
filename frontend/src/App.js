@@ -13,6 +13,7 @@ import SellProduct from "./components/sell-product/SellProduct";
 import ProfileSettings from "./components/profile-settings/ProfileSettings";
 import Help from "./components/help/Help";
 import AboutUs from "./components/about-us/AboutUs";
+import Error404 from "./components/error-404/Error404";
 
 function App() {
     return (
@@ -33,7 +34,8 @@ function App() {
             {/*<SellProduct/>*/}
             {/*<ProfileSettings/>*/}
             {/*<Help/>*/}
-            <AboutUs/>
+            {/*<AboutUs/>*/}
+            <Error404/>
 
             <footer>
                 <Footer/>
