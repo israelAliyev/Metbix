@@ -26,7 +26,7 @@ function ProfileSettings() {
     return (
 
         <>
-            <div className="profile-settings">
+            <div className="profile-settings mb-5">
 
 
                 <div className="pp-bp">

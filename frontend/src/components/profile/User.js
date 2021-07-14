@@ -8,7 +8,7 @@ class User extends Component {
         return (
             <>
 
-                <div className="profile-user p-5">
+                <div className="profile-user p-5 mb-5">
 
                     <header>
 

@@ -6,7 +6,7 @@ class Evaluate extends Component {
         return (
             <>
 
-                <div className="evaluate mt-5">
+                <div className="evaluate mt-5 mb-5">
 
 
                     <div className="header-product d-flex">

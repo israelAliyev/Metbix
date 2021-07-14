@@ -15,7 +15,7 @@ class ProductInfo extends Component {
         return (
             <>
 
-                <section className="product-info mt-3 container">
+                <section className="product-info mt-3 container mb-5">
 
                     <div className="main d-flex justify-content-between">
 

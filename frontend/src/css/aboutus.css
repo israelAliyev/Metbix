@@ -1,0 +1,202 @@
+.about-us {
+    width: 100%;
+    height: 100%;
+    background-color: #fefefe;
+    padding: 5rem;
+}
+
+.about-us p {
+    margin: 0;
+}
+
+.about-us .side {
+    width: 30%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1rem;
+}
+
+.about-us .side .item {
+    width: 13rem;
+    background-color: white;
+    height: 4rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.about-us .side .item i {
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.about-us .side .item .texts p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.about-us .side .item .texts p:first-of-type {
+    color: #08abd7;
+    font-weight: 700;
+}
+
+
+.about-us .side .social-media i {
+    padding: 0.5rem;
+    color: white;
+    background-color: #094db0;
+    font-size: 1.2rem;
+    margin-left: 0.6rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+.about-us .side .social-media .github {
+    background-color: #000000;
+}
+
+.about-us .side .social-media .google {
+    background-color: darkred;
+}
+
+.about-us .side .social-media .instagram {
+    background-color: orangered;
+}
+
+.about-us .side .social-media .linkedin {
+    background-color: #1561cf;
+}
+
+.about-us .side .social-media .microsoft {
+    background-color: darkgreen;
+}
+
+.about-us .side .social-media .twitter {
+    background-color: #08a0e9;
+}
+
+.about-us .contact {
+    width: 30%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1rem;
+}
+
+.about-us .contact h3 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.about-us .contact label {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.about-us .contact input {
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    line-height: 2rem;
+    font-size: 0.9rem;
+}
+
+.about-us .contact textarea {
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    resize: none;
+    height: 15rem;
+}
+
+
+.about-us .contact button {
+
+    margin-top: 2rem;
+    border: none;
+    color: whitesmoke;
+    background-color: #0a58ca;
+    border-radius: 5px;
+    padding: 0.5rem 0;
+}
+
+.about-us .about {
+    width: 30%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.about-us .about p {
+    margin-top: 2rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-us .about h4 {
+    margin-top: 5rem;
+    font-size: 1rem;
+}
+
+.about-us .about span {
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1025px) {
+    .about-us {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .about-us .side {
+        width: 60%;
+    }
+
+    .about-us .contact {
+        width: 60%;
+        margin-top: 3rem;
+    }
+
+    .about-us .about {
+        width: 60%;
+        margin-top: 3rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 1025px) {
+
+
+    .about-us {
+     padding: 5rem 2rem;
+    }
+
+    .about-us .side {
+        width: 100%;
+    }
+
+    .about-us .contact {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .about-us .about {
+        width: 100%;
+        margin-top: 3rem;
+    }
+}

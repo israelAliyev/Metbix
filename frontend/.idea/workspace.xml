@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d960938-7682-49c8-9117-30510a72beb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/help/icons8-customer-support-96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/help/HelpQuestionsData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/help/HelpSerivceData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/about-us/AboutUs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/aboutus.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/account/Register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/account/Register/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/evaluate/Evaluate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/evaluate/Evaluate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/help/Help.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/help/Help.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/help.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/product-info/ProductInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-info/ProductInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile-settings/ProfileSettings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile-settings/ProfileSettings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/Company.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/Company.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sell-product/SellProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sell-product/SellProduct.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -149,7 +154,7 @@
       <workItem from="1625904066840" duration="9523000" />
       <workItem from="1626065166488" duration="15801000" />
       <workItem from="1626148824218" duration="3676000" />
-      <workItem from="1626238451780" duration="18204000" />
+      <workItem from="1626238451780" duration="22680000" />
     </task>
     <servers />
   </component>

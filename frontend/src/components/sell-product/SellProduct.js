@@ -6,7 +6,7 @@ class SellProduct extends Component {
     render() {
         return (
             <>
-                <div className="sell-product">
+                <div className="sell-product mb-5">
 
                     <h3>Sell Products on Metbix</h3>
 

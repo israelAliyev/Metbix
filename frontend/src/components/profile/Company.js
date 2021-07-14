@@ -9,7 +9,7 @@ class Company extends Component {
 
         return (
             <>
-                <div className="profile-company p-5">
+                <div className="profile-company p-5 mb-5">
 
                     <header>
 

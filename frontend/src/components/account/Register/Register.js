@@ -6,7 +6,7 @@ class Register extends Component {
     render() {
         return (
             <>
-                <div className="account-register">
+                <div className="account-register mb-5">
 
                     <div className="pp-forms">
 

@@ -12,6 +12,7 @@ import Login from "./components/account/Login/Login";
 import SellProduct from "./components/sell-product/SellProduct";
 import ProfileSettings from "./components/profile-settings/ProfileSettings";
 import Help from "./components/help/Help";
+import AboutUs from "./components/about-us/AboutUs";
 
 function App() {
     return (
@@ -22,16 +23,17 @@ function App() {
             </header>
 
             {/*<Main/>*/}
-            {/*<ProductOverview/>*/}
             {/*<Evaluate/>*/}
             {/*<Company/>*/}
             {/*<User/>*/}
+            {/*<Products/>*/}
             {/*<ProductInfo/>*/}
             {/*<Register/>*/}
             {/*<Login/>*/}
             {/*<SellProduct/>*/}
             {/*<ProfileSettings/>*/}
-            <Help/>
+            {/*<Help/>*/}
+            <AboutUs/>
 
             <footer>
                 <Footer/>
