@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d960938-7682-49c8-9117-30510a72beb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/404-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/error-404/Error404.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/error404.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/photo-1477959858617-67f85cf4f1df.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/photo-1441986300917-64674bd600d8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/photo-1470309864661-68328b2cd0a5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/photo-1477959858617-67f85cf4f1df.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about-us/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about-us/AboutUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/aboutus.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/aboutus.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -64,11 +67,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/images/help" />
       <recent name="$PROJECT_DIR$/src/components/profile-settings/forms" />
       <recent name="$PROJECT_DIR$/public/images/brands" />
-      <recent name="$PROJECT_DIR$/src/css/fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images" />
@@ -147,7 +150,8 @@
       <workItem from="1625904066840" duration="9523000" />
       <workItem from="1626065166488" duration="15801000" />
       <workItem from="1626148824218" duration="3676000" />
-      <workItem from="1626238451780" duration="24286000" />
+      <workItem from="1626238451780" duration="24375000" />
+      <workItem from="1626329011882" duration="1672000" />
     </task>
     <servers />
   </component>

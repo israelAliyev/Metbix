@@ -5,10 +5,32 @@ function AboutUs(props) {
     return (
         <>
 
-            <div className="about-us d-flex justify-content-between">
+            <div className="about-us d-flex justify-content-evenly flex-wrap">
+
+                <div className="header w-100 text-center">
+
+                    <h3>About Us</h3>
+
+
+                    <p> Metbix.com was founded in April 2021 by software developer Israel Aliyev in the city of Gakh,
+                        Azerbaijan. Metbix is an e-commerce site. The main purpose of Metbix is to enable people to shop
+                        easily. You can operate as a user or a company on Metbix.com. The product can be sold or bought
+                        safely. You can talk to the seller or the company by chat or video chat. Metbix is at your
+                        service 24 hours a day.</p>
+
+                </div>
 
 
                 <div className="side d-flex flex-column">
+
+
+                    <div className="item d-flex">
+                        <img src="/images/isi.jpg" alt=""/>
+                        <div className="texts">
+                            <p>Ceo</p>
+                            <p>Israel Aliyev</p>
+                        </div>
+                    </div>
 
                     <div className="item d-flex">
                         <i className="bi bi-geo-alt-fill"></i>
@@ -68,24 +90,6 @@ function AboutUs(props) {
                     </div>
 
                 </div>
-
-
-                <div className="about">
-
-                    <h3>About Us</h3>
-
-
-                    <p> Metbix.com was founded in April 2021 by software developer Israel Aliyev in the city of Gakh,
-                        Azerbaijan. Metbix is an e-commerce site. The main purpose of Metbix is to enable people to shop
-                        easily. You can operate as a user or a company on Metbix.com. The product can be sold or bought
-                        safely. You can talk to the seller or the company by chat or video chat. Metbix is at your
-                        service 24 hours a day.</p>
-
-
-                    <h4>Developer : <span>Aliyev Israel</span></h4>
-
-                </div>
-
 
 
             </div>

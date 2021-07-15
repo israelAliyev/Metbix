@@ -34,8 +34,8 @@ function App() {
             {/*<SellProduct/>*/}
             {/*<ProfileSettings/>*/}
             {/*<Help/>*/}
-            {/*<AboutUs/>*/}
-            <Error404/>
+            <AboutUs/>
+            {/*<Error404/>*/}
 
             <footer>
                 <Footer/>
