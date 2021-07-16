@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.finance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+}
+
+.finance p {
+    margin: 0;
+}
+
+.finance .coin-search {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.finance .coin-text {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.finance .coin-input {
+    padding-left: 16px;
+    width: 300px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background-color: #eaeaea;
+    color: #6d6b6b;
+}
+
+
+/*coin*/
+
+.finance .coin-container {
+    display: flex;
+    justify-content: center;
+}
+
+.finance .coin-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #d7d7d7;
+    width: 1000px;
+}
+
+.finance .coin {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    min-width: 300px;
+}
+
+.finance .coin h1 {
+    font-size: 16px;
+    width: 150px;
+}
+
+.finance .coin img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.finance .coin-symbol {
+    text-transform: uppercase;
+}
+
+.finance .coin-data {
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.finance .coin-data p {
+    width: 110px;
+    text-align: center;
+}
+
+.finance .coin-data p span {
+    margin-right: 0.2rem;
+}
+
+.finance .coin-price {
+    text-align: center;
+}
+
+.finance .red {
+    color: #f00606;
+}
+
+.finance .green {
+    color: #11d811;
+}
+
+/*end of coin*/
+
+.finance .currency-converter {
+    width: 1032px;
+}
+
+
+.finance .currency-converter .dropdown-toggle {
+    appearance: none;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #434343;
+    background-color: #edefef;
+    width: auto;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #dbd9d9;
+    text-transform: uppercase;
+    padding: 0 1rem;
+
+}
+
+.finance .currency-converter .dropdown-menu {
+    font-size: 0.9rem;
+    overflow-y: auto;
+    height: 35rem;
+}
+
+.finance .currency-converter .dropdown-menu a span {
+    margin-right: 0.5rem;
+    color: #4e4f4f;
+}
+
+
+.finance .table-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+    border: 1px solid #dbd9d9;
+    width: 1032px;
+    background-color: #eaecec;
+    font-weight: 580;
+    padding: 0 2rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.finance .table-coin {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    min-width: 300px;
+}
+
+.finance .table-coin p:first-of-type {
+    width: 165px;
+}
+
+
+.finance .table-coin-data {
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.finance .table-coin-data p {
+    width: 110px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1025px) {
+
+    .finance .coin-row {
+        width: 700px;
+    }
+
+    .finance .coin-data .coin-volume {
+        display: none;
+    }
+
+    .finance .currency-converter {
+        width: 690px;
+    }
+
+    .finance .table-header {
+        width: 732px;
+    }
+
+
+    .finance .table-header .table-coin-volume {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    .finance .coin-row {
+        width: 350px;
+    }
+
+    .finance .coin-data p {
+        width: 100px;
+    }
+
+    .finance .coin h1 {
+        width: 130px;
+    }
+
+    .finance .coin {
+        display: flex;
+        align-items: center;
+        padding-right: 24px;
+        min-width: 240px;
+    }
+
+    .finance .coin-data .coin-volume {
+        display: none;
+    }
+
+    .finance .coin-data .coin-symbol {
+        display: none;
+    }
+
+    .finance .coin-data .coin-marketcap {
+        display: none;
+    }
+
+    .finance .coin-data .coin-percent {
+        display: none;
+    }
+
+    .finance .currency-converter {
+        width: 300px;
+    }
+
+    .finance .table-header {
+        display: none;
+    }
+    
+}
