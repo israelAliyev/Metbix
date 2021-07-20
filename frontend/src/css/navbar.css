@@ -507,7 +507,7 @@ input, input:before, input:after {
     }
 
     .search-bar {
-        display: block !important;
+        display: none !important;
         width: 100%;
         background-color: #0C2D48;
         z-index: 2;

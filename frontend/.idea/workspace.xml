@@ -2,14 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d960938-7682-49c8-9117-30510a72beb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/finance/Coin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/finance/CurrencyData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/finance/Finance.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/finance.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/chat/active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/chat/chat (1).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/chat/chat (2).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/chat/chat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/chat/email (1).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/chat/email (2).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/chat/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/chat/icons8-chat-bubble-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/chat/icons8-chat-message-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/chat/messenger.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/chat/metbix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/chatT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sounds/ertugrul.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/chat/Chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -48,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/sounds" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -67,18 +82,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/public/sounds" />
+      <recent name="$PROJECT_DIR$/public/images/chat" />
       <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/public/images/help" />
-      <recent name="$PROJECT_DIR$/src/components/profile-settings/forms" />
-      <recent name="$PROJECT_DIR$/public/images/brands" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/chat" />
       <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/src/css" />
       <recent name="$PROJECT_DIR$/src/components/main/Slider" />
       <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/fonts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -152,7 +167,14 @@
       <workItem from="1626148824218" duration="3676000" />
       <workItem from="1626238451780" duration="24375000" />
       <workItem from="1626329011882" duration="13834000" />
-      <workItem from="1626408724040" duration="2385000" />
+      <workItem from="1626408724040" duration="3681000" />
+      <workItem from="1626493550637" duration="13933000" />
+      <workItem from="1626548752451" duration="1294000" />
+      <workItem from="1626592890821" duration="17161000" />
+      <workItem from="1626673794251" duration="14258000" />
+      <workItem from="1626758087951" duration="2760000" />
+      <workItem from="1626766579826" duration="180000" />
+      <workItem from="1626766802235" duration="3694000" />
     </task>
     <servers />
   </component>

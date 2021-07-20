@@ -42,7 +42,7 @@ class Navbar extends Component {
                 {this.props.show_sidebar_bool.show_sidebar && <GlobalStyle/>}
 
                 {/*Main Navbar*/}
-                <nav className={`main-navbar navbar navbar-expand-lg `}>
+                <nav className={`main-navbar navbar navbar-expand-lg d-none`}>
 
                     <div className="container-fluid">
 
@@ -250,7 +250,7 @@ class Navbar extends Component {
 
 
                 {/*subnavbar */}
-                <nav className="navbar sub-navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav className=" d-none navbar sub-navbar navbar-expand-lg navbar-dark bg-dark">
                     <div className="container-fluid">
 
                         <div className="collapse navbar-collapse d-flex justify-content-around" id="SubnavbarNav">
@@ -290,8 +290,7 @@ class Navbar extends Component {
 
 
                 {/*search bar for responsive design */}
-                <nav
-                    className={`navbar search-bar d-none`}>
+                <nav className={`navbar search-bar d-none`}>
                     <div className="container-fluid">
                         <form className="form-inline mt-1 navbar-for-search-form-border w-100">
                             <div className="input-group">

@@ -15,6 +15,7 @@ import Help from "./components/help/Help";
 import AboutUs from "./components/about-us/AboutUs";
 import Error404 from "./components/error-404/Error404";
 import Finance from "./components/finance/Finance";
+import Chat from "./components/chat/Chat";
 
 function App() {
     return (
@@ -37,7 +38,8 @@ function App() {
             {/*<Help/>*/}
             {/*<AboutUs/>*/}
             {/*<Error404/>*/}
-            <Finance/>
+            {/*<Finance/>*/}
+            <Chat/>
 
             <footer>
                 <Footer/>

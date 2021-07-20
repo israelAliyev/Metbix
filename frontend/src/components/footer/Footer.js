@@ -11,7 +11,7 @@ class Footer extends Component {
 
                 <section>
 
-                    <footer className="footer d-flex flex-column justify-content-center">
+                    <footer className=" d-none footer d-flex flex-column justify-content-center">
                         
                         <div className="signup">
                             <input type="text" placeholder="Enter email.."/>
@@ -84,7 +84,7 @@ class Footer extends Component {
                     </footer>
 
 
-                    <div className=" responsive-controlling d-flex justify-content-around bg-white d-lg-none shadow-lg">
+                    <div className="d-none responsive-controlling d-flex justify-content-around bg-white d-lg-none shadow-lg">
 
                         <div onClick={() => {
                             this.props.show_sidebar(true)
