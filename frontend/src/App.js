@@ -39,7 +39,7 @@ function App() {
             {/*<AboutUs/>*/}
             {/*<Error404/>*/}
             {/*<Finance/>*/}
-            <Chat/>
+            {/*<Chat/>*/}
 
             <footer>
                 <Footer/>

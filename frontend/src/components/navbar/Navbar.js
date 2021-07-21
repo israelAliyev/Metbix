@@ -42,7 +42,7 @@ class Navbar extends Component {
                 {this.props.show_sidebar_bool.show_sidebar && <GlobalStyle/>}
 
                 {/*Main Navbar*/}
-                <nav className={`main-navbar navbar navbar-expand-lg d-none`}>
+                <nav className={`main-navbar navbar navbar-expand-lg`}>
 
                     <div className="container-fluid">
 
@@ -250,7 +250,7 @@ class Navbar extends Component {
 
 
                 {/*subnavbar */}
-                <nav className=" d-none navbar sub-navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav className="navbar sub-navbar navbar-expand-lg navbar-dark bg-dark">
                     <div className="container-fluid">
 
                         <div className="collapse navbar-collapse d-flex justify-content-around" id="SubnavbarNav">

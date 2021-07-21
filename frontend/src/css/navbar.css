@@ -527,3 +527,16 @@ input, input:before, input:after {
 }
 
 
+.ms-4-5{
+    margin-left: 2.24rem !important
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.btn-silver {
+    color: rgb(84, 84, 84);
+    background-color: #f2f3f4;
+    border-color: #d2d2d2;
+}
