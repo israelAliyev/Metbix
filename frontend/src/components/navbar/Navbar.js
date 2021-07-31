@@ -10,7 +10,7 @@ class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            searchType: "All",
+            searchType: "Products",
             scroll_active: ""
         }
     }
