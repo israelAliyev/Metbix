@@ -2,8 +2,10 @@ package com.backend.pojos;
 
 import lombok.Data;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -55,8 +57,10 @@ public class Users {
     @Column(name = "User_Address2")
     private String userAddress2;
 
-    @Column(name = "User_Role")
-    private Integer userRole;
+    @Column(name = "User_Role" , nullable = false)
+    @JoinColumn(name = "User_Role", table = "Users")
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Roles.class)
+    private Roles userRole;
 
     @Column(name = "User_Photo")
     private String userPhoto;
@@ -69,4 +73,13 @@ public class Users {
 
     @Column(name = "User_Profile_Back")
     private String userProfileBack;
+
+
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = Products.class , orphanRemoval = true)
+    @JoinTable(name = "II_users_products",
+            joinColumns = {@JoinColumn(name = "User_ID")},
+
+            inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
+    )
+    private List<Products> products;
 }

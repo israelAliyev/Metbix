@@ -5,14 +5,13 @@ import javax.persistence.*;
 @Entity
 @Table(name = "products_home_options")
 public class ProductsHomeOptions {
+
+    @Id
     @Column(name = "Product_ID")
     private Long productId;
 
     @Column(name = "Category_ID")
     private Long categoryId;
-
-    @Column(name = "Color_ID")
-    private Long colorId;
 
     @Column(name = "Area")
     private Long area;
@@ -46,14 +45,6 @@ public class ProductsHomeOptions {
 
     public void setCategoryId(Long categoryId) {
         this.categoryId = categoryId;
-    }
-
-    public Long getColorId() {
-        return this.colorId;
-    }
-
-    public void setColorId(Long colorId) {
-        this.colorId = colorId;
     }
 
     public Long getArea() {

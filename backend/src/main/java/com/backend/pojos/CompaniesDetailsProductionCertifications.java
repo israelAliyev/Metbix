@@ -1,12 +1,19 @@
 package com.backend.pojos;
 
+import lombok.Data;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "companies_details_production_certifications")
+@Data
+@Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class CompaniesDetailsProductionCertifications {
     @Id
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "Certificate_Picture")
@@ -30,67 +37,5 @@ public class CompaniesDetailsProductionCertifications {
     @Column(name = "Company_ID")
     private Long companyId;
 
-    public Long getId() {
-        return this.id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getCertificatePicture() {
-        return this.certificatePicture;
-    }
-
-    public void setCertificatePicture(String certificatePicture) {
-        this.certificatePicture = certificatePicture;
-    }
-
-    public String getCertificateName() {
-        return this.certificateName;
-    }
-
-    public void setCertificateName(String certificateName) {
-        this.certificateName = certificateName;
-    }
-
-    public String getCertificateIssuedBy() {
-        return this.certificateIssuedBy;
-    }
-
-    public void setCertificateIssuedBy(String certificateIssuedBy) {
-        this.certificateIssuedBy = certificateIssuedBy;
-    }
-
-    public String getCertificateBusinessScope() {
-        return this.certificateBusinessScope;
-    }
-
-    public void setCertificateBusinessScope(String certificateBusinessScope) {
-        this.certificateBusinessScope = certificateBusinessScope;
-    }
-
-    public java.sql.Timestamp getCertificateAvailableDate() {
-        return this.certificateAvailableDate;
-    }
-
-    public void setCertificateAvailableDate(java.sql.Timestamp certificateAvailableDate) {
-        this.certificateAvailableDate = certificateAvailableDate;
-    }
-
-    public Byte getCertificateVerified() {
-        return this.certificateVerified;
-    }
-
-    public void setCertificateVerified(Byte certificateVerified) {
-        this.certificateVerified = certificateVerified;
-    }
-
-    public Long getCompanyId() {
-        return this.companyId;
-    }
-
-    public void setCompanyId(Long companyId) {
-        this.companyId = companyId;
-    }
 }

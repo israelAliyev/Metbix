@@ -4,6 +4,8 @@ import lombok.Data;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "companies")
@@ -63,8 +65,10 @@ public class Companies {
     @Column(name = "Company_Address")
     private String companyAddress;
 
-    @Column(name = "Company_Role")
-    private Integer companyRole;
+    @Column(name = "Company_Role" , nullable = false)
+    @JoinColumn(name = "Company_Role", table = "Companies")
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Roles.class)
+    private Roles companyRole;
 
     @Column(name = "Company_Profile_Photo")
     private String companyProfilePhoto;
@@ -76,6 +80,7 @@ public class Companies {
     private Integer companyEmployees;
 
     @Column(name = "Company_Desc")
+    @Lob
     private String companyDesc;
 
     @Column(name = "Company_Profile_Back")
@@ -83,4 +88,31 @@ public class Companies {
 
     @Column(name = "Company_Other_Addresses")
     private String companyOtherAddresses;
+
+
+
+
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = Products.class , orphanRemoval = true)
+    @JoinTable(name = "II_companies_products",
+            joinColumns = {@JoinColumn(name = "Company_ID")},
+            inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
+    )
+    private List<Products> products;
+
+
+
+    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.LAZY , targetEntity = CompaniesDetailsImagesAndVideo.class)
+    @JoinColumn(name="Company_ID")
+    private List<CompaniesDetailsImagesAndVideo> companiesDetailsImagesAndVideos;
+
+    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.LAZY , targetEntity = CompaniesDetailsMarketsAndBranches.class)
+    @JoinColumn(name="Company_ID")
+    private List<CompaniesDetailsMarketsAndBranches> companiesDetailsMarketsAndBranches;
+
+    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.LAZY, targetEntity = CompaniesDetailsProductionCertifications.class)
+    @JoinColumn(name="Company_ID")
+    private List<CompaniesDetailsProductionCertifications> companiesDetailsProductionCertifications;
+
+
+
 }

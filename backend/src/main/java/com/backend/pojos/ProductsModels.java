@@ -1,12 +1,20 @@
 package com.backend.pojos;
 
+import lombok.Data;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "products_models")
+@Data
+@Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class ProductsModels {
     @Id
     @Column(name = "Model_ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long modelId;
 
     @Column(name = "Model_Name")
@@ -15,27 +23,8 @@ public class ProductsModels {
     @Column(name = "Brand_ID")
     private Long brandId;
 
-    public Long getModelId() {
-        return this.modelId;
-    }
 
-    public void setModelId(Long modelId) {
-        this.modelId = modelId;
-    }
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = Products.class , mappedBy = "productModel")
+    private List<Products> products;
 
-    public String getModelName() {
-        return this.modelName;
-    }
-
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
-    }
-
-    public Long getBrandId() {
-        return this.brandId;
-    }
-
-    public void setBrandId(Long brandId) {
-        this.brandId = brandId;
-    }
 }

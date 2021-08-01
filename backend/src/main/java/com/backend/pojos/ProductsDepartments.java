@@ -1,30 +1,41 @@
 package com.backend.pojos;
 
+import lombok.Data;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "products_departments")
+@Data
+@Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class ProductsDepartments {
     @Id
     @Column(name = "Department_ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long departmentId;
 
     @Column(name = "Department")
     private String department;
 
-    public Long getDepartmentId() {
-        return this.departmentId;
-    }
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = ProductsCategories.class)
+    @JoinColumn(name="Department_ID", nullable=false)
+    private List<ProductsCategories> productCategories;
 
-    public void setDepartmentId(Long departmentId) {
-        this.departmentId = departmentId;
-    }
 
-    public String getDepartment() {
-        return this.department;
-    }
+    @ManyToMany(fetch = FetchType.LAZY, targetEntity = ProductsColors.class)
+    @JoinTable(name = "II_categories_colors",
+            joinColumns = {@JoinColumn(name = "Department_ID")},
+            inverseJoinColumns = {@JoinColumn(name = "Color_ID")}
+    )
+    private List<ProductsColors> productsColors;
 
-    public void setDepartment(String department) {
-        this.department = department;
-    }
+
+
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = ProductsBrands.class)
+    @JoinColumn(name="Department_ID", nullable=false)
+    private List<ProductsBrands> productsBrands;
+
 }

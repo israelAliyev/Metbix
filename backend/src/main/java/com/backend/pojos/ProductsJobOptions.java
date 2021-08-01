@@ -5,6 +5,8 @@ import javax.persistence.*;
 @Entity
 @Table(name = "products_job_options")
 public class ProductsJobOptions {
+
+    @Id
     @Column(name = "Product_ID")
     private Long productId;
 

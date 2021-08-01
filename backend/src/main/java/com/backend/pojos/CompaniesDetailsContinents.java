@@ -1,30 +1,28 @@
 package com.backend.pojos;
 
+import lombok.Data;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "companies_details_continents")
+@Data
+@Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class CompaniesDetailsContinents {
     @Id
     @Column(name = "Continent_ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long continentId;
 
     @Column(name = "Continent_Name")
     private String continentName;
 
-    public Long getContinentId() {
-        return this.continentId;
-    }
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name="Continent_ID")
+    private List<CompaniesDetailsMarketsAndBranches> companiesDetailsMarketsAndBranches;
 
-    public void setContinentId(Long continentId) {
-        this.continentId = continentId;
-    }
 
-    public String getContinentName() {
-        return this.continentName;
-    }
-
-    public void setContinentName(String continentName) {
-        this.continentName = continentName;
-    }
 }
