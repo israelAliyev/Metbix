@@ -2,8 +2,6 @@ package com.backend.pojos;
 
 import lombok.Data;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
-import org.hibernate.annotations.Cascade;
-import org.springframework.security.core.userdetails.User;
 
 import javax.persistence.*;
 import java.util.List;
