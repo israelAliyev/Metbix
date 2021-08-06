@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState , useEffect} from 'react';
 import '../../css/chat.css'
 
 function Chat(props) {
@@ -12,6 +12,32 @@ function Chat(props) {
     const prevPage = () => {
         showRightNavbar === true ? setShowRightNavbar(false) : showMiddle === true ? setShowMiddle(false) : window.location.href = "http://localhost:3000/";
     }
+
+
+    useEffect(() => {
+
+        let username = 'dfg';
+        let password = 'qax';
+
+        fetch("http://localhost:8080/login", {
+            headers: {
+                "Authorization": 'Basic ' + window.btoa(username + ":" + password)
+            }
+        }).then(resp => {
+
+            console.log(resp);
+
+            if (resp.ok) {
+
+                console.log("logged in -- true")
+
+            } else {
+                console.log("logged in -- false")
+            }
+
+        });
+
+    }, [])
 
     return (
 

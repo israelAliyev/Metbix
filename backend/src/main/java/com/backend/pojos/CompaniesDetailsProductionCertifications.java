@@ -34,8 +34,8 @@ public class CompaniesDetailsProductionCertifications {
     @Column(name = "Certificate_Verified")
     private Byte certificateVerified;
 
-    @Column(name = "Company_ID")
-    private Long companyId;
+//    @Column(name = "Company_ID")
+//    private Long companyId;
 
 
 }

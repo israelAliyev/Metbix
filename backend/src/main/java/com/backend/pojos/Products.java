@@ -41,11 +41,9 @@ public class Products {
     private String productCoverPhoto;
 
     @Column(name = "Product_Update_Date")
-    @Temporal(TemporalType.TIMESTAMP)
     private java.sql.Timestamp productUpdateDate;
 
     @Column(name = "Product_Create_Date")
-    @Temporal(TemporalType.TIMESTAMP)
     private java.sql.Timestamp productCreateDate;
 
 
@@ -65,14 +63,14 @@ public class Products {
     private Integer productYear;
 
 
-    @Column(name = "Product_Category_ID")
-    private Long productCategoryId;
-
-    @Column(name = "Product_Brand_ID")
-    private Long productBrandId;
-
-    @Column(name = "Product_Model_ID")
-    private Long productModelId;
+//    @Column(name = "Product_Category_ID")
+//    private Long productCategoryId;
+//
+//    @Column(name = "Product_Brand_ID")
+//    private Long productBrandId;
+//
+//    @Column(name = "Product_Model_ID")
+//    private Long productModelId;
 
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Users.class)

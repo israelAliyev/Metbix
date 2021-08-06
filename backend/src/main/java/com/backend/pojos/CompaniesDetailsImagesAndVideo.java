@@ -40,7 +40,9 @@ public class CompaniesDetailsImagesAndVideo {
     @Column(name = "Company_Detail_Video")
     private String companyDetailVideo;
 
-    @Column(name = "Company_ID")
-    private Long companyId;
+//    @Column(name = "Company_ID")
+//    private Long companyId;
+
+
 
 }

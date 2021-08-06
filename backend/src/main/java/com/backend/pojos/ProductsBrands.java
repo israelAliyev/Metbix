@@ -20,11 +20,11 @@ public class ProductsBrands {
     @Column(name = "Brand_Name")
     private String brandName;
 
-    @Column(name = "Category_ID")
-    private Long categoryId;
+//    @Column(name = "Category_ID")
+//    private Long categoryId;
 
-    @Column(name = "Department_ID")
-    private Long departmentId;
+//    @Column(name = "Department_ID")
+//    private Long departmentId;
 
 
     @OneToMany(fetch = FetchType.LAZY, targetEntity = Products.class , mappedBy = "productModel")

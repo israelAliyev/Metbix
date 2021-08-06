@@ -25,11 +25,11 @@ public class CompaniesDetailsMarketsAndBranches {
     @Column(name = "Continent_Verified")
     private Byte continentVerified;
 
-    @Column(name = "Company_ID")
-    private Long companyId;
-
-    @Column(name = "Continent_ID")
-    private Long continentId;
+//    @Column(name = "Company_ID")
+//    private Long companyId;
+//
+//    @Column(name = "Continent_ID")
+//    private Long continentId;
 
 
 

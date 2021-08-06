@@ -48,14 +48,12 @@ public class Companies {
     private Byte companyEmailVerified;
 
     @Column(name = "Company_RegistrationDate")
-    @Temporal(TemporalType.TIMESTAMP)
     private java.sql.Timestamp companyRegistrationDate;
 
     @Column(name = "Company_VerificationCode")
     private String companyVerificationCode;
 
     @Column(name = "Company_UpdateDate")
-    @Temporal(TemporalType.TIMESTAMP)
     private java.sql.Timestamp companyUpdateDate;
 
     @Column(name = "Company_IP")
@@ -64,9 +62,8 @@ public class Companies {
     @Column(name = "Company_Address")
     private String companyAddress;
 
-    @Column(name = "Company_Role" , nullable = false)
-    @JoinColumn(name = "Company_Role", table = "Companies")
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Roles.class)
+    @JoinColumn(name = "Company_Role", table = "Companies", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
     private Roles companyRole;
 
     @Column(name = "Company_Profile_Photo")
@@ -91,26 +88,26 @@ public class Companies {
 
 
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = Products.class , orphanRemoval = true)
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = com.backend.pojos.Products.class , orphanRemoval = true)
     @JoinTable(name = "II_companies_products",
             joinColumns = {@JoinColumn(name = "Company_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
     )
-    private List<Products> products;
+    private List<com.backend.pojos.Products> products;
 
 
 
-    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.LAZY , targetEntity = CompaniesDetailsImagesAndVideo.class)
+    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.LAZY , targetEntity = com.backend.pojos.CompaniesDetailsImagesAndVideo.class)
     @JoinColumn(name="Company_ID")
-    private List<CompaniesDetailsImagesAndVideo> companiesDetailsImagesAndVideos;
+    private List<com.backend.pojos.CompaniesDetailsImagesAndVideo> companiesDetailsImagesAndVideos;
 
-    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.LAZY , targetEntity = CompaniesDetailsMarketsAndBranches.class)
+    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.LAZY , targetEntity = com.backend.pojos.CompaniesDetailsMarketsAndBranches.class)
     @JoinColumn(name="Company_ID")
-    private List<CompaniesDetailsMarketsAndBranches> companiesDetailsMarketsAndBranches;
+    private List<com.backend.pojos.CompaniesDetailsMarketsAndBranches> companiesDetailsMarketsAndBranches;
 
-    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.LAZY, targetEntity = CompaniesDetailsProductionCertifications.class)
+    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.LAZY, targetEntity = com.backend.pojos.CompaniesDetailsProductionCertifications.class)
     @JoinColumn(name="Company_ID")
-    private List<CompaniesDetailsProductionCertifications> companiesDetailsProductionCertifications;
+    private List<com.backend.pojos.CompaniesDetailsProductionCertifications> companiesDetailsProductionCertifications;
 
 
 
