@@ -32,7 +32,7 @@ function App() {
             {/*<Products/>*/}
             {/*<ProductInfo/>*/}
             {/*<Register/>*/}
-            <Login/>
+            {/*<Login/>*/}
             {/*<SellProduct/>*/}
             {/*<ProfileSettings/>*/}
             {/*<Help/>*/}

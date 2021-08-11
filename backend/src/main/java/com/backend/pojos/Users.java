@@ -5,7 +5,6 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
 import java.util.List;
-import java.util.Optional;
 
 @Entity
 @Table(name = "users")
@@ -80,4 +79,22 @@ public class Users {
             inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
     )
     private List<Products> products;
+
+
+    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Products.class)
+    @JoinTable(name = "II_users_request_products",
+            joinColumns = {@JoinColumn(name = "User_ID")},
+
+            inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
+    )
+    private List<Products> requestProducts;
+
+
+    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Products.class)
+    @JoinTable(name = "II_users_basket",
+            joinColumns = {@JoinColumn(name = "User_ID")},
+
+            inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
+    )
+    private List<Products> basketProducts;
 }

@@ -1,20 +1,17 @@
 package com.backend.services;
 
-import com.backend.dtos.EmailValidator;
+import com.backend.mail.EmailValidator;
 import com.backend.dtos.RegistrationRequest;
-import com.backend.dtos.token.ConfirmationTokenService;
 import com.backend.pojos.EmailConfirmationToken;
 import com.backend.pojos.Roles;
 import com.backend.pojos.Users;
 import com.backend.repositories.RepositoryRole;
 import com.backend.security.UserDetailsServiceImpl;
-import com.backend.services.email.EmailSender;
+import com.backend.mail.EmailSender;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.management.relation.Role;
-import java.sql.Struct;
 import java.time.LocalDateTime;
 
 @Service

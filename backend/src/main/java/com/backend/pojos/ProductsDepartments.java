@@ -20,8 +20,7 @@ public class ProductsDepartments {
     @Column(name = "Department")
     private String department;
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = ProductsCategories.class)
-    @JoinColumn(name="Department_ID", nullable=false)
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = ProductsCategories.class, mappedBy = "department")
     private List<ProductsCategories> productCategories;
 
 

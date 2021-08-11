@@ -20,8 +20,9 @@ public class ProductsCategories {
     @Column(name = "Category_Name")
     private String categoryName;
 
-//    @Column(name = "Department_ID")
-//    private Long departmentId;
+    @JoinColumn(name = "Department_ID")
+    @ManyToOne(fetch = FetchType.LAZY ,targetEntity = ProductsDepartments.class)
+    private ProductsDepartments department;
 
 
     @OneToMany(fetch = FetchType.LAZY, targetEntity = Products.class , mappedBy = "productCategory")
@@ -174,9 +175,6 @@ public class ProductsCategories {
     @OneToOne(fetch = FetchType.LAZY, targetEntity = ProductsHomeOptions.class)
     @JoinColumn(name="Category_ID")
     private ProductsHomeOptions productsHomeOptions;
-
-
-
 
 
 }

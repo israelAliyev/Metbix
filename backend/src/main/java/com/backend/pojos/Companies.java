@@ -44,8 +44,8 @@ public class Companies {
     @Column(name = "Company_Year_Established")
     private Integer companyYearEstablished;
 
-    @Column(name = "Company_EmailVerified")
-    private Byte companyEmailVerified;
+    @Column(name = "Company_EmailVerified" , columnDefinition="tinyint(1) default 1")
+    private Boolean companyEmailVerified = false;
 
     @Column(name = "Company_RegistrationDate")
     private java.sql.Timestamp companyRegistrationDate;
@@ -110,5 +110,24 @@ public class Companies {
     private List<com.backend.pojos.CompaniesDetailsProductionCertifications> companiesDetailsProductionCertifications;
 
 
+
+    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Products.class)
+    @JoinTable(name = "II_companies_request_products",
+            joinColumns = {@JoinColumn(name = "Company_ID")},
+
+            inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
+    )
+    private List<Products> requestProducts;
+
+
+
+
+    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Products.class)
+    @JoinTable(name = "II_companies_basket",
+            joinColumns = {@JoinColumn(name = "Company_ID")},
+
+            inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
+    )
+    private List<Products> basketProducts;
 
 }
