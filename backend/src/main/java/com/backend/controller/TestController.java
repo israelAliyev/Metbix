@@ -22,7 +22,7 @@ public class TestController {
     @Autowired
     private RepositoryRole repositoryRole;
 
-    @GetMapping("")
+    @GetMapping("/wfsef")
     public Boolean welcome() {
 //
 //        Users user = new Users();

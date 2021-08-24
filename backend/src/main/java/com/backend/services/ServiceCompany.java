@@ -1,17 +1,21 @@
 package com.backend.services;
 
+import com.backend.dtos.UpdateCompanyRequest;
+import com.backend.dtos.UpdateUserRequest;
+import com.backend.pojos.Companies;
 import com.backend.pojos.Products;
 
 import java.util.List;
 
 public interface ServiceCompany {
 
-    List<Products> getComapnysProducts(Long id);
+   Companies getCompanyInfo(Long id);
 
-    List<Products> getComapnysRequestProducts(Integer id);
+    void saveComapnysRequestProduct(Long id , Long productId);
 
-    void saveComapnysRequestProduct(Integer id , Integer productId);
+    void saveComapnysBasketProduct(Long id , Long productId);
 
-    void saveComapnysBasketProduct(Integer id , Integer productId);
+    void updateCompany(Long id, UpdateCompanyRequest request);
+
 
 }

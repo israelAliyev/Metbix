@@ -1,0 +1,132 @@
+
+.search-profiles {
+    padding: 0 20rem;
+}
+
+.search-profiles .header span {
+    width: 100%;
+    background: #DCDEE3;
+    border-radius: 10px;
+    height: 0.5rem;
+}
+
+.search-profiles .header h3 {
+    color: #131313;
+    margin: 0 1rem;
+    text-transform: uppercase;
+}
+
+
+.search-profiles .item {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin-bottom: 5rem;
+
+}
+
+.search-profiles .item .name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #0a58ca;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 2rem;
+}
+
+.search-profiles .item .name span {
+
+    margin: 0 !important;
+    background-color: whitesmoke;
+    color: #6e6c6c;
+    border-radius: 5px;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.4rem;
+}
+
+.search-profiles .item .image {
+    width: 18rem;
+    height: 21rem;
+    position: relative;
+    overflow: hidden;
+    margin-right: 5rem;
+}
+
+.search-profiles .item .image img {
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.search-profiles .item a {
+    display: flex;
+    align-items: center;
+    background-color: #ffd400;
+    color: white;
+    border-radius: 5px;
+    width: 9rem;
+    height: 2rem;
+    font-size: 0.95rem;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-profiles .item a:hover {
+    color: white;
+}
+
+.search-profiles .item a i {
+    margin-right: 0.3rem;
+    font-size: 1rem !important;
+}
+
+.search-profiles .item p {
+    font-size: 0.9rem;
+}
+
+.search-profiles .item p span {
+    color: #5a5959;
+    margin-right: 0.3rem;
+}
+
+.search-profiles .item .desc {
+    width: 100%;
+    padding: 1rem 0 0 0;
+    margin-top: 2rem;
+    border-top: 1px solid #969595;
+    color: #4c4c4c;
+}
+
+@media only screen and (max-width: 1025px){
+
+    .search-profiles {
+
+        padding: 0 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 576px){
+
+    .search-profiles {
+        padding: 0;
+    }
+
+
+    .search-profiles .item .info{
+        margin-top: 2rem;
+    }
+
+
+    .search-profiles .item a {
+        margin-top: 1.5rem;
+    }
+
+    }

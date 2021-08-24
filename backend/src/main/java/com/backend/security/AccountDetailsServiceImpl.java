@@ -1,5 +1,7 @@
 package com.backend.security;
 
+import com.backend.pojos.Companies;
+import com.backend.repositories.RepositoryCompany;
 import com.backend.services.ConfirmationTokenService;
 import com.backend.pojos.EmailConfirmationToken;
 import com.backend.pojos.Users;
@@ -17,9 +19,10 @@ import java.util.UUID;
 
 @Service
 @AllArgsConstructor
-public class UserDetailsServiceImpl implements UserDetailsService {
+public class AccountDetailsServiceImpl implements UserDetailsService {
 
-    private RepositoryUser repositoryUser;
+    private final RepositoryUser repositoryUser;
+    private final RepositoryCompany repositoryCompany;
 
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
     private final ConfirmationTokenService confirmationTokenService;
@@ -29,12 +32,17 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 
         Users user = repositoryUser.findByUserEmail(email);
+        Companies company = repositoryCompany.findByCompanyEmail(email);
 
-        if (repositoryUser == null) {
-            throw new UsernameNotFoundException("Email " + email + " not found");
-        } else {
+        if (user != null) {
+
             return new com.backend.security.UserDetails(user);
+        } else if (company != null) {
 
+            return new com.backend.security.CompanyDetails(company);
+        } else {
+
+            throw new UsernameNotFoundException("Email " + email + " not found");
         }
     }
 
@@ -64,7 +72,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         confirmationToken.setToken(token);
         confirmationToken.setUser(user);
         confirmationToken.setCreatedDate(LocalDateTime.now());
-        confirmationToken.setExpiredDate(LocalDateTime.now().plusMinutes(15));
 
         confirmationTokenService.saveConfirmationToken(confirmationToken);
 
@@ -74,7 +81,49 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     }
 
+
+    public String signUpCompany(Companies company) {
+
+        Companies companyExists = repositoryCompany.findByCompanyEmail(company.getCompanyEmail());
+
+
+        if(companyExists != null) {
+            // TODO check of attributes are the same and
+            // TODO if email not confirmed send confirmation email.
+
+            throw new IllegalStateException("email already taken");
+        }
+
+        String encodedPassword = bCryptPasswordEncoder.encode(company.getCompanyPassword());
+
+        company.setCompanyPassword(encodedPassword);
+
+        repositoryCompany.save(company);
+
+
+        String token = UUID.randomUUID().toString();
+
+        EmailConfirmationToken confirmationToken = new EmailConfirmationToken();
+
+        confirmationToken.setToken(token);
+        confirmationToken.setCompany(company);
+        confirmationToken.setCreatedDate(LocalDateTime.now());
+
+        confirmationTokenService.saveConfirmationToken(confirmationToken);
+
+//        TODO: SEND EMAIL
+
+        return token;
+
+    }
+
+
     public void enableAppUser(String userEmail) {
         repositoryUser.enableAppUser(userEmail);
+    }
+
+
+    public void enableAppCompany(String companyEmail) {
+        repositoryCompany.enableAppCompany(companyEmail);
     }
 }

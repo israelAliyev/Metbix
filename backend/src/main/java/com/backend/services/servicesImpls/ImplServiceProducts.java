@@ -1,19 +1,27 @@
 package com.backend.services.servicesImpls;
 
+import com.backend.dtos.AddProductRequest;
+import com.backend.dtos.ProductReviewRequest;
 import com.backend.pojos.*;
-import com.backend.repositories.RepositoryProducts;
+import com.backend.repositories.*;
+import com.backend.repositories.options.*;
 import com.backend.services.ServiceProducts;
 import lombok.AllArgsConstructor;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.EntityGraph;
+import org.springframework.data.relational.core.sql.In;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
@@ -23,6 +31,47 @@ public class ImplServiceProducts implements ServiceProducts {
 
 
     private final RepositoryProducts repositoryProducts;
+    private final RepositoryUser repositoryUser;
+    private final RepositoryCompany repositoryCompany;
+    private final RepositoryProductReviews repositoryProductReviews;
+    private final RepositoryDepartments repositoryDepartments;
+    private final RepositoryCategory repositoryCategory;
+    private final RepositoryBrands repositoryBrands;
+    private final RepositoryModels repositoryModels;
+    private final RepositoryApparelFabricType repositoryApparelFabricType;
+    private final RepositoryApparelGenderAgeRange repositoryApparelGenderAgeRange;
+    private final RepositoryApparelSizes repositoryApparelSizes;
+    private final RepositoryAutomotiveCrash repositoryAutomotiveCrash;
+    private final RepositoryAutomotiveDistanceTraveleds repositoryAutomotiveDistanceTraveleds;
+    private final RepositoryAutomotiveEngine repositoryAutomotiveEngine;
+    private final RepositoryAutomotiveFuel repositoryAutomotiveFuel;
+    private final RepositoryAutomotiveMaxSpeed repositoryAutomotiveMaxSpeed;
+    private final RepositoryAutomotiveSeat repositoryAutomotiveSeat;
+    private final RepositoryAutomotiveType repositoryAutomotiveType;
+    private final RepositoryElectronicsBattery repositoryElectronicsBattery;
+    private final RepositoryElectronicsCamera repositoryElectronicsCamera;
+    private final RepositoryElectronicsFrontCamera repositoryElectronicsFrontCamera;
+    private final RepositoryElectronicsCellularTechnology repositoryElectronicsCellularTechnology;
+    private final RepositoryElectronicsComputerType repositoryElectronicsComputerType;
+    private final RepositoryElectronicsDisplayTypes repositoryElectronicsDisplayTypes;
+    private final RepositoryElectronicsGraphicsCard repositoryElectronicsGraphicsCard;
+    private final RepositoryElectronicsMemory repositoryElectronicsMemory;
+    private final RepositoryElectronicsOperatingSystem repositoryElectronicsOperatingSystem;
+    private final RepositoryElectronicsProcessor repositoryElectronicsProcessor;
+    private final RepositoryElectronicsRam repositoryElectronicsRam;
+    private final RepositoryElectronicsScreenSize repositoryElectronicsScreenSize;
+    private final RepositoryElectronicsWirelessCarrier repositoryElectronicsWirelessCarrier;
+    private final RepositoryMusicInstruments repositoryMusicInstruments;
+    private final RepositoryProductColors repositoryProductColors;
+
+
+
+    public Products getProductInfo(Long productId) {
+
+        return repositoryProducts.findByProductId(productId);
+    }
+
+
 
 
     @Override
@@ -60,33 +109,33 @@ public class ImplServiceProducts implements ServiceProducts {
                                                         Integer year, Integer minPrice,
                                                         Integer maxPrice, String brand,
                                                         String model,
-                                                        List<ProductsColors> apparelProductsColors,
-                                                        List<ApparelGenderAgeRange> apparelGenderAgeRanges,
-                                                        List<ApparelSize> apparelSizes,
-                                                        List<ApparelFabricType> apparelFabricTypes,
-                                                        List<ProductsColors> automativeProductsColors,
-                                                        List<AutomotiveMaxSpeed> automotiveMaxSpeeds,
-                                                        List<AutomotiveFuel> automotiveFuels,
-                                                        List<AutomotiveSeat> automotiveSeats,
-                                                        List<AutomotiveType> automotiveTypes,
-                                                        List<AutomotiveCrash> automotiveCrashes,
-                                                        List<AutomotiveDistanceTraveled> automotiveDistanceTraveleds,
-                                                        List<AutomotiveEngine> automotiveEngines,
-                                                        List<ProductsColors> electronicsProductsColors,
-                                                        List<ElectronicsMemory> electronicsMemories,
-                                                        List<ElectronicsCamera> electronicsCameras,
-                                                        List<ElectronicsFrontCamera> electronicsFrontCameras,
-                                                        List<ElectronicsWirelessCarrier> electronicsWirelessCarriers,
-                                                        List<ElectronicsOperatingSystem> electronicsOperatingSystems,
-                                                        List<ElectronicsScreenSize> electronicsScreenSizes,
-                                                        List<ElectronicsDisplayType> electronicsDisplayTypes,
-                                                        List<ElectronicsCellularTechnology> electronicsCellularTechnologies,
-                                                        List<ElectronicsBattery> electronicsBatteries,
-                                                        List<ElectronicsProcessor> electronicsProcessors,
-                                                        List<ElectronicsRam> electronicsRams,
-                                                        List<ElectronicsGraphicsCard> electronicsGraphicsCards,
-                                                        List<ElectronicsComputerType> electronicsComputerTypes,
-                                                        List<MusicInstrument> musicInstruments, Pageable pageable) {
+                                                        Set<ProductsColors> apparelProductsColors,
+                                                        Set<ApparelGenderAgeRange> apparelGenderAgeRanges,
+                                                        Set<ApparelSize> apparelSizes,
+                                                        Set<ApparelFabricType> apparelFabricTypes,
+                                                        Set<ProductsColors> automativeProductsColors,
+                                                        Set<AutomotiveMaxSpeed> automotiveMaxSpeeds,
+                                                        Set<AutomotiveFuel> automotiveFuels,
+                                                        Set<AutomotiveSeat> automotiveSeats,
+                                                        Set<AutomotiveType> automotiveTypes,
+                                                        Set<AutomotiveCrash> automotiveCrashes,
+                                                        Set<AutomotiveDistanceTraveled> automotiveDistanceTraveleds,
+                                                        Set<AutomotiveEngine> automotiveEngines,
+                                                        Set<ProductsColors> electronicsProductsColors,
+                                                        Set<ElectronicsMemory> electronicsMemories,
+                                                        Set<ElectronicsCamera> electronicsCameras,
+                                                        Set<ElectronicsFrontCamera> electronicsFrontCameras,
+                                                        Set<ElectronicsWirelessCarrier> electronicsWirelessCarriers,
+                                                        Set<ElectronicsOperatingSystem> electronicsOperatingSystems,
+                                                        Set<ElectronicsScreenSize> electronicsScreenSizes,
+                                                        Set<ElectronicsDisplayType> electronicsDisplayTypes,
+                                                        Set<ElectronicsCellularTechnology> electronicsCellularTechnologies,
+                                                        Set<ElectronicsBattery> electronicsBatteries,
+                                                        Set<ElectronicsProcessor> electronicsProcessors,
+                                                        Set<ElectronicsRam> electronicsRams,
+                                                        Set<ElectronicsGraphicsCard> electronicsGraphicsCards,
+                                                        Set<ElectronicsComputerType> electronicsComputerTypes,
+                                                        Set<MusicInstrument> musicInstruments, Pageable pageable) {
 
         List<Products> productsList = repositoryProducts.getProductsWithCategory(category, pageable);
 
@@ -770,31 +819,91 @@ public class ImplServiceProducts implements ServiceProducts {
     }
 
     @Override
-    public long getProductRating(Integer id) {
+    public ResponseEntity<String> getProductRating(Long id) throws JSONException {
 
-        Products product = repositoryProducts.findById(id).orElse(null);
+        JSONObject ratings = new JSONObject();
+
+        Products product = repositoryProducts.findByProductId(id);
 
         double rating = product.getProductRating() / product.getProductEvaluateCount();
 
-        return Math.round(rating);
+        Integer fiveStars = product.getProductFiveStars();
+        Integer fourStars = product.getProductFourStars();
+        Integer threeStars = product.getProductThreeStars();
+        Integer twoStars = product.getProductTwoStars();
+        Integer oneStar = product.getProductOneStar();
+
+
+        List<ProductReviewRequest> productReviewRequestList = new ArrayList<>();
+
+        for (ProductReviews review : product.getProductReviews()) {
+
+            productReviewRequestList.add(new ProductReviewRequest(review.getReviewTitle(),
+                    review.getReviewDescription(), review.getReviewRating(), review.getUser() != null ? review.getUser().getUserName() : review.getCompany().getCompanyName(), review.getReviewDate()));
+        }
+
+        ratings.put("rating", Math.round(rating));
+        ratings.put("fiveStars", fiveStars);
+        ratings.put("fourStars", fourStars);
+        ratings.put("threeStars", threeStars);
+        ratings.put("twoStars", twoStars);
+        ratings.put("oneStar", oneStar);
+        ratings.put("reviews", productReviewRequestList);
+
+        return new ResponseEntity<String>(ratings.toString(), HttpStatus.OK);
     }
 
 
     @Override
-    public void productEvaluate(Integer id, Integer rating) {
+    public void productEvaluate(Long id, Integer rating, String reviewTitle, String reviewDescription, String accountType, Long accountID) {
 
-        Products product = repositoryProducts.findById(id).orElse(null);
+        Products product = repositoryProducts.findByProductId(id);
 
         product.setProductRating(product.getProductRating() + rating);
         product.setProductEvaluateCount(product.getProductEvaluateCount() + 1);
 
+        if (rating == 5) {
+            product.setProductFiveStars(product.getProductFiveStars() + 1);
+        } else if (rating == 4) {
+            product.setProductFourStars(product.getProductFourStars() + 1);
+        } else if (rating == 3) {
+            product.setProductThreeStars(product.getProductThreeStars() + 1);
+        } else if (rating == 2) {
+            product.setProductTwoStars(product.getProductTwoStars() + 1);
+        } else {
+            product.setProductOneStar(product.getProductOneStar() + 1);
+        }
+
+        LocalDateTime date = LocalDateTime.now();
+
+        ProductReviews productReviews = new ProductReviews();
+        productReviews.setProduct(product);
+        productReviews.setReviewTitle(reviewTitle);
+        productReviews.setReviewDescription(reviewDescription);
+        productReviews.setReviewRating(rating);
+        productReviews.setReviewDate(date);
+
+        if (accountType.equals("user")) {
+
+            Users user = repositoryUser.findById(accountID).orElse(null);
+
+            productReviews.setUser(user);
+        } else {
+            Companies user = repositoryCompany.findById(accountID).orElse(null);
+            productReviews.setCompany(user);
+        }
+
+
+        repositoryProductReviews.save(productReviews);
+
         repositoryProducts.save(product);
     }
 
-    @Override
-    public void addProductRequestCount(Integer id) {
 
-        Products product = repositoryProducts.findById(id).orElse(null);
+    @Override
+    public void addProductRequestCount(Long id) {
+
+        Products product = repositoryProducts.findByProductId(id);
         product.setProductRequestCount(product.getProductRequestCount() + 1);
     }
 
@@ -808,6 +917,453 @@ public class ImplServiceProducts implements ServiceProducts {
         filteredListProducts = listProducts.stream().limit(5).collect(Collectors.toList());
 
         return filteredListProducts;
+    }
+
+    @Override
+    public void addProduct(AddProductRequest addProductRequest) {
+
+
+        Products product = new Products();
+        product.setProductPrice(addProductRequest.getProductPrice());
+        product.setProductOldPrice(addProductRequest.getProductOldPrice());
+        product.setProductWeight(addProductRequest.getProductWeight());
+        product.setProductShortDesc(addProductRequest.getProductShortDesc());
+        product.setProductLongDesc(addProductRequest.getProductLongDesc());
+        product.setProductCoverPhoto(addProductRequest.getProductCoverPhoto());
+        product.setProductUpdateDate(addProductRequest.getProductUpdateDate());
+        product.setProductCreateDate(addProductRequest.getProductCreateDate());
+        product.setProductStatus(addProductRequest.getProductStatus());
+        product.setProductWarranty(addProductRequest.getProductWarranty());
+        product.setProductDomesticShipping(addProductRequest.getProductDomesticShipping());
+        product.setProductInternationalShipping(addProductRequest.getProductInternationalShipping());
+        product.setProductYear(addProductRequest.getProductYear());
+        product.setProductCurrency(addProductRequest.getProductCurrency());
+        product.setProductsPictures(addProductRequest.getProductsPictures());
+
+        if (addProductRequest.getUserID() != null) {
+
+            Users user = repositoryUser.findById(addProductRequest.getUserID()).orElse(null);
+
+            product.setUser(user);
+
+        } else if (addProductRequest.getCompanyID() != null) {
+
+            Companies company = repositoryCompany.findById(addProductRequest.getCompanyID()).orElse(null);
+
+            product.setCompany(company);
+        }
+
+        product.setProductsJobOptions(addProductRequest.getProductsJobOptions());
+        product.setProductsHomeOptions(addProductRequest.getProductsHomeOptions());
+
+
+        product.setProductDepartment(repositoryDepartments.findById(addProductRequest.getProductDepartment().getDepartmentId()).orElse(null));
+        product.setProductCategory(repositoryCategory.findById(addProductRequest.getProductCategory().getCategoryId()).orElse(null));
+
+        product.setProductBrand(repositoryBrands.findById(addProductRequest.getProductBrand().getBrandId()).orElse(null));
+
+        product.setProductModel(repositoryModels.findById(addProductRequest.getProductModel().getModelId()).orElse(null));
+
+
+        if(!addProductRequest.getApparelProductsColors().isEmpty()) {
+
+            Set<ProductsColors> productsColorsSet = new HashSet<>();
+
+            for(ProductsColors pc : addProductRequest.getApparelProductsColors()) {
+
+                repositoryProductColors.findById(pc.getColorId()).ifPresent(productsColorsSet :: add);
+            }
+
+            product.setApparelProductsColors(productsColorsSet);
+
+        }
+
+
+
+        if(!addProductRequest.getApparelGenderAgeRanges().isEmpty()) {
+
+            Set<ApparelGenderAgeRange> productsApparelGenderAgeRangeSet = new HashSet<ApparelGenderAgeRange>();
+
+            for(ApparelGenderAgeRange aga : addProductRequest.getApparelGenderAgeRanges()) {
+
+                repositoryApparelGenderAgeRange.findById(aga.getGenderId()).ifPresent(productsApparelGenderAgeRangeSet :: add);
+            }
+
+            product.setApparelGenderAgeRanges(productsApparelGenderAgeRangeSet);
+
+        }
+
+
+
+        if(!addProductRequest.getApparelSizes().isEmpty()) {
+
+            Set<ApparelSize> productsApparelSizeSet = new HashSet<>();
+
+            for(ApparelSize as : addProductRequest.getApparelSizes()) {
+
+                repositoryApparelSizes.findById(as.getSizeId()).ifPresent(productsApparelSizeSet :: add);
+            }
+
+            product.setApparelSizes(productsApparelSizeSet);
+
+        }
+
+
+
+        if(!addProductRequest.getApparelFabricTypes().isEmpty()) {
+
+            Set<ApparelFabricType> productsApparelFabricTypeSet = new HashSet<>();
+
+            for(ApparelFabricType aft : addProductRequest.getApparelFabricTypes()) {
+
+                repositoryApparelFabricType.findById(aft.getFabricTypeId())
+                        .ifPresent(productsApparelFabricTypeSet :: add);
+            }
+
+            product.setApparelFabricTypes(productsApparelFabricTypeSet);
+
+        }
+
+
+        if(!addProductRequest.getAutomativeProductsColors().isEmpty()) {
+
+            Set<ProductsColors> productsAutomotiveProductsColorsSet = new HashSet<>();
+
+            for(ProductsColors pc : addProductRequest.getAutomativeProductsColors()) {
+
+                repositoryProductColors.findById(pc.getColorId())
+                        .ifPresent(productsAutomotiveProductsColorsSet :: add);
+            }
+
+            product.setAutomativeProductsColors(productsAutomotiveProductsColorsSet);
+
+        }
+
+
+        if(!addProductRequest.getAutomotiveMaxSpeeds().isEmpty()) {
+
+            Set<AutomotiveMaxSpeed> OptionSet = new HashSet<>();
+
+            for(AutomotiveMaxSpeed ams : addProductRequest.getAutomotiveMaxSpeeds()) {
+
+                repositoryAutomotiveMaxSpeed.findById(ams.getMaxSpeedId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setAutomotiveMaxSpeeds(OptionSet);
+
+        }
+
+
+        if(!addProductRequest.getAutomotiveFuels().isEmpty()) {
+
+            Set<AutomotiveFuel> OptionSet = new HashSet<>();
+
+            for(AutomotiveFuel o : addProductRequest.getAutomotiveFuels()) {
+
+                repositoryAutomotiveFuel.findById(o.getFuelId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setAutomotiveFuels(OptionSet);
+        }
+
+
+
+        if(!addProductRequest.getAutomotiveSeats().isEmpty()) {
+
+            Set<AutomotiveSeat> OptionSet = new HashSet<>();
+
+            for(AutomotiveSeat o : addProductRequest.getAutomotiveSeats()) {
+
+                repositoryAutomotiveSeat.findById(o.getSeatId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setAutomotiveSeats(OptionSet);
+        }
+
+
+        if(!addProductRequest.getAutomotiveTypes().isEmpty()) {
+
+            Set<AutomotiveType> OptionSet = new HashSet<>();
+
+            for(AutomotiveType o : addProductRequest.getAutomotiveTypes()) {
+
+                repositoryAutomotiveType.findById(o.getTypeId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setAutomotiveTypes(OptionSet);
+        }
+
+
+
+        if(!addProductRequest.getAutomotiveCrashes().isEmpty()) {
+
+            Set<AutomotiveCrash> OptionSet = new HashSet<>();
+
+            for(AutomotiveCrash o : addProductRequest.getAutomotiveCrashes()) {
+
+                repositoryAutomotiveCrash.findById(o.getCrashId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setAutomotiveCrashes(OptionSet);
+        }
+
+
+        if(!addProductRequest.getAutomotiveDistanceTraveleds().isEmpty()) {
+
+            Set<AutomotiveDistanceTraveled> OptionSet = new HashSet<>();
+
+            for(AutomotiveDistanceTraveled o : addProductRequest.getAutomotiveDistanceTraveleds()) {
+
+                repositoryAutomotiveDistanceTraveleds.findById(o.getDistanceTraveledId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setAutomotiveDistanceTraveleds(OptionSet);
+        }
+
+
+        if(!addProductRequest.getAutomotiveEngines().isEmpty()) {
+
+            Set<AutomotiveEngine> OptionSet = new HashSet<>();
+
+            for(AutomotiveEngine o : addProductRequest.getAutomotiveEngines()) {
+
+                repositoryAutomotiveEngine.findById(o.getEngineId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setAutomotiveEngines(OptionSet);
+        }
+
+
+        if(!addProductRequest.getElectronicsProductsColors().isEmpty()) {
+
+            Set<ProductsColors> OptionSet = new HashSet<>();
+
+            for(ProductsColors o : addProductRequest.getElectronicsProductsColors()) {
+
+                repositoryProductColors.findById(o.getColorId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsProductsColors(OptionSet);
+        }
+
+
+        if(!addProductRequest.getElectronicsMemories().isEmpty()) {
+
+            Set<ElectronicsMemory> OptionSet = new HashSet<>();
+
+            for(ElectronicsMemory o : addProductRequest.getElectronicsMemories()) {
+
+                repositoryElectronicsMemory.findById(o.getMemoryId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsMemories(OptionSet);
+        }
+
+
+
+        if(!addProductRequest.getElectronicsCameras().isEmpty()) {
+
+            Set<ElectronicsCamera> OptionSet = new HashSet<>();
+
+            for(ElectronicsCamera o : addProductRequest.getElectronicsCameras()) {
+
+                repositoryElectronicsCamera.findById(o.getCameraId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsCameras(OptionSet);
+        }
+
+
+
+        if(!addProductRequest.getElectronicsFrontCameras().isEmpty()) {
+
+            Set<ElectronicsFrontCamera> OptionSet = new HashSet<>();
+
+            for(ElectronicsFrontCamera o : addProductRequest.getElectronicsFrontCameras()) {
+
+                repositoryElectronicsFrontCamera.findById(o.getFrontCameraId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsFrontCameras(OptionSet);
+        }
+
+
+        if(!addProductRequest.getElectronicsWirelessCarriers().isEmpty()) {
+
+            Set<ElectronicsWirelessCarrier> OptionSet = new HashSet<>();
+
+            for(ElectronicsWirelessCarrier o : addProductRequest.getElectronicsWirelessCarriers()) {
+
+                repositoryElectronicsWirelessCarrier.findById(o.getWirelessCarrierId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsWirelessCarriers(OptionSet);
+        }
+
+
+
+        if(!addProductRequest.getElectronicsOperatingSystems().isEmpty()) {
+
+            Set<ElectronicsOperatingSystem> OptionSet = new HashSet<>();
+
+            for(ElectronicsOperatingSystem o : addProductRequest.getElectronicsOperatingSystems()) {
+
+                repositoryElectronicsOperatingSystem.findById(o.getOperatingSystemId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsOperatingSystems(OptionSet);
+        }
+
+
+        if(!addProductRequest.getElectronicsScreenSizes().isEmpty()) {
+
+            Set<ElectronicsScreenSize> OptionSet = new HashSet<>();
+
+            for(ElectronicsScreenSize o : addProductRequest.getElectronicsScreenSizes()) {
+
+                repositoryElectronicsScreenSize.findById(o.getScreenSizeId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsScreenSizes(OptionSet);
+        }
+
+
+        if(!addProductRequest.getElectronicsDisplayTypes().isEmpty()) {
+
+            Set<ElectronicsDisplayType> OptionSet = new HashSet<>();
+
+            for(ElectronicsDisplayType o : addProductRequest.getElectronicsDisplayTypes()) {
+
+                repositoryElectronicsDisplayTypes.findById(o.getDisplayTypeId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsDisplayTypes(OptionSet);
+        }
+
+
+
+
+        if(!addProductRequest.getElectronicsCellularTechnologies().isEmpty()) {
+
+            Set<ElectronicsCellularTechnology> OptionSet = new HashSet<>();
+
+            for(ElectronicsCellularTechnology o : addProductRequest.getElectronicsCellularTechnologies()) {
+
+                repositoryElectronicsCellularTechnology.findById(o.getCellularTechnologyId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsCellularTechnologies(OptionSet);
+        }
+
+
+
+        if(!addProductRequest.getElectronicsBatteries().isEmpty()) {
+
+            Set<ElectronicsBattery> OptionSet = new HashSet<>();
+
+            for(ElectronicsBattery o : addProductRequest.getElectronicsBatteries()) {
+
+                repositoryElectronicsBattery.findById(o.getBatteryId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsBatteries(OptionSet);
+        }
+
+
+
+        if(!addProductRequest.getElectronicsProcessors().isEmpty()) {
+
+            Set<ElectronicsProcessor> OptionSet = new HashSet<>();
+
+            for(ElectronicsProcessor o : addProductRequest.getElectronicsProcessors()) {
+
+                repositoryElectronicsProcessor.findById(o.getProcessorId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsProcessors(OptionSet);
+        }
+
+
+
+        if(!addProductRequest.getElectronicsRams().isEmpty()) {
+
+            Set<ElectronicsRam> OptionSet = new HashSet<>();
+
+            for(ElectronicsRam o : addProductRequest.getElectronicsRams()) {
+
+                repositoryElectronicsRam.findById(o.getRamId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsRams(OptionSet);
+        }
+
+
+        if(!addProductRequest.getElectronicsGraphicsCards().isEmpty()) {
+
+            Set<ElectronicsGraphicsCard> OptionSet = new HashSet<>();
+
+            for(ElectronicsGraphicsCard o : addProductRequest.getElectronicsGraphicsCards()) {
+
+                repositoryElectronicsGraphicsCard.findById(o.getGraphicsCardId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsGraphicsCards(OptionSet);
+        }
+
+
+        if(!addProductRequest.getElectronicsComputerTypes().isEmpty()) {
+
+            Set<ElectronicsComputerType> OptionSet = new HashSet<>();
+
+            for(ElectronicsComputerType o : addProductRequest.getElectronicsComputerTypes()) {
+
+                repositoryElectronicsComputerType.findById(o.getTypeId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setElectronicsComputerTypes(OptionSet);
+        }
+
+
+
+        if(!addProductRequest.getMusicInstruments().isEmpty()) {
+
+            Set<MusicInstrument> OptionSet = new HashSet<>();
+
+            for(MusicInstrument o : addProductRequest.getMusicInstruments()) {
+
+                repositoryMusicInstruments.findById(o.getInstrumentId())
+                        .ifPresent(OptionSet :: add);
+            }
+
+            product.setMusicInstruments(OptionSet);
+        }
+
+
+
+
+
+        repositoryProducts.save(product);
     }
 
 }

@@ -19,7 +19,7 @@ export const help_service_data = [
     {
         icon:"/images/help/icons8-buying-96.png",
         title:"Shopping Cart",
-        subtitle:"Manage your products in Basket"
+        subtitle:"Manage your products in profiles"
     },
     {
         icon:"/images/help/icons8-sell-96.png",

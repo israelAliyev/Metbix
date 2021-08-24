@@ -1,15 +1,14 @@
 
-*{
-
+* {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-
-
 }
+
+
 input, input:before, input:after {
     -webkit-user-select: initial;
     -khtml-user-select: initial;
@@ -17,6 +16,7 @@ input, input:before, input:after {
     -ms-user-select: initial;
     user-select: initial;
 }
+
 /*for navbars */
 .main-navbar {
     background-color: #0C2D48;
@@ -39,13 +39,6 @@ input, input:before, input:after {
     color: #ececec;
 }
 
-.for-overflow-dropdown-items {
-
-    max-height: 580px;
-    overflow-y: auto !important;
-    overflow-x: auto !important;
-
-}
 
 /*for navbar site logo*/
 
@@ -53,24 +46,72 @@ input, input:before, input:after {
     height: 36px;
 }
 
-/*for navbar button in search form */
-.navbar-search-form-button {
+
+/*for list of dropdown on account location country form*/
+
+.navbar-account-dropdown .dropdown button {
+    color: white;
+    display: flex;
     border: none;
-    font-size: medium;
+}
+
+.main-navbar .dropdown button::after {
+    display: none;
+}
+
+.main-navbar .dropdown button:focus {
+
+    box-shadow: 0px 0px !important;
+    outline: none !important;
+    border: none !important;
+}
+
+
+.navbar-account-dropdown .dropdown-menu {
+    min-width: auto;
+    font-size: 0.9rem;
+}
+
+.navbar-account-dropdown .dropdown-menu a {
+    padding: 0.2rem 1rem;
+}
+
+
+/*for navbar button in search form */
+.navbar-search-form .dropdown > .dropdown-toggle {
+    border-radius: .25rem 0px 0px .25rem;
+    color: rgb(84, 84, 84);
+    background-color: #f2f3f4;
+    border-color: #d2d2d2;
+    font-size: small;
+    box-shadow: none !important;
+    height: 2.5rem;
+    cursor: pointer !important;
+}
+
+
+.navbar-search-form .dropdown .dropdown-menu {
+    min-width: auto;
+    font-size: 0.9rem;
+}
+
+.navbar-search-form .dropdown  .dropdown-menu a {
+    padding: 0.2rem 1rem;
 }
 
 /*for text input in search form */
+
+
 .navbar-search-form-text-form {
     border: none !important;
-    font-size: 18px;
+    font-size: 18px !important;
     width: 100%;
 }
 
-
-.navbar-search-form-dropdown {
-    font-size: small;
-    box-shadow: none !important;
+.navbar-search-form-text-form:focus{
+  border: none;outline: none;box-shadow: none;
 }
+
 
 .navbar-search-form {
     width: 720px !important;
@@ -82,7 +123,8 @@ input, input:before, input:after {
     border: 2px solid #f90;
     border-radius: 0.40rem;
 }
-.navbar-for-search-form-border:focus-within .navbar-search-form-text-form{
+
+.navbar-for-search-form-border:focus-within .navbar-search-form-text-form {
     font-size: 16px;
 }
 
@@ -162,11 +204,6 @@ input, input:before, input:after {
 }
 
 
-/*for list of dropdown on account location country form*/
-.navbar-account-dropdown ul, .navbar-location-country ul {
-    margin-top: 5px !important;
-}
-
 .navbar-location-country-name {
     font-family: Ayuthaya, sans-serif;
     font-size: 15px;
@@ -178,7 +215,11 @@ input, input:before, input:after {
     margin-top: 0.8rem !important;
 }
 
-/*for navbar notifaction amimation and icons*/
+.navbar-location-country .dropdown .text-secondary{
+    font-size: 0.8rem !important;
+}
+
+    /*for navbar notifaction amimation and icons*/
 
 .navbar-notification span {
 
@@ -233,7 +274,7 @@ input, input:before, input:after {
 .navbar-notification .layer-1 {
     color: #ffffff;
     /*z-index: 9;*/
-    animation: animation-layer-1 infinite 5000ms ;
+    /*animation: animation-layer-1 infinite 5000ms;*/
     opacity: 0;
 }
 
@@ -243,7 +284,7 @@ input, input:before, input:after {
     position: absolute;
     top: 0;
     left: 0;
-    animation: animation-layer-2 infinite 5000ms;
+    /*animation: animation-layer-2 infinite 5000ms;*/
 }
 
 .navbar-notification .layer-3 {
@@ -252,7 +293,7 @@ input, input:before, input:after {
     position: absolute;
     top: 0;
     left: 0;
-    animation: animation-layer-3 infinite 5000ms;
+    /*animation: animation-layer-3 infinite 5000ms;*/
 }
 
 @keyframes animation-layer-1 {
@@ -459,14 +500,13 @@ input, input:before, input:after {
     font-weight: bold;
 }
 
- /*sub navbar*/
+/*sub navbar*/
 
 .sub-navbar {
     background-color: #1b354a !important;
     font-size: 2rem;
     font-weight: bold;
 }
-
 
 
 .sub-navbar li img, .sub-navbar li:hover a {
@@ -494,11 +534,11 @@ input, input:before, input:after {
         justify-content: center !important;
     }
 
-     .navbar-brand {
+    .navbar-brand {
         display: none !important;
     }
 
-    .main-navbar > div > div li , .navbar-search-form{
+    .main-navbar > div > div li, .navbar-search-form {
         display: none !important;
     }
 
@@ -520,18 +560,19 @@ input, input:before, input:after {
     height: 800px !important;
     background-color: #f3f5f6;
 }
-.App{
+
+.App {
 
     background-color: #f5f5f5;
     overflow-x: hidden;
 }
 
 
-.ms-4-5{
+.ms-4-5 {
     margin-left: 2.24rem !important
 }
 
-.cursor-pointer{
+.cursor-pointer {
     cursor: pointer;
 }
 

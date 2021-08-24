@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Repository
-public interface RepositoryRole extends JpaRepository<Roles, Integer> {
+public interface RepositoryRole extends JpaRepository<Roles, Long> {
 
 
 }

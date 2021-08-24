@@ -4,7 +4,10 @@ import lombok.Data;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "companies")
@@ -44,11 +47,14 @@ public class Companies {
     @Column(name = "Company_Year_Established")
     private Integer companyYearEstablished;
 
+
+
     @Column(name = "Company_EmailVerified" , columnDefinition="tinyint(1) default 1")
     private Boolean companyEmailVerified = false;
 
+
     @Column(name = "Company_RegistrationDate")
-    private java.sql.Timestamp companyRegistrationDate;
+    private LocalDateTime companyRegistrationDate;
 
     @Column(name = "Company_VerificationCode")
     private String companyVerificationCode;
@@ -82,52 +88,60 @@ public class Companies {
     @Column(name = "Company_Profile_Back")
     private String companyProfileBack;
 
-    @Column(name = "Company_Other_Addresses")
-    private String companyOtherAddresses;
+    @Column(name = "Company_Other_Address")
+    private String companyOtherAddress;
 
 
 
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = com.backend.pojos.Products.class , orphanRemoval = true)
+
+    @OneToMany(fetch = FetchType.EAGER, targetEntity = com.backend.pojos.Products.class , orphanRemoval = true)
     @JoinTable(name = "II_companies_products",
             joinColumns = {@JoinColumn(name = "Company_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
     )
-    private List<com.backend.pojos.Products> products;
+    private Set<Products> products = new HashSet<Products>();
 
 
 
-    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.LAZY , targetEntity = com.backend.pojos.CompaniesDetailsImagesAndVideo.class)
+    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.EAGER , targetEntity = com.backend.pojos.CompaniesDetailsImagesAndVideo.class)
     @JoinColumn(name="Company_ID")
-    private List<com.backend.pojos.CompaniesDetailsImagesAndVideo> companiesDetailsImagesAndVideos;
+    private Set<CompaniesDetailsImagesAndVideo> companiesDetailsImagesAndVideos = new HashSet<CompaniesDetailsImagesAndVideo>();
 
-    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.LAZY , targetEntity = com.backend.pojos.CompaniesDetailsMarketsAndBranches.class)
+
+    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.EAGER, targetEntity = com.backend.pojos.CompaniesDetailsProductionCertifications.class)
     @JoinColumn(name="Company_ID")
-    private List<com.backend.pojos.CompaniesDetailsMarketsAndBranches> companiesDetailsMarketsAndBranches;
-
-    @OneToMany(cascade=CascadeType.PERSIST , orphanRemoval = true , fetch = FetchType.LAZY, targetEntity = com.backend.pojos.CompaniesDetailsProductionCertifications.class)
-    @JoinColumn(name="Company_ID")
-    private List<com.backend.pojos.CompaniesDetailsProductionCertifications> companiesDetailsProductionCertifications;
+    private Set<CompaniesDetailsProductionCertifications> companiesDetailsProductionCertifications = new HashSet<CompaniesDetailsProductionCertifications>();
 
 
 
-    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Products.class)
+    @ManyToMany(fetch = FetchType.EAGER, targetEntity = Continents.class)
+    @JoinTable(name = "II_companies_continents",
+            joinColumns = {@JoinColumn(name = "Company_ID")},
+
+            inverseJoinColumns = {@JoinColumn(name = "Continent_ID")}
+    )
+    private Set<Continents> companiesDetailsContinents = new HashSet<Continents>();
+
+
+
+    @ManyToMany(fetch = FetchType.EAGER, targetEntity = Products.class)
     @JoinTable(name = "II_companies_request_products",
             joinColumns = {@JoinColumn(name = "Company_ID")},
 
             inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
     )
-    private List<Products> requestProducts;
+    private Set<Products> requestProducts = new HashSet<Products>();
 
 
 
 
-    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Products.class)
+    @ManyToMany(fetch = FetchType.EAGER, targetEntity = Products.class)
     @JoinTable(name = "II_companies_basket",
             joinColumns = {@JoinColumn(name = "Company_ID")},
 
             inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
     )
-    private List<Products> basketProducts;
+    private Set<Products> basketProducts = new HashSet<Products>();
 
 }

@@ -24,9 +24,6 @@ public class EmailConfirmationToken {
     @Column(name = "created_date" , nullable = false)
     private LocalDateTime createdDate;
 
-    @Column(name = "expired_date" , nullable = false)
-    private LocalDateTime expiredDate;
-
     @Column(name = "confirmed_date")
     private LocalDateTime confirmedDate;
 
@@ -37,4 +34,12 @@ public class EmailConfirmationToken {
             inverseJoinColumns = {@JoinColumn(name = "user_id")}
     )
     private Users user;
+
+
+    @ManyToOne(fetch = FetchType.LAZY , optional = false)
+    @JoinTable(name = "II_email_confirmation_token_companies",
+            joinColumns = {@JoinColumn(name = "token_id")},
+            inverseJoinColumns = {@JoinColumn(name = "company_id")}
+    )
+    private Companies company;
 }

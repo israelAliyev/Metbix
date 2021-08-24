@@ -1,10 +1,10 @@
 package com.backend.controller;
 
 
-import com.backend.dtos.RegistrationRequest;
+import com.backend.dtos.RegistrationCompanyRequest;
+import com.backend.dtos.RegistrationUserRequest;
 import com.backend.services.ServiceRegistration;
 import lombok.AllArgsConstructor;
-import org.hibernate.service.ServiceRegistry;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -16,9 +16,14 @@ public class ControllerRegistration {
 
     private final ServiceRegistration serviceRegistration;
 
-    @PostMapping
-    public String register(@RequestBody RegistrationRequest request) {
-        return serviceRegistration.register(request);
+    @PostMapping("/user")
+    public String registerUser(@RequestBody RegistrationUserRequest request) {
+        return serviceRegistration.registerUser(request);
+    }
+
+    @PostMapping("/company")
+    public String registerCompany(@RequestBody RegistrationCompanyRequest request) {
+        return serviceRegistration.registerCompany(request);
     }
 
 

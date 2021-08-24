@@ -1,9 +1,12 @@
 package com.backend.pojos;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "products_job_options")
+@Data
 public class ProductsJobOptions {
 
     @Id
@@ -37,83 +40,5 @@ public class ProductsJobOptions {
     @Column(name = "Experience")
     private String experience;
 
-    public Long getProductId() {
-        return this.productId;
-    }
 
-    public void setProductId(Long productId) {
-        this.productId = productId;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
-
-    public String getJobTitle() {
-        return this.jobTitle;
-    }
-
-    public void setJobTitle(String jobTitle) {
-        this.jobTitle = jobTitle;
-    }
-
-    public java.sql.Timestamp getJobValidTime() {
-        return this.jobValidTime;
-    }
-
-    public void setJobValidTime(java.sql.Timestamp jobValidTime) {
-        this.jobValidTime = jobValidTime;
-    }
-
-    public String getCompany() {
-        return this.company;
-    }
-
-    public void setCompany(String company) {
-        this.company = company;
-    }
-
-    public String getJomEmail() {
-        return this.jomEmail;
-    }
-
-    public void setJomEmail(String jomEmail) {
-        this.jomEmail = jomEmail;
-    }
-
-    public String getCountry() {
-        return this.country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getCity() {
-        return this.city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public Integer getSalary() {
-        return this.salary;
-    }
-
-    public void setSalary(Integer salary) {
-        this.salary = salary;
-    }
-
-    public String getExperience() {
-        return this.experience;
-    }
-
-    public void setExperience(String experience) {
-        this.experience = experience;
-    }
 }

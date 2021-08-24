@@ -1,7 +1,13 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import '../../css/error404.css'
 
 function Error404(props) {
+
+
+    useEffect(() => {
+        window.scrollY = 100;
+    } , [])
+
     return (
         <>
 

@@ -23,16 +23,22 @@ public class ControllerProducts {
 
     private final ServiceProducts serviceProducts;
 
-    @GetMapping("/search")
-    public List<Products> findProductsWithSearch(@RequestBody ProductsSearchRequest productsSearchRequest){
+    @GetMapping("/product-info/{id}")
+    public Products getProductInfo(@PathVariable(name = "id") Long productId) {
 
-        Sort sort = Sort.by( productsSearchRequest.getDirection().equals("ASC") ?
+        return serviceProducts.getProductInfo(productId);
+    }
+
+    @GetMapping("/search")
+    public List<Products> findProductsWithSearch(@RequestBody ProductsSearchRequest productsSearchRequest) {
+
+        Sort sort = Sort.by(productsSearchRequest.getDirection().equals("ASC") ?
                         Direction.ASC : Direction.DESC
                 , productsSearchRequest.getSortBy());
         Pageable pageable = PageRequest.of(productsSearchRequest.getPageNumber(), productsSearchRequest.getPageSize(), sort);
 
         List<Products> productsList = serviceProducts.getProductsWithSearchingFilter(
-               productsSearchRequest.getKeyword(), productsSearchRequest.getReview(), productsSearchRequest.getStatus(), productsSearchRequest.getWarranty(),
+                productsSearchRequest.getKeyword(), productsSearchRequest.getReview(), productsSearchRequest.getStatus(), productsSearchRequest.getWarranty(),
                 productsSearchRequest.getDomestic(), productsSearchRequest.getInternational(), productsSearchRequest.getYear(),
                 productsSearchRequest.getMinPrice(), productsSearchRequest.getMaxPrice(), pageable);
 
@@ -40,11 +46,10 @@ public class ControllerProducts {
     }
 
 
-
     @GetMapping("/findByCategory")
-    public List<Products> findProductsWithCategoryFilter(@RequestBody ProductsFilterRequest productsFilterRequest){
+    public List<Products> findProductsWithCategoryFilter(@RequestBody ProductsFilterRequest productsFilterRequest) {
 
-        Sort sort = Sort.by( productsFilterRequest.getDirection().equals("ASC") ?
+        Sort sort = Sort.by(productsFilterRequest.getDirection().equals("ASC") ?
                         Direction.ASC : Direction.DESC
                 , productsFilterRequest.getSortBy());
         Pageable pageable = PageRequest.of(productsFilterRequest.getPageNumber(), productsFilterRequest.getPageSize(), sort);
@@ -61,6 +66,7 @@ public class ControllerProducts {
                 productsFilterRequest.getMaxPrice(),
                 productsFilterRequest.getBrand(),
                 productsFilterRequest.getModel(),
+
                 productsFilterRequest.getApparelProductsColors(),
                 productsFilterRequest.getApparelGenderAgeRanges(),
                 productsFilterRequest.getApparelSizes(),
@@ -94,23 +100,27 @@ public class ControllerProducts {
 
 
     @GetMapping("/rating/{id}")
-    public long getProductRating(@PathVariable Integer id){
+    public ResponseEntity<String> getProductRating(@PathVariable Long id) throws JSONException {
+
         return serviceProducts.getProductRating(id);
     }
 
-    @PostMapping("/evaluate/{id}/{rating}")
-    public void productEvaluate(@PathVariable Integer id, @PathVariable Integer rating){
-      serviceProducts.productEvaluate(id , rating);
+    @PostMapping("/evaluate/{id}/{rating}/{reviewTitle}/{reviewDescription}/{accountType}/{accountID}")
+    public void productEvaluate(@PathVariable Long id, @PathVariable Integer rating, @PathVariable String reviewTitle, @PathVariable String reviewDescription, @PathVariable String accountType, @PathVariable Long accountID) {
+        serviceProducts.productEvaluate(id, rating, reviewTitle, reviewDescription, accountType, accountID);
     }
 
     @GetMapping("/topRequestedProducts")
-    public List<Products> getTopRequestedProducts(){
+    public List<Products> getTopRequestedProducts() {
 
         return serviceProducts.getTopRequestProducts();
     }
 
 
+    @PostMapping("/addProductRequestCount/{id}")
+    public void addProductRequestCount(@PathVariable Long id) {
 
-
+       serviceProducts.addProductRequestCount(id);
+    }
 
 }

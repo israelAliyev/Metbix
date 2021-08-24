@@ -1,12 +1,21 @@
 package com.backend.pojos;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "apparel_gender_age_range")
+@Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+@Getter
+@Setter
 public class ApparelGenderAgeRange {
     @Id
     @Column(name = "Age_Range_ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ageRangeId;
 
     @Column(name = "Age_Range")

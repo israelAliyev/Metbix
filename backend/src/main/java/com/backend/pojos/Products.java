@@ -4,7 +4,9 @@ import lombok.Data;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "products")
@@ -16,9 +18,6 @@ public class Products {
     @Column(name = "Product_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productId;
-
-    @Column(name = "Product_Name")
-    private String productName;
 
     @Column(name = "Product_Price")
     private Float productPrice;
@@ -50,13 +49,13 @@ public class Products {
     @Column(name = "Product_Status")
     private String productStatus;
 
-    @Column(name = "Product_Warranty" , columnDefinition="tinyint(null) default null")
+    @Column(name = "Product_Warranty", columnDefinition = "tinyint(null) default null")
     private Boolean productWarranty = null;
 
-    @Column(name = "Product_Domestic_Shipping" , columnDefinition="tinyint(null) default null")
+    @Column(name = "Product_Domestic_Shipping", columnDefinition = "tinyint(null) default null")
     private Boolean productDomesticShipping;
 
-    @Column(name = "Product_International_Shipping" , columnDefinition="tinyint(null) default null")
+    @Column(name = "Product_International_Shipping", columnDefinition = "tinyint(null) default null")
     private Boolean productInternationalShipping;
 
     @Column(name = "Product_Year")
@@ -73,9 +72,33 @@ public class Products {
     private Integer productRequestCount;
 
 
+    @Column(name = "Product_Five_Stars")
+    private Integer productFiveStars;
+
+    @Column(name = "Product_Four_Stars")
+    private Integer productFourStars;
+
+    @Column(name = "Product_Three_Stars")
+    private Integer productThreeStars;
+
+    @Column(name = "Product_Two_Stars")
+    private Integer productTwoStars;
+
+    @Column(name = "Product_One_Star")
+    private Integer productOneStar;
+
+    @Column(name = "Product_Currency")
+    private String productCurrency;
+
+    @OneToMany(fetch = FetchType.EAGER, targetEntity = ProductsPictures.class
+            , cascade = CascadeType.ALL, mappedBy = "product")
+    private Set<ProductsPictures> productsPictures = new HashSet<ProductsPictures>();
+
+    @OneToMany(fetch = FetchType.EAGER, targetEntity = ProductReviews.class, mappedBy = "product")
+    private Set<ProductReviews> productReviews = new HashSet<ProductReviews>();
 
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Users.class)
+    @ManyToOne(fetch = FetchType.EAGER, targetEntity = Users.class)
     @JoinTable(name = "II_users_products",
             joinColumns = {@JoinColumn(
                     referencedColumnName = "Product_ID")},
@@ -85,13 +108,12 @@ public class Products {
     private Users user;
 
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Companies.class)
+    @ManyToOne(fetch = FetchType.EAGER, targetEntity = Companies.class)
     @JoinTable(name = "II_companies_products",
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Company_ID")}
     )
     private Companies company;
-
 
 
     //    II_products_apparel_options
@@ -100,7 +122,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Color_ID")}
     )
-    private List<ProductsColors> apparelProductsColors;
+    private Set<ProductsColors> apparelProductsColors = new HashSet<ProductsColors>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ApparelGenderAgeRange.class)
@@ -108,7 +130,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Age_Range_ID")}
     )
-    private List<ApparelGenderAgeRange> apparelGenderAgeRanges;
+    private Set<ApparelGenderAgeRange> apparelGenderAgeRanges = new HashSet<ApparelGenderAgeRange>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ApparelSize.class)
@@ -116,7 +138,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Size_ID")}
     )
-    private List<ApparelSize> apparelSizes;
+    private Set<ApparelSize> apparelSizes = new HashSet<ApparelSize>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ApparelFabricType.class)
@@ -124,7 +146,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Fabric_Type_ID")}
     )
-    private List<ApparelFabricType> apparelFabricTypes;
+    private Set<ApparelFabricType> apparelFabricTypes = new HashSet<ApparelFabricType>();
 
 
     //    II_products_car_options
@@ -133,7 +155,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Color_ID")}
     )
-    private List<ProductsColors> automativeProductsColors;
+    private Set<ProductsColors> automativeProductsColors = new HashSet<ProductsColors>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = AutomotiveMaxSpeed.class)
@@ -141,7 +163,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Max_Speed_ID")}
     )
-    private List<AutomotiveMaxSpeed> automotiveMaxSpeeds;
+    private Set<AutomotiveMaxSpeed> automotiveMaxSpeeds = new HashSet<AutomotiveMaxSpeed>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = AutomotiveFuel.class)
@@ -149,7 +171,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Fuel_ID")}
     )
-    private List<AutomotiveFuel> automotiveFuels;
+    private Set<AutomotiveFuel> automotiveFuels = new HashSet<AutomotiveFuel>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = AutomotiveSeat.class)
@@ -157,7 +179,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Seat_ID")}
     )
-    private List<AutomotiveSeat> automotiveSeats;
+    private Set<AutomotiveSeat> automotiveSeats = new HashSet<AutomotiveSeat>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = AutomotiveType.class)
@@ -165,7 +187,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Type_ID")}
     )
-    private List<AutomotiveType> automotiveTypes;
+    private Set<AutomotiveType> automotiveTypes = new HashSet<AutomotiveType>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = AutomotiveCrash.class)
@@ -173,7 +195,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Crash_ID")}
     )
-    private List<AutomotiveCrash> automotiveCrashes;
+    private Set<AutomotiveCrash> automotiveCrashes = new HashSet<AutomotiveCrash>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = AutomotiveDistanceTraveled.class)
@@ -181,7 +203,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Distance_Traveled_ID")}
     )
-    private List<AutomotiveDistanceTraveled> automotiveDistanceTraveleds;
+    private Set<AutomotiveDistanceTraveled> automotiveDistanceTraveleds = new HashSet<AutomotiveDistanceTraveled>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = AutomotiveEngine.class)
@@ -189,7 +211,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Engine_ID")}
     )
-    private List<AutomotiveEngine> automotiveEngines;
+    private Set<AutomotiveEngine> automotiveEngines = new HashSet<AutomotiveEngine>();
 
 
     //    II_products_electronics_options
@@ -198,7 +220,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Color_ID")}
     )
-    private List<ProductsColors> electronicsProductsColors;
+    private Set<ProductsColors> electronicsProductsColors = new HashSet<ProductsColors>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ElectronicsMemory.class)
@@ -206,7 +228,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Memory_ID")}
     )
-    private List<ElectronicsMemory> electronicsMemories;
+    private Set<ElectronicsMemory> electronicsMemories = new HashSet<ElectronicsMemory>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ElectronicsCamera.class)
@@ -214,7 +236,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Camera_ID")}
     )
-    private List<ElectronicsCamera> electronicsCameras;
+    private Set<ElectronicsCamera> electronicsCameras = new HashSet<ElectronicsCamera>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ElectronicsFrontCamera.class)
@@ -222,7 +244,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Front_Camera_ID")}
     )
-    private List<ElectronicsFrontCamera> electronicsFrontCameras;
+    private Set<ElectronicsFrontCamera> electronicsFrontCameras = new HashSet<ElectronicsFrontCamera>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ElectronicsWirelessCarrier.class)
@@ -230,7 +252,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Wireless_Carrier_ID")}
     )
-    private List<ElectronicsWirelessCarrier> electronicsWirelessCarriers;
+    private Set<ElectronicsWirelessCarrier> electronicsWirelessCarriers = new HashSet<ElectronicsWirelessCarrier>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ElectronicsOperatingSystem.class)
@@ -238,7 +260,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Operating_System_ID")}
     )
-    private List<ElectronicsOperatingSystem> electronicsOperatingSystems;
+    private Set<ElectronicsOperatingSystem> electronicsOperatingSystems = new HashSet<ElectronicsOperatingSystem>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ElectronicsScreenSize.class)
@@ -246,7 +268,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Screen_Size_ID")}
     )
-    private List<ElectronicsScreenSize> electronicsScreenSizes;
+    private Set<ElectronicsScreenSize> electronicsScreenSizes = new HashSet<ElectronicsScreenSize>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ElectronicsDisplayType.class)
@@ -254,7 +276,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Display_Type_ID")}
     )
-    private List<ElectronicsDisplayType> electronicsDisplayTypes;
+    private Set<ElectronicsDisplayType> electronicsDisplayTypes = new HashSet<ElectronicsDisplayType>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ElectronicsCellularTechnology.class)
@@ -262,7 +284,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Cellular_Technology_ID")}
     )
-    private List<ElectronicsCellularTechnology> electronicsCellularTechnologies;
+    private Set<ElectronicsCellularTechnology> electronicsCellularTechnologies = new HashSet<ElectronicsCellularTechnology>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ElectronicsBattery.class)
@@ -270,7 +292,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Battery_ID")}
     )
-    private List<ElectronicsBattery> electronicsBatteries;
+    private Set<ElectronicsBattery> electronicsBatteries = new HashSet<ElectronicsBattery>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ElectronicsProcessor.class)
@@ -278,7 +300,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Processor_ID")}
     )
-    private List<ElectronicsProcessor> electronicsProcessors;
+    private Set<ElectronicsProcessor> electronicsProcessors = new HashSet<ElectronicsProcessor>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ElectronicsRam.class)
@@ -286,7 +308,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Ram_ID")}
     )
-    private List<ElectronicsRam> electronicsRams;
+    private Set<ElectronicsRam> electronicsRams = new HashSet<ElectronicsRam>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ElectronicsGraphicsCard.class)
@@ -294,7 +316,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Graphics_Card_ID")}
     )
-    private List<ElectronicsGraphicsCard> electronicsGraphicsCards;
+    private Set<ElectronicsGraphicsCard> electronicsGraphicsCards = new HashSet<ElectronicsGraphicsCard>();
 
 
     @ManyToMany(fetch = FetchType.EAGER, targetEntity = ElectronicsComputerType.class)
@@ -302,9 +324,7 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Computer_Type_ID")}
     )
-    private List<ElectronicsComputerType> electronicsComputerTypes;
-
-
+    private Set<ElectronicsComputerType> electronicsComputerTypes = new HashSet<ElectronicsComputerType>();
 
 
     //    II_products_music_options
@@ -313,39 +333,39 @@ public class Products {
             joinColumns = {@JoinColumn(name = "Product_ID")},
             inverseJoinColumns = {@JoinColumn(name = "Instrument_ID")}
     )
-    private List<MusicInstrument> musicInstruments;
+    private Set<MusicInstrument> musicInstruments = new HashSet<MusicInstrument>();
 
 
     //    II_products_job_options
     @OneToOne(fetch = FetchType.EAGER, targetEntity = ProductsJobOptions.class)
-    @JoinColumn(name="Product_ID")
+    @JoinColumn(name = "Product_ID")
     private ProductsJobOptions productsJobOptions;
 
 
     //    II_products_home_options
     @OneToOne(fetch = FetchType.EAGER, targetEntity = ProductsHomeOptions.class)
-    @JoinColumn(name="Product_ID")
+    @JoinColumn(name = "Product_ID")
     private ProductsHomeOptions productsHomeOptions;
 
 
-
     @ManyToOne(fetch = FetchType.EAGER, targetEntity = ProductsCategories.class)
-    @JoinColumn(name="Product_Category_ID")
+    @JoinColumn(name = "Product_Category_ID")
     private ProductsCategories productCategory;
 
 
     @ManyToOne(fetch = FetchType.EAGER, targetEntity = ProductsDepartments.class)
-    @JoinColumn(name="Department_ID")
+    @JoinColumn(name = "Department_ID")
     private ProductsDepartments productDepartment;
 
     @ManyToOne(fetch = FetchType.EAGER, targetEntity = ProductsBrands.class)
-    @JoinColumn(name="Product_Brand_ID")
+    @JoinColumn(name = "Product_Brand_ID")
     private ProductsBrands productBrand;
 
 
     @ManyToOne(fetch = FetchType.EAGER, targetEntity = ProductsModels.class)
-    @JoinColumn(name="Product_Model_ID")
+    @JoinColumn(name = "Product_Model_ID")
     private ProductsModels productModel;
+
 
 
 

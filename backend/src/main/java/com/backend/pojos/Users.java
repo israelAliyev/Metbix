@@ -4,7 +4,10 @@ import lombok.Data;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "users")
@@ -40,10 +43,10 @@ public class Users {
     private String userVerificationCode;
 
     @Column(name = "user_registration_date")
-    private java.sql.Timestamp userRegistrationDate;
+    private LocalDateTime userRegistrationDate;
 
     @Column(name = "user_update_date")
-    private java.sql.Timestamp userUpdateDate;
+    private LocalDateTime userUpdateDate;
 
     @Column(name = "User_IP")
     private String userIp;
@@ -68,33 +71,33 @@ public class Users {
 
 
     @JoinColumn(name = "User_Role", table = "Users", nullable = false)
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Roles userRole;
 
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = Products.class , orphanRemoval = true)
+    @OneToMany(fetch = FetchType.EAGER, targetEntity = Products.class , orphanRemoval = true)
     @JoinTable(name = "II_users_products",
             joinColumns = {@JoinColumn(name = "User_ID")},
 
             inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
     )
-    private List<Products> products;
+    private Set<Products> products = new HashSet<Products>();
 
 
-    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Products.class)
+    @ManyToMany(fetch = FetchType.EAGER, targetEntity = Products.class)
     @JoinTable(name = "II_users_request_products",
             joinColumns = {@JoinColumn(name = "User_ID")},
 
             inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
     )
-    private List<Products> requestProducts;
+    private Set<Products> requestProducts = new HashSet<Products>();
 
 
-    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Products.class)
+    @ManyToMany(fetch = FetchType.EAGER, targetEntity = Products.class)
     @JoinTable(name = "II_users_basket",
             joinColumns = {@JoinColumn(name = "User_ID")},
 
             inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
     )
-    private List<Products> basketProducts;
+    private Set<Products> basketProducts = new HashSet<Products>();
 }

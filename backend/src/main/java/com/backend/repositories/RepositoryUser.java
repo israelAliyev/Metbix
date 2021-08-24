@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Repository
-public interface RepositoryUser extends JpaRepository<Users, Integer> {
+public interface RepositoryUser extends JpaRepository<Users, Long> {
 
     @Query("FROM Users WHERE userName=:name")
     List<Users> findByUserName(@Param("name") String name);
@@ -29,5 +29,8 @@ public interface RepositoryUser extends JpaRepository<Users, Integer> {
     @Query("Select u.products from Users u where u.userId = :id")
     List<Products> getUsersProducts(@Param("id") Long id);
 
+
+    @Query("Select u from Users u left join fetch u.products left join fetch u.requestProducts left join fetch u.basketProducts where u.userId = :id")
+    Users findByUserId(Long id);
 
 }

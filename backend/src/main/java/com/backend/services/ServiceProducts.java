@@ -1,5 +1,6 @@
 package com.backend.services;
 
+import com.backend.dtos.AddProductRequest;
 import com.backend.pojos.*;
 import com.backend.repositories.RepositoryProducts;
 import org.codehaus.jettison.json.JSONException;
@@ -9,8 +10,11 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
+import java.util.Set;
 
 public interface ServiceProducts {
+
+     Products getProductInfo(Long productId);
 
 
      List<Products> getProductsWithSearchingFilter(String keyword, Integer review,
@@ -24,41 +28,45 @@ public interface ServiceProducts {
                                                   Boolean domestic, Boolean international,
                                                   Integer year, Integer minPrice,
                                                   Integer maxPrice, String brand,
-                                                  String model ,List<ProductsColors> apparelProductsColors,
-                                                  List<ApparelGenderAgeRange> apparelGenderAgeRanges,
-                                                  List<ApparelSize> apparelSizes,
-                                                  List<ApparelFabricType> apparelFabricTypes,
-                                                  List<ProductsColors> automativeProductsColors,
-                                                  List<AutomotiveMaxSpeed> automotiveMaxSpeeds,
-                                                  List<AutomotiveFuel> automotiveFuels,
-                                                  List<AutomotiveSeat> automotiveSeats,
-                                                  List<AutomotiveType> automotiveTypes,
-                                                  List<AutomotiveCrash> automotiveCrashes,
-                                                  List<AutomotiveDistanceTraveled> automotiveDistanceTraveleds,
-                                                  List<AutomotiveEngine> automotiveEngines,
-                                                  List<ProductsColors> electronicsProductsColors,
-                                                  List<ElectronicsMemory> electronicsMemories,
-                                                  List<ElectronicsCamera> electronicsCameras,
-                                                  List<ElectronicsFrontCamera> electronicsFrontCameras,
-                                                  List<ElectronicsWirelessCarrier> electronicsWirelessCarriers,
-                                                  List<ElectronicsOperatingSystem> electronicsOperatingSystems,
-                                                  List<ElectronicsScreenSize> electronicsScreenSizes,
-                                                  List<ElectronicsDisplayType> electronicsDisplayTypes,
-                                                  List<ElectronicsCellularTechnology> electronicsCellularTechnologies,
-                                                  List<ElectronicsBattery> electronicsBatteries,
-                                                  List<ElectronicsProcessor> electronicsProcessors,
-                                                  List<ElectronicsRam> electronicsRams,
-                                                  List<ElectronicsGraphicsCard> electronicsGraphicsCards,
-                                                  List<ElectronicsComputerType> electronicsComputerTypes,
-                                                  List<MusicInstrument> musicInstruments, Pageable pageable);
+                                                  String model ,Set<ProductsColors> apparelProductsColors,
+                                                  Set<ApparelGenderAgeRange> apparelGenderAgeRanges,
+                                                  Set<ApparelSize> apparelSizes,
+                                                  Set<ApparelFabricType> apparelFabricTypes,
+                                                  Set<ProductsColors> automativeProductsColors,
+                                                  Set<AutomotiveMaxSpeed> automotiveMaxSpeeds,
+                                                  Set<AutomotiveFuel> automotiveFuels,
+                                                  Set<AutomotiveSeat> automotiveSeats,
+                                                  Set<AutomotiveType> automotiveTypes,
+                                                  Set<AutomotiveCrash> automotiveCrashes,
+                                                  Set<AutomotiveDistanceTraveled> automotiveDistanceTraveleds,
+                                                  Set<AutomotiveEngine> automotiveEngines,
+                                                  Set<ProductsColors> electronicsProductsColors,
+                                                  Set<ElectronicsMemory> electronicsMemories,
+                                                  Set<ElectronicsCamera> electronicsCameras,
+                                                  Set<ElectronicsFrontCamera> electronicsFrontCameras,
+                                                  Set<ElectronicsWirelessCarrier> electronicsWirelessCarriers,
+                                                  Set<ElectronicsOperatingSystem> electronicsOperatingSystems,
+                                                  Set<ElectronicsScreenSize> electronicsScreenSizes,
+                                                  Set<ElectronicsDisplayType> electronicsDisplayTypes,
+                                                  Set<ElectronicsCellularTechnology> electronicsCellularTechnologies,
+                                                  Set<ElectronicsBattery> electronicsBatteries,
+                                                  Set<ElectronicsProcessor> electronicsProcessors,
+                                                  Set<ElectronicsRam> electronicsRams,
+                                                  Set<ElectronicsGraphicsCard> electronicsGraphicsCards,
+                                                  Set<ElectronicsComputerType> electronicsComputerTypes,
+                                                  Set<MusicInstrument> musicInstruments
 
-     long getProductRating(Integer id);
+             , Pageable pageable);
 
-     void productEvaluate(Integer id, Integer rating);
+    ResponseEntity<String> getProductRating(Long id) throws JSONException;
 
-    void addProductRequestCount(Integer id);
+     void productEvaluate(Long id, Integer rating , String reviewTitle, String reviewDescription, String accountType, Long accountID);
+
+    void addProductRequestCount(Long id);
 
     List<Products> getTopRequestProducts();
+
+    void addProduct(AddProductRequest addProductRequest);
 
 
 }

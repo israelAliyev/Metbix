@@ -1,6 +1,8 @@
 package com.backend.controller;
 
+import com.backend.pojos.Companies;
 import com.backend.pojos.Products;
+import com.backend.pojos.Users;
 import com.backend.services.ServiceCompany;
 import com.backend.services.ServiceUser;
 import lombok.AllArgsConstructor;
@@ -17,23 +19,14 @@ public class ControllerCompany {
 
     private final ServiceCompany serviceCompany;
 
+    @GetMapping("/info/{id}")
+    public Companies getCompanyInfo(@PathVariable("id") Long id){
 
-    @GetMapping("/{id}/products")
-    public List<Products> getUsersProducts(@PathVariable("id") Long id) {
-
-        return serviceCompany.getComapnysProducts(id);
+        return serviceCompany.getCompanyInfo(id);
     }
-
-
-    @GetMapping("/{id}/requestProducts")
-    public List<Products> getUsersRequestProducts(@PathVariable("id") Integer id) {
-
-        return serviceCompany.getComapnysRequestProducts(id);
-    }
-
 
     @PostMapping("/{id}/saveRequestProduct/{productId}")
-    public void saveRequestProduct(@PathVariable("id") Integer id , @PathVariable("productId") Integer productId) {
+    public void saveRequestProduct(@PathVariable("id") Long id , @PathVariable("productId") Long productId) {
 
         serviceCompany.saveComapnysRequestProduct(id , productId);
     }
