@@ -1,10 +1,19 @@
 package com.backend.pojos;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "electronics_graphics_card")
-public class ElectronicsGraphicsCard {
+@Getter
+@Setter
+public class ElectronicsGraphicsCard implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Graphics_Card_ID")
     private Long graphicsCardId;
@@ -15,27 +24,4 @@ public class ElectronicsGraphicsCard {
     @Column(name = "Category_ID")
     private Long categoryId;
 
-    public Long getGraphicsCardId() {
-        return this.graphicsCardId;
-    }
-
-    public void setGraphicsCardId(Long graphicsCardId) {
-        this.graphicsCardId = graphicsCardId;
-    }
-
-    public String getGraphicsCardModel() {
-        return this.graphicsCardModel;
-    }
-
-    public void setGraphicsCardModel(String graphicsCardModel) {
-        this.graphicsCardModel = graphicsCardModel;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
 }

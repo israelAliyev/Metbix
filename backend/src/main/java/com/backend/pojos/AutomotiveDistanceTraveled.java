@@ -1,52 +1,41 @@
 package com.backend.pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "automotive_distance_traveled")
-public class AutomotiveDistanceTraveled {
+@Getter
+@Setter
+public class AutomotiveDistanceTraveled implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Distance_Traveled_ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long distanceTraveledId;
 
     @Column(name = "Distance_Traveled")
     private Long distanceTraveled;
 
-    @Column(name = "Category_ID")
-    private Long categoryId;
 
-    @Column(name = "Distance_Traveled_Range_ID")
-    private Long distanceTraveledRangeId;
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = AutomotiveDistanceTraveledRange.class, cascade =CascadeType.ALL)
+    @JoinColumn(name = "Distance_Traveled_Range_ID")
+    private AutomotiveDistanceTraveledRange distanceTraveledRange;
 
-    public Long getDistanceTraveledId() {
-        return this.distanceTraveledId;
-    }
 
-    public void setDistanceTraveledId(Long distanceTraveledId) {
-        this.distanceTraveledId = distanceTraveledId;
-    }
-
-    public Long getDistanceTraveled() {
-        return this.distanceTraveled;
-    }
-
-    public void setDistanceTraveled(Long distanceTraveled) {
-        this.distanceTraveled = distanceTraveled;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
-
-    public Long getDistanceTraveledRangeId() {
-        return this.distanceTraveledRangeId;
-    }
-
-    public void setDistanceTraveledRangeId(Long distanceTraveledRangeId) {
-        this.distanceTraveledRangeId = distanceTraveledRangeId;
-    }
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Products.class, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH , CascadeType.REMOVE})
+    @JoinTable(name = "II_products_car_options",
+            joinColumns = {@JoinColumn(name = "Distance_Traveled_ID")},
+            inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
+    )
+    @JsonIgnore
+    private Products product;
 }

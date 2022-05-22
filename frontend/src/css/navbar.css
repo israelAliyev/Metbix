@@ -20,8 +20,27 @@ input, input:before, input:after {
 /*for navbars */
 .main-navbar {
     background-color: #0C2D48;
+    /*height: 4rem;*/
 }
 
+.main-navbar .nav-item .profile-photo {
+    width: 3rem;
+    height: 2.4rem;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.main-navbar .nav-item .profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-navbar .nav-item ul > li:last-of-type > a {
+    color: red !important;
+}
 
 .main-navbar li {
     cursor: pointer;
@@ -95,7 +114,7 @@ input, input:before, input:after {
     font-size: 0.9rem;
 }
 
-.navbar-search-form .dropdown  .dropdown-menu a {
+.navbar-search-form .dropdown .dropdown-menu a {
     padding: 0.2rem 1rem;
 }
 
@@ -104,12 +123,13 @@ input, input:before, input:after {
 
 .navbar-search-form-text-form {
     border: none !important;
-    font-size: 18px !important;
     width: 100%;
 }
 
-.navbar-search-form-text-form:focus{
-  border: none;outline: none;box-shadow: none;
+.navbar-search-form-text-form:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 
 
@@ -124,12 +144,28 @@ input, input:before, input:after {
     border-radius: 0.40rem;
 }
 
+.navbar-for-search-form-border {
+    border: 2px solid #0C2D48;
+    border-radius: 0.40rem;
+
+}
+
+.navbar-search-form-text-form input {
+    line-height: 15px;
+    font-family: inherit;
+    font-size: 18px !important;
+    color: #111;
+    text-indent: 8px;
+    direction: ltr;
+}
+
+
 .navbar-for-search-form-border:focus-within .navbar-search-form-text-form {
     font-size: 16px;
 }
 
 
-/*for drop list of down on navbar languages currency*/
+/*for drop list of down on navbar languages currency-converter*/
 .navbar-languages-currency ul {
     min-width: 10rem !important;
     margin-top: 10px !important;
@@ -141,7 +177,7 @@ input, input:before, input:after {
     background-color: transparent;
 }
 
-/*for account tyes texts and languages-currency texts*/
+/*for account tyes texts and languages-currency-converter texts*/
 .navbar-account-account-types-text, .navbar-languages-currency span {
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -154,7 +190,7 @@ input, input:before, input:after {
 
 }
 
-/*for submenu of dropdown on languags currency form */
+/*for submenu of dropdown on languags currency-converter form */
 .navbar-languages-currency .dropdown-submenu {
     position: relative;
 }
@@ -167,10 +203,31 @@ input, input:before, input:after {
     -webkit-border-radius: 0 6px 6px 6px;
     -moz-border-radius: 0 6px 6px;
     border-radius: 0 6px 6px 6px;
+    width: 5rem!important;
+
+}
+
+.navbar-languages-currency .dropdown-submenu > .dropdown-menu .for-overflow-dropdown-items{
+    overflow: hidden;
+    max-height: 25rem;
+    overflow-y: auto;
+}
+
+.navbar-languages-currency .dropdown-submenu > .dropdown-menu input{
+width: 98%;
+    font-size: 0.9rem;
+}
+
+.navbar-languages-currency .dropdown-submenu > .dropdown-menu input::placeholder{
+font-size: 0.8rem;
 }
 
 .navbar-languages-currency .dropdown-submenu:hover > .dropdown-menu {
     display: block;
+}
+
+.navbar-languages-currency .dropdown-submenu > .dropdown-menu .dropdown-item{
+    font-size: 0.9rem;
 }
 
 .navbar-languages-currency .dropdown-submenu > a:after {
@@ -186,6 +243,11 @@ input, input:before, input:after {
     margin-top: 5px;
     margin-right: -10px;
 }
+
+.navbar-languages-currency > ul .language-hyper a:after {
+    display: none !important;
+}
+
 
 .navbar-languages-currency .dropdown-submenu:hover > a:after {
     border-left-color: #fff;
@@ -206,7 +268,7 @@ input, input:before, input:after {
 
 .navbar-location-country-name {
     font-family: Ayuthaya, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .navbar-location-country img {
@@ -215,11 +277,11 @@ input, input:before, input:after {
     margin-top: 0.8rem !important;
 }
 
-.navbar-location-country .dropdown .text-secondary{
+.navbar-location-country .dropdown .text-secondary {
     font-size: 0.8rem !important;
 }
 
-    /*for navbar notifaction amimation and icons*/
+/*for navbar notifaction amimation and icons*/
 
 .navbar-notification span {
 
@@ -250,8 +312,8 @@ input, input:before, input:after {
     margin: 0;
     padding: 0;
     cursor: pointer;
-
 }
+
 
 .navbar-notification .material-icons {
     font-size: 45px;
@@ -490,22 +552,40 @@ input, input:before, input:after {
 /*for navbar basket */
 .navbar-basket {
     position: relative;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-basket span {
-    position: absolute;
     color: #f8a627;
-    top: 40%;
-    left: 27%;
     font-weight: bold;
+    /*margin-top: 0.8rem;*/
+    position: absolute;
+    font-size: 0.85rem;
+    top: 34%;
+    left: 42%;
+}
+
+.navbar-basket img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    /*background-color: #0a58ca;*/
+    /*margin-bottom: 10px;*/
 }
 
 /*sub navbar*/
 
 .sub-navbar {
     background-color: #1b354a !important;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    /*height: 3.5rem;*/
+    /*text-transform: lowercase;*/
 }
 
 
@@ -522,8 +602,21 @@ input, input:before, input:after {
 
 .sub-navbar li img {
     padding: 0 0 0.5rem 0;
+    /*width: 2.2rem;*/
 }
 
+
+/*microphone*/
+.main-navbar .collapse .nav-mic > div {
+    background-color: #103b5f;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
 
 @media (max-width: 1025px) {
     .sub-navbar {

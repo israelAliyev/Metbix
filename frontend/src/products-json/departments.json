@@ -1,0 +1,128 @@
+[
+  {
+    "departmentId": 1,
+    "department": "Electronics",
+    "photo": "images/department-photos/electronics.jpg",
+    "icon": "ri-headphone-line me-2"
+  },
+  {
+    "departmentId": 2,
+    "department": "Immovable property and furniture",
+    "photo": "images/department-photos/furniture.jpg",
+    "icon": "ri-home-5-line me-2"
+  },
+  {
+    "departmentId": 3,
+    "department": "Arts & Crafts",
+    "photo": "images/department-photos/art.jpg",
+    "icon": "ri-artboard-line me-2"
+  },
+  {
+    "departmentId": 4,
+    "department": "Automotive",
+    "photo": "images/department-photos/car.jpeg",
+    "icon": "ri-car-line me-2"
+  },
+  {
+    "departmentId": 5,
+    "department": "Beauty and Personal Care",
+    "photo": "images/department-photos/care.jpeg",
+    "icon": "ri-magic-line me-2"
+  },
+  {
+    "departmentId": 6,
+    "department": "Health",
+    "photo": "images/department-photos/healthy.jpeg",
+    "icon": "ri-mental-health-line me-2"
+  },
+  {
+    "departmentId": 7,
+    "department": "Industrial and Scientific",
+    "photo": "images/department-photos/industry.jpeg",
+    "icon": "fas fa-dna me-2"
+  },
+  {
+    "departmentId": 8,
+    "department": "Luggage & Bags",
+    "photo": "images/department-photos/bag.jpeg",
+    "icon": "ri-shopping-bag-line me-2"
+  },
+  {
+    "departmentId": 9,
+    "department": "Movies & Television",
+    "photo": "images/department-photos/movie.jpeg",
+    "icon": "ri-tv-line me-2"
+  },
+  {
+    "departmentId": 10,
+    "department": "Pets and Supplies",
+    "photo": "images/department-photos/pet.jpeg",
+    "icon": "ri-bear-smile-line me-2"
+  },
+  {
+    "departmentId": 11,
+    "department": "Software",
+    "photo": "images/department-photos/software.png",
+    "icon": "fas fa-terminal me-2"
+  },
+  {
+    "departmentId": 12,
+    "department": "Sports and Outdoors",
+    "photo": "images/department-photos/sport.jpeg",
+    "icon": "fas fa-futbol me-2"
+  },
+  {
+    "departmentId": 13,
+    "department": "Tools and Home improvement",
+    "photo": "images/department-photos/tools.jpeg",
+    "icon": "ri-tools-line me-2"
+  },
+  {
+    "departmentId": 14,
+    "department": "Toys and Games",
+    "photo": "images/department-photos/toys.jpeg",
+    "icon": "ri-gamepad-line me-2"
+  },
+  {
+    "departmentId": 15,
+    "department": "Video Games",
+    "photo": "images/department-photos/v-game.jpeg",
+    "icon": "ri-steam-line me-2"
+  },
+  {
+    "departmentId": 16,
+    "department": "Jobs",
+    "photo": "images/department-photos/job.jpeg",
+    "icon": "fas fa-user-md me-2"
+  },
+  {
+    "departmentId": 17,
+    "department": "Electronics Accessories & Supplies",
+    "photo": "images/department-photos/acc.jpeg",
+    "icon": "fas fa-mouse me-2"
+  },
+  {
+    "departmentId": 18,
+    "department": "Household Appliances",
+    "photo": "images/department-photos/h-appl.jpeg",
+    "icon": "fas fa-blender me-2"
+  },
+  {
+    "departmentId": 19,
+    "department": "Apparel & Fashion",
+    "photo": "images/department-photos/fashion.jpeg",
+    "icon": "fas fa-tshirt me-2"
+  },
+  {
+    "departmentId": 20,
+    "department": "Music",
+    "photo": "images/department-photos/music.jpeg",
+    "icon": "ri-music-2-line me-2"
+  },
+  {
+    "departmentId": 21,
+    "department": "Other",
+    "photo": "images/department-photos/other.jpeg",
+    "icon": "fas fa-box me-2"
+  }
+]

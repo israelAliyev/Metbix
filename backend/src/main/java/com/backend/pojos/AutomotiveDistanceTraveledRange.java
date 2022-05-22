@@ -1,10 +1,18 @@
 package com.backend.pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "automotive_distance_traveled_range")
+@Getter
+@Setter
 public class AutomotiveDistanceTraveledRange {
+
     @Id
     @Column(name = "Distance_Traveled_Range_ID")
     private Long distanceTraveledRangeId;
@@ -15,27 +23,9 @@ public class AutomotiveDistanceTraveledRange {
     @Column(name = "Category_ID")
     private Long categoryId;
 
-    public Long getDistanceTraveledRangeId() {
-        return this.distanceTraveledRangeId;
-    }
 
-    public void setDistanceTraveledRangeId(Long distanceTraveledRangeId) {
-        this.distanceTraveledRangeId = distanceTraveledRangeId;
-    }
-
-    public String getDistanceTraveledRange() {
-        return this.distanceTraveledRange;
-    }
-
-    public void setDistanceTraveledRange(String distanceTraveledRange) {
-        this.distanceTraveledRange = distanceTraveledRange;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = AutomotiveDistanceTraveled.class, cascade =CascadeType.ALL)
+    @JoinColumn(name = "Distance_Traveled_Range_ID")
+    @JsonIgnore
+    private List<AutomotiveDistanceTraveled> automotiveDistanceTraveleds;
 }

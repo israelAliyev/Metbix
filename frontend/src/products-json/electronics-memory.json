@@ -1,0 +1,317 @@
+[
+  {
+    "memoryId": 1,
+    "memoryGb": "Up to 3.9 Gb ",
+    "categoryId": 87
+  },
+  {
+    "memoryId": 2,
+    "memoryGb": "4 GB",
+    "categoryId": 87
+  },
+  {
+    "memoryId": 3,
+    "memoryGb": "8 GB",
+    "categoryId": 87
+  },
+  {
+    "memoryId": 4,
+    "memoryGb": "16 Gb",
+    "categoryId": 87
+  },
+  {
+    "memoryId": 5,
+    "memoryGb": "32 GB",
+    "categoryId": 87
+  },
+  {
+    "memoryId": 6,
+    "memoryGb": "64 GB",
+    "categoryId": 87
+  },
+  {
+    "memoryId": 7,
+    "memoryGb": "128 GB",
+    "categoryId": 87
+  },
+  {
+    "memoryId": 8,
+    "memoryGb": "256 GB",
+    "categoryId": 87
+  },
+  {
+    "memoryId": 9,
+    "memoryGb": "512 GB & Above",
+    "categoryId": 87
+  },
+  {
+    "memoryId": 10,
+    "memoryGb": "Up to 3.9 Gb ",
+    "categoryId": 88
+  },
+  {
+    "memoryId": 11,
+    "memoryGb": "4 GB",
+    "categoryId": 88
+  },
+  {
+    "memoryId": 12,
+    "memoryGb": "8 GB",
+    "categoryId": 88
+  },
+  {
+    "memoryId": 13,
+    "memoryGb": "16 Gb",
+    "categoryId": 88
+  },
+  {
+    "memoryId": 14,
+    "memoryGb": "32 GB",
+    "categoryId": 88
+  },
+  {
+    "memoryId": 15,
+    "memoryGb": "64 GB",
+    "categoryId": 88
+  },
+  {
+    "memoryId": 16,
+    "memoryGb": "128 GB",
+    "categoryId": 88
+  },
+  {
+    "memoryId": 17,
+    "memoryGb": "256 GB",
+    "categoryId": 88
+  },
+  {
+    "memoryId": 18,
+    "memoryGb": "512 GB & Above",
+    "categoryId": 88
+  },
+  {
+    "memoryId": 19,
+    "memoryGb": "Up to 3.9 Gb ",
+    "categoryId": 94
+  },
+  {
+    "memoryId": 20,
+    "memoryGb": "4 GB",
+    "categoryId": 94
+  },
+  {
+    "memoryId": 21,
+    "memoryGb": "8 GB",
+    "categoryId": 94
+  },
+  {
+    "memoryId": 22,
+    "memoryGb": "16 Gb",
+    "categoryId": 94
+  },
+  {
+    "memoryId": 23,
+    "memoryGb": "32 GB",
+    "categoryId": 94
+  },
+  {
+    "memoryId": 24,
+    "memoryGb": "64 GB",
+    "categoryId": 94
+  },
+  {
+    "memoryId": 25,
+    "memoryGb": "128 GB",
+    "categoryId": 94
+  },
+  {
+    "memoryId": 26,
+    "memoryGb": "256 GB",
+    "categoryId": 94
+  },
+  {
+    "memoryId": 27,
+    "memoryGb": "512 GB & Above",
+    "categoryId": 94
+  },
+  {
+    "memoryId": 28,
+    "memoryGb": "Up to 3.9 Gb ",
+    "categoryId": 292
+  },
+  {
+    "memoryId": 29,
+    "memoryGb": "4 GB",
+    "categoryId": 292
+  },
+  {
+    "memoryId": 30,
+    "memoryGb": "8 GB",
+    "categoryId": 292
+  },
+  {
+    "memoryId": 31,
+    "memoryGb": "16 Gb",
+    "categoryId": 292
+  },
+  {
+    "memoryId": 32,
+    "memoryGb": "32 GB",
+    "categoryId": 292
+  },
+  {
+    "memoryId": 33,
+    "memoryGb": "64 GB",
+    "categoryId": 292
+  },
+  {
+    "memoryId": 34,
+    "memoryGb": "128 GB",
+    "categoryId": 292
+  },
+  {
+    "memoryId": 35,
+    "memoryGb": "256 GB",
+    "categoryId": 292
+  },
+  {
+    "memoryId": 36,
+    "memoryGb": "512 GB & Above",
+    "categoryId": 292
+  },
+  {
+    "memoryId": 37,
+    "memoryGb": "Up to 3.9 Gb ",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 38,
+    "memoryGb": "4 GB",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 39,
+    "memoryGb": "8 GB",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 40,
+    "memoryGb": "16 Gb",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 41,
+    "memoryGb": "32 GB",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 42,
+    "memoryGb": "64 GB",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 43,
+    "memoryGb": "128 GB",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 44,
+    "memoryGb": "256 GB",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 45,
+    "memoryGb": "512 GB & Above",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 46,
+    "memoryGb": "Up to 3.9 Gb ",
+    "categoryId": 294
+  },
+  {
+    "memoryId": 47,
+    "memoryGb": "4 GB",
+    "categoryId": 294
+  },
+  {
+    "memoryId": 48,
+    "memoryGb": "8 GB",
+    "categoryId": 294
+  },
+  {
+    "memoryId": 49,
+    "memoryGb": "16 Gb",
+    "categoryId": 294
+  },
+  {
+    "memoryId": 50,
+    "memoryGb": "32 GB",
+    "categoryId": 294
+  },
+  {
+    "memoryId": 51,
+    "memoryGb": "64 GB",
+    "categoryId": 294
+  },
+  {
+    "memoryId": 52,
+    "memoryGb": "128 GB",
+    "categoryId": 294
+  },
+  {
+    "memoryId": 53,
+    "memoryGb": "256 GB",
+    "categoryId": 294
+  },
+  {
+    "memoryId": 54,
+    "memoryGb": "512 GB & Above",
+    "categoryId": 294
+  },
+  {
+    "memoryId": 55,
+    "memoryGb": "Up to 3.9 Gb ",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 56,
+    "memoryGb": "4 GB",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 57,
+    "memoryGb": "8 GB",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 58,
+    "memoryGb": "16 Gb",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 59,
+    "memoryGb": "32 GB",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 60,
+    "memoryGb": "64 GB",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 61,
+    "memoryGb": "128 GB",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 62,
+    "memoryGb": "256 GB",
+    "categoryId": 293
+  },
+  {
+    "memoryId": 63,
+    "memoryGb": "512 GB & Above",
+    "categoryId": 293
+  }
+]

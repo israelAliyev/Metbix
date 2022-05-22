@@ -1,10 +1,19 @@
 package com.backend.pojos;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "automotive_crash")
-public class AutomotiveCrash {
+@Getter
+@Setter
+public class AutomotiveCrash implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Crash_ID")
     private Long crashId;
@@ -15,27 +24,4 @@ public class AutomotiveCrash {
     @Column(name = "Category_ID")
     private Long categoryId;
 
-    public Long getCrashId() {
-        return this.crashId;
-    }
-
-    public void setCrashId(Long crashId) {
-        this.crashId = crashId;
-    }
-
-    public String getCrash() {
-        return this.crash;
-    }
-
-    public void setCrash(String crash) {
-        this.crash = crash;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
 }

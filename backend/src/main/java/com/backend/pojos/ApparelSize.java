@@ -1,10 +1,19 @@
 package com.backend.pojos;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "apparel_size")
-public class ApparelSize {
+@Getter
+@Setter
+public class ApparelSize implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Size_ID")
     private Long sizeId;
@@ -12,30 +21,7 @@ public class ApparelSize {
     @Column(name = "Size")
     private String size;
 
-    @Column(name = "SubCategory_ID")
+    @Column(name = "Sub_Category_ID")
     private Long subCategoryId;
 
-    public Long getSizeId() {
-        return this.sizeId;
-    }
-
-    public void setSizeId(Long sizeId) {
-        this.sizeId = sizeId;
-    }
-
-    public String getSize() {
-        return this.size;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    public Long getSubCategoryId() {
-        return this.subCategoryId;
-    }
-
-    public void setSubCategoryId(Long subCategoryId) {
-        this.subCategoryId = subCategoryId;
-    }
 }

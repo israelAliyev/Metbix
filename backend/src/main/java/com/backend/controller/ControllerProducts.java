@@ -1,27 +1,47 @@
 package com.backend.controller;
 
-import com.backend.dtos.ProductsFilterRequest;
-import com.backend.dtos.ProductsSearchRequest;
+import com.backend.dtos.request.AddProductRequest;
+import com.backend.dtos.request.EvaluateProductRequest;
+import com.backend.dtos.request.ProductsFilterRequest;
+import com.backend.dtos.request.ProductsSearchRequest;
+import com.backend.pojos.Companies;
 import com.backend.pojos.Products;
+import com.backend.pojos.Users;
 import com.backend.services.ServiceProducts;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.codehaus.jettison.json.JSONException;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @RestController
-@RequestMapping("products")
-@AllArgsConstructor
+@RequestMapping("api/products")
+@RequiredArgsConstructor
 @CrossOrigin("*")
 public class ControllerProducts {
 
     private final ServiceProducts serviceProducts;
+
+    @GetMapping("/user-basket-products/{email}")
+    public Set<Products> getUserBasketProducts(@PathVariable(name = "email") String email) {
+
+        return serviceProducts.getUserBasketProducts(email);
+    }
+
+    @GetMapping("/company-basket-products/{email}")
+    public Set<Products> getCompanyBasketProducts(@PathVariable(name = "email") String email) {
+
+        return serviceProducts.getCompanyBasketProducts(email);
+    }
+
 
     @GetMapping("/product-info/{id}")
     public Products getProductInfo(@PathVariable(name = "id") Long productId) {
@@ -30,97 +50,114 @@ public class ControllerProducts {
     }
 
     @GetMapping("/search")
-    public List<Products> findProductsWithSearch(@RequestBody ProductsSearchRequest productsSearchRequest) {
+    public List<Products> getProductsBySearchKeyword(@RequestParam String keyword) {
 
-        Sort sort = Sort.by(productsSearchRequest.getDirection().equals("ASC") ?
-                        Direction.ASC : Direction.DESC
-                , productsSearchRequest.getSortBy());
-        Pageable pageable = PageRequest.of(productsSearchRequest.getPageNumber(), productsSearchRequest.getPageSize(), sort);
-
-        List<Products> productsList = serviceProducts.getProductsWithSearchingFilter(
-                productsSearchRequest.getKeyword(), productsSearchRequest.getReview(), productsSearchRequest.getStatus(), productsSearchRequest.getWarranty(),
-                productsSearchRequest.getDomestic(), productsSearchRequest.getInternational(), productsSearchRequest.getYear(),
-                productsSearchRequest.getMinPrice(), productsSearchRequest.getMaxPrice(), pageable);
-
-        return productsList;
+        return serviceProducts.getProductsBySearchKeyword(keyword);
     }
 
 
-    @GetMapping("/findByCategory")
-    public List<Products> findProductsWithCategoryFilter(@RequestBody ProductsFilterRequest productsFilterRequest) {
+    @GetMapping("/find-by-category/{id}")
+    public List<Products> findProductsWithCategory(@PathVariable(name = "id") Long productId) {
 
-        Sort sort = Sort.by(productsFilterRequest.getDirection().equals("ASC") ?
-                        Direction.ASC : Direction.DESC
-                , productsFilterRequest.getSortBy());
-        Pageable pageable = PageRequest.of(productsFilterRequest.getPageNumber(), productsFilterRequest.getPageSize(), sort);
-
-        List<Products> productsList = serviceProducts.getProductsWithCategoryFilter(
-                productsFilterRequest.getCategory(),
-                productsFilterRequest.getReview(),
-                productsFilterRequest.getStatus(),
-                productsFilterRequest.getWarranty(),
-                productsFilterRequest.getDomestic(),
-                productsFilterRequest.getInternational(),
-                productsFilterRequest.getYear(),
-                productsFilterRequest.getMinPrice(),
-                productsFilterRequest.getMaxPrice(),
-                productsFilterRequest.getBrand(),
-                productsFilterRequest.getModel(),
-
-                productsFilterRequest.getApparelProductsColors(),
-                productsFilterRequest.getApparelGenderAgeRanges(),
-                productsFilterRequest.getApparelSizes(),
-                productsFilterRequest.getApparelFabricTypes(),
-                productsFilterRequest.getAutomativeProductsColors(),
-                productsFilterRequest.getAutomotiveMaxSpeeds(),
-                productsFilterRequest.getAutomotiveFuels(),
-                productsFilterRequest.getAutomotiveSeats(),
-                productsFilterRequest.getAutomotiveTypes(),
-                productsFilterRequest.getAutomotiveCrashes(),
-                productsFilterRequest.getAutomotiveDistanceTraveleds(),
-                productsFilterRequest.getAutomotiveEngines(),
-                productsFilterRequest.getElectronicsProductsColors(),
-                productsFilterRequest.getElectronicsMemories(),
-                productsFilterRequest.getElectronicsCameras(),
-                productsFilterRequest.getElectronicsFrontCameras(),
-                productsFilterRequest.getElectronicsWirelessCarriers(),
-                productsFilterRequest.getElectronicsOperatingSystems(),
-                productsFilterRequest.getElectronicsScreenSizes(),
-                productsFilterRequest.getElectronicsDisplayTypes(),
-                productsFilterRequest.getElectronicsCellularTechnologies(),
-                productsFilterRequest.getElectronicsBatteries(),
-                productsFilterRequest.getElectronicsProcessors(),
-                productsFilterRequest.getElectronicsRams(),
-                productsFilterRequest.getElectronicsGraphicsCards(),
-                productsFilterRequest.getElectronicsComputerTypes(),
-                productsFilterRequest.getMusicInstruments(), pageable);
-
-        return productsList;
+        return serviceProducts.getProductsByCategoryId(productId);
     }
 
 
-    @GetMapping("/rating/{id}")
-    public ResponseEntity<String> getProductRating(@PathVariable Long id) throws JSONException {
+    @GetMapping("/find-by-department/{id}")
+    public List<Products> findProductsWithDepartment(@PathVariable(name = "id") Long departmentId) {
 
-        return serviceProducts.getProductRating(id);
+        return serviceProducts.getProductsByDepartmentId(departmentId);
     }
 
-    @PostMapping("/evaluate/{id}/{rating}/{reviewTitle}/{reviewDescription}/{accountType}/{accountID}")
-    public void productEvaluate(@PathVariable Long id, @PathVariable Integer rating, @PathVariable String reviewTitle, @PathVariable String reviewDescription, @PathVariable String accountType, @PathVariable Long accountID) {
-        serviceProducts.productEvaluate(id, rating, reviewTitle, reviewDescription, accountType, accountID);
+
+    @PostMapping("/filter-products")
+    public List<Products> filterProducts(@RequestBody ProductsFilterRequest productsFilterRequest) {
+
+        return serviceProducts.getProductsFilter(productsFilterRequest);
     }
 
-    @GetMapping("/topRequestedProducts")
+
+
+    @PostMapping("/add-basket-product")
+    public void addBasketProduct(@RequestParam String email, @RequestParam Long product_id) {
+
+        serviceProducts.addBasketProduct(email, product_id);
+    }
+
+    @PostMapping("/remove-basket-product")
+    public void removeBasketProduct(@RequestParam String email, @RequestParam Long product_id) {
+
+        serviceProducts.removeBasketProduct(email, product_id);
+    }
+
+    @PostMapping("/evaluate")
+    public void productEvaluate(@RequestBody EvaluateProductRequest evaluateProductRequest) {
+        serviceProducts.productEvaluate(evaluateProductRequest);
+    }
+
+
+    @GetMapping("/exist-in-basket-by-account-email")
+    public Boolean productExistInBasketByAccountEmail(@RequestParam Long product_id, @RequestParam String email) {
+        return serviceProducts.productExistInBasketByAccountEmail(product_id, email);
+    }
+
+    @GetMapping("/which-account-exist-by-email/{email}")
+    public String whichAccountExistByEmail(@PathVariable String email) {
+
+        return serviceProducts.whichAccountExistByEmail(email);
+    }
+
+
+    @GetMapping("/top-requested-products")
     public List<Products> getTopRequestedProducts() {
 
         return serviceProducts.getTopRequestProducts();
     }
 
+    @GetMapping("/top-liked-products")
+    public List<Products> getTopLikedProducts() {
 
-    @PostMapping("/addProductRequestCount/{id}")
-    public void addProductRequestCount(@PathVariable Long id) {
+        return serviceProducts.getTopLikedProducts();
+    }
 
-       serviceProducts.addProductRequestCount(id);
+    @GetMapping("/get-products-by-category-id/{id}")
+    public List<Products> getProductsByCategoryId(@PathVariable Long id) {
+
+        return serviceProducts.getProductsByCategoryId(id);
+    }
+
+
+
+//    @PostMapping("/addProductRequestCount/{id}")
+//    public void addProductRequestCount(@PathVariable Long id) {
+//
+//       serviceProducts.addProductRequestCount(id);
+//    }
+
+
+    @PostMapping("/addProduct")
+    public void addProductRequestCount(@RequestBody AddProductRequest addProductRequest) {
+
+        serviceProducts.addProduct(addProductRequest);
+    }
+
+
+    @GetMapping("/get-user-products-in-stock/{email}")
+    public Set<Products> getUserProductsInStock(@PathVariable String email) {
+
+        return serviceProducts.getUserProductsInStock(email);
+    }
+
+    @GetMapping("/get-company-products-in-stock/{email}")
+    public Set<Products> getCompanyProductsInStock(@PathVariable String email) {
+
+
+        return serviceProducts.getCompanyProductsInStock(email);
+    }
+
+    @PostMapping("/remove-product-by-id/{id}")
+    public void removeProductById(@PathVariable Long id) {
+        serviceProducts.removeProductById(id);
     }
 
 }

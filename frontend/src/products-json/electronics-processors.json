@@ -1,0 +1,917 @@
+[
+  {
+    "processorId": 1,
+    "processor": "Intel Pentium MMX",
+    "categoryId": 88
+  },
+  {
+    "processorId": 2,
+    "processor": "Intel Atom",
+    "categoryId": 88
+  },
+  {
+    "processorId": 3,
+    "processor": "Intel Celeron",
+    "categoryId": 88
+  },
+  {
+    "processorId": 4,
+    "processor": "Intel Pentium Pro",
+    "categoryId": 88
+  },
+  {
+    "processorId": 5,
+    "processor": "Pentium II",
+    "categoryId": 88
+  },
+  {
+    "processorId": 6,
+    "processor": "Pentium III",
+    "categoryId": 88
+  },
+  {
+    "processorId": 7,
+    "processor": "Pentium 4",
+    "categoryId": 88
+  },
+  {
+    "processorId": 8,
+    "processor": "Pentium M",
+    "categoryId": 88
+  },
+  {
+    "processorId": 9,
+    "processor": "Pentium D/EE",
+    "categoryId": 88
+  },
+  {
+    "processorId": 10,
+    "processor": "Pentium Dual-Core",
+    "categoryId": 88
+  },
+  {
+    "processorId": 11,
+    "processor": "Intel Core",
+    "categoryId": 88
+  },
+  {
+    "processorId": 12,
+    "processor": "Intel Core 2",
+    "categoryId": 88
+  },
+  {
+    "processorId": 13,
+    "processor": "Intel Core i3",
+    "categoryId": 88
+  },
+  {
+    "processorId": 14,
+    "processor": "Intel Core i5",
+    "categoryId": 88
+  },
+  {
+    "processorId": 15,
+    "processor": "Intel Core i7",
+    "categoryId": 88
+  },
+  {
+    "processorId": 16,
+    "processor": "Intel Core i9",
+    "categoryId": 88
+  },
+  {
+    "processorId": 17,
+    "processor": "AMD A4",
+    "categoryId": 88
+  },
+  {
+    "processorId": 18,
+    "processor": "AMD A6",
+    "categoryId": 88
+  },
+  {
+    "processorId": 19,
+    "processor": "AMD A8",
+    "categoryId": 88
+  },
+  {
+    "processorId": 20,
+    "processor": "AMD Athlon",
+    "categoryId": 88
+  },
+  {
+    "processorId": 21,
+    "processor": "AMD FX",
+    "categoryId": 88
+  },
+  {
+    "processorId": 22,
+    "processor": "AMD Phenom",
+    "categoryId": 88
+  },
+  {
+    "processorId": 23,
+    "processor": "AMD Phenom II",
+    "categoryId": 88
+  },
+  {
+    "processorId": 24,
+    "processor": "AMD Ryzen 3",
+    "categoryId": 88
+  },
+  {
+    "processorId": 25,
+    "processor": "AMD Ryzen 5",
+    "categoryId": 88
+  },
+  {
+    "processorId": 26,
+    "processor": "AMD Ryzen 7",
+    "categoryId": 88
+  },
+  {
+    "processorId": 27,
+    "processor": "AMD Ryzen 9",
+    "categoryId": 88
+  },
+  {
+    "processorId": 28,
+    "processor": "AMD Ryzen Threadripper",
+    "categoryId": 88
+  },
+  {
+    "processorId": 29,
+    "processor": "AMD Sempron",
+    "categoryId": 88
+  },
+  {
+    "processorId": 30,
+    "processor": "AMD Turion",
+    "categoryId": 88
+  },
+  {
+    "processorId": 31,
+    "processor": "Snapdragon S2",
+    "categoryId": 87
+  },
+  {
+    "processorId": 32,
+    "processor": "Snapdragon S3",
+    "categoryId": 87
+  },
+  {
+    "processorId": 33,
+    "processor": "Snapdragon S4 series (Play , Plus , Pro & Prime)",
+    "categoryId": 87
+  },
+  {
+    "processorId": 34,
+    "processor": "Snapdragon 2 series (200 - *)",
+    "categoryId": 87
+  },
+  {
+    "processorId": 35,
+    "processor": "Snapdragon 3 series (300 - *)",
+    "categoryId": 87
+  },
+  {
+    "processorId": 36,
+    "processor": "Snapdragon 4 series (400 - *)",
+    "categoryId": 87
+  },
+  {
+    "processorId": 37,
+    "processor": "Snapdragon 5 series (500 - *)",
+    "categoryId": 87
+  },
+  {
+    "processorId": 38,
+    "processor": "Snapdragon 6 series (600 - *)",
+    "categoryId": 87
+  },
+  {
+    "processorId": 39,
+    "processor": "Snapdragon 7 series (700 - *)",
+    "categoryId": 87
+  },
+  {
+    "processorId": 40,
+    "processor": "Snapdragon 8 series (800 - *)",
+    "categoryId": 87
+  },
+  {
+    "processorId": 41,
+    "processor": "Snapdragon 9 series (900 - *)",
+    "categoryId": 87
+  },
+  {
+    "processorId": 42,
+    "processor": "Snapdragon for PC",
+    "categoryId": 87
+  },
+  {
+    "processorId": 43,
+    "processor": "ARM7",
+    "categoryId": 87
+  },
+  {
+    "processorId": 44,
+    "processor": "ARM8",
+    "categoryId": 87
+  },
+  {
+    "processorId": 45,
+    "processor": "ARM9",
+    "categoryId": 87
+  },
+  {
+    "processorId": 46,
+    "processor": "ARM11",
+    "categoryId": 87
+  },
+  {
+    "processorId": 47,
+    "processor": "Cortex-A9",
+    "categoryId": 87
+  },
+  {
+    "processorId": 48,
+    "processor": "Exynos 7 Dual",
+    "categoryId": 87
+  },
+  {
+    "processorId": 49,
+    "processor": "Exynos 7 Quad",
+    "categoryId": 87
+  },
+  {
+    "processorId": 50,
+    "processor": "Exynos 7 Octa",
+    "categoryId": 87
+  },
+  {
+    "processorId": 51,
+    "processor": "Exynos 9 SeriesExynos 7 SeriesExynos 5 SeriesExyno",
+    "categoryId": 87
+  },
+  {
+    "processorId": 52,
+    "processor": "Exynos 8 Octa",
+    "categoryId": 87
+  },
+  {
+    "processorId": 53,
+    "processor": "Exynos 5 Series",
+    "categoryId": 87
+  },
+  {
+    "processorId": 54,
+    "processor": "Exynos 7 Series",
+    "categoryId": 87
+  },
+  {
+    "processorId": 55,
+    "processor": "Exynos 9 Series",
+    "categoryId": 87
+  },
+  {
+    "processorId": 56,
+    "processor": "Apple A4",
+    "categoryId": 87
+  },
+  {
+    "processorId": 57,
+    "processor": "Apple A5",
+    "categoryId": 87
+  },
+  {
+    "processorId": 58,
+    "processor": "Apple A5X",
+    "categoryId": 87
+  },
+  {
+    "processorId": 59,
+    "processor": "Apple A6",
+    "categoryId": 87
+  },
+  {
+    "processorId": 60,
+    "processor": "Apple A6X",
+    "categoryId": 87
+  },
+  {
+    "processorId": 61,
+    "processor": "Apple A7",
+    "categoryId": 87
+  },
+  {
+    "processorId": 62,
+    "processor": "Apple A8",
+    "categoryId": 87
+  },
+  {
+    "processorId": 63,
+    "processor": "Apple A8X",
+    "categoryId": 87
+  },
+  {
+    "processorId": 64,
+    "processor": "Apple A9",
+    "categoryId": 87
+  },
+  {
+    "processorId": 65,
+    "processor": "Apple A9X",
+    "categoryId": 87
+  },
+  {
+    "processorId": 66,
+    "processor": "Apple A10 Fusion",
+    "categoryId": 87
+  },
+  {
+    "processorId": 67,
+    "processor": "Apple A10X Fusion",
+    "categoryId": 87
+  },
+  {
+    "processorId": 68,
+    "processor": "Apple A11 Bionic",
+    "categoryId": 87
+  },
+  {
+    "processorId": 69,
+    "processor": "Apple A12 Bionic",
+    "categoryId": 87
+  },
+  {
+    "processorId": 70,
+    "processor": "Apple A12X Bionic",
+    "categoryId": 87
+  },
+  {
+    "processorId": 71,
+    "processor": "Apple A12Z Bionic",
+    "categoryId": 87
+  },
+  {
+    "processorId": 72,
+    "processor": "Apple A13 Bionic",
+    "categoryId": 87
+  },
+  {
+    "processorId": 73,
+    "processor": "Apple A14 Bionic",
+    "categoryId": 87
+  },
+  {
+    "processorId": 74,
+    "processor": "Apple S1",
+    "categoryId": 87
+  },
+  {
+    "processorId": 75,
+    "processor": "Apple S1P",
+    "categoryId": 87
+  },
+  {
+    "processorId": 76,
+    "processor": "Apple S2",
+    "categoryId": 87
+  },
+  {
+    "processorId": 77,
+    "processor": "Apple S3",
+    "categoryId": 87
+  },
+  {
+    "processorId": 78,
+    "processor": "Apple S4",
+    "categoryId": 87
+  },
+  {
+    "processorId": 79,
+    "processor": "Apple S5",
+    "categoryId": 87
+  },
+  {
+    "processorId": 80,
+    "processor": "Apple S6",
+    "categoryId": 87
+  },
+  {
+    "processorId": 81,
+    "processor": "Apple T1",
+    "categoryId": 87
+  },
+  {
+    "processorId": 82,
+    "processor": "Apple T2",
+    "categoryId": 87
+  },
+  {
+    "processorId": 83,
+    "processor": "Apple W1",
+    "categoryId": 87
+  },
+  {
+    "processorId": 84,
+    "processor": "Apple W2",
+    "categoryId": 87
+  },
+  {
+    "processorId": 85,
+    "processor": "Apple W3",
+    "categoryId": 87
+  },
+  {
+    "processorId": 86,
+    "processor": "Apple H1",
+    "categoryId": 87
+  },
+  {
+    "processorId": 87,
+    "processor": "Apple U1",
+    "categoryId": 87
+  },
+  {
+    "processorId": 88,
+    "processor": "Apple M1",
+    "categoryId": 87
+  },
+  {
+    "processorId": 89,
+    "processor": "Kirin 950 and 955",
+    "categoryId": 87
+  },
+  {
+    "processorId": 90,
+    "processor": "Kirin 960",
+    "categoryId": 87
+  },
+  {
+    "processorId": 91,
+    "processor": "Kirin 970",
+    "categoryId": 87
+  },
+  {
+    "processorId": 92,
+    "processor": "Kirin 980 & Kirin 985 5G/4G",
+    "categoryId": 87
+  },
+  {
+    "processorId": 93,
+    "processor": "Kirin 990 4G, Kirin 990 5G & Kirin 990E 5G",
+    "categoryId": 87
+  },
+  {
+    "processorId": 94,
+    "processor": "Kirin 9000 5G/4G & Kirin 9000E",
+    "categoryId": 87
+  },
+  {
+    "processorId": 95,
+    "processor": "Kirin 950 and 955",
+    "categoryId": 87
+  },
+  {
+    "processorId": 96,
+    "processor": "K3V2",
+    "categoryId": 87
+  },
+  {
+    "processorId": 97,
+    "processor": "K3V2E",
+    "categoryId": 87
+  },
+  {
+    "processorId": 98,
+    "processor": "Kirin 620",
+    "categoryId": 87
+  },
+  {
+    "processorId": 99,
+    "processor": "Kirin 650, 655, 658, 659",
+    "categoryId": 87
+  },
+  {
+    "processorId": 100,
+    "processor": "Kirin 710",
+    "categoryId": 87
+  },
+  {
+    "processorId": 101,
+    "processor": "Kirin 810 and 820",
+    "categoryId": 87
+  },
+  {
+    "processorId": 102,
+    "processor": "Kirin 910 and 910T",
+    "categoryId": 87
+  },
+  {
+    "processorId": 103,
+    "processor": "Kirin 920, 925 and 928",
+    "categoryId": 87
+  },
+  {
+    "processorId": 104,
+    "processor": "Kirin 930 and 935",
+    "categoryId": 87
+  },
+  {
+    "processorId": 105,
+    "processor": "Snapdragon S1",
+    "categoryId": 87
+  },
+  {
+    "processorId": 106,
+    "processor": "Snapdragon S1",
+    "categoryId": 89
+  },
+  {
+    "processorId": 107,
+    "processor": "Snapdragon S2",
+    "categoryId": 89
+  },
+  {
+    "processorId": 108,
+    "processor": "Snapdragon S3",
+    "categoryId": 89
+  },
+  {
+    "processorId": 109,
+    "processor": "Snapdragon S4 series (Play , Plus , Pro & Prime)",
+    "categoryId": 89
+  },
+  {
+    "processorId": 110,
+    "processor": "Snapdragon 2 series (200 - *)",
+    "categoryId": 89
+  },
+  {
+    "processorId": 111,
+    "processor": "Snapdragon 3 series (300 - *)",
+    "categoryId": 89
+  },
+  {
+    "processorId": 112,
+    "processor": "Snapdragon 4 series (400 - *)",
+    "categoryId": 89
+  },
+  {
+    "processorId": 113,
+    "processor": "Snapdragon 5 series (500 - *)",
+    "categoryId": 89
+  },
+  {
+    "processorId": 114,
+    "processor": "Snapdragon 6 series (600 - *)",
+    "categoryId": 89
+  },
+  {
+    "processorId": 115,
+    "processor": "Snapdragon 7 series (700 - *)",
+    "categoryId": 89
+  },
+  {
+    "processorId": 116,
+    "processor": "Snapdragon 8 series (800 - *)",
+    "categoryId": 89
+  },
+  {
+    "processorId": 117,
+    "processor": "Snapdragon 9 series (900 - *)",
+    "categoryId": 89
+  },
+  {
+    "processorId": 118,
+    "processor": "Snapdragon for PC",
+    "categoryId": 89
+  },
+  {
+    "processorId": 119,
+    "processor": "ARM7",
+    "categoryId": 89
+  },
+  {
+    "processorId": 120,
+    "processor": "ARM8",
+    "categoryId": 89
+  },
+  {
+    "processorId": 121,
+    "processor": "ARM9",
+    "categoryId": 89
+  },
+  {
+    "processorId": 122,
+    "processor": "ARM11",
+    "categoryId": 89
+  },
+  {
+    "processorId": 123,
+    "processor": "Cortex-A9",
+    "categoryId": 89
+  },
+  {
+    "processorId": 124,
+    "processor": "Exynos 7 Dual",
+    "categoryId": 89
+  },
+  {
+    "processorId": 125,
+    "processor": "Exynos 7 Quad",
+    "categoryId": 89
+  },
+  {
+    "processorId": 126,
+    "processor": "Exynos 7 Octa",
+    "categoryId": 89
+  },
+  {
+    "processorId": 127,
+    "processor": "Exynos 9 SeriesExynos 7 SeriesExynos 5 SeriesExyno",
+    "categoryId": 89
+  },
+  {
+    "processorId": 128,
+    "processor": "Exynos 8 Octa",
+    "categoryId": 89
+  },
+  {
+    "processorId": 129,
+    "processor": "Exynos 5 Series",
+    "categoryId": 89
+  },
+  {
+    "processorId": 130,
+    "processor": "Exynos 7 Series",
+    "categoryId": 89
+  },
+  {
+    "processorId": 131,
+    "processor": "Exynos 9 Series",
+    "categoryId": 89
+  },
+  {
+    "processorId": 132,
+    "processor": "Apple A4",
+    "categoryId": 89
+  },
+  {
+    "processorId": 133,
+    "processor": "Apple A5",
+    "categoryId": 89
+  },
+  {
+    "processorId": 134,
+    "processor": "Apple A5X",
+    "categoryId": 89
+  },
+  {
+    "processorId": 135,
+    "processor": "Apple A6",
+    "categoryId": 89
+  },
+  {
+    "processorId": 136,
+    "processor": "Apple A6X",
+    "categoryId": 89
+  },
+  {
+    "processorId": 137,
+    "processor": "Apple A7",
+    "categoryId": 89
+  },
+  {
+    "processorId": 138,
+    "processor": "Apple A8",
+    "categoryId": 89
+  },
+  {
+    "processorId": 139,
+    "processor": "Apple A8X",
+    "categoryId": 89
+  },
+  {
+    "processorId": 140,
+    "processor": "Apple A9",
+    "categoryId": 89
+  },
+  {
+    "processorId": 141,
+    "processor": "Apple A9X",
+    "categoryId": 89
+  },
+  {
+    "processorId": 142,
+    "processor": "Apple A10 Fusion",
+    "categoryId": 89
+  },
+  {
+    "processorId": 143,
+    "processor": "Apple A10X Fusion",
+    "categoryId": 89
+  },
+  {
+    "processorId": 144,
+    "processor": "Apple A11 Bionic",
+    "categoryId": 89
+  },
+  {
+    "processorId": 145,
+    "processor": "Apple A12 Bionic",
+    "categoryId": 89
+  },
+  {
+    "processorId": 146,
+    "processor": "Apple A12X Bionic",
+    "categoryId": 89
+  },
+  {
+    "processorId": 147,
+    "processor": "Apple A12Z Bionic",
+    "categoryId": 89
+  },
+  {
+    "processorId": 148,
+    "processor": "Apple A13 Bionic",
+    "categoryId": 89
+  },
+  {
+    "processorId": 149,
+    "processor": "Apple A14 Bionic",
+    "categoryId": 89
+  },
+  {
+    "processorId": 150,
+    "processor": "Apple S1",
+    "categoryId": 89
+  },
+  {
+    "processorId": 151,
+    "processor": "Apple S1P",
+    "categoryId": 89
+  },
+  {
+    "processorId": 152,
+    "processor": "Apple S2",
+    "categoryId": 89
+  },
+  {
+    "processorId": 153,
+    "processor": "Apple S3",
+    "categoryId": 89
+  },
+  {
+    "processorId": 154,
+    "processor": "Apple S4",
+    "categoryId": 89
+  },
+  {
+    "processorId": 155,
+    "processor": "Apple S5",
+    "categoryId": 89
+  },
+  {
+    "processorId": 156,
+    "processor": "Apple S6",
+    "categoryId": 89
+  },
+  {
+    "processorId": 157,
+    "processor": "Apple T1",
+    "categoryId": 89
+  },
+  {
+    "processorId": 158,
+    "processor": "Apple T2",
+    "categoryId": 89
+  },
+  {
+    "processorId": 159,
+    "processor": "Apple W1",
+    "categoryId": 89
+  },
+  {
+    "processorId": 160,
+    "processor": "Apple W2",
+    "categoryId": 89
+  },
+  {
+    "processorId": 161,
+    "processor": "Apple W3",
+    "categoryId": 89
+  },
+  {
+    "processorId": 162,
+    "processor": "Apple H1",
+    "categoryId": 89
+  },
+  {
+    "processorId": 163,
+    "processor": "Apple U1",
+    "categoryId": 89
+  },
+  {
+    "processorId": 164,
+    "processor": "Apple M1",
+    "categoryId": 89
+  },
+  {
+    "processorId": 165,
+    "processor": "Kirin 950 and 955",
+    "categoryId": 89
+  },
+  {
+    "processorId": 166,
+    "processor": "Kirin 960",
+    "categoryId": 89
+  },
+  {
+    "processorId": 167,
+    "processor": "Kirin 970",
+    "categoryId": 89
+  },
+  {
+    "processorId": 168,
+    "processor": "Kirin 980 & Kirin 985 5G/4G",
+    "categoryId": 89
+  },
+  {
+    "processorId": 169,
+    "processor": "Kirin 990 4G, Kirin 990 5G & Kirin 990E 5G",
+    "categoryId": 89
+  },
+  {
+    "processorId": 170,
+    "processor": "Kirin 9000 5G/4G & Kirin 9000E",
+    "categoryId": 89
+  },
+  {
+    "processorId": 171,
+    "processor": "Kirin 950 and 955",
+    "categoryId": 89
+  },
+  {
+    "processorId": 172,
+    "processor": "K3V2",
+    "categoryId": 89
+  },
+  {
+    "processorId": 173,
+    "processor": "K3V2E",
+    "categoryId": 89
+  },
+  {
+    "processorId": 174,
+    "processor": "Kirin 620",
+    "categoryId": 89
+  },
+  {
+    "processorId": 175,
+    "processor": "Kirin 650, 655, 658, 659",
+    "categoryId": 89
+  },
+  {
+    "processorId": 176,
+    "processor": "Kirin 710",
+    "categoryId": 89
+  },
+  {
+    "processorId": 177,
+    "processor": "Kirin 810 and 820",
+    "categoryId": 89
+  },
+  {
+    "processorId": 178,
+    "processor": "Kirin 910 and 910T",
+    "categoryId": 89
+  },
+  {
+    "processorId": 179,
+    "processor": "Kirin 920, 925 and 928",
+    "categoryId": 89
+  },
+  {
+    "processorId": 180,
+    "processor": "Kirin 930 and 935",
+    "categoryId": 89
+  },
+  {
+    "processorId": 181,
+    "processor": "Other",
+    "categoryId": 87
+  },
+  {
+    "processorId": 182,
+    "processor": "Other",
+    "categoryId": 88
+  },
+  {
+    "processorId": 183,
+    "processor": "Other",
+    "categoryId": 94
+  }
+]

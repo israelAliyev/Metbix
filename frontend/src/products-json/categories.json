@@ -1,0 +1,2495 @@
+[
+  {
+    "categoryId": 87,
+    "categoryName": "Phones",
+    "department": {
+      "departmentId": 1,
+      "department": "Electronics",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 88,
+    "categoryName": "Computers",
+    "department": {
+      "departmentId": 1,
+      "department": "Electronics",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 89,
+    "categoryName": "Cameras",
+    "department": {
+      "departmentId": 1,
+      "department": "Electronics",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 90,
+    "categoryName": "Audio and Video",
+    "department": {
+      "departmentId": 1,
+      "department": "Electronics",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 91,
+    "categoryName": "Monitors",
+    "department": {
+      "departmentId": 1,
+      "department": "Electronics",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 92,
+    "categoryName": "Smart Watches",
+    "department": {
+      "departmentId": 1,
+      "department": "Electronics",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 93,
+    "categoryName": "SIM cards",
+    "department": {
+      "departmentId": 1,
+      "department": "Electronics",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 94,
+    "categoryName": "Tablets",
+    "department": {
+      "departmentId": 1,
+      "department": "Electronics",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 95,
+    "categoryName": "Printers",
+    "department": {
+      "departmentId": 1,
+      "department": "Electronics",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 96,
+    "categoryName": "3D Printers",
+    "department": {
+      "departmentId": 1,
+      "department": "Electronics",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 97,
+    "categoryName": "TV",
+    "department": {
+      "departmentId": 1,
+      "department": "Electronics",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 98,
+    "categoryName": "VR Devices",
+    "department": {
+      "departmentId": 1,
+      "department": "Electronics",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 99,
+    "categoryName": "Homes",
+    "department": {
+      "departmentId": 2,
+      "department": "Immovable property and furniture",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 100,
+    "categoryName": "Apartments",
+    "department": {
+      "departmentId": 2,
+      "department": "Immovable property and furniture",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 101,
+    "categoryName": "Lands",
+    "department": {
+      "departmentId": 2,
+      "department": "Immovable property and furniture",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 102,
+    "categoryName": "Shops",
+    "department": {
+      "departmentId": 2,
+      "department": "Immovable property and furniture",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 103,
+    "categoryName": "Rooms",
+    "department": {
+      "departmentId": 2,
+      "department": "Immovable property and furniture",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 104,
+    "categoryName": "Fabric",
+    "department": {
+      "departmentId": 3,
+      "department": "Arts & Crafts",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 105,
+    "categoryName": "Embroidery and Sewing Machines",
+    "department": {
+      "departmentId": 3,
+      "department": "Arts & Crafts",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 106,
+    "categoryName": "Painting, Drawing & Art Supplies",
+    "department": {
+      "departmentId": 3,
+      "department": "Arts & Crafts",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 107,
+    "categoryName": "Paintings",
+    "department": {
+      "departmentId": 3,
+      "department": "Arts & Crafts",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 108,
+    "categoryName": "Party Decorations & Supplies",
+    "department": {
+      "departmentId": 3,
+      "department": "Arts & Crafts",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 109,
+    "categoryName": "Gift Packaging Materials",
+    "department": {
+      "departmentId": 3,
+      "department": "Arts & Crafts",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 110,
+    "categoryName": "Beading & Jewelry Making",
+    "department": {
+      "departmentId": 3,
+      "department": "Arts & Crafts",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 111,
+    "categoryName": "Bicycles",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 112,
+    "categoryName": "Knitting & Crochet",
+    "department": {
+      "departmentId": 3,
+      "department": "Arts & Crafts",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 113,
+    "categoryName": "Scooters",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 114,
+    "categoryName": "Cars",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 115,
+    "categoryName": "Skateboards",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 116,
+    "categoryName": "Motorcycles",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 117,
+    "categoryName": "Hoverboard",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 118,
+    "categoryName": "Car Care",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 119,
+    "categoryName": "Car Accessories",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 120,
+    "categoryName": "Painting and Painting Supplies",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 121,
+    "categoryName": "Replacement Parts",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 122,
+    "categoryName": "Car Logos",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 123,
+    "categoryName": "Oils & Fluids",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 124,
+    "categoryName": "Motor Accessories",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 125,
+    "categoryName": "Tires & Wheels",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 126,
+    "categoryName": "Interior Accessors",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 127,
+    "categoryName": "Hair Care, Dryer and Press Machines",
+    "department": {
+      "departmentId": 5,
+      "department": "Beauty and Personal Care",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 128,
+    "categoryName": "Makeup",
+    "department": {
+      "departmentId": 5,
+      "department": "Beauty and Personal Care",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 129,
+    "categoryName": "Skin Care",
+    "department": {
+      "departmentId": 5,
+      "department": "Beauty and Personal Care",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 130,
+    "categoryName": "Fragrance",
+    "department": {
+      "departmentId": 5,
+      "department": "Beauty and Personal Care",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 131,
+    "categoryName": "Foot, Hand & Nail Care",
+    "department": {
+      "departmentId": 5,
+      "department": "Beauty and Personal Care",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 132,
+    "categoryName": "Tools & Accessories",
+    "department": {
+      "departmentId": 5,
+      "department": "Beauty and Personal Care",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 133,
+    "categoryName": "Shave and Hair Removal",
+    "department": {
+      "departmentId": 5,
+      "department": "Beauty and Personal Care",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 134,
+    "categoryName": "Personal Care",
+    "department": {
+      "departmentId": 5,
+      "department": "Beauty and Personal Care",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 135,
+    "categoryName": "Oral Care",
+    "department": {
+      "departmentId": 5,
+      "department": "Beauty and Personal Care",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 136,
+    "categoryName": "Baby & Child Care",
+    "department": {
+      "departmentId": 6,
+      "department": "Health",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 137,
+    "categoryName": "Health Care",
+    "department": {
+      "departmentId": 6,
+      "department": "Health",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 138,
+    "categoryName": "Household Supplies",
+    "department": {
+      "departmentId": 6,
+      "department": "Health",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 139,
+    "categoryName": "Medical Supplies and Equipment",
+    "department": {
+      "departmentId": 6,
+      "department": "Health",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 140,
+    "categoryName": "Oral Care",
+    "department": {
+      "departmentId": 6,
+      "department": "Health",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 141,
+    "categoryName": "Personal Care",
+    "department": {
+      "departmentId": 6,
+      "department": "Health",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 142,
+    "categoryName": "Sexual Wellness",
+    "department": {
+      "departmentId": 6,
+      "department": "Health",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 143,
+    "categoryName": "Sports Nutrition",
+    "department": {
+      "departmentId": 6,
+      "department": "Health",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 144,
+    "categoryName": "Stationery & Gift Wrapping Supplies",
+    "department": {
+      "departmentId": 6,
+      "department": "Health",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 145,
+    "categoryName": "Vision Care",
+    "department": {
+      "departmentId": 6,
+      "department": "Health",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 146,
+    "categoryName": "Vitamins & Dietary Supplements",
+    "department": {
+      "departmentId": 6,
+      "department": "Health",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 147,
+    "categoryName": "Wellness & Relaxation",
+    "department": {
+      "departmentId": 6,
+      "department": "Health",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 148,
+    "categoryName": "Abrasive & Finishing Products",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 149,
+    "categoryName": "Additive Manufacturing Products",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 150,
+    "categoryName": "Commercial Door Products",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 151,
+    "categoryName": "Cutting Tools",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 152,
+    "categoryName": "Fasteners",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 153,
+    "categoryName": "Filtration",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 154,
+    "categoryName": "Food Service Equipment & Supplies",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 155,
+    "categoryName": "Hydraulics, Pneumatics & Plumbing",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 156,
+    "categoryName": "Industrial Electrical",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 157,
+    "categoryName": "Industrial Hardware",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 158,
+    "categoryName": "Industrial Power & Hand Tools",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 159,
+    "categoryName": "Janitorial & Sanitation Supplies",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 160,
+    "categoryName": "Lab & Scientific Products",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 161,
+    "categoryName": "Material Handling Products",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 162,
+    "categoryName": "Occupational Health & Safety Products",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 163,
+    "categoryName": "Packaging & Shipping Supplies",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 164,
+    "categoryName": "Power Transmission Products",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 165,
+    "categoryName": "Professional Dental Supplies",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 166,
+    "categoryName": "Professional Medical Supplies",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 167,
+    "categoryName": "Raw Materials",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 168,
+    "categoryName": "Retail Store Fixtures & Equipment",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 169,
+    "categoryName": "Robotics",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 170,
+    "categoryName": "Science Education",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 171,
+    "categoryName": "Tapes, Adhesives & Sealants",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 172,
+    "categoryName": "Test, Measure & Inspect",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 173,
+    "categoryName": "Backpacks",
+    "department": {
+      "departmentId": 8,
+      "department": "Luggage & Bags",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 174,
+    "categoryName": "Carry-ons",
+    "department": {
+      "departmentId": 8,
+      "department": "Luggage & Bags",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 175,
+    "categoryName": "Garment bags",
+    "department": {
+      "departmentId": 8,
+      "department": "Luggage & Bags",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 176,
+    "categoryName": "Travel Totes",
+    "department": {
+      "departmentId": 8,
+      "department": "Luggage & Bags",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 177,
+    "categoryName": "Luggage Sets",
+    "department": {
+      "departmentId": 8,
+      "department": "Luggage & Bags",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 178,
+    "categoryName": "Laptop Bags",
+    "department": {
+      "departmentId": 8,
+      "department": "Luggage & Bags",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 179,
+    "categoryName": "Suitcases",
+    "department": {
+      "departmentId": 8,
+      "department": "Luggage & Bags",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 180,
+    "categoryName": "Kids Luggage",
+    "department": {
+      "departmentId": 8,
+      "department": "Luggage & Bags",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 181,
+    "categoryName": "Messenger Bags",
+    "department": {
+      "departmentId": 8,
+      "department": "Luggage & Bags",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 182,
+    "categoryName": "Umbrellas",
+    "department": {
+      "departmentId": 8,
+      "department": "Luggage & Bags",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 183,
+    "categoryName": "Duffles",
+    "department": {
+      "departmentId": 8,
+      "department": "Luggage & Bags",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 184,
+    "categoryName": "Travel Accessories",
+    "department": {
+      "departmentId": 8,
+      "department": "Luggage & Bags",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 185,
+    "categoryName": "Movies",
+    "department": {
+      "departmentId": 9,
+      "department": "Movies & Television",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 186,
+    "categoryName": "TV Shows",
+    "department": {
+      "departmentId": 9,
+      "department": "Movies & Television",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 187,
+    "categoryName": "Blu-ray",
+    "department": {
+      "departmentId": 9,
+      "department": "Movies & Television",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 188,
+    "categoryName": "4K Ultra HD",
+    "department": {
+      "departmentId": 9,
+      "department": "Movies & Television",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 189,
+    "categoryName": "Today's Deals",
+    "department": {
+      "departmentId": 9,
+      "department": "Movies & Television",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 190,
+    "categoryName": "New Releases",
+    "department": {
+      "departmentId": 9,
+      "department": "Movies & Television",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 191,
+    "categoryName": "Pre-orders",
+    "department": {
+      "departmentId": 9,
+      "department": "Movies & Television",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 192,
+    "categoryName": "Kids & Family",
+    "department": {
+      "departmentId": 9,
+      "department": "Movies & Television",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 193,
+    "categoryName": "Prime Video",
+    "department": {
+      "departmentId": 9,
+      "department": "Movies & Television",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 194,
+    "categoryName": "Dogs",
+    "department": {
+      "departmentId": 10,
+      "department": "Pets and Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 195,
+    "categoryName": "Cats",
+    "department": {
+      "departmentId": 10,
+      "department": "Pets and Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 196,
+    "categoryName": "Fish & Aquatic Pets",
+    "department": {
+      "departmentId": 10,
+      "department": "Pets and Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 197,
+    "categoryName": "Birds",
+    "department": {
+      "departmentId": 10,
+      "department": "Pets and Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 198,
+    "categoryName": "Horses",
+    "department": {
+      "departmentId": 10,
+      "department": "Pets and Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 199,
+    "categoryName": "Reptiles & Amphibians",
+    "department": {
+      "departmentId": 10,
+      "department": "Pets and Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 200,
+    "categoryName": "Small Animals",
+    "department": {
+      "departmentId": 10,
+      "department": "Pets and Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 201,
+    "categoryName": "Backend",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 202,
+    "categoryName": "Frontend",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 203,
+    "categoryName": "UI",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 204,
+    "categoryName": "UX",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 205,
+    "categoryName": "Web Projects",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 206,
+    "categoryName": "Domains",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 207,
+    "categoryName": "Courses",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 208,
+    "categoryName": "Free Lance",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 209,
+    "categoryName": "Accounting & Finance",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 210,
+    "categoryName": "Antivirus & Security",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 211,
+    "categoryName": "Business & Office",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 212,
+    "categoryName": "Children's",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 213,
+    "categoryName": "Design & Illustration",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 214,
+    "categoryName": "Digital Software",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 215,
+    "categoryName": "Education & Reference",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 216,
+    "categoryName": "Games",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 217,
+    "categoryName": "Lifestyle & Hobbies",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 218,
+    "categoryName": "Music",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 219,
+    "categoryName": "Networking & Servers",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 220,
+    "categoryName": "Operating Systems",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 221,
+    "categoryName": "Photography",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 222,
+    "categoryName": "Programming & Web Development",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 223,
+    "categoryName": "Tax Preparation",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 224,
+    "categoryName": "Utilities",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 225,
+    "categoryName": "Video",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 226,
+    "categoryName": "Sports and Outdoors",
+    "department": {
+      "departmentId": 12,
+      "department": "Sports and Outdoors",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 227,
+    "categoryName": "Outdoor Recreation",
+    "department": {
+      "departmentId": 12,
+      "department": "Sports and Outdoors",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 228,
+    "categoryName": "Sports & Fitness",
+    "department": {
+      "departmentId": 12,
+      "department": "Sports and Outdoors",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 229,
+    "categoryName": "Fan Shop",
+    "department": {
+      "departmentId": 12,
+      "department": "Sports and Outdoors",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 230,
+    "categoryName": "Appliances",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 231,
+    "categoryName": "Building Supplies",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 232,
+    "categoryName": "Electrical",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 233,
+    "categoryName": "Hardware",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 234,
+    "categoryName": "Kitchen & Bath Fixtures",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 235,
+    "categoryName": "Light Bulbs",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 236,
+    "categoryName": "Lighting & Ceiling Fans",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 237,
+    "categoryName": "Measuring & Layout Tools",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 238,
+    "categoryName": "Painting Supplies & Wall Treatments",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 239,
+    "categoryName": "Power & Hand Tools",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 240,
+    "categoryName": "Rough Plumbing",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 241,
+    "categoryName": "Safety & Security",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 242,
+    "categoryName": "Storage & Home Organization",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 243,
+    "categoryName": "Welding & Soldering",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 244,
+    "categoryName": "Action Figures & Statues",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 245,
+    "categoryName": "Arts & Crafts",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 246,
+    "categoryName": "Baby & Toddler Toys",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 247,
+    "categoryName": "Building Toys",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 248,
+    "categoryName": "Dolls & Accessories",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 249,
+    "categoryName": "Dress Up & Pretend Play",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 250,
+    "categoryName": "Kids' Electronics",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 251,
+    "categoryName": "Games",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 252,
+    "categoryName": "Hobbies",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 253,
+    "categoryName": "Grown-Up Toys",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 254,
+    "categoryName": "Kids' Furniture",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 255,
+    "categoryName": "Learning & Education",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 256,
+    "categoryName": "Novelty & Gag Toys",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 257,
+    "categoryName": "Party Supplies",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 258,
+    "categoryName": "Puppets",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 259,
+    "categoryName": "Puzzles",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 260,
+    "categoryName": "Sports & Outdoor Play",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 261,
+    "categoryName": "Stuffed Animals & Plush Toys",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 262,
+    "categoryName": "Toy Remote Control & Play Vehicles",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 263,
+    "categoryName": "Tricycles",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 264,
+    "categoryName": "Video Games",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 265,
+    "categoryName": "Video Games",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 266,
+    "categoryName": "PlayStation 4",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 267,
+    "categoryName": "PlayStation 3",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 268,
+    "categoryName": "Xbox One",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 269,
+    "categoryName": "Xbox 360",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 270,
+    "categoryName": "Nintendo Switch",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 271,
+    "categoryName": "Wii U",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 272,
+    "categoryName": "Wii",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 273,
+    "categoryName": "PC",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 274,
+    "categoryName": "Mac",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 275,
+    "categoryName": "Nintendo 3DS & 2DS",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 276,
+    "categoryName": "Nintendo DS",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 277,
+    "categoryName": "PlayStation Vita",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 278,
+    "categoryName": "Sony PSP",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 279,
+    "categoryName": "Retro Gaming & Microconsoles",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 280,
+    "categoryName": "Accessories",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 281,
+    "categoryName": "Digital Games",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 282,
+    "categoryName": "Kids & Family",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 283,
+    "categoryName": "Full-Time Jobs",
+    "department": {
+      "departmentId": 16,
+      "department": "Jobs",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 284,
+    "categoryName": "Part-Time jobs",
+    "department": {
+      "departmentId": 16,
+      "department": "Jobs",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 285,
+    "categoryName": "Remote Jobs",
+    "department": {
+      "departmentId": 16,
+      "department": "Jobs",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 286,
+    "categoryName": "Free lance",
+    "department": {
+      "departmentId": 16,
+      "department": "Jobs",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 287,
+    "categoryName": "By Contract",
+    "department": {
+      "departmentId": 16,
+      "department": "Jobs",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 288,
+    "categoryName": "Ram",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 289,
+    "categoryName": "Graphics Card",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 290,
+    "categoryName": "Processors",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 291,
+    "categoryName": "Monitors",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 292,
+    "categoryName": "SD Card",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 293,
+    "categoryName": "HDD Storage",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 294,
+    "categoryName": "SDD Storage",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 295,
+    "categoryName": "HeadPhones",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 296,
+    "categoryName": "Portable Charger",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 297,
+    "categoryName": "Adapters",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 298,
+    "categoryName": "Cases",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 299,
+    "categoryName": "USB Storage",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 300,
+    "categoryName": "GPS & Navigation",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 301,
+    "categoryName": "Loudspeaker",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 302,
+    "categoryName": "Amplifier",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 303,
+    "categoryName": "Video Projectors",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 304,
+    "categoryName": "Wifi",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 305,
+    "categoryName": "Modem",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 306,
+    "categoryName": "Air conditioning",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 307,
+    "categoryName": "Fan",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 308,
+    "categoryName": "Air cleaner",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 309,
+    "categoryName": "Kettle",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 310,
+    "categoryName": "Vacuum Cleaner",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 311,
+    "categoryName": "Washing Machines",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 312,
+    "categoryName": "Electric Irons",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 313,
+    "categoryName": "Sewing machine",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 314,
+    "categoryName": "Instant Water Heater",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 315,
+    "categoryName": "Heater",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 316,
+    "categoryName": "Landline phones",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 317,
+    "categoryName": "Scales",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 318,
+    "categoryName": "Dishwasher",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 319,
+    "categoryName": "Refrigerators",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 320,
+    "categoryName": "Microwave Stoves",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 321,
+    "categoryName": "Toasters",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 322,
+    "categoryName": "Blenders, Mixers, Grinders",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 323,
+    "categoryName": "Meat Grinder",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 324,
+    "categoryName": "Gas stove",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 325,
+    "categoryName": "Water filter",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 326,
+    "categoryName": "Coffee machine",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 327,
+    "categoryName": "Fruit juicer",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 328,
+    "categoryName": "Baby Apparel",
+    "department": {
+      "departmentId": 19,
+      "department": "Apparel & Fashion",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 329,
+    "categoryName": "Boys' Apparel & Fashion",
+    "department": {
+      "departmentId": 19,
+      "department": "Apparel & Fashion",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 330,
+    "categoryName": "Girls' Apparel & Fashion",
+    "department": {
+      "departmentId": 19,
+      "department": "Apparel & Fashion",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 331,
+    "categoryName": "Men's Apparel & Fashion",
+    "department": {
+      "departmentId": 19,
+      "department": "Apparel & Fashion",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 332,
+    "categoryName": "Women's Apparel & Fashion",
+    "department": {
+      "departmentId": 19,
+      "department": "Apparel & Fashion",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 333,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 1,
+      "department": "Electronics",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 334,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 2,
+      "department": "Immovable property and furniture",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 335,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 3,
+      "department": "Arts & Crafts",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 336,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 337,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 5,
+      "department": "Beauty and Personal Care",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 338,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 6,
+      "department": "Health",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 339,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 7,
+      "department": "Industrial and Scientific",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 340,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 8,
+      "department": "Luggage & Bags",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 341,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 9,
+      "department": "Movies & Television",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 342,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 10,
+      "department": "Pets and Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 343,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 11,
+      "department": "Software",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 344,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 12,
+      "department": "Sports and Outdoors",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 345,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 13,
+      "department": "Tools and Home improvement",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 346,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 14,
+      "department": "Toys and Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 347,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 15,
+      "department": "Video Games",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 348,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 16,
+      "department": "Jobs",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 349,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 350,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 18,
+      "department": "Household Appliances",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 351,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 19,
+      "department": "Apparel & Fashion",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 352,
+    "categoryName": "Tractors",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 353,
+    "categoryName": "Truck",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 354,
+    "categoryName": "Excavator",
+    "department": {
+      "departmentId": 4,
+      "department": "Automotive",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 355,
+    "categoryName": "Batteries",
+    "department": {
+      "departmentId": 17,
+      "department": "Electronics Accessories & Supplies",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 363,
+    "categoryName": "Stringed instruments",
+    "department": {
+      "departmentId": 20,
+      "department": "Music",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 364,
+    "categoryName": "Percussion instruments",
+    "department": {
+      "departmentId": 20,
+      "department": "Music",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 365,
+    "categoryName": "Wind instruments",
+    "department": {
+      "departmentId": 20,
+      "department": "Music",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 366,
+    "categoryName": "Keyed instruments",
+    "department": {
+      "departmentId": 20,
+      "department": "Music",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 367,
+    "categoryName": "String instruments",
+    "department": {
+      "departmentId": 20,
+      "department": "Music",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 368,
+    "categoryName": "Microphone",
+    "department": {
+      "departmentId": 20,
+      "department": "Music",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 369,
+    "categoryName": "Accessories",
+    "department": {
+      "departmentId": 20,
+      "department": "Music",
+      "hibernateLazyInitializer": {}
+    }
+  },
+  {
+    "categoryId": 370,
+    "categoryName": "Other",
+    "department": {
+      "departmentId": 20,
+      "department": "Music",
+      "hibernateLazyInitializer": {}
+    }
+  }
+]

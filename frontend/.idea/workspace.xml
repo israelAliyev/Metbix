@@ -1,106 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d960938-7682-49c8-9117-30510a72beb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/dtos/AddProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/dtos/ProductReviewRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/dtos/RegistrationCompanyRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/dtos/UpdateCompanyRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/dtos/UpdateUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/Continents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/ProductReviews.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/ProductsPictures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryBrands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryContinents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryDepartments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryModels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryProductReviews.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryApparelFabricType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryApparelGenderAgeRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryApparelSizes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryAutomotiveCrash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryAutomotiveDistanceTraveleds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryAutomotiveEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryAutomotiveFuel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryAutomotiveMaxSpeed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryAutomotiveSeat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryAutomotiveType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryElectronicsBattery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryElectronicsCamera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryElectronicsCellularTechnology.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryElectronicsComputerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryElectronicsDisplayTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryElectronicsFrontCamera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryElectronicsGraphicsCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryElectronicsMemory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryElectronicsOperatingSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryElectronicsProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryElectronicsRam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryElectronicsScreenSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryElectronicsWirelessCarrier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryMusicInstruments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/options/RepositoryProductColors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/security/CompanyDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/Companies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/ProductColorsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/Products.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/ProductsColors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/ProductsPictures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/RepositoryPictures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/RepositoryProducts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/profiles/Profiles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/searchprofiles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/url-query-parameter/url-query-parameter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/logs/metbix.log" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/logs/metbix.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/BackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/cache/CacheConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/cache/CacheConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/controller/ControllerCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/controller/ControllerCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/controller/ControllerProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/controller/ControllerProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/controller/ControllerRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/controller/ControllerRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/controller/ControllerUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/controller/ControllerUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/dtos/ProductsFilterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/dtos/ProductsFilterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/dtos/RegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/dtos/RegistrationUserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/ApparelGenderAgeRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/ApparelGenderAgeRange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/Companies.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/Companies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/CompaniesDetailsContinents.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/CompaniesDetailsContinents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/CompaniesDetailsImagesAndVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/CompaniesDetailsImagesAndVideo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/CompaniesDetailsMarketsAndBranches.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/CompaniesDetailsMarketsAndBranches.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/EmailConfirmationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/EmailConfirmationToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/ProductsJobOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/ProductsJobOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/pojos/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/ConfirmationTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/ConfirmationTokenRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryAuthenticate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryAuthenticate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/repositories/RepositoryUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/security/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/security/UserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/security/AccountDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/ConfirmationTokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/ConfirmationTokenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/ServiceCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/ServiceCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/ServiceProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/ServiceProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/ServiceRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/ServiceRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/ServiceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/ServiceUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/servicesImpls/ImplServiceCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/servicesImpls/ImplServiceCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/servicesImpls/ImplServiceProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/servicesImpls/ImplServiceProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/servicesImpls/ImplServiceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/backend/services/servicesImpls/ImplServiceUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/error-404/Error404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/error-404/Error404.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/help/HelpSerivceData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/help/HelpSerivceData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navbar.css" afterDir="false" />
-    </list>
+    <list default="true" id="0d960938-7682-49c8-9117-30510a72beb8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +42,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ECMAScript 6&#10;Angular2Html&#10;JSON5" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/services/get-profiles-by-company-name" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -152,27 +58,56 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/sounds" />
-      <recent name="$PROJECT_DIR$/public/images/chat" />
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/src/images" />
-      <recent name="$PROJECT_DIR$/public/images/help" />
+      <recent name="$PROJECT_DIR$/src/services/get-profiles-by-company-name" />
+      <recent name="$PROJECT_DIR$/src/services/get-users-by-name" />
+      <recent name="$PROJECT_DIR$/src/services/products/remove-product-from-stock" />
+      <recent name="$PROJECT_DIR$/src/services/products/profile-profile-products-in-stock" />
+      <recent name="$PROJECT_DIR$/src/services/products/product-basket/get-basket-products" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/chat" />
-      <recent name="$PROJECT_DIR$/src/images" />
-      <recent name="$PROJECT_DIR$/src/css" />
-      <recent name="$PROJECT_DIR$/src/components/main/Slider" />
-      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/src/pages/profile/components" />
+      <recent name="$PROJECT_DIR$/src/pages/profile/company" />
+      <recent name="$PROJECT_DIR$/src/pages/profile/user" />
+      <recent name="$PROJECT_DIR$/src/services/user" />
+      <recent name="$PROJECT_DIR$/src/animations/jsons" />
     </key>
   </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://jsonplaceholder.typicode.com/posts" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="npm.npm start">
+    <configuration name="test#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/test.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_4.es6" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.es6" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -185,6 +120,12 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.scratch_4.es6" />
+        <item itemvalue="HTTP Request.test#1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -279,7 +220,211 @@
       <workItem from="1629654710771" duration="536000" />
       <workItem from="1629695731850" duration="17573000" />
       <workItem from="1629746270928" duration="402000" />
-      <workItem from="1629783168198" duration="108000" />
+      <workItem from="1629783168198" duration="6426000" />
+      <workItem from="1629830465063" duration="1067000" />
+      <workItem from="1629890472911" duration="2246000" />
+      <workItem from="1629983795487" duration="546000" />
+      <workItem from="1630066476638" duration="250000" />
+      <workItem from="1630421538870" duration="560000" />
+      <workItem from="1630679687343" duration="6244000" />
+      <workItem from="1630731035469" duration="5831000" />
+      <workItem from="1630816711184" duration="21348000" />
+      <workItem from="1630905066731" duration="18633000" />
+      <workItem from="1630992380675" duration="20699000" />
+      <workItem from="1631082882480" duration="14484000" />
+      <workItem from="1631183646480" duration="12331000" />
+      <workItem from="1631294007241" duration="4322000" />
+      <workItem from="1631337986611" duration="16396000" />
+      <workItem from="1631426074537" duration="2748000" />
+      <workItem from="1631456727100" duration="4446000" />
+      <workItem from="1631513394325" duration="10312000" />
+      <workItem from="1631621103016" duration="1510000" />
+      <workItem from="1631679634156" duration="5366000" />
+      <workItem from="1631768824745" duration="11166000" />
+      <workItem from="1631860642113" duration="22403000" />
+      <workItem from="1631944701458" duration="4469000" />
+      <workItem from="1631962353404" duration="4591000" />
+      <workItem from="1632029209194" duration="12812000" />
+      <workItem from="1632117494486" duration="1409000" />
+      <workItem from="1632203550587" duration="18215000" />
+      <workItem from="1632319139493" duration="3533000" />
+      <workItem from="1632372875874" duration="10105000" />
+      <workItem from="1632460905945" duration="2554000" />
+      <workItem from="1632552523405" duration="8843000" />
+      <workItem from="1632635359189" duration="23348000" />
+      <workItem from="1632819046079" duration="3847000" />
+      <workItem from="1632922744247" duration="2037000" />
+      <workItem from="1632975284170" duration="766000" />
+      <workItem from="1632976571582" duration="72000" />
+      <workItem from="1632978635000" duration="1620000" />
+      <workItem from="1633013341384" duration="830000" />
+      <workItem from="1633059748414" duration="6083000" />
+      <workItem from="1633151840318" duration="15619000" />
+      <workItem from="1633352702766" duration="220000" />
+      <workItem from="1633406958841" duration="1417000" />
+      <workItem from="1633455413871" duration="1131000" />
+      <workItem from="1633499751492" duration="497000" />
+      <workItem from="1633578595920" duration="6300000" />
+      <workItem from="1633669350553" duration="5535000" />
+      <workItem from="1633758372085" duration="11068000" />
+      <workItem from="1633847782493" duration="6586000" />
+      <workItem from="1633927855805" duration="2910000" />
+      <workItem from="1633971135167" duration="4554000" />
+      <workItem from="1634017296109" duration="2545000" />
+      <workItem from="1634061199200" duration="527000" />
+      <workItem from="1634061761289" duration="34000" />
+      <workItem from="1634061798621" duration="1631000" />
+      <workItem from="1634101990461" duration="4492000" />
+      <workItem from="1634190095707" duration="14026000" />
+      <workItem from="1634275680687" duration="34183000" />
+      <workItem from="1634451697833" duration="281000" />
+      <workItem from="1634479164913" duration="2034000" />
+      <workItem from="1634551121873" duration="15016000" />
+      <workItem from="1634616503192" duration="2358000" />
+      <workItem from="1634625399524" duration="612000" />
+      <workItem from="1634626512336" duration="7000" />
+      <workItem from="1634644989063" duration="19980000" />
+      <workItem from="1634792510926" duration="20012000" />
+      <workItem from="1634878663550" duration="8894000" />
+      <workItem from="1634966619873" duration="1223000" />
+      <workItem from="1635053164875" duration="16716000" />
+      <workItem from="1635160915629" duration="1045000" />
+      <workItem from="1635345428778" duration="3000" />
+      <workItem from="1635486760666" duration="3463000" />
+      <workItem from="1635533424882" duration="757000" />
+      <workItem from="1635619780608" duration="374000" />
+      <workItem from="1635673465487" duration="119000" />
+      <workItem from="1635702832551" duration="2396000" />
+      <workItem from="1635747779730" duration="1249000" />
+      <workItem from="1635774919836" duration="6998000" />
+      <workItem from="1635875046811" duration="6281000" />
+      <workItem from="1635935446246" duration="1213000" />
+      <workItem from="1635956475529" duration="9354000" />
+      <workItem from="1636006852477" duration="5608000" />
+      <workItem from="1636096612184" duration="8186000" />
+      <workItem from="1636182333814" duration="20231000" />
+      <workItem from="1636273694848" duration="6722000" />
+      <workItem from="1636355007587" duration="1301000" />
+      <workItem from="1636401989815" duration="199000" />
+      <workItem from="1636449913470" duration="2587000" />
+      <workItem from="1636529905117" duration="2680000" />
+      <workItem from="1636610813587" duration="8176000" />
+      <workItem from="1636699644877" duration="10964000" />
+      <workItem from="1636739995320" duration="5143000" />
+      <workItem from="1636908740642" duration="8009000" />
+      <workItem from="1636950989331" duration="276000" />
+      <workItem from="1636951812849" duration="7473000" />
+      <workItem from="1637037289119" duration="6646000" />
+      <workItem from="1637068802450" duration="416000" />
+      <workItem from="1637075289348" duration="6803000" />
+      <workItem from="1637129815469" duration="5620000" />
+      <workItem from="1637144498476" duration="3480000" />
+      <workItem from="1637152974724" duration="2296000" />
+      <workItem from="1637216466974" duration="3870000" />
+      <workItem from="1637304020119" duration="12147000" />
+      <workItem from="1637398500286" duration="7120000" />
+      <workItem from="1637487362362" duration="4594000" />
+      <workItem from="1637560220878" duration="349000" />
+      <workItem from="1637573590735" duration="1077000" />
+      <workItem from="1637674164769" duration="769000" />
+      <workItem from="1637743042390" duration="1078000" />
+      <workItem from="1637824641849" duration="6577000" />
+      <workItem from="1637917658629" duration="4595000" />
+      <workItem from="1638006608410" duration="20000" />
+      <workItem from="1638006643780" duration="512000" />
+      <workItem from="1638007382052" duration="300000" />
+      <workItem from="1638007729182" duration="1022000" />
+      <workItem from="1638008838844" duration="561000" />
+      <workItem from="1638009429039" duration="682000" />
+      <workItem from="1638010158718" duration="11532000" />
+      <workItem from="1638085440911" duration="976000" />
+      <workItem from="1638190933093" duration="145000" />
+      <workItem from="1638191315208" duration="164000" />
+      <workItem from="1638565560497" duration="133000" />
+      <workItem from="1638565713048" duration="166000" />
+      <workItem from="1638565901523" duration="235000" />
+      <workItem from="1638566419174" duration="140000" />
+      <workItem from="1638566574188" duration="273000" />
+      <workItem from="1638566860411" duration="132000" />
+      <workItem from="1638606005835" duration="17538000" />
+      <workItem from="1638691466270" duration="651000" />
+      <workItem from="1638704454948" duration="6605000" />
+      <workItem from="1638734491499" duration="2779000" />
+      <workItem from="1638769856443" duration="5067000" />
+      <workItem from="1638817164100" duration="90000" />
+      <workItem from="1638850851998" duration="2525000" />
+      <workItem from="1638882585069" duration="408000" />
+      <workItem from="1638947718356" duration="11000" />
+      <workItem from="1638979789275" duration="2306000" />
+      <workItem from="1639051179520" duration="521000" />
+      <workItem from="1639061180007" duration="818000" />
+      <workItem from="1639128266386" duration="3706000" />
+      <workItem from="1639206369069" duration="464000" />
+      <workItem from="1639251421418" duration="818000" />
+      <workItem from="1639300713884" duration="150000" />
+      <workItem from="1639306668249" duration="7305000" />
+      <workItem from="1639373951834" duration="1159000" />
+      <workItem from="1639399595685" duration="6652000" />
+      <workItem from="1639462405654" duration="5992000" />
+      <workItem from="1639481775303" duration="1393000" />
+      <workItem from="1639485963370" duration="1303000" />
+      <workItem from="1639489651913" duration="644000" />
+      <workItem from="1639491231639" duration="2466000" />
+      <workItem from="1639571082426" duration="7143000" />
+      <workItem from="1639652544761" duration="2025000" />
+      <workItem from="1639726267148" duration="4000" />
+      <workItem from="1639940753160" duration="269000" />
+      <workItem from="1639979045169" duration="3104000" />
+      <workItem from="1640006023788" duration="1951000" />
+      <workItem from="1640010667578" duration="2157000" />
+      <workItem from="1640069994370" duration="222000" />
+      <workItem from="1640100623047" duration="5453000" />
+      <workItem from="1640195962089" duration="362000" />
+      <workItem from="1640367175584" duration="5751000" />
+      <workItem from="1640423354959" duration="4043000" />
+      <workItem from="1640506482318" duration="2238000" />
+      <workItem from="1640598081696" duration="2892000" />
+      <workItem from="1640672660750" duration="8376000" />
+      <workItem from="1640804271558" duration="3864000" />
+      <workItem from="1640889152040" duration="724000" />
+      <workItem from="1640984667821" duration="2606000" />
+      <workItem from="1641020310536" duration="6014000" />
+      <workItem from="1641110810951" duration="4190000" />
+      <workItem from="1641149864379" duration="532000" />
+      <workItem from="1641187356747" duration="5175000" />
+      <workItem from="1641382174538" duration="5057000" />
+      <workItem from="1641452073851" duration="966000" />
+      <workItem from="1641535729125" duration="1162000" />
+      <workItem from="1641546413168" duration="877000" />
+      <workItem from="1641547621877" duration="3567000" />
+      <workItem from="1641643558131" duration="730000" />
+      <workItem from="1641711177224" duration="257000" />
+      <workItem from="1641837609531" duration="583000" />
+      <workItem from="1641886337428" duration="38000" />
+      <workItem from="1641906512578" duration="5814000" />
+      <workItem from="1641975470847" duration="6834000" />
+      <workItem from="1642018007486" duration="34000" />
+      <workItem from="1642071216168" duration="5009000" />
+      <workItem from="1642182313059" duration="101000" />
+      <workItem from="1642241921711" duration="5346000" />
+      <workItem from="1642322210312" duration="646000" />
+      <workItem from="1642499886554" duration="7386000" />
+      <workItem from="1642617997400" duration="6087000" />
+      <workItem from="1642668315236" duration="686000" />
+      <workItem from="1642698037489" duration="601000" />
+      <workItem from="1642776806705" duration="230000" />
+      <workItem from="1642850985938" duration="5019000" />
+      <workItem from="1642965569404" duration="1408000" />
+      <workItem from="1644918028540" duration="3000" />
+      <workItem from="1645441279226" duration="462000" />
+      <workItem from="1645448337997" duration="327000" />
+      <workItem from="1645454781306" duration="271000" />
+      <workItem from="1645461838715" duration="621000" />
+      <workItem from="1645467448848" duration="4839000" />
+      <workItem from="1645527783479" duration="660000" />
+      <workItem from="1645529972863" duration="4000" />
+      <workItem from="1645978668043" duration="170000" />
+      <workItem from="1653212176505" duration="10000" />
     </task>
     <servers />
   </component>
@@ -310,5 +455,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

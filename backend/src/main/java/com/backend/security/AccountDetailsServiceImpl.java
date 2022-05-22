@@ -7,6 +7,8 @@ import com.backend.pojos.EmailConfirmationToken;
 import com.backend.pojos.Users;
 import com.backend.repositories.RepositoryUser;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -18,7 +20,7 @@ import java.util.UUID;
 
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class AccountDetailsServiceImpl implements UserDetailsService {
 
     private final RepositoryUser repositoryUser;
@@ -36,10 +38,12 @@ public class AccountDetailsServiceImpl implements UserDetailsService {
 
         if (user != null) {
 
-            return new com.backend.security.UserDetails(user);
-        } else if (company != null) {
+            return new com.backend.security.UserDetailsService(user);
+        } else
 
-            return new com.backend.security.CompanyDetails(company);
+        if (company != null) {
+
+            return new CompanyDetailsService(company);
         } else {
 
             throw new UsernameNotFoundException("Email " + email + " not found");
@@ -49,72 +53,74 @@ public class AccountDetailsServiceImpl implements UserDetailsService {
     public String signUpUser(Users user) {
 
         Users userExists = repositoryUser.findByUserEmail(user.getUserEmail());
+        Companies companyExists = repositoryCompany.findByCompanyEmail(user.getUserEmail());
 
-
-        if (userExists != null) {
+        if (userExists != null || companyExists != null) {
             // TODO check of attributes are the same and
             // TODO if email not confirmed send confirmation email.
 
-            throw new IllegalStateException("email already taken");
-        }
+            return "Email already taken";
+        }else {
 
-        String encodedPassword = bCryptPasswordEncoder.encode(user.getUserPassword());
+            String encodedPassword = bCryptPasswordEncoder.encode(user.getUserPassword());
 
-        user.setUserPassword(encodedPassword);
+            user.setUserPassword(encodedPassword);
 
-        repositoryUser.save(user);
+            repositoryUser.save(user);
 
 
-        String token = UUID.randomUUID().toString();
+            String token = UUID.randomUUID().toString();
 
-        EmailConfirmationToken confirmationToken = new EmailConfirmationToken();
+            EmailConfirmationToken confirmationToken = new EmailConfirmationToken();
 
-        confirmationToken.setToken(token);
-        confirmationToken.setUser(user);
-        confirmationToken.setCreatedDate(LocalDateTime.now());
+            confirmationToken.setToken(token);
+            confirmationToken.setUser(user);
+            confirmationToken.setCreatedDate(LocalDateTime.now());
 
-        confirmationTokenService.saveConfirmationToken(confirmationToken);
+            confirmationTokenService.saveConfirmationToken(confirmationToken);
 
 //        TODO: SEND EMAIL
 
-        return token;
+            return token;
+        }
 
     }
 
 
     public String signUpCompany(Companies company) {
 
+        Users userExists = repositoryUser.findByUserEmail(company.getCompanyEmail());
         Companies companyExists = repositoryCompany.findByCompanyEmail(company.getCompanyEmail());
 
-
-        if(companyExists != null) {
+        if (userExists != null || companyExists != null) {
             // TODO check of attributes are the same and
             // TODO if email not confirmed send confirmation email.
 
-            throw new IllegalStateException("email already taken");
-        }
+            return "Email already taken";
+        }else {
 
-        String encodedPassword = bCryptPasswordEncoder.encode(company.getCompanyPassword());
+            String encodedPassword = bCryptPasswordEncoder.encode(company.getCompanyPassword());
 
-        company.setCompanyPassword(encodedPassword);
+            company.setCompanyPassword(encodedPassword);
 
-        repositoryCompany.save(company);
+            repositoryCompany.save(company);
 
 
-        String token = UUID.randomUUID().toString();
+            String token = UUID.randomUUID().toString();
 
-        EmailConfirmationToken confirmationToken = new EmailConfirmationToken();
+            EmailConfirmationToken confirmationToken = new EmailConfirmationToken();
 
-        confirmationToken.setToken(token);
-        confirmationToken.setCompany(company);
-        confirmationToken.setCreatedDate(LocalDateTime.now());
+            confirmationToken.setToken(token);
+            confirmationToken.setCompany(company);
+            confirmationToken.setCreatedDate(LocalDateTime.now());
 
-        confirmationTokenService.saveConfirmationToken(confirmationToken);
+            confirmationTokenService.saveConfirmationToken(confirmationToken);
 
 //        TODO: SEND EMAIL
 
-        return token;
+            return token;
 
+        }
     }
 
 

@@ -1,0 +1,54 @@
+[
+  {
+    "colorId": 1,
+    "colorName": "bg-white"
+  },
+  {
+    "colorId": 2,
+    "colorName": "bg-dark"
+  },
+  {
+    "colorId": 3,
+    "colorName": "bg-danger"
+  },
+  {
+    "colorId": 4,
+    "colorName": "bg-primary"
+  },
+  {
+    "colorId": 5,
+    "colorName": "bg-secondary"
+  },
+  {
+    "colorId": 6,
+    "colorName": "bg-success"
+  },
+  {
+    "colorId": 7,
+    "colorName": "bg-yellow"
+  },
+  {
+    "colorId": 8,
+    "colorName": "bg-orange"
+  },
+  {
+    "colorId": 9,
+    "colorName": "bg-brown"
+  },
+  {
+    "colorId": 10,
+    "colorName": "bg-pink"
+  },
+  {
+    "colorId": 11,
+    "colorName": "bg-cream"
+  },
+  {
+    "colorId": 12,
+    "colorName": "bg-silver"
+  },
+  {
+    "colorId": 13,
+    "colorName": "other-color"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "seatId": 1,
+    "seat": "1",
+    "categoryId": 114
+  },
+  {
+    "seatId": 2,
+    "seat": "2",
+    "categoryId": 114
+  },
+  {
+    "seatId": 3,
+    "seat": "4",
+    "categoryId": 114
+  },
+  {
+    "seatId": 4,
+    "seat": "5",
+    "categoryId": 114
+  },
+  {
+    "seatId": 5,
+    "seat": "7",
+    "categoryId": 114
+  },
+  {
+    "seatId": 6,
+    "seat": "8",
+    "categoryId": 114
+  },
+  {
+    "seatId": 7,
+    "seat": "8+",
+    "categoryId": 114
+  }
+]

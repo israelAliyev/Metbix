@@ -7,6 +7,19 @@
     font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
 }
 
+.profile-company iframe {
+    width: 70%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.profile-company .animation {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
 .profile-company p {
     margin: 0;
 }
@@ -150,24 +163,19 @@
     margin-left: 1.5rem;
 }
 
-.profile-company header > div > .actions .buttons .follow {
-    background-color: #0A66C2;
-    border: 1px solid #0A66C2;
-    color: white;
-    font-weight: bold;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    padding: 0 1rem;
+.profile-company header > div > .actions .buttons button{
+    height: 2rem;
 }
+
 
 .profile-company header > div > .actions .buttons .follow:hover {
     background-color: #074a8c;
 }
 
 .profile-company header > div > .actions .buttons .message {
-    background-color: white;
-    border: 1px solid #5d5d5d;
-    color: #747475;
+    background-color: #0a66c2;
+    border: 1px solid white;
+    color: white;
     font-weight: 500;
     border-radius: 5px;
     padding: 0 0.7rem !important;
@@ -175,11 +183,10 @@
 }
 
 .profile-company header > div > .actions .buttons .message:hover {
-    background-color: #eaeaea;
-    border: 1.5px solid #545454;
-    color: #646464;
-    font-weight: 600;
+    background-color: #0a529b;
+
 }
+
 
 
 .profile-company header > div > .actions .buttons .site {
@@ -199,29 +206,22 @@
     text-decoration: underline;
 }
 
-.profile-company header > div > .actions .buttons .share {
-    background-color: #0A66C2;
-    border: 1px solid #0A66C2;
-    color: white;
-    font-weight: 650;
-    border-radius: 5px;
+
+.profile-company header > div > .actions .buttons .products {
+    background-color: white;
+    border: 1px solid #5d5d5d;
+    color: #747475;
+    font-weight: 500;
+    border-radius: 20px;
     padding: 0 0.7rem !important;
     font-size: 0.9rem;
 }
 
-.profile-company header > div > .actions .buttons .share-2 {
-    background-color: #0A66C2;
-    border: 1px solid #0A66C2;
-    color: white;
-    font-weight: 650;
-    border-radius: 5px;
-    padding: 0 0 0 0.3rem !important;
-    font-size: 0.9rem;
+.profile-company header > div > .actions .buttons .products:hover{
+    background-color: #e9ebee;
 }
 
-.profile-company header > div > .actions .buttons .share:hover {
-    background-color: #074a8c;
-}
+
 
 .profile-company header > div > .actions .review {
     border-bottom: 2px solid #3EA6FF;
@@ -608,11 +608,12 @@
     .profile-company header > div > .actions .buttons .share-2 {
         display: block !important;
     }
+
     .profile-company header > div > .actions .review {
         margin-top: 2rem;
     }
 
-    .profile-company .body .overview > .certification{
+    .profile-company .body .overview > .certification {
 
         width: 100%;
         overflow-y: hidden;
@@ -628,9 +629,22 @@
         height: 245px;
     }
 
-    .profile-company .product-overview .header label:last-of-type{
+    .profile-company .product-overview .header label:last-of-type {
         margin-left: 0 !important;
         margin-top: 0.5rem;
+    }
+
+    .profile-company header > div:last-of-type {
+        padding: 0.6rem 1rem 1.1rem 1rem !important;
+    }
+
+    .profile-company header > div > .actions .buttons button i {
+        display: none;
+    }
+
+
+    .profile-company .body .overview .info table {
+        width: 100%;
     }
 
 }

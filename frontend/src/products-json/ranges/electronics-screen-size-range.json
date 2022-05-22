@@ -1,0 +1,192 @@
+[
+  {
+    "screenSizeRangeId": 1,
+    "screenSizeRange": "4 Inches & Under",
+    "categoryId": 87
+  },
+  {
+    "screenSizeRangeId": 2,
+    "screenSizeRange": "4 to 4.9 Inches",
+    "categoryId": 87
+  },
+  {
+    "screenSizeRangeId": 3,
+    "screenSizeRange": "5 to 5.9 Inches\r",
+    "categoryId": 87
+  },
+  {
+    "screenSizeRangeId": 4,
+    "screenSizeRange": "6 Inches & Above",
+    "categoryId": 87
+  },
+  {
+    "screenSizeRangeId": 5,
+    "screenSizeRange": "4 Inches & Under",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 6,
+    "screenSizeRange": "4 to 4.9 Inches",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 7,
+    "screenSizeRange": "5 to 5.9 Inches\r",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 8,
+    "screenSizeRange": "6 to 6.9 Inches\r",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 9,
+    "screenSizeRange": "7 to 7.9 Inches\r",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 10,
+    "screenSizeRange": "8 to 8.9 Inches\r",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 11,
+    "screenSizeRange": "9 to 9.9 Inches\r",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 12,
+    "screenSizeRange": "10 to 10.9 Inches\r",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 13,
+    "screenSizeRange": "11 to 11.9 Inches\r",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 14,
+    "screenSizeRange": "12 to 12.9 Inches\r",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 15,
+    "screenSizeRange": "13 to 13.9 Inches\r",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 16,
+    "screenSizeRange": "14 to 14.9 Inches\r",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 17,
+    "screenSizeRange": "15 to 15.9 Inches\r",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 18,
+    "screenSizeRange": "16 to 16.9 Inches\r",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 19,
+    "screenSizeRange": "17 Inches & Above",
+    "categoryId": 88
+  },
+  {
+    "screenSizeRangeId": 20,
+    "screenSizeRange": "4 Inches & Under",
+    "categoryId": 94
+  },
+  {
+    "screenSizeRangeId": 21,
+    "screenSizeRange": "4 to 4.9 Inches",
+    "categoryId": 94
+  },
+  {
+    "screenSizeRangeId": 22,
+    "screenSizeRange": "5 to 5.9 Inches\r",
+    "categoryId": 94
+  },
+  {
+    "screenSizeRangeId": 23,
+    "screenSizeRange": "6 Inches & Above",
+    "categoryId": 94
+  },
+  {
+    "screenSizeRangeId": 24,
+    "screenSizeRange": "4 Inches & Under",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 25,
+    "screenSizeRange": "4 to 4.9 Inches",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 26,
+    "screenSizeRange": "5 to 5.9 Inches\r",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 27,
+    "screenSizeRange": "6 to 6.9 Inches\r",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 28,
+    "screenSizeRange": "7 to 7.9 Inches\r",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 29,
+    "screenSizeRange": "8 to 8.9 Inches\r",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 30,
+    "screenSizeRange": "9 to 9.9 Inches\r",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 31,
+    "screenSizeRange": "10 to 10.9 Inches\r",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 32,
+    "screenSizeRange": "11 to 11.9 Inches\r",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 33,
+    "screenSizeRange": "12 to 12.9 Inches\r",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 34,
+    "screenSizeRange": "13 to 13.9 Inches\r",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 35,
+    "screenSizeRange": "14 to 14.9 Inches\r",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 36,
+    "screenSizeRange": "15 to 15.9 Inches\r",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 37,
+    "screenSizeRange": "16 to 16.9 Inches\r",
+    "categoryId": 91
+  },
+  {
+    "screenSizeRangeId": 38,
+    "screenSizeRange": "17 Inches & Above",
+    "categoryId": 91
+  }
+]
