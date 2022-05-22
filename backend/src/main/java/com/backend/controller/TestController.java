@@ -1,17 +1,27 @@
 package com.backend.controller;
 
 
-import com.backend.pojos.Roles;
-import com.backend.pojos.Users;
-import com.backend.repositories.RepositoryRole;
-import com.backend.repositories.RepositoryUser;
+import com.backend.dtos.response.CompanyResponse;
+import com.backend.dtos.response.ProductsListResponse;
+import com.backend.pojos.*;
+import com.backend.repositories.*;
+import com.backend.repositories.options.RepositoryAutomotiveDistanceTraveledsRange;
+import com.backend.repositories.options.RepositoryElectronicsBatteryRange;
+import com.backend.repositories.options.RepositoryElectronicsScreenSizeRange;
+import com.backend.repositories.options.RepositoryProductColors;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Optional;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 
 @RestController
-@RequestMapping("")
+@RequestMapping("api/test/con")
 @CrossOrigin("*")
 public class TestController {
 
@@ -22,34 +32,52 @@ public class TestController {
     @Autowired
     private RepositoryRole repositoryRole;
 
-    @GetMapping("/wfsef")
-    public Boolean welcome() {
-//
-//        Users user = new Users();
-//        user.setUserEmail("12321");
-//        user.setUserPassword("123123");
-//        user.setUserName("2342");
-//
-//        Roles role = repositoryRole.findById(2).orElse(null);
-//
-//        user.setUserRole(role);
-//
-//        repositoryUser.save(user);
+    @Autowired
+    AuthenticationManager authenticationManager;
 
-        return repositoryUser.findByUserEmail("qas").getUserEmailVerified();
+    @Autowired
+    RepositoryDepartments repositoryDepartments;
+
+    @Autowired
+    RepositoryCompany repository;
+
+
+    @GetMapping("/dep")
+    public Set<Companies> welcome() {
+
+
+
+        return repository.getByCompaniesName("isi");
     }
 
-    @GetMapping("/test")
-    public String testText() {
-        return "This is text";
-    }
 
-    @GetMapping("/fail_login")
-    public String failLogin() {
+//    @GetMapping("/wfs")
+//    public Boolean welcome() {
+//
+//        return repositoryUser.findByUserEmail("qas").orElse(null).getUserEmailVerified();
+//    }
 
-        System.out.println("Login Fail");
+//    @GetMapping("/test")
+//    public String testText() {
+//        return "This is text";
+//    }
 
-        return "Login Fail";
-    }
+//    @PostMapping("/signin")
+//    public void authenticateUser(@RequestBody LoginForm loginRequest) {
+//
+//        Users user = repositoryUser.findByUserEmail(loginRequest.getEmail());
+//
+//
+//        Authentication authentication = authenticationManager.authenticate(
+//                    new UsernamePasswordAuthenticationToken(
+//                            loginRequest.getEmail(),
+//                            loginRequest.getPassword()
+//                    )
+//            );
+//
+//            SecurityContextHolder.getContext().setAuthentication(authentication);
+//
+//    }
+
 
 }

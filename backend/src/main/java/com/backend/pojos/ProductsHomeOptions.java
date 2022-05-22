@@ -1,97 +1,54 @@
 package com.backend.pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.Setter;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "products_home_options")
-public class ProductsHomeOptions {
+@Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+@Getter
+@Setter
+public class ProductsHomeOptions implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
 
     @Id
-    @Column(name = "Product_ID")
-    private Long productId;
+    @Column(name = "Home_ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long homeID;
 
-    @Column(name = "Category_ID")
-    private Long categoryId;
+    @OneToOne(fetch = FetchType.LAZY, targetEntity = Products.class , cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH , CascadeType.REMOVE})
+    @JoinColumn(name = "Product_ID" )
+    @JsonIgnore
+    private Products product;
+
+
+//    @Column(name = "Category_ID")
+//    private Long categoryId;
 
     @Column(name = "Area")
     private Long area;
 
     @Column(name = "Garage")
-    private Integer garage;
+    private Boolean garage;
 
     @Column(name = "Garden")
-    private String garden;
+    private Boolean garden;
+
+    @Column(name = "Balcony")
+    private Boolean balcony;
 
     @Column(name = "Floors")
     private Integer floors;
 
-    @Column(name = "Balcony")
-    private String balcony;
-
     @Column(name = "Heating_Type")
     private String heatingType;
 
-    public Long getProductId() {
-        return this.productId;
-    }
 
-    public void setProductId(Long productId) {
-        this.productId = productId;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
-
-    public Long getArea() {
-        return this.area;
-    }
-
-    public void setArea(Long area) {
-        this.area = area;
-    }
-
-    public Integer getGarage() {
-        return this.garage;
-    }
-
-    public void setGarage(Integer garage) {
-        this.garage = garage;
-    }
-
-    public String getGarden() {
-        return this.garden;
-    }
-
-    public void setGarden(String garden) {
-        this.garden = garden;
-    }
-
-    public Integer getFloors() {
-        return this.floors;
-    }
-
-    public void setFloors(Integer floors) {
-        this.floors = floors;
-    }
-
-    public String getBalcony() {
-        return this.balcony;
-    }
-
-    public void setBalcony(String balcony) {
-        this.balcony = balcony;
-    }
-
-    public String getHeatingType() {
-        return this.heatingType;
-    }
-
-    public void setHeatingType(String heatingType) {
-        this.heatingType = heatingType;
-    }
 }

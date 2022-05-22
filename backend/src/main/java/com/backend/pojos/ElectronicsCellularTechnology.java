@@ -1,10 +1,19 @@
 package com.backend.pojos;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "electronics_cellular_technology")
-public class ElectronicsCellularTechnology {
+@Setter
+@Getter
+public class ElectronicsCellularTechnology implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Cellular_Technology_ID")
     private Long cellularTechnologyId;
@@ -15,27 +24,4 @@ public class ElectronicsCellularTechnology {
     @Column(name = "Category_ID")
     private Long categoryId;
 
-    public Long getCellularTechnologyId() {
-        return this.cellularTechnologyId;
-    }
-
-    public void setCellularTechnologyId(Long cellularTechnologyId) {
-        this.cellularTechnologyId = cellularTechnologyId;
-    }
-
-    public String getCellularTechnology() {
-        return this.cellularTechnology;
-    }
-
-    public void setCellularTechnology(String cellularTechnology) {
-        this.cellularTechnology = cellularTechnology;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
 }

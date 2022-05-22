@@ -1,10 +1,19 @@
 package com.backend.pojos;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "electronics_display_type")
-public class ElectronicsDisplayType {
+@Getter
+@Setter
+public class ElectronicsDisplayType implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Display_Type_ID")
     private Long displayTypeId;
@@ -15,27 +24,4 @@ public class ElectronicsDisplayType {
     @Column(name = "Category_ID")
     private Long categoryId;
 
-    public Long getDisplayTypeId() {
-        return this.displayTypeId;
-    }
-
-    public void setDisplayTypeId(Long displayTypeId) {
-        this.displayTypeId = displayTypeId;
-    }
-
-    public String getDisplayType() {
-        return this.displayType;
-    }
-
-    public void setDisplayType(String displayType) {
-        this.displayType = displayType;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
 }

@@ -1,11 +1,11 @@
-
-
 @media only screen and (max-width: 1025px) {
 
     .product-info > .main {
 
         display: flex !important;
         flex-direction: column !important;
+        padding: 1rem 0 0 0 !important;
+
     }
 
     .product-info .main .photos {
@@ -45,7 +45,53 @@
         font-size: 14px;
     }
 
+    .product-info .main .operations {
+        margin-top: 2rem;
+        height: auto !important;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
+
+    .product-info .product-properties .property-group > div {
+        width: 46%;
+    }
+
+    .product-info .review .main .rating-info {
+        font-size: 0.7rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-info .review .main .rating-info > div:nth-child(1){
+        display: none;
+    }
+
+    .product-info .review .main .rating-info > div:nth-child(2){
+        margin-top: 1rem;
+    }
+
+    .product-info .review .main .header{
+        align-items: center;
+    }
+
+    .product-info .review .main .header button {
+        height: 2rem;
+    }
+
+    .product-info .review .main .header p {
+        font-size: 0.95rem;
+    }
+
+    .product-info .review .sub .review-wrapper .review-section-r .info-comment-id {
+        width: 100% !important;
+    }
+
+
+    .product-info .review .sub .review-wrapper .review-section-r .photos {
+        width: 100%;
+    }
+}
 
 
 @media only screen and (max-width: 576px) {
@@ -162,6 +208,20 @@
 
     .product-info .message .text > .balloon {
         display: none;
+    }
+
+    .product-info .about .product-description {
+
+        width: 100%;
+
+        /*font-family: Skin-market-sans, serif;*/
+    }
+
+
+    .product-info .product-properties .property-group > div {
+        margin-top: 1rem;
+        margin-right: 0;
+        width: 100%;
     }
 
 }

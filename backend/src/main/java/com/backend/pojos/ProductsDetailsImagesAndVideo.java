@@ -1,10 +1,20 @@
 package com.backend.pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "products_details_images_and_video")
-public class ProductsDetailsImagesAndVideo {
+@Getter
+@Setter
+public class ProductsDetailsImagesAndVideo implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "id")
     private Long id;
@@ -34,85 +44,7 @@ public class ProductsDetailsImagesAndVideo {
     private String productDetailVideo;
 
     @Column(name = "Product_ID")
+    @JsonIgnore
     private Long productId;
 
-    public Long getId() {
-        return this.id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getProductDetailImageOne() {
-        return this.productDetailImageOne;
-    }
-
-    public void setProductDetailImageOne(String productDetailImageOne) {
-        this.productDetailImageOne = productDetailImageOne;
-    }
-
-    public String getProductDetailImageTwo() {
-        return this.productDetailImageTwo;
-    }
-
-    public void setProductDetailImageTwo(String productDetailImageTwo) {
-        this.productDetailImageTwo = productDetailImageTwo;
-    }
-
-    public String getProductDetailImageThree() {
-        return this.productDetailImageThree;
-    }
-
-    public void setProductDetailImageThree(String productDetailImageThree) {
-        this.productDetailImageThree = productDetailImageThree;
-    }
-
-    public String getProductDetailImageFour() {
-        return this.productDetailImageFour;
-    }
-
-    public void setProductDetailImageFour(String productDetailImageFour) {
-        this.productDetailImageFour = productDetailImageFour;
-    }
-
-    public String getProductDetailImageFive() {
-        return this.productDetailImageFive;
-    }
-
-    public void setProductDetailImageFive(String productDetailImageFive) {
-        this.productDetailImageFive = productDetailImageFive;
-    }
-
-    public String getProductDetailImageSix() {
-        return this.productDetailImageSix;
-    }
-
-    public void setProductDetailImageSix(String productDetailImageSix) {
-        this.productDetailImageSix = productDetailImageSix;
-    }
-
-    public String getProductDetailImageSeven() {
-        return this.productDetailImageSeven;
-    }
-
-    public void setProductDetailImageSeven(String productDetailImageSeven) {
-        this.productDetailImageSeven = productDetailImageSeven;
-    }
-
-    public String getProductDetailVideo() {
-        return this.productDetailVideo;
-    }
-
-    public void setProductDetailVideo(String productDetailVideo) {
-        this.productDetailVideo = productDetailVideo;
-    }
-
-    public Long getProductId() {
-        return this.productId;
-    }
-
-    public void setProductId(Long productId) {
-        this.productId = productId;
-    }
 }

@@ -1,0 +1,5252 @@
+[
+  {
+    "brandId": 1,
+    "brandName": "Intel",
+    "categoryId": 290
+  },
+  {
+    "brandId": 2,
+    "brandName": "Amd",
+    "categoryId": 290
+  },
+  {
+    "brandId": 12,
+    "brandName": "Qualcomm",
+    "categoryId": 290
+  },
+  {
+    "brandId": 13,
+    "brandName": "MediaTek",
+    "categoryId": 290
+  },
+  {
+    "brandId": 14,
+    "brandName": "Samsung Exynos",
+    "categoryId": 290
+  },
+  {
+    "brandId": 15,
+    "brandName": "Apple Bionic SoC",
+    "categoryId": 290
+  },
+  {
+    "brandId": 16,
+    "brandName": "HiSilicon Kirin ",
+    "categoryId": 290
+  },
+  {
+    "brandId": 18,
+    "brandName": "Nvidia",
+    "categoryId": 289
+  },
+  {
+    "brandId": 21,
+    "brandName": "Asus",
+    "categoryId": 289
+  },
+  {
+    "brandId": 22,
+    "brandName": "EVGA",
+    "categoryId": 289
+  },
+  {
+    "brandId": 23,
+    "brandName": "Gigabyte",
+    "categoryId": 289
+  },
+  {
+    "brandId": 24,
+    "brandName": "Sapphire",
+    "categoryId": 289
+  },
+  {
+    "brandId": 25,
+    "brandName": "Zotac",
+    "categoryId": 289
+  },
+  {
+    "brandId": 26,
+    "brandName": "Via",
+    "categoryId": 289
+  },
+  {
+    "brandId": 27,
+    "brandName": "Power VR",
+    "categoryId": 289
+  },
+  {
+    "brandId": 28,
+    "brandName": "Intel",
+    "categoryId": 289
+  },
+  {
+    "brandId": 29,
+    "brandName": "Amd",
+    "categoryId": 289
+  },
+  {
+    "brandId": 98,
+    "brandName": "Canon ",
+    "categoryId": 89
+  },
+  {
+    "brandId": 99,
+    "brandName": "Fujifilm ",
+    "categoryId": 89
+  },
+  {
+    "brandId": 100,
+    "brandName": "GoPro",
+    "categoryId": 89
+  },
+  {
+    "brandId": 101,
+    "brandName": "Leica ",
+    "categoryId": 89
+  },
+  {
+    "brandId": 102,
+    "brandName": "Nikon ",
+    "categoryId": 89
+  },
+  {
+    "brandId": 103,
+    "brandName": "Olympus",
+    "categoryId": 89
+  },
+  {
+    "brandId": 104,
+    "brandName": "Panasonic",
+    "categoryId": 89
+  },
+  {
+    "brandId": 105,
+    "brandName": "Ricoh ",
+    "categoryId": 89
+  },
+  {
+    "brandId": 115,
+    "brandName": "Apple",
+    "categoryId": 90
+  },
+  {
+    "brandId": 117,
+    "brandName": "TOZO",
+    "categoryId": 90
+  },
+  {
+    "brandId": 118,
+    "brandName": "Anker",
+    "categoryId": 90
+  },
+  {
+    "brandId": 119,
+    "brandName": "Beam Electronics",
+    "categoryId": 90
+  },
+  {
+    "brandId": 120,
+    "brandName": "LUOATIP",
+    "categoryId": 90
+  },
+  {
+    "brandId": 121,
+    "brandName": "iOttie",
+    "categoryId": 90
+  },
+  {
+    "brandId": 123,
+    "brandName": "INIU",
+    "categoryId": 90
+  },
+  {
+    "brandId": 128,
+    "brandName": "Alienware",
+    "categoryId": 91
+  },
+  {
+    "brandId": 129,
+    "brandName": "Asus",
+    "categoryId": 91
+  },
+  {
+    "brandId": 130,
+    "brandName": "BenQ",
+    "categoryId": 91
+  },
+  {
+    "brandId": 131,
+    "brandName": "Dell",
+    "categoryId": 91
+  },
+  {
+    "brandId": 132,
+    "brandName": "HP",
+    "categoryId": 91
+  },
+  {
+    "brandId": 133,
+    "brandName": "LG",
+    "categoryId": 91
+  },
+  {
+    "brandId": 134,
+    "brandName": "Lenovo",
+    "categoryId": 91
+  },
+  {
+    "brandId": 135,
+    "brandName": "Samsung",
+    "categoryId": 91
+  },
+  {
+    "brandId": 136,
+    "brandName": "ViewSonic",
+    "categoryId": 91
+  },
+  {
+    "brandId": 139,
+    "brandName": "Apple",
+    "categoryId": 92
+  },
+  {
+    "brandId": 140,
+    "brandName": "Samsung",
+    "categoryId": 92
+  },
+  {
+    "brandId": 141,
+    "brandName": "Acer",
+    "categoryId": 91
+  },
+  {
+    "brandId": 142,
+    "brandName": "Garmin",
+    "categoryId": 92
+  },
+  {
+    "brandId": 143,
+    "brandName": "Fitbit",
+    "categoryId": 92
+  },
+  {
+    "brandId": 144,
+    "brandName": "Fossil",
+    "categoryId": 92
+  },
+  {
+    "brandId": 145,
+    "brandName": "TicWatch",
+    "categoryId": 92
+  },
+  {
+    "brandId": 146,
+    "brandName": "Motorola",
+    "categoryId": 92
+  },
+  {
+    "brandId": 147,
+    "brandName": "Huawei",
+    "categoryId": 92
+  },
+  {
+    "brandId": 149,
+    "brandName": "Michael Kors",
+    "categoryId": 92
+  },
+  {
+    "brandId": 150,
+    "brandName": "Tag Heuer",
+    "categoryId": 92
+  },
+  {
+    "brandId": 151,
+    "brandName": "ASUS",
+    "categoryId": 92
+  },
+  {
+    "brandId": 152,
+    "brandName": "Sony",
+    "categoryId": 92
+  },
+  {
+    "brandId": 153,
+    "brandName": "Suunto",
+    "categoryId": 92
+  },
+  {
+    "brandId": 154,
+    "brandName": "Apple",
+    "categoryId": 94
+  },
+  {
+    "brandId": 155,
+    "brandName": "Google",
+    "categoryId": 94
+  },
+  {
+    "brandId": 156,
+    "brandName": "Samsung",
+    "categoryId": 94
+  },
+  {
+    "brandId": 160,
+    "brandName": "Huawei",
+    "categoryId": 94
+  },
+  {
+    "brandId": 162,
+    "brandName": "HTC",
+    "categoryId": 94
+  },
+  {
+    "brandId": 164,
+    "brandName": "Lenovo",
+    "categoryId": 94
+  },
+  {
+    "brandId": 167,
+    "brandName": "Amazon",
+    "categoryId": 94
+  },
+  {
+    "brandId": 168,
+    "brandName": "Asus",
+    "categoryId": 94
+  },
+  {
+    "brandId": 173,
+    "brandName": "Microsoft",
+    "categoryId": 94
+  },
+  {
+    "brandId": 180,
+    "brandName": "Ricoh ",
+    "categoryId": 95
+  },
+  {
+    "brandId": 181,
+    "brandName": "HP ",
+    "categoryId": 95
+  },
+  {
+    "brandId": 182,
+    "brandName": "RISO ",
+    "categoryId": 95
+  },
+  {
+    "brandId": 183,
+    "brandName": "Lexmark ",
+    "categoryId": 95
+  },
+  {
+    "brandId": 184,
+    "brandName": "Sony",
+    "categoryId": 95
+  },
+  {
+    "brandId": 185,
+    "brandName": "MakerBot.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 186,
+    "brandName": "Ultimaker.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 187,
+    "brandName": "FlashForge.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 188,
+    "brandName": "LulzBot.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 189,
+    "brandName": "XYZPrinting.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 190,
+    "brandName": "3D Systems.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 191,
+    "brandName": "BEEVERYCREATIVE.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 192,
+    "brandName": "MakerBot.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 193,
+    "brandName": "Ultimaker.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 194,
+    "brandName": "FlashForge.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 195,
+    "brandName": "LulzBot.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 196,
+    "brandName": "XYZPrinting.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 197,
+    "brandName": "3D Systems.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 198,
+    "brandName": "BEEVERYCREATIVE.",
+    "categoryId": 96
+  },
+  {
+    "brandId": 199,
+    "brandName": "LG Electronics",
+    "categoryId": 97
+  },
+  {
+    "brandId": 200,
+    "brandName": "Panasonic",
+    "categoryId": 97
+  },
+  {
+    "brandId": 201,
+    "brandName": "Samsung",
+    "categoryId": 97
+  },
+  {
+    "brandId": 202,
+    "brandName": "Sharp",
+    "categoryId": 97
+  },
+  {
+    "brandId": 203,
+    "brandName": "Sony",
+    "categoryId": 97
+  },
+  {
+    "brandId": 204,
+    "brandName": "LG Electronics",
+    "categoryId": 97
+  },
+  {
+    "brandId": 205,
+    "brandName": "Panasonic",
+    "categoryId": 97
+  },
+  {
+    "brandId": 206,
+    "brandName": "Samsung",
+    "categoryId": 97
+  },
+  {
+    "brandId": 207,
+    "brandName": "Sharp",
+    "categoryId": 97
+  },
+  {
+    "brandId": 208,
+    "brandName": "Sony",
+    "categoryId": 97
+  },
+  {
+    "brandId": 209,
+    "brandName": "HTC",
+    "categoryId": 98
+  },
+  {
+    "brandId": 210,
+    "brandName": "Sony",
+    "categoryId": 98
+  },
+  {
+    "brandId": 211,
+    "brandName": "Oculus",
+    "categoryId": 98
+  },
+  {
+    "brandId": 212,
+    "brandName": "Valve",
+    "categoryId": 98
+  },
+  {
+    "brandId": 213,
+    "brandName": "HP",
+    "categoryId": 98
+  },
+  {
+    "brandId": 214,
+    "brandName": "Felt",
+    "categoryId": 111
+  },
+  {
+    "brandId": 215,
+    "brandName": "Fortified",
+    "categoryId": 111
+  },
+  {
+    "brandId": 216,
+    "brandName": "Sixthreezero",
+    "categoryId": 111
+  },
+  {
+    "brandId": 217,
+    "brandName": "Critical Cycles",
+    "categoryId": 111
+  },
+  {
+    "brandId": 218,
+    "brandName": "Santa Cruz",
+    "categoryId": 111
+  },
+  {
+    "brandId": 219,
+    "brandName": "Cervelo",
+    "categoryId": 111
+  },
+  {
+    "brandId": 220,
+    "brandName": "Trek",
+    "categoryId": 111
+  },
+  {
+    "brandId": 221,
+    "brandName": "Scott",
+    "categoryId": 111
+  },
+  {
+    "brandId": 222,
+    "brandName": "Kona",
+    "categoryId": 111
+  },
+  {
+    "brandId": 223,
+    "brandName": "Giordano",
+    "categoryId": 111
+  },
+  {
+    "brandId": 224,
+    "brandName": "Giant",
+    "categoryId": 111
+  },
+  {
+    "brandId": 225,
+    "brandName": "Specialized",
+    "categoryId": 111
+  },
+  {
+    "brandId": 226,
+    "brandName": "Cannondale",
+    "categoryId": 111
+  },
+  {
+    "brandId": 227,
+    "brandName": "Mongoose",
+    "categoryId": 111
+  },
+  {
+    "brandId": 228,
+    "brandName": "Schwinn",
+    "categoryId": 111
+  },
+  {
+    "brandId": 229,
+    "brandName": "Fuji",
+    "categoryId": 111
+  },
+  {
+    "brandId": 230,
+    "brandName": "Bianchi",
+    "categoryId": 111
+  },
+  {
+    "brandId": 231,
+    "brandName": "Salsa",
+    "categoryId": 111
+  },
+  {
+    "brandId": 232,
+    "brandName": "Diamondback",
+    "categoryId": 111
+  },
+  {
+    "brandId": 233,
+    "brandName": "Pure Cycles",
+    "categoryId": 111
+  },
+  {
+    "brandId": 234,
+    "brandName": "Marin",
+    "categoryId": 111
+  },
+  {
+    "brandId": 235,
+    "brandName": "Firmstrong",
+    "categoryId": 111
+  },
+  {
+    "brandId": 236,
+    "brandName": "Tommaso",
+    "categoryId": 111
+  },
+  {
+    "brandId": 237,
+    "brandName": "Aprilia.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 238,
+    "brandName": "Genuine.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 239,
+    "brandName": "Honda.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 240,
+    "brandName": "Kymco.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 241,
+    "brandName": "Piaggio.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 242,
+    "brandName": "Suzuki.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 243,
+    "brandName": "Vespa.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 244,
+    "brandName": "Aprilia.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 245,
+    "brandName": "Genuine.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 246,
+    "brandName": "Honda.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 247,
+    "brandName": "Kymco.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 248,
+    "brandName": "Piaggio.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 249,
+    "brandName": "Suzuki.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 250,
+    "brandName": "Vespa.",
+    "categoryId": 113
+  },
+  {
+    "brandId": 251,
+    "brandName": "Fuzion",
+    "categoryId": 113
+  },
+  {
+    "brandId": 252,
+    "brandName": "Mongoose Rise Stunt Kick",
+    "categoryId": 113
+  },
+  {
+    "brandId": 253,
+    "brandName": "Albott Pro",
+    "categoryId": 113
+  },
+  {
+    "brandId": 254,
+    "brandName": "Vokul",
+    "categoryId": 113
+  },
+  {
+    "brandId": 255,
+    "brandName": "Playshion",
+    "categoryId": 113
+  },
+  {
+    "brandId": 256,
+    "brandName": "Envy",
+    "categoryId": 113
+  },
+  {
+    "brandId": 257,
+    "brandName": "Phoenix Pilot",
+    "categoryId": 113
+  },
+  {
+    "brandId": 258,
+    "brandName": "Dominator Trooper",
+    "categoryId": 113
+  },
+  {
+    "brandId": 259,
+    "brandName": "Razor Pro",
+    "categoryId": 113
+  },
+  {
+    "brandId": 310,
+    "brandName": "Santa Cruz",
+    "categoryId": 115
+  },
+  {
+    "brandId": 311,
+    "brandName": "Powell Peralta",
+    "categoryId": 115
+  },
+  {
+    "brandId": 312,
+    "brandName": "Anti-Hero",
+    "categoryId": 115
+  },
+  {
+    "brandId": 313,
+    "brandName": "Girl",
+    "categoryId": 115
+  },
+  {
+    "brandId": 314,
+    "brandName": "Enjoi",
+    "categoryId": 115
+  },
+  {
+    "brandId": 315,
+    "brandName": "Baker",
+    "categoryId": 115
+  },
+  {
+    "brandId": 316,
+    "brandName": "Polar Skate",
+    "categoryId": 115
+  },
+  {
+    "brandId": 317,
+    "brandName": "Yamaha",
+    "categoryId": 116
+  },
+  {
+    "brandId": 318,
+    "brandName": "Honda",
+    "categoryId": 116
+  },
+  {
+    "brandId": 319,
+    "brandName": "Ducati",
+    "categoryId": 116
+  },
+  {
+    "brandId": 320,
+    "brandName": "Kawasaki",
+    "categoryId": 116
+  },
+  {
+    "brandId": 321,
+    "brandName": "Triumph",
+    "categoryId": 116
+  },
+  {
+    "brandId": 322,
+    "brandName": "BMW",
+    "categoryId": 116
+  },
+  {
+    "brandId": 323,
+    "brandName": "Harley-Davidson",
+    "categoryId": 116
+  },
+  {
+    "brandId": 324,
+    "brandName": "Suzuki",
+    "categoryId": 116
+  },
+  {
+    "brandId": 325,
+    "brandName": "Aprilia",
+    "categoryId": 116
+  },
+  {
+    "brandId": 326,
+    "brandName": "KTM (Austria)",
+    "categoryId": 116
+  },
+  {
+    "brandId": 327,
+    "brandName": "MV Agusta",
+    "categoryId": 116
+  },
+  {
+    "brandId": 328,
+    "brandName": "Moto Guzzi",
+    "categoryId": 116
+  },
+  {
+    "brandId": 329,
+    "brandName": "Royal Enfield",
+    "categoryId": 116
+  },
+  {
+    "brandId": 330,
+    "brandName": "Indian Motorcycle",
+    "categoryId": 116
+  },
+  {
+    "brandId": 331,
+    "brandName": "Benelli",
+    "categoryId": 116
+  },
+  {
+    "brandId": 332,
+    "brandName": "Bajaj",
+    "categoryId": 116
+  },
+  {
+    "brandId": 333,
+    "brandName": "Norton",
+    "categoryId": 116
+  },
+  {
+    "brandId": 334,
+    "brandName": "Victory",
+    "categoryId": 116
+  },
+  {
+    "brandId": 335,
+    "brandName": "Bimota",
+    "categoryId": 116
+  },
+  {
+    "brandId": 336,
+    "brandName": "Hero",
+    "categoryId": 116
+  },
+  {
+    "brandId": 348,
+    "brandName": "Halo Rover X",
+    "categoryId": 117
+  },
+  {
+    "brandId": 349,
+    "brandName": "Swagtron T6 Outlaw",
+    "categoryId": 117
+  },
+  {
+    "brandId": 350,
+    "brandName": "Gotrax SRX Pro",
+    "categoryId": 117
+  },
+  {
+    "brandId": 351,
+    "brandName": "Segway Ninebot S",
+    "categoryId": 117
+  },
+  {
+    "brandId": 352,
+    "brandName": "Swagtron Swagboard T1 Pro",
+    "categoryId": 117
+  },
+  {
+    "brandId": 353,
+    "brandName": "Gotrax Hoverfly ECO",
+    "categoryId": 117
+  },
+  {
+    "brandId": 354,
+    "brandName": "Razor Hovertrax 2.0",
+    "categoryId": 117
+  },
+  {
+    "brandId": 355,
+    "brandName": "Gyroor G-F1",
+    "categoryId": 117
+  },
+  {
+    "brandId": 356,
+    "brandName": "FutureSaw Pro Edition",
+    "categoryId": 117
+  },
+  {
+    "brandId": 357,
+    "brandName": "Gyroor Warrior",
+    "categoryId": 117
+  },
+  {
+    "brandId": 358,
+    "brandName": "Gotrax SRX A6 Bluetooth Hoverboard",
+    "categoryId": 117
+  },
+  {
+    "brandId": 359,
+    "brandName": "Toyota",
+    "categoryId": 122
+  },
+  {
+    "brandId": 360,
+    "brandName": "Honda",
+    "categoryId": 122
+  },
+  {
+    "brandId": 361,
+    "brandName": "Chevrolet",
+    "categoryId": 122
+  },
+  {
+    "brandId": 362,
+    "brandName": "Ford",
+    "categoryId": 122
+  },
+  {
+    "brandId": 363,
+    "brandName": "Mercedes-Benz",
+    "categoryId": 122
+  },
+  {
+    "brandId": 364,
+    "brandName": "Jeep",
+    "categoryId": 122
+  },
+  {
+    "brandId": 365,
+    "brandName": "BMW",
+    "categoryId": 122
+  },
+  {
+    "brandId": 366,
+    "brandName": "Porsche",
+    "categoryId": 122
+  },
+  {
+    "brandId": 367,
+    "brandName": "Subaru",
+    "categoryId": 122
+  },
+  {
+    "brandId": 368,
+    "brandName": "Nissan",
+    "categoryId": 122
+  },
+  {
+    "brandId": 369,
+    "brandName": "Cadillac",
+    "categoryId": 122
+  },
+  {
+    "brandId": 370,
+    "brandName": "Volkswagen",
+    "categoryId": 122
+  },
+  {
+    "brandId": 371,
+    "brandName": "Lexus",
+    "categoryId": 122
+  },
+  {
+    "brandId": 372,
+    "brandName": "Audi",
+    "categoryId": 122
+  },
+  {
+    "brandId": 373,
+    "brandName": "Ferrari",
+    "categoryId": 122
+  },
+  {
+    "brandId": 374,
+    "brandName": "Volvo",
+    "categoryId": 122
+  },
+  {
+    "brandId": 375,
+    "brandName": "Jaguar",
+    "categoryId": 122
+  },
+  {
+    "brandId": 376,
+    "brandName": "GMC",
+    "categoryId": 122
+  },
+  {
+    "brandId": 377,
+    "brandName": "Buick",
+    "categoryId": 122
+  },
+  {
+    "brandId": 378,
+    "brandName": "Acura",
+    "categoryId": 122
+  },
+  {
+    "brandId": 379,
+    "brandName": "Bentley",
+    "categoryId": 122
+  },
+  {
+    "brandId": 380,
+    "brandName": "Dodge",
+    "categoryId": 122
+  },
+  {
+    "brandId": 381,
+    "brandName": "Hyundai",
+    "categoryId": 122
+  },
+  {
+    "brandId": 382,
+    "brandName": "Lincoln",
+    "categoryId": 122
+  },
+  {
+    "brandId": 383,
+    "brandName": "Mazda",
+    "categoryId": 122
+  },
+  {
+    "brandId": 384,
+    "brandName": "Land Rover",
+    "categoryId": 122
+  },
+  {
+    "brandId": 385,
+    "brandName": "Tesla",
+    "categoryId": 122
+  },
+  {
+    "brandId": 386,
+    "brandName": "Ram Trucks",
+    "categoryId": 122
+  },
+  {
+    "brandId": 387,
+    "brandName": "Kia",
+    "categoryId": 122
+  },
+  {
+    "brandId": 388,
+    "brandName": "Chrysler",
+    "categoryId": 122
+  },
+  {
+    "brandId": 389,
+    "brandName": "Pontiac",
+    "categoryId": 122
+  },
+  {
+    "brandId": 390,
+    "brandName": "Infiniti",
+    "categoryId": 122
+  },
+  {
+    "brandId": 391,
+    "brandName": "Mitsubishi",
+    "categoryId": 122
+  },
+  {
+    "brandId": 392,
+    "brandName": "Oldsmobile",
+    "categoryId": 122
+  },
+  {
+    "brandId": 393,
+    "brandName": "Maserati",
+    "categoryId": 122
+  },
+  {
+    "brandId": 394,
+    "brandName": "Aston Martin",
+    "categoryId": 122
+  },
+  {
+    "brandId": 395,
+    "brandName": "Bugatti",
+    "categoryId": 122
+  },
+  {
+    "brandId": 396,
+    "brandName": "Fiat",
+    "categoryId": 122
+  },
+  {
+    "brandId": 397,
+    "brandName": "Mini",
+    "categoryId": 122
+  },
+  {
+    "brandId": 398,
+    "brandName": "Alfa Romeo",
+    "categoryId": 122
+  },
+  {
+    "brandId": 399,
+    "brandName": "Saab",
+    "categoryId": 122
+  },
+  {
+    "brandId": 400,
+    "brandName": "Genesis",
+    "categoryId": 122
+  },
+  {
+    "brandId": 401,
+    "brandName": "Suzuki",
+    "categoryId": 122
+  },
+  {
+    "brandId": 402,
+    "brandName": "Studebaker",
+    "categoryId": 122
+  },
+  {
+    "brandId": 403,
+    "brandName": "Renault",
+    "categoryId": 122
+  },
+  {
+    "brandId": 404,
+    "brandName": "Peugeot",
+    "categoryId": 122
+  },
+  {
+    "brandId": 405,
+    "brandName": "Daewoo",
+    "categoryId": 122
+  },
+  {
+    "brandId": 406,
+    "brandName": "Hudson",
+    "categoryId": 122
+  },
+  {
+    "brandId": 407,
+    "brandName": "Citroen",
+    "categoryId": 122
+  },
+  {
+    "brandId": 408,
+    "brandName": "MG",
+    "categoryId": 122
+  },
+  {
+    "brandId": 451,
+    "brandName": "Herschel Supply Co",
+    "categoryId": 173
+  },
+  {
+    "brandId": 452,
+    "brandName": "JanSport",
+    "categoryId": 173
+  },
+  {
+    "brandId": 453,
+    "brandName": "Fjallraven",
+    "categoryId": 173
+  },
+  {
+    "brandId": 454,
+    "brandName": "Under Armour",
+    "categoryId": 173
+  },
+  {
+    "brandId": 455,
+    "brandName": "The North Face",
+    "categoryId": 173
+  },
+  {
+    "brandId": 456,
+    "brandName": "BAGGU",
+    "categoryId": 173
+  },
+  {
+    "brandId": 457,
+    "brandName": "Deuter",
+    "categoryId": 173
+  },
+  {
+    "brandId": 458,
+    "brandName": "Patagonia",
+    "categoryId": 173
+  },
+  {
+    "brandId": 459,
+    "brandName": "Timbuk2",
+    "categoryId": 173
+  },
+  {
+    "brandId": 460,
+    "brandName": "Dagne Dover",
+    "categoryId": 173
+  },
+  {
+    "brandId": 461,
+    "brandName": "Tumi",
+    "categoryId": 173
+  },
+  {
+    "brandId": 462,
+    "brandName": "Osprey",
+    "categoryId": 173
+  },
+  {
+    "brandId": 463,
+    "brandName": "American Tourister",
+    "categoryId": 174
+  },
+  {
+    "brandId": 464,
+    "brandName": "Samsonite",
+    "categoryId": 174
+  },
+  {
+    "brandId": 465,
+    "brandName": "Travelpro",
+    "categoryId": 174
+  },
+  {
+    "brandId": 466,
+    "brandName": "Eagle Creek",
+    "categoryId": 174
+  },
+  {
+    "brandId": 467,
+    "brandName": "Delsey",
+    "categoryId": 174
+  },
+  {
+    "brandId": 468,
+    "brandName": "Briggs & Riley",
+    "categoryId": 174
+  },
+  {
+    "brandId": 469,
+    "brandName": "Victorinox",
+    "categoryId": 174
+  },
+  {
+    "brandId": 470,
+    "brandName": "Tumi",
+    "categoryId": 174
+  },
+  {
+    "brandId": 471,
+    "brandName": "Nomatic",
+    "categoryId": 175
+  },
+  {
+    "brandId": 472,
+    "brandName": "Montblanc",
+    "categoryId": 175
+  },
+  {
+    "brandId": 473,
+    "brandName": "Zegur",
+    "categoryId": 175
+  },
+  {
+    "brandId": 474,
+    "brandName": "Modoker",
+    "categoryId": 175
+  },
+  {
+    "brandId": 475,
+    "brandName": "SwissGear",
+    "categoryId": 175
+  },
+  {
+    "brandId": 476,
+    "brandName": "UNIQUEBELLA",
+    "categoryId": 175
+  },
+  {
+    "brandId": 477,
+    "brandName": "Travelpro",
+    "categoryId": 175
+  },
+  {
+    "brandId": 478,
+    "brandName": "NEWHEY",
+    "categoryId": 175
+  },
+  {
+    "brandId": 479,
+    "brandName": "Tom Ford",
+    "categoryId": 175
+  },
+  {
+    "brandId": 480,
+    "brandName": "AmazonBasics",
+    "categoryId": 175
+  },
+  {
+    "brandId": 481,
+    "brandName": "Berluti",
+    "categoryId": 175
+  },
+  {
+    "brandId": 482,
+    "brandName": "Away",
+    "categoryId": 176
+  },
+  {
+    "brandId": 483,
+    "brandName": "YSL",
+    "categoryId": 176
+  },
+  {
+    "brandId": 484,
+    "brandName": "Nodykka",
+    "categoryId": 176
+  },
+  {
+    "brandId": 485,
+    "brandName": "Cuyana",
+    "categoryId": 176
+  },
+  {
+    "brandId": 486,
+    "brandName": "Sunny Snowy",
+    "categoryId": 176
+  },
+  {
+    "brandId": 487,
+    "brandName": "Versace",
+    "categoryId": 176
+  },
+  {
+    "brandId": 488,
+    "brandName": "Bottega Veneta",
+    "categoryId": 176
+  },
+  {
+    "brandId": 489,
+    "brandName": "Cuyana",
+    "categoryId": 176
+  },
+  {
+    "brandId": 490,
+    "brandName": "Away",
+    "categoryId": 176
+  },
+  {
+    "brandId": 491,
+    "brandName": "Covelin",
+    "categoryId": 176
+  },
+  {
+    "brandId": 492,
+    "brandName": "Bottega Veneta",
+    "categoryId": 176
+  },
+  {
+    "brandId": 493,
+    "brandName": "American Tourister",
+    "categoryId": 177
+  },
+  {
+    "brandId": 494,
+    "brandName": "Samsonite",
+    "categoryId": 177
+  },
+  {
+    "brandId": 495,
+    "brandName": "Travelpro",
+    "categoryId": 177
+  },
+  {
+    "brandId": 496,
+    "brandName": "Eagle Creek",
+    "categoryId": 177
+  },
+  {
+    "brandId": 497,
+    "brandName": "Delsey",
+    "categoryId": 177
+  },
+  {
+    "brandId": 498,
+    "brandName": "Briggs & Riley",
+    "categoryId": 177
+  },
+  {
+    "brandId": 499,
+    "brandName": "Victorinox",
+    "categoryId": 177
+  },
+  {
+    "brandId": 500,
+    "brandName": "Tumi",
+    "categoryId": 177
+  },
+  {
+    "brandId": 501,
+    "brandName": "American Tourister",
+    "categoryId": 177
+  },
+  {
+    "brandId": 502,
+    "brandName": "Samsonite",
+    "categoryId": 177
+  },
+  {
+    "brandId": 503,
+    "brandName": "Travelpro",
+    "categoryId": 177
+  },
+  {
+    "brandId": 504,
+    "brandName": "Eagle Creek",
+    "categoryId": 177
+  },
+  {
+    "brandId": 505,
+    "brandName": "Delsey",
+    "categoryId": 177
+  },
+  {
+    "brandId": 506,
+    "brandName": "Briggs & Riley",
+    "categoryId": 177
+  },
+  {
+    "brandId": 507,
+    "brandName": "Victorinox",
+    "categoryId": 177
+  },
+  {
+    "brandId": 508,
+    "brandName": "Tumi",
+    "categoryId": 177
+  },
+  {
+    "brandId": 509,
+    "brandName": "Peak Design Everyday Messenger",
+    "categoryId": 178
+  },
+  {
+    "brandId": 510,
+    "brandName": "Herschel Supply Co. Pop Quiz Backpack",
+    "categoryId": 178
+  },
+  {
+    "brandId": 511,
+    "brandName": "Swissgear 1900 ScanSmart Mini/Slim Version Lapt",
+    "categoryId": 178
+  },
+  {
+    "brandId": 512,
+    "brandName": "Timbuk2 Spire",
+    "categoryId": 178
+  },
+  {
+    "brandId": 513,
+    "brandName": "Solo Duane Laptop/Briefcase Hybrid",
+    "categoryId": 178
+  },
+  {
+    "brandId": 514,
+    "brandName": "Mancro Anti-Theft Backpack",
+    "categoryId": 178
+  },
+  {
+    "brandId": 515,
+    "brandName": "eBags Professional Slim Laptop Backpack",
+    "categoryId": 178
+  },
+  {
+    "brandId": 516,
+    "brandName": "AmazonBasics Shoulder Bag Carrying Case",
+    "categoryId": 178
+  },
+  {
+    "brandId": 517,
+    "brandName": "Samsonite Gridlok Backpack",
+    "categoryId": 178
+  },
+  {
+    "brandId": 518,
+    "brandName": "HP Envy Urban Backpack",
+    "categoryId": 178
+  },
+  {
+    "brandId": 519,
+    "brandName": "American Tourister",
+    "categoryId": 179
+  },
+  {
+    "brandId": 520,
+    "brandName": "Samsonite",
+    "categoryId": 179
+  },
+  {
+    "brandId": 521,
+    "brandName": "Travelpro",
+    "categoryId": 179
+  },
+  {
+    "brandId": 522,
+    "brandName": "Eagle Creek",
+    "categoryId": 179
+  },
+  {
+    "brandId": 523,
+    "brandName": "Delsey",
+    "categoryId": 179
+  },
+  {
+    "brandId": 524,
+    "brandName": "Briggs & Riley",
+    "categoryId": 179
+  },
+  {
+    "brandId": 525,
+    "brandName": "Victorinox",
+    "categoryId": 179
+  },
+  {
+    "brandId": 526,
+    "brandName": "Tumi",
+    "categoryId": 179
+  },
+  {
+    "brandId": 527,
+    "brandName": "Trunki",
+    "categoryId": 180
+  },
+  {
+    "brandId": 528,
+    "brandName": "Jetkids Bedbox",
+    "categoryId": 180
+  },
+  {
+    "brandId": 529,
+    "brandName": "Heys America",
+    "categoryId": 180
+  },
+  {
+    "brandId": 530,
+    "brandName": "Stephen Joseph",
+    "categoryId": 180
+  },
+  {
+    "brandId": 531,
+    "brandName": "Skip Hop",
+    "categoryId": 180
+  },
+  {
+    "brandId": 532,
+    "brandName": "American Tourister Disney Hardside",
+    "categoryId": 180
+  },
+  {
+    "brandId": 533,
+    "brandName": "Rockland 2",
+    "categoryId": 180
+  },
+  {
+    "brandId": 534,
+    "brandName": "Rockland Departure Hardside Spinner Wheel Luggage",
+    "categoryId": 180
+  },
+  {
+    "brandId": 535,
+    "brandName": "Herschel Trade Carry On",
+    "categoryId": 180
+  },
+  {
+    "brandId": 536,
+    "brandName": "Kenneth Cole Reaction",
+    "categoryId": 180
+  },
+  {
+    "brandId": 537,
+    "brandName": "Kenneth Cole ",
+    "categoryId": 181
+  },
+  {
+    "brandId": 538,
+    "brandName": "Ytonet Expandable",
+    "categoryId": 181
+  },
+  {
+    "brandId": 539,
+    "brandName": "Frye Logan",
+    "categoryId": 181
+  },
+  {
+    "brandId": 540,
+    "brandName": "Timbuk2",
+    "categoryId": 181
+  },
+  {
+    "brandId": 541,
+    "brandName": "Away",
+    "categoryId": 181
+  },
+  {
+    "brandId": 542,
+    "brandName": "Samsonite Flap Over ",
+    "categoryId": 181
+  },
+  {
+    "brandId": 543,
+    "brandName": "Chrome Mini Metro",
+    "categoryId": 181
+  },
+  {
+    "brandId": 544,
+    "brandName": "Timbuk2 Command TSA-friendly",
+    "categoryId": 181
+  },
+  {
+    "brandId": 545,
+    "brandName": "Travelon Anti-Theft ",
+    "categoryId": 181
+  },
+  {
+    "brandId": 546,
+    "brandName": "Sweetbriar Canvas",
+    "categoryId": 181
+  },
+  {
+    "brandId": 547,
+    "brandName": "Leaper Retro",
+    "categoryId": 181
+  },
+  {
+    "brandId": 548,
+    "brandName": "Filson Padded",
+    "categoryId": 181
+  },
+  {
+    "brandId": 549,
+    "brandName": "Peacechaos Waterproof ",
+    "categoryId": 181
+  },
+  {
+    "brandId": 550,
+    "brandName": "Davek",
+    "categoryId": 182
+  },
+  {
+    "brandId": 551,
+    "brandName": "Burberry",
+    "categoryId": 182
+  },
+  {
+    "brandId": 552,
+    "brandName": "Magitec",
+    "categoryId": 182
+  },
+  {
+    "brandId": 553,
+    "brandName": "GustBuster",
+    "categoryId": 182
+  },
+  {
+    "brandId": 554,
+    "brandName": "LifeTek",
+    "categoryId": 182
+  },
+  {
+    "brandId": 555,
+    "brandName": "Repel",
+    "categoryId": 183
+  },
+  {
+    "brandId": 556,
+    "brandName": "Siepasa",
+    "categoryId": 183
+  },
+  {
+    "brandId": 557,
+    "brandName": "EEZ-Y",
+    "categoryId": 183
+  },
+  {
+    "brandId": 558,
+    "brandName": "G4Free",
+    "categoryId": 183
+  },
+  {
+    "brandId": 559,
+    "brandName": "Paul Smith",
+    "categoryId": 183
+  },
+  {
+    "brandId": 560,
+    "brandName": "Totes",
+    "categoryId": 183
+  },
+  {
+    "brandId": 561,
+    "brandName": "AmazonBasics",
+    "categoryId": 183
+  },
+  {
+    "brandId": 562,
+    "brandName": "Yohji Yamamoto",
+    "categoryId": 183
+  },
+  {
+    "brandId": 563,
+    "brandName": "Adidas Defender III\t",
+    "categoryId": 184
+  },
+  {
+    "brandId": 564,
+    "brandName": "Waterfield Atlas Executive\t",
+    "categoryId": 184
+  },
+  {
+    "brandId": 565,
+    "brandName": "DALIX Sports\t",
+    "categoryId": 184
+  },
+  {
+    "brandId": 566,
+    "brandName": "Amabilis Dave Jr\t",
+    "categoryId": 184
+  },
+  {
+    "brandId": 567,
+    "brandName": "Under Armour Undeniable",
+    "categoryId": 184
+  },
+  {
+    "brandId": 568,
+    "brandName": "Thule Subterra",
+    "categoryId": 184
+  },
+  {
+    "brandId": 569,
+    "brandName": "Canway",
+    "categoryId": 184
+  },
+  {
+    "brandId": 570,
+    "brandName": "Osprey Rolling Transporter",
+    "categoryId": 184
+  },
+  {
+    "brandId": 571,
+    "brandName": "5.11 Rush LBD",
+    "categoryId": 184
+  },
+  {
+    "brandId": 572,
+    "brandName": "Filson",
+    "categoryId": 184
+  },
+  {
+    "brandId": 573,
+    "brandName": "Herschel Sutton",
+    "categoryId": 184
+  },
+  {
+    "brandId": 574,
+    "brandName": "Plambag Canvas",
+    "categoryId": 184
+  },
+  {
+    "brandId": 575,
+    "brandName": "North Face Base Camp",
+    "categoryId": 184
+  },
+  {
+    "brandId": 576,
+    "brandName": "Nike Golf Ripstop",
+    "categoryId": 184
+  },
+  {
+    "brandId": 577,
+    "brandName": "Valextra Boston",
+    "categoryId": 184
+  },
+  {
+    "brandId": 578,
+    "brandName": "Nike",
+    "categoryId": 228
+  },
+  {
+    "brandId": 579,
+    "brandName": "Adidas",
+    "categoryId": 228
+  },
+  {
+    "brandId": 580,
+    "brandName": "Puma",
+    "categoryId": 228
+  },
+  {
+    "brandId": 581,
+    "brandName": "Reebok",
+    "categoryId": 228
+  },
+  {
+    "brandId": 582,
+    "brandName": "2XU",
+    "categoryId": 228
+  },
+  {
+    "brandId": 583,
+    "brandName": "Rhone",
+    "categoryId": 228
+  },
+  {
+    "brandId": 584,
+    "brandName": "Asics",
+    "categoryId": 228
+  },
+  {
+    "brandId": 585,
+    "brandName": "Gymshark",
+    "categoryId": 228
+  },
+  {
+    "brandId": 586,
+    "brandName": "Fabletics",
+    "categoryId": 228
+  },
+  {
+    "brandId": 587,
+    "brandName": "On Running",
+    "categoryId": 228
+  },
+  {
+    "brandId": 588,
+    "brandName": "Wolven",
+    "categoryId": 228
+  },
+  {
+    "brandId": 589,
+    "brandName": "Champion",
+    "categoryId": 228
+  },
+  {
+    "brandId": 590,
+    "brandName": "New Balance",
+    "categoryId": 228
+  },
+  {
+    "brandId": 591,
+    "brandName": "P.E. Nation",
+    "categoryId": 228
+  },
+  {
+    "brandId": 592,
+    "brandName": "WATINC.",
+    "categoryId": 258
+  },
+  {
+    "brandId": 593,
+    "brandName": "Schylling.",
+    "categoryId": 258
+  },
+  {
+    "brandId": 594,
+    "brandName": "Melissa & Doug.",
+    "categoryId": 258
+  },
+  {
+    "brandId": 595,
+    "brandName": "GUND.",
+    "categoryId": 258
+  },
+  {
+    "brandId": 596,
+    "brandName": "The Puppet Company.",
+    "categoryId": 258
+  },
+  {
+    "brandId": 597,
+    "brandName": "JOYIN.",
+    "categoryId": 258
+  },
+  {
+    "brandId": 598,
+    "brandName": "Geyiie.",
+    "categoryId": 258
+  },
+  {
+    "brandId": 599,
+    "brandName": "Nintendo",
+    "categoryId": 264
+  },
+  {
+    "brandId": 600,
+    "brandName": "Valve Corporation",
+    "categoryId": 264
+  },
+  {
+    "brandId": 601,
+    "brandName": "Rockstar Games",
+    "categoryId": 264
+  },
+  {
+    "brandId": 602,
+    "brandName": "Electronic Arts",
+    "categoryId": 264
+  },
+  {
+    "brandId": 603,
+    "brandName": "Activision Blizzard",
+    "categoryId": 264
+  },
+  {
+    "brandId": 604,
+    "brandName": "Sony Computer Entertainment",
+    "categoryId": 264
+  },
+  {
+    "brandId": 605,
+    "brandName": "Ubisoft",
+    "categoryId": 264
+  },
+  {
+    "brandId": 606,
+    "brandName": "Sega Games Co. Ltd",
+    "categoryId": 264
+  },
+  {
+    "brandId": 607,
+    "brandName": "BioWare",
+    "categoryId": 264
+  },
+  {
+    "brandId": 608,
+    "brandName": "Naughty Dog Inc",
+    "categoryId": 264
+  },
+  {
+    "brandId": 609,
+    "brandName": "Square Enix Holdings Co. Ltd",
+    "categoryId": 264
+  },
+  {
+    "brandId": 610,
+    "brandName": "Capcom Company Ltd",
+    "categoryId": 264
+  },
+  {
+    "brandId": 611,
+    "brandName": "Bungie Inc",
+    "categoryId": 264
+  },
+  {
+    "brandId": 612,
+    "brandName": "Microsoft Corporation",
+    "categoryId": 264
+  },
+  {
+    "brandId": 613,
+    "brandName": "Bandai Namco Entertainment",
+    "categoryId": 264
+  },
+  {
+    "brandId": 614,
+    "brandName": "Epic Games",
+    "categoryId": 264
+  },
+  {
+    "brandId": 615,
+    "brandName": "Game Freak",
+    "categoryId": 264
+  },
+  {
+    "brandId": 616,
+    "brandName": "Insomniac Games Inc",
+    "categoryId": 264
+  },
+  {
+    "brandId": 617,
+    "brandName": "Infinity Ward",
+    "categoryId": 264
+  },
+  {
+    "brandId": 618,
+    "brandName": "Gameloft",
+    "categoryId": 264
+  },
+  {
+    "brandId": 619,
+    "brandName": "Blizzard Entertainment Inc",
+    "categoryId": 264
+  },
+  {
+    "brandId": 620,
+    "brandName": "Konami Holdings Corporations",
+    "categoryId": 264
+  },
+  {
+    "brandId": 621,
+    "brandName": "Nintendo",
+    "categoryId": 265
+  },
+  {
+    "brandId": 622,
+    "brandName": "Valve Corporation",
+    "categoryId": 265
+  },
+  {
+    "brandId": 623,
+    "brandName": "Rockstar Games",
+    "categoryId": 265
+  },
+  {
+    "brandId": 624,
+    "brandName": "Electronic Arts",
+    "categoryId": 265
+  },
+  {
+    "brandId": 625,
+    "brandName": "Activision Blizzard",
+    "categoryId": 265
+  },
+  {
+    "brandId": 626,
+    "brandName": "Sony Computer Entertainment",
+    "categoryId": 265
+  },
+  {
+    "brandId": 627,
+    "brandName": "Ubisoft",
+    "categoryId": 265
+  },
+  {
+    "brandId": 628,
+    "brandName": "Sega Games Co. Ltd",
+    "categoryId": 265
+  },
+  {
+    "brandId": 629,
+    "brandName": "BioWare",
+    "categoryId": 265
+  },
+  {
+    "brandId": 630,
+    "brandName": "Naughty Dog Inc",
+    "categoryId": 265
+  },
+  {
+    "brandId": 631,
+    "brandName": "Square Enix Holdings Co. Ltd",
+    "categoryId": 265
+  },
+  {
+    "brandId": 632,
+    "brandName": "Capcom Company Ltd",
+    "categoryId": 265
+  },
+  {
+    "brandId": 633,
+    "brandName": "Bungie Inc",
+    "categoryId": 265
+  },
+  {
+    "brandId": 634,
+    "brandName": "Microsoft Corporation",
+    "categoryId": 265
+  },
+  {
+    "brandId": 635,
+    "brandName": "Bandai Namco Entertainment",
+    "categoryId": 265
+  },
+  {
+    "brandId": 636,
+    "brandName": "Epic Games",
+    "categoryId": 265
+  },
+  {
+    "brandId": 637,
+    "brandName": "Game Freak",
+    "categoryId": 265
+  },
+  {
+    "brandId": 638,
+    "brandName": "Insomniac Games Inc",
+    "categoryId": 265
+  },
+  {
+    "brandId": 639,
+    "brandName": "Infinity Ward",
+    "categoryId": 265
+  },
+  {
+    "brandId": 640,
+    "brandName": "Gameloft",
+    "categoryId": 265
+  },
+  {
+    "brandId": 641,
+    "brandName": "Blizzard Entertainment Inc",
+    "categoryId": 265
+  },
+  {
+    "brandId": 642,
+    "brandName": "Konami Holdings Corporations",
+    "categoryId": 265
+  },
+  {
+    "brandId": 643,
+    "brandName": "Nintendo",
+    "categoryId": 266
+  },
+  {
+    "brandId": 644,
+    "brandName": "Valve Corporation",
+    "categoryId": 266
+  },
+  {
+    "brandId": 645,
+    "brandName": "Rockstar Games",
+    "categoryId": 266
+  },
+  {
+    "brandId": 646,
+    "brandName": "Electronic Arts",
+    "categoryId": 266
+  },
+  {
+    "brandId": 647,
+    "brandName": "Activision Blizzard",
+    "categoryId": 266
+  },
+  {
+    "brandId": 648,
+    "brandName": "Sony Computer Entertainment",
+    "categoryId": 266
+  },
+  {
+    "brandId": 649,
+    "brandName": "Ubisoft",
+    "categoryId": 266
+  },
+  {
+    "brandId": 650,
+    "brandName": "Sega Games Co. Ltd",
+    "categoryId": 266
+  },
+  {
+    "brandId": 651,
+    "brandName": "BioWare",
+    "categoryId": 266
+  },
+  {
+    "brandId": 652,
+    "brandName": "Naughty Dog Inc",
+    "categoryId": 266
+  },
+  {
+    "brandId": 653,
+    "brandName": "Square Enix Holdings Co. Ltd",
+    "categoryId": 266
+  },
+  {
+    "brandId": 654,
+    "brandName": "Capcom Company Ltd",
+    "categoryId": 266
+  },
+  {
+    "brandId": 655,
+    "brandName": "Bungie Inc",
+    "categoryId": 266
+  },
+  {
+    "brandId": 656,
+    "brandName": "Microsoft Corporation",
+    "categoryId": 266
+  },
+  {
+    "brandId": 657,
+    "brandName": "Bandai Namco Entertainment",
+    "categoryId": 266
+  },
+  {
+    "brandId": 658,
+    "brandName": "Epic Games",
+    "categoryId": 266
+  },
+  {
+    "brandId": 659,
+    "brandName": "Game Freak",
+    "categoryId": 266
+  },
+  {
+    "brandId": 660,
+    "brandName": "Insomniac Games Inc",
+    "categoryId": 266
+  },
+  {
+    "brandId": 661,
+    "brandName": "Infinity Ward",
+    "categoryId": 266
+  },
+  {
+    "brandId": 662,
+    "brandName": "Gameloft",
+    "categoryId": 266
+  },
+  {
+    "brandId": 663,
+    "brandName": "Blizzard Entertainment Inc",
+    "categoryId": 266
+  },
+  {
+    "brandId": 664,
+    "brandName": "Konami Holdings Corporations",
+    "categoryId": 266
+  },
+  {
+    "brandId": 665,
+    "brandName": "Nintendo",
+    "categoryId": 267
+  },
+  {
+    "brandId": 666,
+    "brandName": "Valve Corporation",
+    "categoryId": 267
+  },
+  {
+    "brandId": 667,
+    "brandName": "Rockstar Games",
+    "categoryId": 267
+  },
+  {
+    "brandId": 668,
+    "brandName": "Electronic Arts",
+    "categoryId": 267
+  },
+  {
+    "brandId": 669,
+    "brandName": "Activision Blizzard",
+    "categoryId": 267
+  },
+  {
+    "brandId": 670,
+    "brandName": "Sony Computer Entertainment",
+    "categoryId": 267
+  },
+  {
+    "brandId": 671,
+    "brandName": "Ubisoft",
+    "categoryId": 267
+  },
+  {
+    "brandId": 672,
+    "brandName": "Sega Games Co. Ltd",
+    "categoryId": 267
+  },
+  {
+    "brandId": 673,
+    "brandName": "BioWare",
+    "categoryId": 267
+  },
+  {
+    "brandId": 674,
+    "brandName": "Naughty Dog Inc",
+    "categoryId": 267
+  },
+  {
+    "brandId": 675,
+    "brandName": "Square Enix Holdings Co. Ltd",
+    "categoryId": 267
+  },
+  {
+    "brandId": 676,
+    "brandName": "Capcom Company Ltd",
+    "categoryId": 267
+  },
+  {
+    "brandId": 677,
+    "brandName": "Bungie Inc",
+    "categoryId": 267
+  },
+  {
+    "brandId": 678,
+    "brandName": "Microsoft Corporation",
+    "categoryId": 267
+  },
+  {
+    "brandId": 679,
+    "brandName": "Bandai Namco Entertainment",
+    "categoryId": 267
+  },
+  {
+    "brandId": 680,
+    "brandName": "Epic Games",
+    "categoryId": 267
+  },
+  {
+    "brandId": 681,
+    "brandName": "Game Freak",
+    "categoryId": 267
+  },
+  {
+    "brandId": 682,
+    "brandName": "Insomniac Games Inc",
+    "categoryId": 267
+  },
+  {
+    "brandId": 683,
+    "brandName": "Infinity Ward",
+    "categoryId": 267
+  },
+  {
+    "brandId": 684,
+    "brandName": "Gameloft",
+    "categoryId": 267
+  },
+  {
+    "brandId": 685,
+    "brandName": "Blizzard Entertainment Inc",
+    "categoryId": 267
+  },
+  {
+    "brandId": 686,
+    "brandName": "Konami Holdings Corporations",
+    "categoryId": 267
+  },
+  {
+    "brandId": 687,
+    "brandName": "Nintendo",
+    "categoryId": 268
+  },
+  {
+    "brandId": 688,
+    "brandName": "Valve Corporation",
+    "categoryId": 268
+  },
+  {
+    "brandId": 689,
+    "brandName": "Rockstar Games",
+    "categoryId": 268
+  },
+  {
+    "brandId": 690,
+    "brandName": "Electronic Arts",
+    "categoryId": 268
+  },
+  {
+    "brandId": 691,
+    "brandName": "Activision Blizzard",
+    "categoryId": 268
+  },
+  {
+    "brandId": 692,
+    "brandName": "Sony Computer Entertainment",
+    "categoryId": 268
+  },
+  {
+    "brandId": 693,
+    "brandName": "Ubisoft",
+    "categoryId": 268
+  },
+  {
+    "brandId": 694,
+    "brandName": "Sega Games Co. Ltd",
+    "categoryId": 268
+  },
+  {
+    "brandId": 695,
+    "brandName": "BioWare",
+    "categoryId": 268
+  },
+  {
+    "brandId": 696,
+    "brandName": "Naughty Dog Inc",
+    "categoryId": 268
+  },
+  {
+    "brandId": 697,
+    "brandName": "Square Enix Holdings Co. Ltd",
+    "categoryId": 268
+  },
+  {
+    "brandId": 698,
+    "brandName": "Capcom Company Ltd",
+    "categoryId": 268
+  },
+  {
+    "brandId": 699,
+    "brandName": "Bungie Inc",
+    "categoryId": 268
+  },
+  {
+    "brandId": 700,
+    "brandName": "Microsoft Corporation",
+    "categoryId": 268
+  },
+  {
+    "brandId": 701,
+    "brandName": "Bandai Namco Entertainment",
+    "categoryId": 268
+  },
+  {
+    "brandId": 702,
+    "brandName": "Epic Games",
+    "categoryId": 268
+  },
+  {
+    "brandId": 703,
+    "brandName": "Game Freak",
+    "categoryId": 268
+  },
+  {
+    "brandId": 704,
+    "brandName": "Insomniac Games Inc",
+    "categoryId": 268
+  },
+  {
+    "brandId": 705,
+    "brandName": "Infinity Ward",
+    "categoryId": 268
+  },
+  {
+    "brandId": 706,
+    "brandName": "Gameloft",
+    "categoryId": 268
+  },
+  {
+    "brandId": 707,
+    "brandName": "Blizzard Entertainment Inc",
+    "categoryId": 268
+  },
+  {
+    "brandId": 708,
+    "brandName": "Konami Holdings Corporations",
+    "categoryId": 268
+  },
+  {
+    "brandId": 709,
+    "brandName": "Nintendo",
+    "categoryId": 269
+  },
+  {
+    "brandId": 710,
+    "brandName": "Valve Corporation",
+    "categoryId": 269
+  },
+  {
+    "brandId": 711,
+    "brandName": "Rockstar Games",
+    "categoryId": 269
+  },
+  {
+    "brandId": 712,
+    "brandName": "Electronic Arts",
+    "categoryId": 269
+  },
+  {
+    "brandId": 713,
+    "brandName": "Activision Blizzard",
+    "categoryId": 269
+  },
+  {
+    "brandId": 714,
+    "brandName": "Sony Computer Entertainment",
+    "categoryId": 269
+  },
+  {
+    "brandId": 715,
+    "brandName": "Ubisoft",
+    "categoryId": 269
+  },
+  {
+    "brandId": 716,
+    "brandName": "Sega Games Co. Ltd",
+    "categoryId": 269
+  },
+  {
+    "brandId": 717,
+    "brandName": "BioWare",
+    "categoryId": 269
+  },
+  {
+    "brandId": 718,
+    "brandName": "Naughty Dog Inc",
+    "categoryId": 269
+  },
+  {
+    "brandId": 719,
+    "brandName": "Square Enix Holdings Co. Ltd",
+    "categoryId": 269
+  },
+  {
+    "brandId": 720,
+    "brandName": "Capcom Company Ltd",
+    "categoryId": 269
+  },
+  {
+    "brandId": 721,
+    "brandName": "Bungie Inc",
+    "categoryId": 269
+  },
+  {
+    "brandId": 722,
+    "brandName": "Microsoft Corporation",
+    "categoryId": 269
+  },
+  {
+    "brandId": 723,
+    "brandName": "Bandai Namco Entertainment",
+    "categoryId": 269
+  },
+  {
+    "brandId": 724,
+    "brandName": "Epic Games",
+    "categoryId": 269
+  },
+  {
+    "brandId": 725,
+    "brandName": "Game Freak",
+    "categoryId": 269
+  },
+  {
+    "brandId": 726,
+    "brandName": "Insomniac Games Inc",
+    "categoryId": 269
+  },
+  {
+    "brandId": 727,
+    "brandName": "Infinity Ward",
+    "categoryId": 269
+  },
+  {
+    "brandId": 728,
+    "brandName": "Gameloft",
+    "categoryId": 269
+  },
+  {
+    "brandId": 729,
+    "brandName": "Blizzard Entertainment Inc",
+    "categoryId": 269
+  },
+  {
+    "brandId": 730,
+    "brandName": "Konami Holdings Corporations",
+    "categoryId": 269
+  },
+  {
+    "brandId": 731,
+    "brandName": "Nintendo",
+    "categoryId": 273
+  },
+  {
+    "brandId": 732,
+    "brandName": "Valve Corporation",
+    "categoryId": 273
+  },
+  {
+    "brandId": 733,
+    "brandName": "Rockstar Games",
+    "categoryId": 273
+  },
+  {
+    "brandId": 734,
+    "brandName": "Electronic Arts",
+    "categoryId": 273
+  },
+  {
+    "brandId": 735,
+    "brandName": "Activision Blizzard",
+    "categoryId": 273
+  },
+  {
+    "brandId": 736,
+    "brandName": "Sony Computer Entertainment",
+    "categoryId": 273
+  },
+  {
+    "brandId": 737,
+    "brandName": "Ubisoft",
+    "categoryId": 273
+  },
+  {
+    "brandId": 738,
+    "brandName": "Sega Games Co. Ltd",
+    "categoryId": 273
+  },
+  {
+    "brandId": 739,
+    "brandName": "BioWare",
+    "categoryId": 273
+  },
+  {
+    "brandId": 740,
+    "brandName": "Naughty Dog Inc",
+    "categoryId": 273
+  },
+  {
+    "brandId": 741,
+    "brandName": "Square Enix Holdings Co. Ltd",
+    "categoryId": 273
+  },
+  {
+    "brandId": 742,
+    "brandName": "Capcom Company Ltd",
+    "categoryId": 273
+  },
+  {
+    "brandId": 743,
+    "brandName": "Bungie Inc",
+    "categoryId": 273
+  },
+  {
+    "brandId": 744,
+    "brandName": "Microsoft Corporation",
+    "categoryId": 273
+  },
+  {
+    "brandId": 745,
+    "brandName": "Bandai Namco Entertainment",
+    "categoryId": 273
+  },
+  {
+    "brandId": 746,
+    "brandName": "Epic Games",
+    "categoryId": 273
+  },
+  {
+    "brandId": 747,
+    "brandName": "Game Freak",
+    "categoryId": 273
+  },
+  {
+    "brandId": 748,
+    "brandName": "Insomniac Games Inc",
+    "categoryId": 273
+  },
+  {
+    "brandId": 749,
+    "brandName": "Infinity Ward",
+    "categoryId": 273
+  },
+  {
+    "brandId": 750,
+    "brandName": "Gameloft",
+    "categoryId": 273
+  },
+  {
+    "brandId": 751,
+    "brandName": "Blizzard Entertainment Inc",
+    "categoryId": 273
+  },
+  {
+    "brandId": 752,
+    "brandName": "Konami Holdings Corporations",
+    "categoryId": 273
+  },
+  {
+    "brandId": 764,
+    "brandName": "Alienware",
+    "categoryId": 291
+  },
+  {
+    "brandId": 765,
+    "brandName": "Asus",
+    "categoryId": 291
+  },
+  {
+    "brandId": 766,
+    "brandName": "BenQ",
+    "categoryId": 291
+  },
+  {
+    "brandId": 767,
+    "brandName": "Dell",
+    "categoryId": 291
+  },
+  {
+    "brandId": 768,
+    "brandName": "HP",
+    "categoryId": 291
+  },
+  {
+    "brandId": 769,
+    "brandName": "LG",
+    "categoryId": 291
+  },
+  {
+    "brandId": 770,
+    "brandName": "Lenovo",
+    "categoryId": 291
+  },
+  {
+    "brandId": 771,
+    "brandName": "Samsung",
+    "categoryId": 291
+  },
+  {
+    "brandId": 772,
+    "brandName": "ViewSonic",
+    "categoryId": 291
+  },
+  {
+    "brandId": 773,
+    "brandName": "Nec",
+    "categoryId": 291
+  },
+  {
+    "brandId": 774,
+    "brandName": "iiyama",
+    "categoryId": 291
+  },
+  {
+    "brandId": 775,
+    "brandName": "Intel",
+    "categoryId": 288
+  },
+  {
+    "brandId": 776,
+    "brandName": "Amd",
+    "categoryId": 288
+  },
+  {
+    "brandId": 777,
+    "brandName": "Nvidia",
+    "categoryId": 288
+  },
+  {
+    "brandId": 778,
+    "brandName": "Asus",
+    "categoryId": 288
+  },
+  {
+    "brandId": 779,
+    "brandName": "EVGA",
+    "categoryId": 288
+  },
+  {
+    "brandId": 780,
+    "brandName": "Gigabyte",
+    "categoryId": 288
+  },
+  {
+    "brandId": 781,
+    "brandName": "Kitchen Aid",
+    "categoryId": null
+  },
+  {
+    "brandId": 782,
+    "brandName": "Frigidaire",
+    "categoryId": null
+  },
+  {
+    "brandId": 783,
+    "brandName": "Whirlpool Corporation",
+    "categoryId": null
+  },
+  {
+    "brandId": 784,
+    "brandName": "General Electric",
+    "categoryId": null
+  },
+  {
+    "brandId": 785,
+    "brandName": "Bosch",
+    "categoryId": null
+  },
+  {
+    "brandId": 786,
+    "brandName": "LG",
+    "categoryId": null
+  },
+  {
+    "brandId": 787,
+    "brandName": "Jenn-Air",
+    "categoryId": null
+  },
+  {
+    "brandId": 788,
+    "brandName": "Maytag",
+    "categoryId": null
+  },
+  {
+    "brandId": 789,
+    "brandName": "Thermador",
+    "categoryId": null
+  },
+  {
+    "brandId": 790,
+    "brandName": "Electrolux",
+    "categoryId": null
+  },
+  {
+    "brandId": 791,
+    "brandName": "Kenmore",
+    "categoryId": null
+  },
+  {
+    "brandId": 792,
+    "brandName": "Beko",
+    "categoryId": null
+  },
+  {
+    "brandId": 793,
+    "brandName": "Viking",
+    "categoryId": null
+  },
+  {
+    "brandId": 794,
+    "brandName": "Panasonic Corporation",
+    "categoryId": null
+  },
+  {
+    "brandId": 795,
+    "brandName": "Carter’s: Cute & Comfy",
+    "categoryId": 328
+  },
+  {
+    "brandId": 796,
+    "brandName": "Primary",
+    "categoryId": 328
+  },
+  {
+    "brandId": 797,
+    "brandName": "Burt’s Bees Baby",
+    "categoryId": 328
+  },
+  {
+    "brandId": 798,
+    "brandName": "Cat & Jack",
+    "categoryId": 328
+  },
+  {
+    "brandId": 799,
+    "brandName": "Kickee Pants",
+    "categoryId": 328
+  },
+  {
+    "brandId": 800,
+    "brandName": "Old Navy",
+    "categoryId": 328
+  },
+  {
+    "brandId": 801,
+    "brandName": "Tea Collection",
+    "categoryId": 328
+  },
+  {
+    "brandId": 802,
+    "brandName": "Loulou Lollipop",
+    "categoryId": 328
+  },
+  {
+    "brandId": 803,
+    "brandName": "H&M",
+    "categoryId": 328
+  },
+  {
+    "brandId": 804,
+    "brandName": "Hanna Andersson",
+    "categoryId": 328
+  },
+  {
+    "brandId": 805,
+    "brandName": "Carter’s: Cute & Comfy",
+    "categoryId": 329
+  },
+  {
+    "brandId": 806,
+    "brandName": "Primary",
+    "categoryId": 329
+  },
+  {
+    "brandId": 807,
+    "brandName": "Burt’s Bees Baby",
+    "categoryId": 329
+  },
+  {
+    "brandId": 808,
+    "brandName": "Cat & Jack",
+    "categoryId": 329
+  },
+  {
+    "brandId": 809,
+    "brandName": "Kickee Pants",
+    "categoryId": 329
+  },
+  {
+    "brandId": 810,
+    "brandName": "Old Navy",
+    "categoryId": 329
+  },
+  {
+    "brandId": 811,
+    "brandName": "Tea Collection",
+    "categoryId": 329
+  },
+  {
+    "brandId": 812,
+    "brandName": "Loulou Lollipop",
+    "categoryId": 329
+  },
+  {
+    "brandId": 813,
+    "brandName": "H&M",
+    "categoryId": 329
+  },
+  {
+    "brandId": 814,
+    "brandName": "Hanna Andersson",
+    "categoryId": 329
+  },
+  {
+    "brandId": 815,
+    "brandName": "Carter’s: Cute & Comfy",
+    "categoryId": 330
+  },
+  {
+    "brandId": 816,
+    "brandName": "Primary",
+    "categoryId": 330
+  },
+  {
+    "brandId": 817,
+    "brandName": "Burt’s Bees Baby",
+    "categoryId": 330
+  },
+  {
+    "brandId": 818,
+    "brandName": "Cat & Jack",
+    "categoryId": 330
+  },
+  {
+    "brandId": 819,
+    "brandName": "Kickee Pants",
+    "categoryId": 330
+  },
+  {
+    "brandId": 820,
+    "brandName": "Old Navy",
+    "categoryId": 330
+  },
+  {
+    "brandId": 821,
+    "brandName": "Tea Collection",
+    "categoryId": 330
+  },
+  {
+    "brandId": 822,
+    "brandName": "Loulou Lollipop",
+    "categoryId": 330
+  },
+  {
+    "brandId": 823,
+    "brandName": "H&M",
+    "categoryId": 330
+  },
+  {
+    "brandId": 824,
+    "brandName": "Hanna Andersson",
+    "categoryId": 330
+  },
+  {
+    "brandId": 825,
+    "brandName": "LOUIS VUITTON",
+    "categoryId": 331
+  },
+  {
+    "brandId": 826,
+    "brandName": "GUCCI",
+    "categoryId": 331
+  },
+  {
+    "brandId": 827,
+    "brandName": "HERMES",
+    "categoryId": 331
+  },
+  {
+    "brandId": 828,
+    "brandName": "PRADA",
+    "categoryId": 331
+  },
+  {
+    "brandId": 829,
+    "brandName": "CHANEL",
+    "categoryId": 331
+  },
+  {
+    "brandId": 830,
+    "brandName": "RALPH LAUREN",
+    "categoryId": 331
+  },
+  {
+    "brandId": 831,
+    "brandName": "BURBERRY",
+    "categoryId": 331
+  },
+  {
+    "brandId": 832,
+    "brandName": "HOUSE OF VERSACE",
+    "categoryId": 331
+  },
+  {
+    "brandId": 833,
+    "brandName": "FENDI",
+    "categoryId": 331
+  },
+  {
+    "brandId": 834,
+    "brandName": "ARMANI",
+    "categoryId": 331
+  },
+  {
+    "brandId": 835,
+    "brandName": "LOUIS VUITTON",
+    "categoryId": 332
+  },
+  {
+    "brandId": 836,
+    "brandName": "GUCCI",
+    "categoryId": 332
+  },
+  {
+    "brandId": 837,
+    "brandName": "HERMES",
+    "categoryId": 332
+  },
+  {
+    "brandId": 838,
+    "brandName": "PRADA",
+    "categoryId": 332
+  },
+  {
+    "brandId": 839,
+    "brandName": "CHANEL",
+    "categoryId": 332
+  },
+  {
+    "brandId": 840,
+    "brandName": "RALPH LAUREN",
+    "categoryId": 332
+  },
+  {
+    "brandId": 841,
+    "brandName": "BURBERRY",
+    "categoryId": 332
+  },
+  {
+    "brandId": 842,
+    "brandName": "HOUSE OF VERSACE",
+    "categoryId": 332
+  },
+  {
+    "brandId": 843,
+    "brandName": "FENDI",
+    "categoryId": 332
+  },
+  {
+    "brandId": 844,
+    "brandName": "ARMANI",
+    "categoryId": 332
+  },
+  {
+    "brandId": 845,
+    "brandName": "Mahindra & Mahindra",
+    "categoryId": 352
+  },
+  {
+    "brandId": 846,
+    "brandName": "John Deere",
+    "categoryId": 352
+  },
+  {
+    "brandId": 847,
+    "brandName": "Massey Ferguson",
+    "categoryId": 352
+  },
+  {
+    "brandId": 848,
+    "brandName": "Case IH",
+    "categoryId": 352
+  },
+  {
+    "brandId": 849,
+    "brandName": "Sonalika International",
+    "categoryId": 352
+  },
+  {
+    "brandId": 850,
+    "brandName": "Escorts Group",
+    "categoryId": 352
+  },
+  {
+    "brandId": 851,
+    "brandName": "Kubota",
+    "categoryId": 352
+  },
+  {
+    "brandId": 852,
+    "brandName": "Fendt",
+    "categoryId": 352
+  },
+  {
+    "brandId": 853,
+    "brandName": "Ram",
+    "categoryId": 353
+  },
+  {
+    "brandId": 854,
+    "brandName": "Ford",
+    "categoryId": 353
+  },
+  {
+    "brandId": 855,
+    "brandName": "Honda",
+    "categoryId": 353
+  },
+  {
+    "brandId": 856,
+    "brandName": "Chevrolet",
+    "categoryId": 353
+  },
+  {
+    "brandId": 857,
+    "brandName": "GMC",
+    "categoryId": 353
+  },
+  {
+    "brandId": 858,
+    "brandName": "Nissan",
+    "categoryId": 353
+  },
+  {
+    "brandId": 859,
+    "brandName": "Toyota",
+    "categoryId": 353
+  },
+  {
+    "brandId": 860,
+    "brandName": "Volvo CE",
+    "categoryId": 354
+  },
+  {
+    "brandId": 861,
+    "brandName": "Caterpillar Inc",
+    "categoryId": 354
+  },
+  {
+    "brandId": 862,
+    "brandName": "Komatsu",
+    "categoryId": 354
+  },
+  {
+    "brandId": 863,
+    "brandName": "Doosan",
+    "categoryId": 354
+  },
+  {
+    "brandId": 864,
+    "brandName": "Hitachi excavator",
+    "categoryId": 354
+  },
+  {
+    "brandId": 865,
+    "brandName": "JCB",
+    "categoryId": 354
+  },
+  {
+    "brandId": 866,
+    "brandName": "Deere & Company",
+    "categoryId": 354
+  },
+  {
+    "brandId": 867,
+    "brandName": "Gibson",
+    "categoryId": null
+  },
+  {
+    "brandId": 868,
+    "brandName": "Harman Professional",
+    "categoryId": null
+  },
+  {
+    "brandId": 869,
+    "brandName": "Shure",
+    "categoryId": null
+  },
+  {
+    "brandId": 870,
+    "brandName": "Yamaha",
+    "categoryId": null
+  },
+  {
+    "brandId": 871,
+    "brandName": "Fender Musical Instruments",
+    "categoryId": null
+  },
+  {
+    "brandId": 872,
+    "brandName": "Steinway Musical Instruments",
+    "categoryId": null
+  },
+  {
+    "brandId": 873,
+    "brandName": "Sennheiser",
+    "categoryId": null
+  },
+  {
+    "brandId": 874,
+    "brandName": "Roland",
+    "categoryId": null
+  },
+  {
+    "brandId": 875,
+    "brandName": "Kawai",
+    "categoryId": null
+  },
+  {
+    "brandId": 876,
+    "brandName": "C. F. Martin and Company",
+    "categoryId": null
+  },
+  {
+    "brandId": 1556,
+    "brandName": "Acura",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1557,
+    "brandName": "Alfa Romeo",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1558,
+    "brandName": "AMC",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1559,
+    "brandName": "Aston Martin",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1560,
+    "brandName": "Audi",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1561,
+    "brandName": "Avanti",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1562,
+    "brandName": "Bentley",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1563,
+    "brandName": "BMW",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1564,
+    "brandName": "Buick",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1565,
+    "brandName": "Cadillac",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1566,
+    "brandName": "Chevrolet",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1567,
+    "brandName": "Chrysler",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1568,
+    "brandName": "Daewoo",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1569,
+    "brandName": "Daihatsu",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1570,
+    "brandName": "Datsun",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1571,
+    "brandName": "DeLorean",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1572,
+    "brandName": "Dodge",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1573,
+    "brandName": "Eagle",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1574,
+    "brandName": "Ferrari",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1575,
+    "brandName": "FIAT",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1576,
+    "brandName": "Fisker",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1577,
+    "brandName": "Ford",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1578,
+    "brandName": "Freightliner",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1579,
+    "brandName": "Geo",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1580,
+    "brandName": "GMC",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1581,
+    "brandName": "Honda",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1582,
+    "brandName": "HUMMER",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1583,
+    "brandName": "Hyundai",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1584,
+    "brandName": "Infiniti",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1585,
+    "brandName": "Isuzu",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1586,
+    "brandName": "Jaguar",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1587,
+    "brandName": "Jeep",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1588,
+    "brandName": "Kia",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1589,
+    "brandName": "Lamborghini",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1590,
+    "brandName": "Lancia",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1591,
+    "brandName": "Land Rover",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1592,
+    "brandName": "Lexus",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1593,
+    "brandName": "Lincoln",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1594,
+    "brandName": "Lotus",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1595,
+    "brandName": "Maserati",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1596,
+    "brandName": "Maybach",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1597,
+    "brandName": "Mazda",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1598,
+    "brandName": "McLaren",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1599,
+    "brandName": "Mercedes-Benz",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1600,
+    "brandName": "Mercury",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1601,
+    "brandName": "Merkur",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1602,
+    "brandName": "MINI",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1603,
+    "brandName": "Mitsubishi",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1604,
+    "brandName": "Nissan",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1605,
+    "brandName": "Oldsmobile",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1606,
+    "brandName": "Peugeot",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1607,
+    "brandName": "Plymouth",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1608,
+    "brandName": "Pontiac",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1609,
+    "brandName": "Porsche",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1610,
+    "brandName": "RAM",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1611,
+    "brandName": "Renault",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1612,
+    "brandName": "Rolls-Royce",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1613,
+    "brandName": "Saab",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1614,
+    "brandName": "Saturn",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1615,
+    "brandName": "Scion",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1616,
+    "brandName": "smart",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1617,
+    "brandName": "SRT",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1618,
+    "brandName": "Sterling",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1619,
+    "brandName": "Subaru",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1620,
+    "brandName": "Suzuki",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1621,
+    "brandName": "Tesla",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1622,
+    "brandName": "Toyota",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1623,
+    "brandName": "Triumph",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1624,
+    "brandName": "Volkswagen",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1625,
+    "brandName": "Volvo",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1626,
+    "brandName": "Yugo",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1628,
+    "brandName": "Acer",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1629,
+    "brandName": "Alcatel",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1630,
+    "brandName": "Allview",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1631,
+    "brandName": "Amazon",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1633,
+    "brandName": "Apple",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1635,
+    "brandName": "Asus",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1637,
+    "brandName": "Benefon",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1641,
+    "brandName": "BlackBerry",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1642,
+    "brandName": "Blackview",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1643,
+    "brandName": "BLU",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1644,
+    "brandName": "Bosch",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1645,
+    "brandName": "BQ",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1647,
+    "brandName": "Cat",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1648,
+    "brandName": "Celkon",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1650,
+    "brandName": "Coolpad",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1651,
+    "brandName": "Dell",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1653,
+    "brandName": "Energizer",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1654,
+    "brandName": "Ericsson",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1657,
+    "brandName": "Fujitsu",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1659,
+    "brandName": "Gigabyte",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1660,
+    "brandName": "Gionee",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1661,
+    "brandName": "Google",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1662,
+    "brandName": "Haier",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1663,
+    "brandName": "Honor",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1664,
+    "brandName": "HP",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1665,
+    "brandName": "HTC",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1666,
+    "brandName": "Huawei",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1670,
+    "brandName": "Infinix",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1674,
+    "brandName": "Jolla",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1675,
+    "brandName": "Karbonn",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1676,
+    "brandName": "Kyocera",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1677,
+    "brandName": "Lava",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1678,
+    "brandName": "LeEco",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1679,
+    "brandName": "Lenovo",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1680,
+    "brandName": "LG",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1682,
+    "brandName": "Maxwest",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1683,
+    "brandName": "Meizu",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1684,
+    "brandName": "Micromax",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1685,
+    "brandName": "Microsoft",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1687,
+    "brandName": "Mitsubishi",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1689,
+    "brandName": "Motorola",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1691,
+    "brandName": "NEC",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1694,
+    "brandName": "Nokia",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1695,
+    "brandName": "Nvidia",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1697,
+    "brandName": "OnePlus",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1698,
+    "brandName": "Oppo",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1700,
+    "brandName": "Palm",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1701,
+    "brandName": "Panasonic",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1707,
+    "brandName": "Prestigio",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1708,
+    "brandName": "QMobile",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1710,
+    "brandName": "Razer",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1711,
+    "brandName": "Realme",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1713,
+    "brandName": "Samsung",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1716,
+    "brandName": "Sharp",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1719,
+    "brandName": "Sony",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1721,
+    "brandName": "T-Mobile",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1723,
+    "brandName": "Tecno",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1727,
+    "brandName": "Toshiba",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1728,
+    "brandName": "Ulefone",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1730,
+    "brandName": "Vertu",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1732,
+    "brandName": "Vivo",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1734,
+    "brandName": "Vodafone",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1735,
+    "brandName": "Wiko",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1738,
+    "brandName": "Xiaomi",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1739,
+    "brandName": "XOLO",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1740,
+    "brandName": "Yezz",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1741,
+    "brandName": "Yota",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1742,
+    "brandName": "YU",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1743,
+    "brandName": "ZTE",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1744,
+    "brandName": "Other",
+    "categoryId": 87
+  },
+  {
+    "brandId": 1746,
+    "brandName": "Other",
+    "categoryId": 89
+  },
+  {
+    "brandId": 1747,
+    "brandName": "Other",
+    "categoryId": 90
+  },
+  {
+    "brandId": 1748,
+    "brandName": "Other",
+    "categoryId": 91
+  },
+  {
+    "brandId": 1749,
+    "brandName": "Other",
+    "categoryId": 92
+  },
+  {
+    "brandId": 1750,
+    "brandName": "Other",
+    "categoryId": 93
+  },
+  {
+    "brandId": 1751,
+    "brandName": "Other",
+    "categoryId": 94
+  },
+  {
+    "brandId": 1752,
+    "brandName": "Other",
+    "categoryId": 95
+  },
+  {
+    "brandId": 1753,
+    "brandName": "Other",
+    "categoryId": 96
+  },
+  {
+    "brandId": 1754,
+    "brandName": "Other",
+    "categoryId": 97
+  },
+  {
+    "brandId": 1755,
+    "brandName": "Other",
+    "categoryId": 98
+  },
+  {
+    "brandId": 1756,
+    "brandName": "Other",
+    "categoryId": 99
+  },
+  {
+    "brandId": 1757,
+    "brandName": "Other",
+    "categoryId": 100
+  },
+  {
+    "brandId": 1758,
+    "brandName": "Other",
+    "categoryId": 101
+  },
+  {
+    "brandId": 1759,
+    "brandName": "Other",
+    "categoryId": 102
+  },
+  {
+    "brandId": 1760,
+    "brandName": "Other",
+    "categoryId": 103
+  },
+  {
+    "brandId": 1761,
+    "brandName": "Other",
+    "categoryId": 104
+  },
+  {
+    "brandId": 1762,
+    "brandName": "Other",
+    "categoryId": 105
+  },
+  {
+    "brandId": 1763,
+    "brandName": "Other",
+    "categoryId": 106
+  },
+  {
+    "brandId": 1764,
+    "brandName": "Other",
+    "categoryId": 107
+  },
+  {
+    "brandId": 1765,
+    "brandName": "Other",
+    "categoryId": 108
+  },
+  {
+    "brandId": 1766,
+    "brandName": "Other",
+    "categoryId": 109
+  },
+  {
+    "brandId": 1767,
+    "brandName": "Other",
+    "categoryId": 110
+  },
+  {
+    "brandId": 1768,
+    "brandName": "Other",
+    "categoryId": 111
+  },
+  {
+    "brandId": 1769,
+    "brandName": "Other",
+    "categoryId": 112
+  },
+  {
+    "brandId": 1770,
+    "brandName": "Other",
+    "categoryId": 113
+  },
+  {
+    "brandId": 1771,
+    "brandName": "Other",
+    "categoryId": 114
+  },
+  {
+    "brandId": 1772,
+    "brandName": "Other",
+    "categoryId": 115
+  },
+  {
+    "brandId": 1773,
+    "brandName": "Other",
+    "categoryId": 116
+  },
+  {
+    "brandId": 1774,
+    "brandName": "Other",
+    "categoryId": 117
+  },
+  {
+    "brandId": 1775,
+    "brandName": "Other",
+    "categoryId": 118
+  },
+  {
+    "brandId": 1776,
+    "brandName": "Other",
+    "categoryId": 119
+  },
+  {
+    "brandId": 1777,
+    "brandName": "Other",
+    "categoryId": 120
+  },
+  {
+    "brandId": 1778,
+    "brandName": "Other",
+    "categoryId": 121
+  },
+  {
+    "brandId": 1779,
+    "brandName": "Other",
+    "categoryId": 122
+  },
+  {
+    "brandId": 1780,
+    "brandName": "Other",
+    "categoryId": 123
+  },
+  {
+    "brandId": 1781,
+    "brandName": "Other",
+    "categoryId": 124
+  },
+  {
+    "brandId": 1782,
+    "brandName": "Other",
+    "categoryId": 125
+  },
+  {
+    "brandId": 1783,
+    "brandName": "Other",
+    "categoryId": 126
+  },
+  {
+    "brandId": 1784,
+    "brandName": "Other",
+    "categoryId": 127
+  },
+  {
+    "brandId": 1785,
+    "brandName": "Other",
+    "categoryId": 128
+  },
+  {
+    "brandId": 1786,
+    "brandName": "Other",
+    "categoryId": 129
+  },
+  {
+    "brandId": 1787,
+    "brandName": "Other",
+    "categoryId": 130
+  },
+  {
+    "brandId": 1788,
+    "brandName": "Other",
+    "categoryId": 131
+  },
+  {
+    "brandId": 1789,
+    "brandName": "Other",
+    "categoryId": 132
+  },
+  {
+    "brandId": 1790,
+    "brandName": "Other",
+    "categoryId": 133
+  },
+  {
+    "brandId": 1791,
+    "brandName": "Other",
+    "categoryId": 134
+  },
+  {
+    "brandId": 1792,
+    "brandName": "Other",
+    "categoryId": 135
+  },
+  {
+    "brandId": 1793,
+    "brandName": "Other",
+    "categoryId": 136
+  },
+  {
+    "brandId": 1794,
+    "brandName": "Other",
+    "categoryId": 137
+  },
+  {
+    "brandId": 1795,
+    "brandName": "Other",
+    "categoryId": 138
+  },
+  {
+    "brandId": 1796,
+    "brandName": "Other",
+    "categoryId": 139
+  },
+  {
+    "brandId": 1797,
+    "brandName": "Other",
+    "categoryId": 140
+  },
+  {
+    "brandId": 1798,
+    "brandName": "Other",
+    "categoryId": 141
+  },
+  {
+    "brandId": 1799,
+    "brandName": "Other",
+    "categoryId": 142
+  },
+  {
+    "brandId": 1800,
+    "brandName": "Other",
+    "categoryId": 143
+  },
+  {
+    "brandId": 1801,
+    "brandName": "Other",
+    "categoryId": 144
+  },
+  {
+    "brandId": 1802,
+    "brandName": "Other",
+    "categoryId": 145
+  },
+  {
+    "brandId": 1803,
+    "brandName": "Other",
+    "categoryId": 146
+  },
+  {
+    "brandId": 1804,
+    "brandName": "Other",
+    "categoryId": 147
+  },
+  {
+    "brandId": 1805,
+    "brandName": "Other",
+    "categoryId": 148
+  },
+  {
+    "brandId": 1806,
+    "brandName": "Other",
+    "categoryId": 149
+  },
+  {
+    "brandId": 1807,
+    "brandName": "Other",
+    "categoryId": 150
+  },
+  {
+    "brandId": 1808,
+    "brandName": "Other",
+    "categoryId": 151
+  },
+  {
+    "brandId": 1809,
+    "brandName": "Other",
+    "categoryId": 152
+  },
+  {
+    "brandId": 1810,
+    "brandName": "Other",
+    "categoryId": 153
+  },
+  {
+    "brandId": 1811,
+    "brandName": "Other",
+    "categoryId": 154
+  },
+  {
+    "brandId": 1812,
+    "brandName": "Other",
+    "categoryId": 155
+  },
+  {
+    "brandId": 1813,
+    "brandName": "Other",
+    "categoryId": 156
+  },
+  {
+    "brandId": 1814,
+    "brandName": "Other",
+    "categoryId": 157
+  },
+  {
+    "brandId": 1815,
+    "brandName": "Other",
+    "categoryId": 158
+  },
+  {
+    "brandId": 1816,
+    "brandName": "Other",
+    "categoryId": 159
+  },
+  {
+    "brandId": 1817,
+    "brandName": "Other",
+    "categoryId": 160
+  },
+  {
+    "brandId": 1818,
+    "brandName": "Other",
+    "categoryId": 161
+  },
+  {
+    "brandId": 1819,
+    "brandName": "Other",
+    "categoryId": 162
+  },
+  {
+    "brandId": 1820,
+    "brandName": "Other",
+    "categoryId": 163
+  },
+  {
+    "brandId": 1821,
+    "brandName": "Other",
+    "categoryId": 164
+  },
+  {
+    "brandId": 1822,
+    "brandName": "Other",
+    "categoryId": 165
+  },
+  {
+    "brandId": 1823,
+    "brandName": "Other",
+    "categoryId": 166
+  },
+  {
+    "brandId": 1824,
+    "brandName": "Other",
+    "categoryId": 167
+  },
+  {
+    "brandId": 1825,
+    "brandName": "Other",
+    "categoryId": 168
+  },
+  {
+    "brandId": 1826,
+    "brandName": "Other",
+    "categoryId": 169
+  },
+  {
+    "brandId": 1827,
+    "brandName": "Other",
+    "categoryId": 170
+  },
+  {
+    "brandId": 1828,
+    "brandName": "Other",
+    "categoryId": 171
+  },
+  {
+    "brandId": 1829,
+    "brandName": "Other",
+    "categoryId": 172
+  },
+  {
+    "brandId": 1830,
+    "brandName": "Other",
+    "categoryId": 173
+  },
+  {
+    "brandId": 1831,
+    "brandName": "Other",
+    "categoryId": 174
+  },
+  {
+    "brandId": 1832,
+    "brandName": "Other",
+    "categoryId": 175
+  },
+  {
+    "brandId": 1833,
+    "brandName": "Other",
+    "categoryId": 176
+  },
+  {
+    "brandId": 1834,
+    "brandName": "Other",
+    "categoryId": 177
+  },
+  {
+    "brandId": 1835,
+    "brandName": "Other",
+    "categoryId": 178
+  },
+  {
+    "brandId": 1836,
+    "brandName": "Other",
+    "categoryId": 179
+  },
+  {
+    "brandId": 1837,
+    "brandName": "Other",
+    "categoryId": 180
+  },
+  {
+    "brandId": 1838,
+    "brandName": "Other",
+    "categoryId": 181
+  },
+  {
+    "brandId": 1839,
+    "brandName": "Other",
+    "categoryId": 182
+  },
+  {
+    "brandId": 1840,
+    "brandName": "Other",
+    "categoryId": 183
+  },
+  {
+    "brandId": 1841,
+    "brandName": "Other",
+    "categoryId": 184
+  },
+  {
+    "brandId": 1842,
+    "brandName": "Other",
+    "categoryId": 185
+  },
+  {
+    "brandId": 1843,
+    "brandName": "Other",
+    "categoryId": 186
+  },
+  {
+    "brandId": 1844,
+    "brandName": "Other",
+    "categoryId": 187
+  },
+  {
+    "brandId": 1845,
+    "brandName": "Other",
+    "categoryId": 188
+  },
+  {
+    "brandId": 1846,
+    "brandName": "Other",
+    "categoryId": 189
+  },
+  {
+    "brandId": 1847,
+    "brandName": "Other",
+    "categoryId": 190
+  },
+  {
+    "brandId": 1848,
+    "brandName": "Other",
+    "categoryId": 191
+  },
+  {
+    "brandId": 1849,
+    "brandName": "Other",
+    "categoryId": 192
+  },
+  {
+    "brandId": 1850,
+    "brandName": "Other",
+    "categoryId": 193
+  },
+  {
+    "brandId": 1851,
+    "brandName": "Other",
+    "categoryId": 194
+  },
+  {
+    "brandId": 1852,
+    "brandName": "Other",
+    "categoryId": 195
+  },
+  {
+    "brandId": 1853,
+    "brandName": "Other",
+    "categoryId": 196
+  },
+  {
+    "brandId": 1854,
+    "brandName": "Other",
+    "categoryId": 197
+  },
+  {
+    "brandId": 1855,
+    "brandName": "Other",
+    "categoryId": 198
+  },
+  {
+    "brandId": 1856,
+    "brandName": "Other",
+    "categoryId": 199
+  },
+  {
+    "brandId": 1857,
+    "brandName": "Other",
+    "categoryId": 200
+  },
+  {
+    "brandId": 1858,
+    "brandName": "Other",
+    "categoryId": 201
+  },
+  {
+    "brandId": 1859,
+    "brandName": "Other",
+    "categoryId": 202
+  },
+  {
+    "brandId": 1860,
+    "brandName": "Other",
+    "categoryId": 203
+  },
+  {
+    "brandId": 1861,
+    "brandName": "Other",
+    "categoryId": 204
+  },
+  {
+    "brandId": 1862,
+    "brandName": "Other",
+    "categoryId": 205
+  },
+  {
+    "brandId": 1863,
+    "brandName": "Other",
+    "categoryId": 206
+  },
+  {
+    "brandId": 1864,
+    "brandName": "Other",
+    "categoryId": 207
+  },
+  {
+    "brandId": 1865,
+    "brandName": "Other",
+    "categoryId": 208
+  },
+  {
+    "brandId": 1866,
+    "brandName": "Other",
+    "categoryId": 209
+  },
+  {
+    "brandId": 1867,
+    "brandName": "Other",
+    "categoryId": 210
+  },
+  {
+    "brandId": 1868,
+    "brandName": "Other",
+    "categoryId": 211
+  },
+  {
+    "brandId": 1869,
+    "brandName": "Other",
+    "categoryId": 212
+  },
+  {
+    "brandId": 1870,
+    "brandName": "Other",
+    "categoryId": 213
+  },
+  {
+    "brandId": 1871,
+    "brandName": "Other",
+    "categoryId": 214
+  },
+  {
+    "brandId": 1872,
+    "brandName": "Other",
+    "categoryId": 215
+  },
+  {
+    "brandId": 1873,
+    "brandName": "Other",
+    "categoryId": 216
+  },
+  {
+    "brandId": 1874,
+    "brandName": "Other",
+    "categoryId": 217
+  },
+  {
+    "brandId": 1875,
+    "brandName": "Other",
+    "categoryId": 218
+  },
+  {
+    "brandId": 1876,
+    "brandName": "Other",
+    "categoryId": 219
+  },
+  {
+    "brandId": 1877,
+    "brandName": "Other",
+    "categoryId": 220
+  },
+  {
+    "brandId": 1878,
+    "brandName": "Other",
+    "categoryId": 221
+  },
+  {
+    "brandId": 1879,
+    "brandName": "Other",
+    "categoryId": 222
+  },
+  {
+    "brandId": 1880,
+    "brandName": "Other",
+    "categoryId": 223
+  },
+  {
+    "brandId": 1881,
+    "brandName": "Other",
+    "categoryId": 224
+  },
+  {
+    "brandId": 1882,
+    "brandName": "Other",
+    "categoryId": 225
+  },
+  {
+    "brandId": 1883,
+    "brandName": "Other",
+    "categoryId": 226
+  },
+  {
+    "brandId": 1884,
+    "brandName": "Other",
+    "categoryId": 227
+  },
+  {
+    "brandId": 1885,
+    "brandName": "Other",
+    "categoryId": 228
+  },
+  {
+    "brandId": 1886,
+    "brandName": "Other",
+    "categoryId": 229
+  },
+  {
+    "brandId": 1887,
+    "brandName": "Other",
+    "categoryId": 230
+  },
+  {
+    "brandId": 1888,
+    "brandName": "Other",
+    "categoryId": 231
+  },
+  {
+    "brandId": 1889,
+    "brandName": "Other",
+    "categoryId": 232
+  },
+  {
+    "brandId": 1890,
+    "brandName": "Other",
+    "categoryId": 233
+  },
+  {
+    "brandId": 1891,
+    "brandName": "Other",
+    "categoryId": 234
+  },
+  {
+    "brandId": 1892,
+    "brandName": "Other",
+    "categoryId": 235
+  },
+  {
+    "brandId": 1893,
+    "brandName": "Other",
+    "categoryId": 236
+  },
+  {
+    "brandId": 1894,
+    "brandName": "Other",
+    "categoryId": 237
+  },
+  {
+    "brandId": 1895,
+    "brandName": "Other",
+    "categoryId": 238
+  },
+  {
+    "brandId": 1896,
+    "brandName": "Other",
+    "categoryId": 239
+  },
+  {
+    "brandId": 1897,
+    "brandName": "Other",
+    "categoryId": 240
+  },
+  {
+    "brandId": 1898,
+    "brandName": "Other",
+    "categoryId": 241
+  },
+  {
+    "brandId": 1899,
+    "brandName": "Other",
+    "categoryId": 242
+  },
+  {
+    "brandId": 1900,
+    "brandName": "Other",
+    "categoryId": 243
+  },
+  {
+    "brandId": 1901,
+    "brandName": "Other",
+    "categoryId": 244
+  },
+  {
+    "brandId": 1902,
+    "brandName": "Other",
+    "categoryId": 245
+  },
+  {
+    "brandId": 1903,
+    "brandName": "Other",
+    "categoryId": 246
+  },
+  {
+    "brandId": 1904,
+    "brandName": "Other",
+    "categoryId": 247
+  },
+  {
+    "brandId": 1905,
+    "brandName": "Other",
+    "categoryId": 248
+  },
+  {
+    "brandId": 1906,
+    "brandName": "Other",
+    "categoryId": 249
+  },
+  {
+    "brandId": 1907,
+    "brandName": "Other",
+    "categoryId": 250
+  },
+  {
+    "brandId": 1908,
+    "brandName": "Other",
+    "categoryId": 251
+  },
+  {
+    "brandId": 1909,
+    "brandName": "Other",
+    "categoryId": 252
+  },
+  {
+    "brandId": 1910,
+    "brandName": "Other",
+    "categoryId": 253
+  },
+  {
+    "brandId": 1911,
+    "brandName": "Other",
+    "categoryId": 254
+  },
+  {
+    "brandId": 1912,
+    "brandName": "Other",
+    "categoryId": 255
+  },
+  {
+    "brandId": 1913,
+    "brandName": "Other",
+    "categoryId": 256
+  },
+  {
+    "brandId": 1914,
+    "brandName": "Other",
+    "categoryId": 257
+  },
+  {
+    "brandId": 1915,
+    "brandName": "Other",
+    "categoryId": 258
+  },
+  {
+    "brandId": 1916,
+    "brandName": "Other",
+    "categoryId": 259
+  },
+  {
+    "brandId": 1917,
+    "brandName": "Other",
+    "categoryId": 260
+  },
+  {
+    "brandId": 1918,
+    "brandName": "Other",
+    "categoryId": 261
+  },
+  {
+    "brandId": 1919,
+    "brandName": "Other",
+    "categoryId": 262
+  },
+  {
+    "brandId": 1920,
+    "brandName": "Other",
+    "categoryId": 263
+  },
+  {
+    "brandId": 1921,
+    "brandName": "Other",
+    "categoryId": 264
+  },
+  {
+    "brandId": 1922,
+    "brandName": "Other",
+    "categoryId": 265
+  },
+  {
+    "brandId": 1923,
+    "brandName": "Other",
+    "categoryId": 266
+  },
+  {
+    "brandId": 1924,
+    "brandName": "Other",
+    "categoryId": 267
+  },
+  {
+    "brandId": 1925,
+    "brandName": "Other",
+    "categoryId": 268
+  },
+  {
+    "brandId": 1926,
+    "brandName": "Other",
+    "categoryId": 269
+  },
+  {
+    "brandId": 1927,
+    "brandName": "Other",
+    "categoryId": 270
+  },
+  {
+    "brandId": 1928,
+    "brandName": "Other",
+    "categoryId": 271
+  },
+  {
+    "brandId": 1929,
+    "brandName": "Other",
+    "categoryId": 272
+  },
+  {
+    "brandId": 1930,
+    "brandName": "Other",
+    "categoryId": 273
+  },
+  {
+    "brandId": 1931,
+    "brandName": "Other",
+    "categoryId": 274
+  },
+  {
+    "brandId": 1932,
+    "brandName": "Other",
+    "categoryId": 275
+  },
+  {
+    "brandId": 1933,
+    "brandName": "Other",
+    "categoryId": 276
+  },
+  {
+    "brandId": 1934,
+    "brandName": "Other",
+    "categoryId": 277
+  },
+  {
+    "brandId": 1935,
+    "brandName": "Other",
+    "categoryId": 278
+  },
+  {
+    "brandId": 1936,
+    "brandName": "Other",
+    "categoryId": 279
+  },
+  {
+    "brandId": 1937,
+    "brandName": "Other",
+    "categoryId": 280
+  },
+  {
+    "brandId": 1938,
+    "brandName": "Other",
+    "categoryId": 281
+  },
+  {
+    "brandId": 1939,
+    "brandName": "Other",
+    "categoryId": 282
+  },
+  {
+    "brandId": 1940,
+    "brandName": "Other",
+    "categoryId": 283
+  },
+  {
+    "brandId": 1941,
+    "brandName": "Other",
+    "categoryId": 284
+  },
+  {
+    "brandId": 1942,
+    "brandName": "Other",
+    "categoryId": 285
+  },
+  {
+    "brandId": 1943,
+    "brandName": "Other",
+    "categoryId": 286
+  },
+  {
+    "brandId": 1944,
+    "brandName": "Other",
+    "categoryId": 287
+  },
+  {
+    "brandId": 1945,
+    "brandName": "Other",
+    "categoryId": 288
+  },
+  {
+    "brandId": 1946,
+    "brandName": "Other",
+    "categoryId": 289
+  },
+  {
+    "brandId": 1947,
+    "brandName": "Other",
+    "categoryId": 290
+  },
+  {
+    "brandId": 1948,
+    "brandName": "Other",
+    "categoryId": 291
+  },
+  {
+    "brandId": 1949,
+    "brandName": "Other",
+    "categoryId": 292
+  },
+  {
+    "brandId": 1950,
+    "brandName": "Other",
+    "categoryId": 293
+  },
+  {
+    "brandId": 1951,
+    "brandName": "Other",
+    "categoryId": 294
+  },
+  {
+    "brandId": 1952,
+    "brandName": "Other",
+    "categoryId": 295
+  },
+  {
+    "brandId": 1953,
+    "brandName": "Other",
+    "categoryId": 296
+  },
+  {
+    "brandId": 1954,
+    "brandName": "Other",
+    "categoryId": 297
+  },
+  {
+    "brandId": 1955,
+    "brandName": "Other",
+    "categoryId": 298
+  },
+  {
+    "brandId": 1956,
+    "brandName": "Other",
+    "categoryId": 299
+  },
+  {
+    "brandId": 1957,
+    "brandName": "Other",
+    "categoryId": 300
+  },
+  {
+    "brandId": 1958,
+    "brandName": "Other",
+    "categoryId": 301
+  },
+  {
+    "brandId": 1959,
+    "brandName": "Other",
+    "categoryId": 302
+  },
+  {
+    "brandId": 1960,
+    "brandName": "Other",
+    "categoryId": 303
+  },
+  {
+    "brandId": 1961,
+    "brandName": "Other",
+    "categoryId": 304
+  },
+  {
+    "brandId": 1962,
+    "brandName": "Other",
+    "categoryId": 305
+  },
+  {
+    "brandId": 1963,
+    "brandName": "Other",
+    "categoryId": 306
+  },
+  {
+    "brandId": 1964,
+    "brandName": "Other",
+    "categoryId": 307
+  },
+  {
+    "brandId": 1965,
+    "brandName": "Other",
+    "categoryId": 308
+  },
+  {
+    "brandId": 1966,
+    "brandName": "Other",
+    "categoryId": 309
+  },
+  {
+    "brandId": 1967,
+    "brandName": "Other",
+    "categoryId": 310
+  },
+  {
+    "brandId": 1968,
+    "brandName": "Other",
+    "categoryId": 311
+  },
+  {
+    "brandId": 1969,
+    "brandName": "Other",
+    "categoryId": 312
+  },
+  {
+    "brandId": 1970,
+    "brandName": "Other",
+    "categoryId": 313
+  },
+  {
+    "brandId": 1971,
+    "brandName": "Other",
+    "categoryId": 314
+  },
+  {
+    "brandId": 1972,
+    "brandName": "Other",
+    "categoryId": 315
+  },
+  {
+    "brandId": 1973,
+    "brandName": "Other",
+    "categoryId": 316
+  },
+  {
+    "brandId": 1974,
+    "brandName": "Other",
+    "categoryId": 317
+  },
+  {
+    "brandId": 1975,
+    "brandName": "Other",
+    "categoryId": 318
+  },
+  {
+    "brandId": 1976,
+    "brandName": "Other",
+    "categoryId": 319
+  },
+  {
+    "brandId": 1977,
+    "brandName": "Other",
+    "categoryId": 320
+  },
+  {
+    "brandId": 1978,
+    "brandName": "Other",
+    "categoryId": 321
+  },
+  {
+    "brandId": 1979,
+    "brandName": "Other",
+    "categoryId": 322
+  },
+  {
+    "brandId": 1980,
+    "brandName": "Other",
+    "categoryId": 323
+  },
+  {
+    "brandId": 1981,
+    "brandName": "Other",
+    "categoryId": 324
+  },
+  {
+    "brandId": 1982,
+    "brandName": "Other",
+    "categoryId": 325
+  },
+  {
+    "brandId": 1983,
+    "brandName": "Other",
+    "categoryId": 326
+  },
+  {
+    "brandId": 1984,
+    "brandName": "Other",
+    "categoryId": 327
+  },
+  {
+    "brandId": 1985,
+    "brandName": "Other",
+    "categoryId": 328
+  },
+  {
+    "brandId": 1986,
+    "brandName": "Other",
+    "categoryId": 329
+  },
+  {
+    "brandId": 1987,
+    "brandName": "Other",
+    "categoryId": 330
+  },
+  {
+    "brandId": 1988,
+    "brandName": "Other",
+    "categoryId": 331
+  },
+  {
+    "brandId": 1989,
+    "brandName": "Other",
+    "categoryId": 332
+  },
+  {
+    "brandId": 1990,
+    "brandName": "Other",
+    "categoryId": 352
+  },
+  {
+    "brandId": 1991,
+    "brandName": "Other",
+    "categoryId": 353
+  },
+  {
+    "brandId": 1992,
+    "brandName": "Other",
+    "categoryId": 354
+  },
+  {
+    "brandId": 1993,
+    "brandName": "Other",
+    "categoryId": 355
+  },
+  {
+    "brandId": 1994,
+    "brandName": "Other",
+    "categoryId": 363
+  },
+  {
+    "brandId": 1995,
+    "brandName": "Other",
+    "categoryId": 364
+  },
+  {
+    "brandId": 1996,
+    "brandName": "Other",
+    "categoryId": 365
+  },
+  {
+    "brandId": 1997,
+    "brandName": "Other",
+    "categoryId": 366
+  },
+  {
+    "brandId": 1998,
+    "brandName": "Other",
+    "categoryId": 367
+  },
+  {
+    "brandId": 1999,
+    "brandName": "Other",
+    "categoryId": 368
+  },
+  {
+    "brandId": 2000,
+    "brandName": "Other",
+    "categoryId": 369
+  },
+  {
+    "brandId": 2001,
+    "brandName": "Lenovo",
+    "categoryId": 88
+  },
+  {
+    "brandId": 2002,
+    "brandName": "HP",
+    "categoryId": 88
+  },
+  {
+    "brandId": 2003,
+    "brandName": "Dell",
+    "categoryId": 88
+  },
+  {
+    "brandId": 2004,
+    "brandName": "Apple",
+    "categoryId": 88
+  },
+  {
+    "brandId": 2005,
+    "brandName": "Acer",
+    "categoryId": 88
+  },
+  {
+    "brandId": 2006,
+    "brandName": "Asus",
+    "categoryId": 88
+  },
+  {
+    "brandId": 2007,
+    "brandName": "Other",
+    "categoryId": 88
+  }
+]

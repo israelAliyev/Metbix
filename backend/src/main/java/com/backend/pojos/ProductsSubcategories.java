@@ -1,37 +1,59 @@
 package com.backend.pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "products_subcategories")
-@Data
 @Cacheable
 @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-public class ProductsSubcategories {
+@Getter
+@Setter
+public class ProductsSubcategories implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
-    @Column(name = "SubCategory_ID")
+    @Column(name = "Sub_Category_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long subCategoryId;
 
-    @Column(name = "SubCategory_Name")
+    @Column(name = "Sub_Category_Name")
     private String subCategoryName;
 
+    @ManyToMany(fetch = FetchType.LAZY, targetEntity = ProductsCategories.class)
+    @JoinTable(name = "II_categories_subcategories",
+            joinColumns = {@JoinColumn(name = "Sub_Category_ID")},
+            inverseJoinColumns = {@JoinColumn(name = "Category_ID")}
+    )
+    @JsonIgnore
+    private List<ProductsCategories> productsCategory;
+
+
     @OneToMany(fetch = FetchType.LAZY, targetEntity = ProductsSubcategoriesType.class)
-    @JoinColumn(name = "SubCategory_ID")
+    @JoinColumn(name = "Sub_Category_ID")
+    @JsonIgnore
     private List<ProductsSubcategoriesType> subcategoriesTypes;
 
 
     @OneToMany(fetch = FetchType.LAZY, targetEntity = ApparelSize.class)
-    @JoinColumn(name = "SubCategory_ID")
+    @JoinColumn(name = "Sub_Category_ID")
+    @JsonIgnore
     private List<ApparelSize> apparelSizes;
 
 
     @OneToMany(fetch = FetchType.LAZY, targetEntity = ApparelFabricType.class)
-    @JoinColumn(name = "SubCategory_ID")
+    @JoinColumn(name = "Sub_Category_ID")
+    @JsonIgnore
     private List<ApparelFabricType> apparelFabricTypes;
 
 }

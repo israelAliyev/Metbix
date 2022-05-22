@@ -1,0 +1,427 @@
+[
+  {
+    "typeId": 1,
+    "type": "Sedan",
+    "categoryId": 114
+  },
+  {
+    "typeId": 2,
+    "type": "Coupe",
+    "categoryId": 114
+  },
+  {
+    "typeId": 3,
+    "type": "SUV",
+    "categoryId": 114
+  },
+  {
+    "typeId": 4,
+    "type": "Crossover",
+    "categoryId": 114
+  },
+  {
+    "typeId": 5,
+    "type": "Wagon/Hatchback",
+    "categoryId": 114
+  },
+  {
+    "typeId": 6,
+    "type": "Green Car/Hybrid",
+    "categoryId": 114
+  },
+  {
+    "typeId": 7,
+    "type": "Convertible",
+    "categoryId": 114
+  },
+  {
+    "typeId": 8,
+    "type": "Sports Car",
+    "categoryId": 114
+  },
+  {
+    "typeId": 9,
+    "type": "Pickup Truck",
+    "categoryId": 114
+  },
+  {
+    "typeId": 10,
+    "type": "Minivan/Van",
+    "categoryId": 114
+  },
+  {
+    "typeId": 11,
+    "type": "Luxury Car",
+    "categoryId": 114
+  },
+  {
+    "typeId": 12,
+    "type": "Certified Pre-Owned",
+    "categoryId": 114
+  },
+  {
+    "typeId": 13,
+    "type": "Street (Crotch Rocket)",
+    "categoryId": 116
+  },
+  {
+    "typeId": 14,
+    "type": "Chopper",
+    "categoryId": 116
+  },
+  {
+    "typeId": 15,
+    "type": "Cruiser",
+    "categoryId": 116
+  },
+  {
+    "typeId": 16,
+    "type": "Power Cruiser",
+    "categoryId": 116
+  },
+  {
+    "typeId": 17,
+    "type": "Dirt Bike",
+    "categoryId": 116
+  },
+  {
+    "typeId": 18,
+    "type": "Enduro Bike",
+    "categoryId": 116
+  },
+  {
+    "typeId": 19,
+    "type": "Motocross",
+    "categoryId": 116
+  },
+  {
+    "typeId": 20,
+    "type": "Naked Bike",
+    "categoryId": 116
+  },
+  {
+    "typeId": 21,
+    "type": "Scooter",
+    "categoryId": 116
+  },
+  {
+    "typeId": 22,
+    "type": "Power Scooter",
+    "categoryId": 116
+  },
+  {
+    "typeId": 23,
+    "type": "Touring",
+    "categoryId": 116
+  },
+  {
+    "typeId": 24,
+    "type": "Harley Davidson",
+    "categoryId": 116
+  },
+  {
+    "typeId": 25,
+    "type": "Earth-Moving Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 26,
+    "type": "Garden Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 27,
+    "type": "Implement Carrier Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 28,
+    "type": "Industrial Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 29,
+    "type": "Orchard Type Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 30,
+    "type": "Rotary Tillers",
+    "categoryId": 352
+  },
+  {
+    "typeId": 31,
+    "type": "Row Crop Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 32,
+    "type": "Earth-Moving Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 33,
+    "type": "Garden Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 34,
+    "type": "Implement Carrier Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 35,
+    "type": "Industrial Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 36,
+    "type": "Orchard Type Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 37,
+    "type": "Rotary Tillers",
+    "categoryId": 352
+  },
+  {
+    "typeId": 38,
+    "type": "Row Crop Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 39,
+    "type": "Utility Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 40,
+    "type": "Application",
+    "categoryId": 352
+  },
+  {
+    "typeId": 41,
+    "type": "How to Choose the Tractor That is Right for You",
+    "categoryId": 352
+  },
+  {
+    "typeId": 42,
+    "type": "Fun Facts about Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 43,
+    "type": "Utility Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 44,
+    "type": "Application",
+    "categoryId": 352
+  },
+  {
+    "typeId": 45,
+    "type": "How to Choose the Tractor That is Right for You",
+    "categoryId": 352
+  },
+  {
+    "typeId": 46,
+    "type": "Fun Facts about Tractors",
+    "categoryId": 352
+  },
+  {
+    "typeId": 47,
+    "type": "Pickup Truck",
+    "categoryId": 353
+  },
+  {
+    "typeId": 48,
+    "type": "Australian Road Train",
+    "categoryId": 353
+  },
+  {
+    "typeId": 49,
+    "type": "Boat Haulage",
+    "categoryId": 353
+  },
+  {
+    "typeId": 50,
+    "type": "Car Transporter/Car Carrier Trailer",
+    "categoryId": 353
+  },
+  {
+    "typeId": 51,
+    "type": "Cement Truck",
+    "categoryId": 353
+  },
+  {
+    "typeId": 52,
+    "type": "Chiller Trucks/Reefers",
+    "categoryId": 353
+  },
+  {
+    "typeId": 53,
+    "type": "Crane Trucks/Mobile Cranes",
+    "categoryId": 353
+  },
+  {
+    "typeId": 54,
+    "type": "Fire Truck",
+    "categoryId": 353
+  },
+  {
+    "typeId": 55,
+    "type": "Tow Truck",
+    "categoryId": 353
+  },
+  {
+    "typeId": 56,
+    "type": "Trailer",
+    "categoryId": 353
+  },
+  {
+    "typeId": 57,
+    "type": "Flat-bed Trailer",
+    "categoryId": 353
+  },
+  {
+    "typeId": 58,
+    "type": "Furniture Truck",
+    "categoryId": 353
+  },
+  {
+    "typeId": 59,
+    "type": "Highway Maintenance Trucks",
+    "categoryId": 353
+  },
+  {
+    "typeId": 60,
+    "type": "Livestock Trucks",
+    "categoryId": 353
+  },
+  {
+    "typeId": 61,
+    "type": "Logging Trucks",
+    "categoryId": 353
+  },
+  {
+    "typeId": 62,
+    "type": "Snow Plows",
+    "categoryId": 353
+  },
+  {
+    "typeId": 63,
+    "type": "Tankers",
+    "categoryId": 353
+  },
+  {
+    "typeId": 64,
+    "type": "Tipper Trucks",
+    "categoryId": 353
+  },
+  {
+    "typeId": 65,
+    "type": "Trailer Trucks",
+    "categoryId": 353
+  },
+  {
+    "typeId": 66,
+    "type": "Box Truck",
+    "categoryId": 353
+  },
+  {
+    "typeId": 67,
+    "type": "Crawler",
+    "categoryId": 354
+  },
+  {
+    "typeId": 68,
+    "type": "Wheeled",
+    "categoryId": 354
+  },
+  {
+    "typeId": 69,
+    "type": "Suction ",
+    "categoryId": 354
+  },
+  {
+    "typeId": 70,
+    "type": "Long Reach",
+    "categoryId": 354
+  },
+  {
+    "typeId": 71,
+    "type": "Hydraulic Shovels",
+    "categoryId": 354
+  },
+  {
+    "typeId": 72,
+    "type": "Dragline",
+    "categoryId": 354
+  },
+  {
+    "typeId": 73,
+    "type": "Skid Steers",
+    "categoryId": 354
+  },
+  {
+    "typeId": 74,
+    "type": "Crawler",
+    "categoryId": 354
+  },
+  {
+    "typeId": 75,
+    "type": "Wheeled",
+    "categoryId": 354
+  },
+  {
+    "typeId": 76,
+    "type": "Suction ",
+    "categoryId": 354
+  },
+  {
+    "typeId": 77,
+    "type": "Long Reach",
+    "categoryId": 354
+  },
+  {
+    "typeId": 78,
+    "type": "Hydraulic Shovels",
+    "categoryId": 354
+  },
+  {
+    "typeId": 79,
+    "type": "Dragline",
+    "categoryId": 354
+  },
+  {
+    "typeId": 80,
+    "type": "Skid Steers",
+    "categoryId": 354
+  },
+  {
+    "typeId": 81,
+    "type": "Other",
+    "categoryId": 114
+  },
+  {
+    "typeId": 82,
+    "type": "Other",
+    "categoryId": 116
+  },
+  {
+    "typeId": 83,
+    "type": "Other",
+    "categoryId": 352
+  },
+  {
+    "typeId": 84,
+    "type": "Other",
+    "categoryId": 353
+  },
+  {
+    "typeId": 85,
+    "type": "Other",
+    "categoryId": 354
+  }
+]

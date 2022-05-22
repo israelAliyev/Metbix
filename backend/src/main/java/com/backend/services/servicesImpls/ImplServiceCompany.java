@@ -1,29 +1,24 @@
 package com.backend.services.servicesImpls;
 
-import com.backend.dtos.UpdateCompanyRequest;
+import com.backend.dtos.request.UpdateCompanyRequest;
+import com.backend.dtos.response.CompanyResponse;
 import com.backend.pojos.Companies;
 import com.backend.pojos.Continents;
 import com.backend.pojos.Products;
-import com.backend.pojos.Users;
 import com.backend.repositories.RepositoryCompany;
 import com.backend.repositories.RepositoryContinents;
 import com.backend.repositories.RepositoryProducts;
-import com.backend.repositories.RepositoryUser;
 import com.backend.services.ServiceCompany;
-import com.backend.services.ServiceUser;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Service
 @Transactional
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class ImplServiceCompany implements ServiceCompany {
 
     private final RepositoryCompany repositoryCompany;
@@ -32,8 +27,48 @@ public class ImplServiceCompany implements ServiceCompany {
 
 
     @Override
-    public Companies getCompanyInfo(Long id) {
-        return repositoryCompany.findByCompanyId(id);
+    public CompanyResponse getCompanyInfo(Long id) {
+
+        Companies company = repositoryCompany.findByCompanyId(id);
+
+        CompanyResponse response = new CompanyResponse();
+
+        if (company != null) {
+            response.setCompany(company);
+            response.setProducts(company.getProducts());
+            response.setBasketProducts(company.getBasketProducts());
+            response.setCompaniesDetailsContinents(company.getCompaniesDetailsContinents());
+            response.setCompaniesDetailsImagesAndVideos(company.getCompaniesDetailsImagesAndVideos());
+            response.setRequestProducts(company.getRequestProducts());
+            response.setBasketProducts(company.getBasketProducts());
+            response.setCompaniesDetailsProductionCertifications(company.getCompaniesDetailsProductionCertifications());
+            return response;
+        }
+
+        return null;
+
+    }
+
+    @Override
+    public CompanyResponse getCompanyInfoByEmail(String email) {
+
+        Companies company = repositoryCompany.findByCompanyEmail(email);
+
+        CompanyResponse response = new CompanyResponse();
+
+        if (company != null) {
+            response.setCompany(company);
+            response.setProducts(company.getProducts());
+            response.setBasketProducts(company.getBasketProducts());
+            response.setCompaniesDetailsContinents(company.getCompaniesDetailsContinents());
+            response.setCompaniesDetailsImagesAndVideos(company.getCompaniesDetailsImagesAndVideos());
+            response.setRequestProducts(company.getRequestProducts());
+            response.setBasketProducts(company.getBasketProducts());
+            response.setCompaniesDetailsProductionCertifications(company.getCompaniesDetailsProductionCertifications());
+            return response;
+        }
+
+        return null;
     }
 
     @Override
@@ -41,7 +76,7 @@ public class ImplServiceCompany implements ServiceCompany {
 
         Companies company = repositoryCompany.findByCompanyId(id);
 
-        Products product =repositoryProducts.findByProductId(productId);
+        Products product =repositoryProducts .findByProductId(productId);
 
         Set<Products> productsList = new HashSet<Products>();
         productsList.add(product);
@@ -82,7 +117,6 @@ public class ImplServiceCompany implements ServiceCompany {
         company.setCompanyEmployees(request.getCompanyEmployees());
         company.setCompanyDesc(request.getCompanyDesc());
         company.setCompanyProfileBack(request.getCompanyProfileBack());
-        company.setCompanyOtherAddress(request.getCompanyOtherAddress());
         company.setCompaniesDetailsImagesAndVideos(request.getCompaniesDetailsImagesAndVideos());
         company.setCompaniesDetailsProductionCertifications(request.getCompaniesDetailsProductionCertifications());
 
@@ -119,6 +153,11 @@ public class ImplServiceCompany implements ServiceCompany {
         repositoryCompany.save(company);
 
         }
+
+    @Override
+    public Set<Companies> getByCompaniesName(String name) {
+        return repositoryCompany.getByCompaniesName(name);
+    }
 
 
 }

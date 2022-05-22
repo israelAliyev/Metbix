@@ -1,0 +1,177 @@
+[
+  {
+    "sizeId": 2,
+    "size": "XS",
+    "subCategoryId": 1
+  },
+  {
+    "sizeId": 3,
+    "size": "S",
+    "subCategoryId": 1
+  },
+  {
+    "sizeId": 4,
+    "size": "M",
+    "subCategoryId": 1
+  },
+  {
+    "sizeId": 5,
+    "size": "L",
+    "subCategoryId": 1
+  },
+  {
+    "sizeId": 6,
+    "size": "XL",
+    "subCategoryId": 1
+  },
+  {
+    "sizeId": 7,
+    "size": "XXL",
+    "subCategoryId": 1
+  },
+  {
+    "sizeId": 8,
+    "size": "XXXL",
+    "subCategoryId": 1
+  },
+  {
+    "sizeId": 58,
+    "size": "6(US)  36-37(EU)  4(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 59,
+    "size": "6.5(US) 37(EU)  4.5(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 60,
+    "size": "7(US)  37-38(EU)  5(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 61,
+    "size": "7.5(US)  38(EU)  5.5(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 62,
+    "size": "8(US)  38-39(EU)  6(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 63,
+    "size": "8.5(US)  39(EU)  6.5(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 64,
+    "size": "9(US)  39-40(EU)  7(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 65,
+    "size": "9.5(US)  40(EU)  7.5(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 66,
+    "size": "10(US)  40-41(EU)  8(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 67,
+    "size": "10.5(US)  41(EU)  8.5(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 68,
+    "size": "11(US)  41-42(EU)  9(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 69,
+    "size": "11.5(US)  42(EU)  9.5(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 70,
+    "size": "12(US)  42-43(EU)  10(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 71,
+    "size": "12.5(US)  43(EU)  10.5(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 72,
+    "size": "13(US)  43-44(EU)  11(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 73,
+    "size": "13.5(US)  44(EU)  11.5(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 74,
+    "size": "14(US)  44.5(EU)  12(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 75,
+    "size": "14.5(US)  45(EU)  12.5(UK)",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 77,
+    "size": "XS",
+    "subCategoryId": 7
+  },
+  {
+    "sizeId": 78,
+    "size": "S",
+    "subCategoryId": 7
+  },
+  {
+    "sizeId": 79,
+    "size": "M",
+    "subCategoryId": 7
+  },
+  {
+    "sizeId": 80,
+    "size": "L",
+    "subCategoryId": 7
+  },
+  {
+    "sizeId": 81,
+    "size": "XL",
+    "subCategoryId": 7
+  },
+  {
+    "sizeId": 82,
+    "size": "XXL",
+    "subCategoryId": 7
+  },
+  {
+    "sizeId": 83,
+    "size": "XXXL",
+    "subCategoryId": 7
+  },
+  {
+    "sizeId": 84,
+    "size": "Other",
+    "subCategoryId": 1
+  },
+  {
+    "sizeId": 85,
+    "size": "Other",
+    "subCategoryId": 2
+  },
+  {
+    "sizeId": 86,
+    "size": "Other",
+    "subCategoryId": 7
+  }
+]

@@ -1,0 +1,197 @@
+[
+  {
+    "graphicsCardId": 1,
+    "graphicsCardModel": "Nvidia RTX 3090\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 2,
+    "graphicsCardModel": "Nvidia RTX 3080\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 3,
+    "graphicsCardModel": "Nvidia Titan V\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 4,
+    "graphicsCardModel": "Nvidia RTX Titan\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 5,
+    "graphicsCardModel": "Nvidia RTX 2080 Ti\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 6,
+    "graphicsCardModel": "Nvidia RTX 3070\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 7,
+    "graphicsCardModel": "Nvidia RTX 3060 Ti\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 8,
+    "graphicsCardModel": "Nvidia Titan Pascal\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 9,
+    "graphicsCardModel": "Nvidia RTX 2080 SUPER\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 10,
+    "graphicsCardModel": "Nvidia GTX 1080 Ti\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 11,
+    "graphicsCardModel": "Nvidia RTX 2080\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 12,
+    "graphicsCardModel": "Nvidia RTX 3060\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 13,
+    "graphicsCardModel": "Nvidia RTX 2070 SUPER\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 14,
+    "graphicsCardModel": "Nvidia GTX 1080\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 15,
+    "graphicsCardModel": "AMD Radeon RX 6800",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 16,
+    "graphicsCardModel": "AMD Radeon RX 6700 XT",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 17,
+    "graphicsCardModel": "AMD Radeon RX 5600 XT ",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 18,
+    "graphicsCardModel": "AMD Radeon RX 5700 XT",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 19,
+    "graphicsCardModel": "AMD Radeon RX 6800 XT",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 20,
+    "graphicsCardModel": "AMD Radeon RX 5500 XT",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 21,
+    "graphicsCardModel": "MSI Radeon RX 6700 XT Gaming X ",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 22,
+    "graphicsCardModel": "AMD Radeon RX 570",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 23,
+    "graphicsCardModel": "MSI Aero Radeon RX 560",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 24,
+    "graphicsCardModel": "Intel HD Graphics 610\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 25,
+    "graphicsCardModel": "Intel HD Graphics 615\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 26,
+    "graphicsCardModel": "Intel HD Graphics 620\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 27,
+    "graphicsCardModel": "Intel HD Graphics 630\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 28,
+    "graphicsCardModel": "Intel Iris Plus Graphics 640\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 29,
+    "graphicsCardModel": "Intel Iris Plus Graphics 650\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 30,
+    "graphicsCardModel": "Intel HD Graphics 500\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 31,
+    "graphicsCardModel": "Intel Iris Pro Graphics 580\t",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 32,
+    "graphicsCardModel": "Asus",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 33,
+    "graphicsCardModel": "EVGA",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 34,
+    "graphicsCardModel": "Gigabyte",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 35,
+    "graphicsCardModel": "Sapphire",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 36,
+    "graphicsCardModel": "Zotac",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 37,
+    "graphicsCardModel": "Via",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 38,
+    "graphicsCardModel": "Power VR",
+    "categoryId": 88
+  },
+  {
+    "graphicsCardId": 39,
+    "graphicsCardModel": "Other",
+    "categoryId": 88
+  }
+]

@@ -1,16 +1,23 @@
 package com.backend.pojos;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "continents")
-@Data
+@Getter
+@Setter
 @Cacheable
 @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-public class Continents {
+public class Continents implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
 
     @Id
     @Column(name = "Continent_ID")
@@ -19,5 +26,6 @@ public class Continents {
 
     @Column(name = "Continent_Name")
     private String continentName;
+
 
 }

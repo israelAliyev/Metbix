@@ -1,0 +1,102 @@
+[
+  {
+    "operatingSystemId": 1,
+    "operatingSystem": "Android (Google)",
+    "categoryId": 87
+  },
+  {
+    "operatingSystemId": 2,
+    "operatingSystem": "iOS (Apple)",
+    "categoryId": 87
+  },
+  {
+    "operatingSystemId": 3,
+    "operatingSystem": "Bada (Samsung)",
+    "categoryId": 87
+  },
+  {
+    "operatingSystemId": 4,
+    "operatingSystem": "Blackberry OS (Research in Motion)",
+    "categoryId": 87
+  },
+  {
+    "operatingSystemId": 5,
+    "operatingSystem": "Windows OS (Microsoft)",
+    "categoryId": 87
+  },
+  {
+    "operatingSystemId": 6,
+    "operatingSystem": "Symbian OS (Nokia)",
+    "categoryId": 87
+  },
+  {
+    "operatingSystemId": 7,
+    "operatingSystem": "Android (Google)",
+    "categoryId": 94
+  },
+  {
+    "operatingSystemId": 8,
+    "operatingSystem": "Tizen (Samsung)",
+    "categoryId": 87
+  },
+  {
+    "operatingSystemId": 9,
+    "operatingSystem": "iOS (Apple)",
+    "categoryId": 94
+  },
+  {
+    "operatingSystemId": 10,
+    "operatingSystem": "Bada (Samsung)",
+    "categoryId": 94
+  },
+  {
+    "operatingSystemId": 11,
+    "operatingSystem": "Blackberry OS (Research in Motion)",
+    "categoryId": 94
+  },
+  {
+    "operatingSystemId": 12,
+    "operatingSystem": "Macos",
+    "categoryId": 88
+  },
+  {
+    "operatingSystemId": 13,
+    "operatingSystem": "Windows OS (Microsoft)",
+    "categoryId": 94
+  },
+  {
+    "operatingSystemId": 14,
+    "operatingSystem": "Windows",
+    "categoryId": 88
+  },
+  {
+    "operatingSystemId": 15,
+    "operatingSystem": "Symbian OS (Nokia)",
+    "categoryId": 94
+  },
+  {
+    "operatingSystemId": 16,
+    "operatingSystem": "Linux",
+    "categoryId": 88
+  },
+  {
+    "operatingSystemId": 17,
+    "operatingSystem": "Tizen (Samsung)",
+    "categoryId": 94
+  },
+  {
+    "operatingSystemId": 18,
+    "operatingSystem": "Other",
+    "categoryId": 87
+  },
+  {
+    "operatingSystemId": 19,
+    "operatingSystem": "Other",
+    "categoryId": 88
+  },
+  {
+    "operatingSystemId": 20,
+    "operatingSystem": "Other",
+    "categoryId": 94
+  }
+]

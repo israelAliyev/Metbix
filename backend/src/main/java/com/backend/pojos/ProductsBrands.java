@@ -1,9 +1,11 @@
 package com.backend.pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
@@ -11,7 +13,10 @@ import java.util.List;
 @Data
 @Cacheable
 @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-public class ProductsBrands {
+public class ProductsBrands implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Brand_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,14 +25,12 @@ public class ProductsBrands {
     @Column(name = "Brand_Name")
     private String brandName;
 
-//    @Column(name = "Category_ID")
-//    private Long categoryId;
-
-//    @Column(name = "Department_ID")
-//    private Long departmentId;
+    @Column(name = "Category_ID" , insertable = false , updatable = false)
+    private Long categoryId;
 
 
     @OneToMany(fetch = FetchType.LAZY, targetEntity = Products.class , mappedBy = "productModel")
+    @JsonIgnore
     private List<Products> products;
 
 }

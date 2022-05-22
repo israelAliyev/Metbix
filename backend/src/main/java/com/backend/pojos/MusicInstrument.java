@@ -1,41 +1,27 @@
 package com.backend.pojos;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "music_instrument")
-public class MusicInstrument {
+@Getter
+@Setter
+public class MusicInstrument implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Instrument_ID")
-    private Long ınstrumentId;
+    private Long instrumentId;
 
     @Column(name = "Instrument")
-    private String ınstrument;
+    private String instrument;
 
     @Column(name = "Category_ID")
     private Long categoryId;
 
-    public Long getInstrumentId() {
-        return this.ınstrumentId;
-    }
-
-    public void setInstrumentId(Long ınstrumentId) {
-        this.ınstrumentId = ınstrumentId;
-    }
-
-    public String getInstrument() {
-        return this.ınstrument;
-    }
-
-    public void setInstrument(String ınstrument) {
-        this.ınstrument = ınstrument;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
 }

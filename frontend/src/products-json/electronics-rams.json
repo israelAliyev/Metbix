@@ -1,0 +1,152 @@
+[
+  {
+    "ramId": 1,
+    "ramGb": "2",
+    "categoryId": 88
+  },
+  {
+    "ramId": 2,
+    "ramGb": "4",
+    "categoryId": 88
+  },
+  {
+    "ramId": 3,
+    "ramGb": "6",
+    "categoryId": 88
+  },
+  {
+    "ramId": 4,
+    "ramGb": "8",
+    "categoryId": 88
+  },
+  {
+    "ramId": 5,
+    "ramGb": "10",
+    "categoryId": 88
+  },
+  {
+    "ramId": 6,
+    "ramGb": "12",
+    "categoryId": 88
+  },
+  {
+    "ramId": 7,
+    "ramGb": "16",
+    "categoryId": 88
+  },
+  {
+    "ramId": 8,
+    "ramGb": "32",
+    "categoryId": 88
+  },
+  {
+    "ramId": 9,
+    "ramGb": "64",
+    "categoryId": 88
+  },
+  {
+    "ramId": 10,
+    "ramGb": "2",
+    "categoryId": 87
+  },
+  {
+    "ramId": 11,
+    "ramGb": "4",
+    "categoryId": 87
+  },
+  {
+    "ramId": 12,
+    "ramGb": "6",
+    "categoryId": 87
+  },
+  {
+    "ramId": 13,
+    "ramGb": "8",
+    "categoryId": 87
+  },
+  {
+    "ramId": 14,
+    "ramGb": "10",
+    "categoryId": 87
+  },
+  {
+    "ramId": 15,
+    "ramGb": "12",
+    "categoryId": 87
+  },
+  {
+    "ramId": 16,
+    "ramGb": "16",
+    "categoryId": 87
+  },
+  {
+    "ramId": 17,
+    "ramGb": "32",
+    "categoryId": 87
+  },
+  {
+    "ramId": 18,
+    "ramGb": "64",
+    "categoryId": 87
+  },
+  {
+    "ramId": 19,
+    "ramGb": "2",
+    "categoryId": 94
+  },
+  {
+    "ramId": 20,
+    "ramGb": "4",
+    "categoryId": 94
+  },
+  {
+    "ramId": 21,
+    "ramGb": "6",
+    "categoryId": 94
+  },
+  {
+    "ramId": 22,
+    "ramGb": "8",
+    "categoryId": 94
+  },
+  {
+    "ramId": 23,
+    "ramGb": "10",
+    "categoryId": 94
+  },
+  {
+    "ramId": 24,
+    "ramGb": "12",
+    "categoryId": 94
+  },
+  {
+    "ramId": 25,
+    "ramGb": "16",
+    "categoryId": 94
+  },
+  {
+    "ramId": 26,
+    "ramGb": "32",
+    "categoryId": 94
+  },
+  {
+    "ramId": 27,
+    "ramGb": "64",
+    "categoryId": 94
+  },
+  {
+    "ramId": 28,
+    "ramGb": "128 & Above",
+    "categoryId": 87
+  },
+  {
+    "ramId": 29,
+    "ramGb": "128 & Above",
+    "categoryId": 88
+  },
+  {
+    "ramId": 30,
+    "ramGb": "128 & Above",
+    "categoryId": 94
+  }
+]

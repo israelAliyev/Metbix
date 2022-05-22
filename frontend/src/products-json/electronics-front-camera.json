@@ -1,0 +1,227 @@
+[
+  {
+    "frontCameraId": 1,
+    "frontCamera": "2",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 2,
+    "frontCamera": "5",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 3,
+    "frontCamera": "6",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 4,
+    "frontCamera": "8",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 5,
+    "frontCamera": "9",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 6,
+    "frontCamera": "12",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 7,
+    "frontCamera": "16",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 8,
+    "frontCamera": "32",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 9,
+    "frontCamera": "48",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 10,
+    "frontCamera": "64",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 11,
+    "frontCamera": "80",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 12,
+    "frontCamera": "96",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 13,
+    "frontCamera": "112",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 14,
+    "frontCamera": "128",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 15,
+    "frontCamera": "2",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 16,
+    "frontCamera": "5",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 17,
+    "frontCamera": "6",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 18,
+    "frontCamera": "8",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 19,
+    "frontCamera": "9",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 20,
+    "frontCamera": "12",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 21,
+    "frontCamera": "16",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 22,
+    "frontCamera": "32",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 23,
+    "frontCamera": "48",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 24,
+    "frontCamera": "64",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 25,
+    "frontCamera": "80",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 26,
+    "frontCamera": "96",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 27,
+    "frontCamera": "112",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 28,
+    "frontCamera": "128",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 29,
+    "frontCamera": "2",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 30,
+    "frontCamera": "5",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 31,
+    "frontCamera": "6",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 32,
+    "frontCamera": "8",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 33,
+    "frontCamera": "9",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 34,
+    "frontCamera": "12",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 35,
+    "frontCamera": "16",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 36,
+    "frontCamera": "32",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 37,
+    "frontCamera": "48",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 38,
+    "frontCamera": "64",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 39,
+    "frontCamera": "80",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 40,
+    "frontCamera": "96",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 41,
+    "frontCamera": "112",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 42,
+    "frontCamera": "128",
+    "categoryId": 94
+  },
+  {
+    "frontCameraId": 43,
+    "frontCamera": "Other",
+    "categoryId": 87
+  },
+  {
+    "frontCameraId": 44,
+    "frontCamera": "Other",
+    "categoryId": 88
+  },
+  {
+    "frontCameraId": 45,
+    "frontCamera": "Other",
+    "categoryId": 94
+  }
+]

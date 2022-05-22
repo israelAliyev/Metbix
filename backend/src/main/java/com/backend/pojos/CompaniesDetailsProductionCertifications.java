@@ -1,16 +1,24 @@
 package com.backend.pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "companies_details_production_certifications")
-@Data
 @Cacheable
 @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-public class CompaniesDetailsProductionCertifications {
+@Getter
+@Setter
+public class CompaniesDetailsProductionCertifications implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,11 +39,11 @@ public class CompaniesDetailsProductionCertifications {
     @Column(name = "Certificate_Available_Date")
     private java.sql.Timestamp certificateAvailableDate;
 
-    @Column(name = "Certificate_Verified")
-    private Byte certificateVerified;
 
-//    @Column(name = "Company_ID")
-//    private Long companyId;
+    @ManyToOne(cascade=CascadeType.ALL , fetch = FetchType.LAZY, targetEntity = Companies.class)
+    @JoinColumn(name = "Company_ID")
+    @JsonIgnore
+    private Companies company;
 
 
 }

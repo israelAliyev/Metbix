@@ -1,7 +1,7 @@
 .account-login {
     background-color: white;
     height: auto;
-    width: 39.5%;
+    width: 30%;
     margin: 5rem auto;
     padding: 1rem 2rem;
 }
@@ -23,7 +23,7 @@
 }
 
 .account-login .forms .form {
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -69,6 +69,35 @@
     border: 1px solid #297fff;
 }
 
+
+.account-login .forms .form input[type="password"] {
+    width: 100%;
+    border: 1px solid #cbccce;
+    border-radius: 2px;
+    background: #fafafa;
+    color: #666;
+    transition: all 0.4s ease;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 0 5px;
+}
+
+.account-login .forms .form input[type="password"]:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+    border: 1px solid #297fff;
+}
+
+
 .account-login .forms label {
     text-decoration: none;
     font-size: 0.9rem;
@@ -90,7 +119,15 @@
     border-radius: 3px;
     border: none;
     padding: 0.1rem;
+    margin-top: 1.3rem;
+    height: 2.2rem;
 }
+
+.account-login .forms .alert{
+    margin-top: 1.5rem;
+    /*display: none;*/
+}
+
 
 .account-login .forms .social-media p {
     font-size: 0.9rem;

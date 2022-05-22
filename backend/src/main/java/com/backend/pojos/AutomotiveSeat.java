@@ -1,9 +1,14 @@
 package com.backend.pojos;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "automotive_seat")
+@Getter
+@Setter
 public class AutomotiveSeat {
     @Id
     @Column(name = "Seat_ID")
@@ -15,27 +20,4 @@ public class AutomotiveSeat {
     @Column(name = "Category_ID")
     private Long categoryId;
 
-    public Long getSeatId() {
-        return this.seatId;
-    }
-
-    public void setSeatId(Long seatId) {
-        this.seatId = seatId;
-    }
-
-    public String getSeat() {
-        return this.seat;
-    }
-
-    public void setSeat(String seat) {
-        this.seat = seat;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
 }

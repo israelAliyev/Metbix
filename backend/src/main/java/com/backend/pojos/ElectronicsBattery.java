@@ -1,52 +1,38 @@
 package com.backend.pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "electronics_battery")
-public class ElectronicsBattery {
+@Getter
+@Setter
+public class ElectronicsBattery implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Battery_ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long batteryId;
 
     @Column(name = "Battery")
     private Integer battery;
 
-    @Column(name = "Category_ID")
-    private Long categoryId;
 
-    @Column(name = "Battery_Range_ID")
-    private Long batteryRangeId;
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = ElectronicsBatteryRange.class, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH , CascadeType.REMOVE})
+    @JoinColumn(name = "Battery_Range_ID")
+    private ElectronicsBatteryRange electronicsBatteryRange;
 
-    public Long getBatteryId() {
-        return this.batteryId;
-    }
-
-    public void setBatteryId(Long batteryId) {
-        this.batteryId = batteryId;
-    }
-
-    public Integer getBattery() {
-        return this.battery;
-    }
-
-    public void setBattery(Integer battery) {
-        this.battery = battery;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
-
-    public Long getBatteryRangeId() {
-        return this.batteryRangeId;
-    }
-
-    public void setBatteryRangeId(Long batteryRangeId) {
-        this.batteryRangeId = batteryRangeId;
-    }
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Products.class, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH , CascadeType.REMOVE})
+    @JoinTable(name = "ii_products_electronics_options",
+            joinColumns = {@JoinColumn(name = "Battery_ID")},
+            inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
+    )
+    @JsonIgnore
+    private Products product;
 }

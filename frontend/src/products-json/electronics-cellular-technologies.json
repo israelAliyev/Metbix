@@ -1,0 +1,132 @@
+[
+  {
+    "cellularTechnologyId": 1,
+    "cellularTechnology": "1G",
+    "categoryId": 87
+  },
+  {
+    "cellularTechnologyId": 2,
+    "cellularTechnology": "2G",
+    "categoryId": 87
+  },
+  {
+    "cellularTechnologyId": 3,
+    "cellularTechnology": "3G",
+    "categoryId": 87
+  },
+  {
+    "cellularTechnologyId": 4,
+    "cellularTechnology": "4G",
+    "categoryId": 87
+  },
+  {
+    "cellularTechnologyId": 5,
+    "cellularTechnology": "5G",
+    "categoryId": 87
+  },
+  {
+    "cellularTechnologyId": 6,
+    "cellularTechnology": "LTE",
+    "categoryId": 87
+  },
+  {
+    "cellularTechnologyId": 7,
+    "cellularTechnology": "GSM",
+    "categoryId": 87
+  },
+  {
+    "cellularTechnologyId": 8,
+    "cellularTechnology": "CDMA",
+    "categoryId": 87
+  },
+  {
+    "cellularTechnologyId": 9,
+    "cellularTechnology": "HSPA",
+    "categoryId": 87
+  },
+  {
+    "cellularTechnologyId": 10,
+    "cellularTechnology": "AWS",
+    "categoryId": 87
+  },
+  {
+    "cellularTechnologyId": 11,
+    "cellularTechnology": "XLTE",
+    "categoryId": 87
+  },
+  {
+    "cellularTechnologyId": 12,
+    "cellularTechnology": "VoLTE",
+    "categoryId": 87
+  },
+  {
+    "cellularTechnologyId": 13,
+    "cellularTechnology": "1G",
+    "categoryId": 94
+  },
+  {
+    "cellularTechnologyId": 14,
+    "cellularTechnology": "2G",
+    "categoryId": 94
+  },
+  {
+    "cellularTechnologyId": 15,
+    "cellularTechnology": "3G",
+    "categoryId": 94
+  },
+  {
+    "cellularTechnologyId": 16,
+    "cellularTechnology": "4G",
+    "categoryId": 94
+  },
+  {
+    "cellularTechnologyId": 17,
+    "cellularTechnology": "5G",
+    "categoryId": 94
+  },
+  {
+    "cellularTechnologyId": 18,
+    "cellularTechnology": "LTE",
+    "categoryId": 94
+  },
+  {
+    "cellularTechnologyId": 19,
+    "cellularTechnology": "GSM",
+    "categoryId": 94
+  },
+  {
+    "cellularTechnologyId": 20,
+    "cellularTechnology": "CDMA",
+    "categoryId": 94
+  },
+  {
+    "cellularTechnologyId": 21,
+    "cellularTechnology": "HSPA",
+    "categoryId": 94
+  },
+  {
+    "cellularTechnologyId": 22,
+    "cellularTechnology": "AWS",
+    "categoryId": 94
+  },
+  {
+    "cellularTechnologyId": 23,
+    "cellularTechnology": "XLTE",
+    "categoryId": 94
+  },
+  {
+    "cellularTechnologyId": 24,
+    "cellularTechnology": "VoLTE",
+    "categoryId": 94
+  },
+  {
+    "cellularTechnologyId": 25,
+    "cellularTechnology": "Other",
+    "categoryId": 87
+  },
+  {
+    "cellularTechnologyId": 26,
+    "cellularTechnology": "Other",
+    "categoryId": 94
+  }
+]

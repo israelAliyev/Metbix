@@ -1,0 +1,107 @@
+[
+  {
+    "displayTypeId": 1,
+    "displayType": "LCD",
+    "categoryId": 87
+  },
+  {
+    "displayTypeId": 2,
+    "displayType": "OLED",
+    "categoryId": 87
+  },
+  {
+    "displayTypeId": 3,
+    "displayType": "AMOLED",
+    "categoryId": 87
+  },
+  {
+    "displayTypeId": 4,
+    "displayType": "Super AMOLED",
+    "categoryId": 87
+  },
+  {
+    "displayTypeId": 5,
+    "displayType": "TFT",
+    "categoryId": 87
+  },
+  {
+    "displayTypeId": 6,
+    "displayType": "IPS",
+    "categoryId": 87
+  },
+  {
+    "displayTypeId": 7,
+    "displayType": "LCD",
+    "categoryId": 88
+  },
+  {
+    "displayTypeId": 8,
+    "displayType": "LED",
+    "categoryId": 88
+  },
+  {
+    "displayTypeId": 9,
+    "displayType": "VGA",
+    "categoryId": 88
+  },
+  {
+    "displayTypeId": 10,
+    "displayType": "CCFL",
+    "categoryId": 88
+  },
+  {
+    "displayTypeId": 11,
+    "displayType": "XVGA",
+    "categoryId": 88
+  },
+  {
+    "displayTypeId": 12,
+    "displayType": "VGA",
+    "categoryId": 88
+  },
+  {
+    "displayTypeId": 13,
+    "displayType": "LCD",
+    "categoryId": 94
+  },
+  {
+    "displayTypeId": 14,
+    "displayType": "OLED",
+    "categoryId": 94
+  },
+  {
+    "displayTypeId": 15,
+    "displayType": "AMOLED",
+    "categoryId": 94
+  },
+  {
+    "displayTypeId": 16,
+    "displayType": "Super AMOLED",
+    "categoryId": 94
+  },
+  {
+    "displayTypeId": 17,
+    "displayType": "TFT",
+    "categoryId": 94
+  },
+  {
+    "displayTypeId": 18,
+    "displayType": "IPS",
+    "categoryId": 94
+  },
+  {
+    "displayTypeId": 19,
+    "displayType": "Other",
+    "categoryId": 87
+  },
+  {
+    "displayTypeId": 20,
+    "displayType": "Other",
+    "categoryId": 88
+  },
+  {
+    "displayTypeId": 21,
+    "displayType": "Other",
+    "categoryId": 94
+  }
+]

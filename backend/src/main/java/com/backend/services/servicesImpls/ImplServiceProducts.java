@@ -1,27 +1,28 @@
 package com.backend.services.servicesImpls;
 
-import com.backend.dtos.AddProductRequest;
-import com.backend.dtos.ProductReviewRequest;
+import com.backend.dtos.request.AddProductRequest;
+import com.backend.dtos.request.EvaluateProductRequest;
+import com.backend.dtos.request.ProductReviewRequest;
+import com.backend.dtos.request.ProductsFilterRequest;
+import com.backend.dtos.response.ProductsListResponse;
 import com.backend.pojos.*;
 import com.backend.repositories.*;
 import com.backend.repositories.options.*;
 import com.backend.services.ServiceProducts;
 import lombok.AllArgsConstructor;
+import lombok.var;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.EntityGraph;
-import org.springframework.data.relational.core.sql.In;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.DecimalFormat;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -29,17 +30,19 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class ImplServiceProducts implements ServiceProducts {
 
+    private static final DecimalFormat df = new DecimalFormat("0.00");
+
 
     private final RepositoryProducts repositoryProducts;
     private final RepositoryUser repositoryUser;
     private final RepositoryCompany repositoryCompany;
     private final RepositoryProductReviews repositoryProductReviews;
     private final RepositoryDepartments repositoryDepartments;
+    private final RepositorySubCategoriesTypes repositorySubCategoriesTypes;
     private final RepositoryCategory repositoryCategory;
     private final RepositoryBrands repositoryBrands;
     private final RepositoryModels repositoryModels;
     private final RepositoryApparelFabricType repositoryApparelFabricType;
-    private final RepositoryApparelGenderAgeRange repositoryApparelGenderAgeRange;
     private final RepositoryApparelSizes repositoryApparelSizes;
     private final RepositoryAutomotiveCrash repositoryAutomotiveCrash;
     private final RepositoryAutomotiveDistanceTraveleds repositoryAutomotiveDistanceTraveleds;
@@ -60,138 +63,171 @@ public class ImplServiceProducts implements ServiceProducts {
     private final RepositoryElectronicsProcessor repositoryElectronicsProcessor;
     private final RepositoryElectronicsRam repositoryElectronicsRam;
     private final RepositoryElectronicsScreenSize repositoryElectronicsScreenSize;
-    private final RepositoryElectronicsWirelessCarrier repositoryElectronicsWirelessCarrier;
     private final RepositoryMusicInstruments repositoryMusicInstruments;
     private final RepositoryProductColors repositoryProductColors;
-
-
+    private final RepositoryElectronicsBatteryRange repositoryElectronicsBatteryRange;
+    private final RepositoryAutomotiveDistanceTraveledsRange repositoryAutomotiveDistanceTraveledsRange;
+    private final RepositoryElectronicsScreenSizeRange repositoryElectronicsScreenSizeRange;
+    private final RepositorySubCategories repositorySubCategories;
+    private final RepositoryProductPictures repositoryProductPictures;
 
     public Products getProductInfo(Long productId) {
 
         return repositoryProducts.findByProductId(productId);
     }
 
+    @Override
+    public Boolean productExistInBasketByAccountEmail(Long id, String email) {
 
+        Products p = repositoryProducts.findById(id).orElse(null);
 
+        if (repositoryUser.existsByUserEmail(email)) {
+            return !p.getBasketUsers().stream().filter(user -> Objects.equals(user.getUserEmail(), email)).collect(Collectors.toList()).isEmpty();
+        } else {
+            return !p.getBasketCompanies().stream().filter(company -> Objects.equals(company.getCompanyEmail(), email)).collect(Collectors.toList()).isEmpty();
+        }
+    }
 
     @Override
-    public List<Products> getProductsWithSearchingFilter(String keyword, Integer review, String status, Boolean warranty, Boolean domestic, Boolean international, Integer year, Integer minPrice, Integer maxPrice, Pageable pageable) {
+    public void addBasketProduct(String email, Long productId) {
 
-        List<Products> filteredProductsList = new ArrayList<>();
+        String account = whichAccountExistByEmail(email);
+        Products product = repositoryProducts.findById(productId).orElse(null);
 
-        List<Products> productsList = repositoryProducts.getProductsWithSearching(keyword, pageable);
+        if (account.equals("user")) {
+            Users user = repositoryUser.findByUserEmail(email);
+            user.getBasketProducts().add(product);
+        } else if (account.equals("company")) {
+            Companies company = repositoryCompany.findByCompanyEmail(email);
+            company.getBasketProducts().add(product);
+        }
+    }
 
+    @Override
+    @Async
+    public void removeBasketProduct(String email, Long productId) {
+        String account = whichAccountExistByEmail(email);
+        Products product = repositoryProducts.findById(productId).orElse(null);
 
-        filteredProductsList = productsList.stream().filter(product ->
+        if (account.equals("user")) {
+            Users user = repositoryUser.findByUserEmail(email);
+            user.getBasketProducts().remove(product);
+        } else if (account.equals("company")) {
+            Companies company = repositoryCompany.findByCompanyEmail(email);
+            company.getBasketProducts().remove(product);
+        }
+    }
 
-                product.getProductRating().equals(review) &&
-                        product.getProductStatus().equals(status) &&
-                        product.getProductWarranty().equals(warranty) &&
-                        product.getProductDomesticShipping().equals(domestic) &&
-                        product.getProductInternationalShipping().equals(international) &&
-                        product.getProductYear().equals(year) &&
-                        product.getProductPrice() > minPrice &&
-                        product.getProductPrice() < maxPrice
+    @Override
+    public Set<Products> getUserBasketProducts(String email) {
 
+        Users user = repositoryUser.findByUserEmail(email);
 
-        ).collect(Collectors.toList());
+        return user.getBasketProducts();
+    }
 
-        productsList = filteredProductsList;
+    @Override
+    public Set<Products> getCompanyBasketProducts(String email) {
 
-        return productsList;
+        Companies company = repositoryCompany.findByCompanyEmail(email);
+
+        return company.getBasketProducts();
+    }
+
+    @Override
+    public String whichAccountExistByEmail(String email) {
+
+        Boolean user = repositoryUser.existsByUserEmail(email);
+        Boolean company = repositoryCompany.existsByCompanyEmail(email);
+
+        if (user) {
+            return "user";
+        } else if (company) {
+            return "company";
+        } else {
+            return null;
+        }
+    }
+
+    @Override
+    public List<Products> getProductsBySearchKeyword(String keyword) {
+
+        return repositoryProducts.getProductsBySearchKeyword(keyword);
     }
 
 
     @Override
-    public List<Products> getProductsWithCategoryFilter(String category, Integer review,
-                                                        String status, Boolean warranty,
-                                                        Boolean domestic, Boolean international,
-                                                        Integer year, Integer minPrice,
-                                                        Integer maxPrice, String brand,
-                                                        String model,
-                                                        Set<ProductsColors> apparelProductsColors,
-                                                        Set<ApparelGenderAgeRange> apparelGenderAgeRanges,
-                                                        Set<ApparelSize> apparelSizes,
-                                                        Set<ApparelFabricType> apparelFabricTypes,
-                                                        Set<ProductsColors> automativeProductsColors,
-                                                        Set<AutomotiveMaxSpeed> automotiveMaxSpeeds,
-                                                        Set<AutomotiveFuel> automotiveFuels,
-                                                        Set<AutomotiveSeat> automotiveSeats,
-                                                        Set<AutomotiveType> automotiveTypes,
-                                                        Set<AutomotiveCrash> automotiveCrashes,
-                                                        Set<AutomotiveDistanceTraveled> automotiveDistanceTraveleds,
-                                                        Set<AutomotiveEngine> automotiveEngines,
-                                                        Set<ProductsColors> electronicsProductsColors,
-                                                        Set<ElectronicsMemory> electronicsMemories,
-                                                        Set<ElectronicsCamera> electronicsCameras,
-                                                        Set<ElectronicsFrontCamera> electronicsFrontCameras,
-                                                        Set<ElectronicsWirelessCarrier> electronicsWirelessCarriers,
-                                                        Set<ElectronicsOperatingSystem> electronicsOperatingSystems,
-                                                        Set<ElectronicsScreenSize> electronicsScreenSizes,
-                                                        Set<ElectronicsDisplayType> electronicsDisplayTypes,
-                                                        Set<ElectronicsCellularTechnology> electronicsCellularTechnologies,
-                                                        Set<ElectronicsBattery> electronicsBatteries,
-                                                        Set<ElectronicsProcessor> electronicsProcessors,
-                                                        Set<ElectronicsRam> electronicsRams,
-                                                        Set<ElectronicsGraphicsCard> electronicsGraphicsCards,
-                                                        Set<ElectronicsComputerType> electronicsComputerTypes,
-                                                        Set<MusicInstrument> musicInstruments, Pageable pageable) {
+    public List<Products> getProductsByCategoryId(Long categoryId) {
 
-        List<Products> productsList = repositoryProducts.getProductsWithCategory(category, pageable);
+        return repositoryProducts.getProductsByCategory(categoryId);
+
+    }
+
+    @Override
+    public List<Products> getProductsByDepartmentId(Long departmentId) {
+        return repositoryProducts.getProductsByDepartment(departmentId);
+    }
+
+    @Override
+    public List<Products> getProductsFilter(ProductsFilterRequest productsFilterRequest) {
+
+        List<Products> filteredProducts = new ArrayList<>();
+
+        filteredProducts = null;
+
+        if (productsFilterRequest.getProducts() != null){
 
 
-        if (!category.isEmpty() || !(review == null) || !(status == null) ||
-                !(warranty == null) || !(domestic == null) || !(international == null) ||
-                !(year == null) || !(minPrice == null) || !(maxPrice == null) ||
-                !(brand == null) || !(model == null) || !apparelProductsColors.isEmpty() ||
-                !apparelGenderAgeRanges.isEmpty() || !apparelSizes.isEmpty() ||
-                !apparelFabricTypes.isEmpty() || !automativeProductsColors.isEmpty() ||
-                !automotiveMaxSpeeds.isEmpty() || !automotiveFuels.isEmpty() ||
-                !automotiveSeats.isEmpty() || !automotiveTypes.isEmpty() ||
-                !automotiveCrashes.isEmpty() || !automotiveDistanceTraveleds.isEmpty() ||
-                !automotiveEngines.isEmpty() || !electronicsProductsColors.isEmpty() ||
-                !electronicsMemories.isEmpty() || !electronicsCameras.isEmpty() ||
-                !electronicsFrontCameras.isEmpty() || !electronicsWirelessCarriers.isEmpty() ||
-                !electronicsOperatingSystems.isEmpty() || !electronicsScreenSizes.isEmpty() ||
-                !electronicsDisplayTypes.isEmpty() || !electronicsCellularTechnologies.isEmpty() ||
-                !electronicsBatteries.isEmpty() || !electronicsProcessors.isEmpty() ||
-                !electronicsRams.isEmpty() || !electronicsGraphicsCards.isEmpty() ||
-                !electronicsComputerTypes.isEmpty() || !musicInstruments.isEmpty()) {
+        if (productsFilterRequest.getRating() != null) {
+            filteredProducts = productsFilterRequest.getProducts().stream().filter(product -> Math.round(product.getRating() / product.getReviewCount()) == productsFilterRequest.getRating()).collect(Collectors.toList());
+        }
 
-            if (!(review == null) || !(status == null) ||
-                    !(warranty == null) || !(domestic == null) || !(international == null) ||
-                    !(year == null) || !(minPrice == null) || !(maxPrice == null) ||
-                    !(brand == null) || !(model == null)) {
+        if (productsFilterRequest.getCondition() != null) {
+            filteredProducts = productsFilterRequest.getProducts().stream().filter(product -> product.getProductStatus().equals(productsFilterRequest.getCondition())).collect(Collectors.toList());
+        }
 
-                List<Products> filteredProductsOptions = new ArrayList<>();
+        if (productsFilterRequest.getWarranty() != null) {
+            filteredProducts = productsFilterRequest.getProducts().stream().filter(product -> product.getProductWarranty() == productsFilterRequest.getWarranty()).collect(Collectors.toList());
+        }
 
-                filteredProductsOptions = productsList.stream().filter(product ->
+        if (productsFilterRequest.getDomestic() != null) {
+            filteredProducts = productsFilterRequest.getProducts().stream().filter(product -> product.getProductDomesticShipping() == productsFilterRequest.getDomestic()).collect(Collectors.toList());
+        }
 
-                        product.getProductRating().equals(review) &&
-                                product.getProductStatus().equals(status) &&
-                                product.getProductWarranty().equals(warranty) &&
-                                product.getProductDomesticShipping().equals(domestic) &&
-                                product.getProductInternationalShipping().equals(international) &&
-                                product.getProductYear().equals(year) &&
-                                product.getProductPrice() > minPrice &&
-                                product.getProductPrice() < maxPrice &&
-                                product.getProductBrand().getBrandName().equals(brand) &&
-                                product.getProductModel().getModelName().equals(model)
+        if (productsFilterRequest.getInternational() != null) {
+            filteredProducts = productsFilterRequest.getProducts().stream().filter(product -> product.getProductInternationalShipping() == productsFilterRequest.getInternational()).collect(Collectors.toList());
+        }
 
-                ).collect(Collectors.toList());
+        if (productsFilterRequest.getYear() != null) {
+            filteredProducts = productsFilterRequest.getProducts().stream().filter(product -> Objects.equals(product.getProductYear(), productsFilterRequest.getYear())).collect(Collectors.toList());
+        }
 
-                productsList = filteredProductsOptions;
+        if (productsFilterRequest.getMinPrice() != null) {
+            filteredProducts = productsFilterRequest.getProducts().stream().filter(product -> productsFilterRequest.getMinPrice() <= product.getProductPrice()).collect(Collectors.toList());
+        }
 
-            }
+        if (productsFilterRequest.getMaxPrice() != null) {
+            filteredProducts = productsFilterRequest.getProducts().stream().filter(product -> product.getProductPrice() <= productsFilterRequest.getMaxPrice()).collect(Collectors.toList());
+        }
+
+        if (productsFilterRequest.getBrandId() != null) {
+            filteredProducts = productsFilterRequest.getProducts().stream().filter(product -> Objects.equals(product.getProductBrand().getBrandId(), productsFilterRequest.getBrandId())).collect(Collectors.toList());
+        }
+
+        if (productsFilterRequest.getModelId() != null) {
+            filteredProducts = productsFilterRequest.getProducts().stream().filter(product -> Objects.equals(product.getProductModel().getModelId(), productsFilterRequest.getBrandId())).collect(Collectors.toList());
+        }
 
 
-            if (!apparelProductsColors.isEmpty()) {
+        if (productsFilterRequest.getOptions() != null) {
+
+            if (!productsFilterRequest.getOptions().getApparelProductsColors().isEmpty()) {
 
                 List<Products> filteredProductsApparelColors = new ArrayList<>();
 
-                for (ProductsColors color : apparelProductsColors) {
+                for (ProductsColors color : productsFilterRequest.getOptions().getApparelProductsColors()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ProductsColors color2 : product.getApparelProductsColors()) {
 
@@ -204,42 +240,18 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsApparelColors;
+                filteredProducts = filteredProductsApparelColors;
 
             }
 
 
-            if (!apparelGenderAgeRanges.isEmpty()) {
-
-                List<Products> filteredProductsGenderAgeRanges = new ArrayList<>();
-
-                for (ApparelGenderAgeRange range : apparelGenderAgeRanges) {
-
-                    for (Products product : productsList) {
-
-                        for (ApparelGenderAgeRange range2 : product.getApparelGenderAgeRanges()) {
-
-                            if (range.getGenderId().equals(range2.getGenderId())) {
-
-                                filteredProductsGenderAgeRanges.add(product);
-                            }
-
-                        }
-                    }
-                }
-
-                productsList = filteredProductsGenderAgeRanges;
-
-            }
-
-
-            if (!apparelSizes.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getApparelSizes().isEmpty()) {
 
                 List<Products> filteredProductsApparelSizes = new ArrayList<>();
 
-                for (ApparelSize size : apparelSizes) {
+                for (ApparelSize size : productsFilterRequest.getOptions().getApparelSizes()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ApparelSize size2 : product.getApparelSizes()) {
 
@@ -252,18 +264,18 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsApparelSizes;
+                filteredProducts = filteredProductsApparelSizes;
 
             }
 
 
-            if (!apparelFabricTypes.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getApparelFabricTypes().isEmpty()) {
 
                 List<Products> filteredProductsApparelFabricTypes = new ArrayList<>();
 
-                for (ApparelFabricType type : apparelFabricTypes) {
+                for (ApparelFabricType type : productsFilterRequest.getOptions().getApparelFabricTypes()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ApparelFabricType type2 : product.getApparelFabricTypes()) {
 
@@ -276,18 +288,18 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsApparelFabricTypes;
+                filteredProducts = filteredProductsApparelFabricTypes;
 
             }
 
 
-            if (!automativeProductsColors.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getAutomativeProductsColors().isEmpty()) {
 
                 List<Products> filteredProductsAutomotiveProductColors = new ArrayList<>();
 
-                for (ProductsColors color : automativeProductsColors) {
+                for (ProductsColors color : productsFilterRequest.getOptions().getAutomativeProductsColors()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ProductsColors color2 : product.getAutomativeProductsColors()) {
 
@@ -300,18 +312,18 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsAutomotiveProductColors;
+                filteredProducts = filteredProductsAutomotiveProductColors;
 
             }
 
 
-            if (!automotiveMaxSpeeds.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getAutomotiveMaxSpeeds().isEmpty()) {
 
                 List<Products> filteredProductsAutomotiveMaxSpeeds = new ArrayList<>();
 
-                for (AutomotiveMaxSpeed speed : automotiveMaxSpeeds) {
+                for (AutomotiveMaxSpeed speed : productsFilterRequest.getOptions().getAutomotiveMaxSpeeds()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (AutomotiveMaxSpeed speed2 : product.getAutomotiveMaxSpeeds()) {
 
@@ -324,18 +336,18 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsAutomotiveMaxSpeeds;
+                filteredProducts = filteredProductsAutomotiveMaxSpeeds;
 
             }
 
 
-            if (!automotiveFuels.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getAutomotiveFuels().isEmpty()) {
 
                 List<Products> filteredProductsAutomotiveFuels = new ArrayList<>();
 
-                for (AutomotiveFuel fuel : automotiveFuels) {
+                for (AutomotiveFuel fuel : productsFilterRequest.getOptions().getAutomotiveFuels()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (AutomotiveFuel fuel2 : product.getAutomotiveFuels()) {
 
@@ -348,17 +360,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsAutomotiveFuels;
+                filteredProducts = filteredProductsAutomotiveFuels;
             }
 
 
-            if (!automotiveSeats.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getAutomotiveSeats().isEmpty()) {
 
                 List<Products> filteredProductsAutomotiveSeats = new ArrayList<>();
 
-                for (AutomotiveSeat seat : automotiveSeats) {
+                for (AutomotiveSeat seat : productsFilterRequest.getOptions().getAutomotiveSeats()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (AutomotiveSeat seat2 : product.getAutomotiveSeats()) {
 
@@ -371,17 +383,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsAutomotiveSeats;
+                filteredProducts = filteredProductsAutomotiveSeats;
             }
 
 
-            if (!automotiveTypes.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getAutomotiveTypes().isEmpty()) {
 
                 List<Products> filteredProductsAutomotiveTypes = new ArrayList<>();
 
-                for (AutomotiveType type : automotiveTypes) {
+                for (AutomotiveType type : productsFilterRequest.getOptions().getAutomotiveTypes()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (AutomotiveType type2 : product.getAutomotiveTypes()) {
 
@@ -394,17 +406,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsAutomotiveTypes;
+                filteredProducts = filteredProductsAutomotiveTypes;
             }
 
 
-            if (!automotiveCrashes.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getAutomotiveCrashes().isEmpty()) {
 
                 List<Products> filteredProductsAutomotiveCrashes = new ArrayList<>();
 
-                for (AutomotiveCrash crash : automotiveCrashes) {
+                for (AutomotiveCrash crash : productsFilterRequest.getOptions().getAutomotiveCrashes()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (AutomotiveCrash crash2 : product.getAutomotiveCrashes()) {
 
@@ -417,21 +429,21 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsAutomotiveCrashes;
+                filteredProducts = filteredProductsAutomotiveCrashes;
             }
 
 
-            if (!automotiveDistanceTraveleds.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getAutomotiveDistanceTraveleds().isEmpty()) {
 
                 List<Products> filteredProductsAutomotiveDistanceTraveleds = new ArrayList<>();
 
-                for (AutomotiveDistanceTraveled traveled : automotiveDistanceTraveleds) {
+                for (AutomotiveDistanceTraveledRange traveledRange : productsFilterRequest.getOptions().getAutomotiveDistanceTraveleds()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (AutomotiveDistanceTraveled traveled2 : product.getAutomotiveDistanceTraveleds()) {
 
-                            if (traveled.getDistanceTraveledId().equals(traveled2.getDistanceTraveledId())) {
+                            if (traveledRange.getDistanceTraveledRangeId().equals(traveled2.getDistanceTraveledRange().getDistanceTraveledRangeId())) {
 
                                 filteredProductsAutomotiveDistanceTraveleds.add(product);
                             }
@@ -440,17 +452,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsAutomotiveDistanceTraveleds;
+                filteredProducts = filteredProductsAutomotiveDistanceTraveleds;
             }
 
 
-            if (!automotiveEngines.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getAutomotiveEngines().isEmpty()) {
 
                 List<Products> filteredProductsAutomotiveEngines = new ArrayList<>();
 
-                for (AutomotiveEngine engine : automotiveEngines) {
+                for (AutomotiveEngine engine : productsFilterRequest.getOptions().getAutomotiveEngines()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (AutomotiveEngine engine2 : product.getAutomotiveEngines()) {
 
@@ -463,17 +475,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsAutomotiveEngines;
+                filteredProducts = filteredProductsAutomotiveEngines;
             }
 
 
-            if (!electronicsProductsColors.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getElectronicsProductsColors().isEmpty()) {
 
                 List<Products> filteredProductsElectronicsColors = new ArrayList<>();
 
-                for (ProductsColors color : electronicsProductsColors) {
+                for (ProductsColors color : productsFilterRequest.getOptions().getElectronicsProductsColors()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ProductsColors color2 : product.getElectronicsProductsColors()) {
 
@@ -486,17 +498,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsElectronicsColors;
+                filteredProducts = filteredProductsElectronicsColors;
             }
 
 
-            if (!electronicsMemories.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getElectronicsMemories().isEmpty()) {
 
                 List<Products> filteredProductsElectronicsMemories = new ArrayList<>();
 
-                for (ElectronicsMemory memory : electronicsMemories) {
+                for (ElectronicsMemory memory : productsFilterRequest.getOptions().getElectronicsMemories()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ElectronicsMemory memory2 : product.getElectronicsMemories()) {
 
@@ -509,17 +521,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsElectronicsMemories;
+                filteredProducts = filteredProductsElectronicsMemories;
             }
 
 
-            if (!electronicsCameras.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getElectronicsCameras().isEmpty()) {
 
                 List<Products> filteredProductsElectronicsCameras = new ArrayList<>();
 
-                for (ElectronicsCamera camera : electronicsCameras) {
+                for (ElectronicsCamera camera : productsFilterRequest.getOptions().getElectronicsCameras()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ElectronicsCamera camera2 : product.getElectronicsCameras()) {
 
@@ -532,17 +544,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsElectronicsCameras;
+                filteredProducts = filteredProductsElectronicsCameras;
             }
 
 
-            if (!electronicsFrontCameras.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getElectronicsFrontCameras().isEmpty()) {
 
                 List<Products> filteredProductsElectronicsFrontCameras = new ArrayList<>();
 
-                for (ElectronicsFrontCamera camera : electronicsFrontCameras) {
+                for (ElectronicsFrontCamera camera : productsFilterRequest.getOptions().getElectronicsFrontCameras()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ElectronicsFrontCamera camera2 : product.getElectronicsFrontCameras()) {
 
@@ -555,40 +567,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsElectronicsFrontCameras;
+                filteredProducts = filteredProductsElectronicsFrontCameras;
             }
 
 
-            if (!electronicsWirelessCarriers.isEmpty()) {
-
-                List<Products> filteredProductsElectronicsWirelessCarriers = new ArrayList<>();
-
-                for (ElectronicsWirelessCarrier wirelessCarrier : electronicsWirelessCarriers) {
-
-                    for (Products product : productsList) {
-
-                        for (ElectronicsWirelessCarrier wirelessCarrier2 : product.getElectronicsWirelessCarriers()) {
-
-                            if (wirelessCarrier.getWirelessCarrierId().equals(wirelessCarrier2.getWirelessCarrierId())) {
-
-                                filteredProductsElectronicsWirelessCarriers.add(product);
-                            }
-
-                        }
-                    }
-                }
-
-                productsList = filteredProductsElectronicsWirelessCarriers;
-            }
-
-
-            if (!electronicsOperatingSystems.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getElectronicsOperatingSystems().isEmpty()) {
 
                 List<Products> filteredProductsElectronicsOperatingSystems = new ArrayList<>();
 
-                for (ElectronicsOperatingSystem operatingSystem : electronicsOperatingSystems) {
+                for (ElectronicsOperatingSystem operatingSystem : productsFilterRequest.getOptions().getElectronicsOperatingSystems()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ElectronicsOperatingSystem operatingSystem2 : product.getElectronicsOperatingSystems()) {
 
@@ -601,21 +590,21 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsElectronicsOperatingSystems;
+                filteredProducts = filteredProductsElectronicsOperatingSystems;
             }
 
 
-            if (!electronicsScreenSizes.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getElectronicsScreenSizes().isEmpty()) {
 
                 List<Products> filteredProductsElectronicsScreenSizes = new ArrayList<>();
 
-                for (ElectronicsScreenSize screenSize : electronicsScreenSizes) {
+                for (ElectronicsScreenSizeRange screenSizeRange : productsFilterRequest.getOptions().getElectronicsScreenSizes()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ElectronicsScreenSize screenSize2 : product.getElectronicsScreenSizes()) {
 
-                            if (screenSize.getScreenSizeId().equals(screenSize2.getScreenSizeId())) {
+                            if (screenSizeRange.getScreenSizeRangeId().equals(screenSize2.getElectronicsScreenSizeRange().getScreenSizeRangeId())) {
 
                                 filteredProductsElectronicsScreenSizes.add(product);
                             }
@@ -624,17 +613,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsElectronicsScreenSizes;
+                filteredProducts = filteredProductsElectronicsScreenSizes;
             }
 
 
-            if (!electronicsDisplayTypes.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getElectronicsDisplayTypes().isEmpty()) {
 
                 List<Products> filteredProductsElectronicsDisplayType = new ArrayList<>();
 
-                for (ElectronicsDisplayType displayType : electronicsDisplayTypes) {
+                for (ElectronicsDisplayType displayType : productsFilterRequest.getOptions().getElectronicsDisplayTypes()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ElectronicsDisplayType displayType2 : product.getElectronicsDisplayTypes()) {
 
@@ -647,17 +636,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsElectronicsDisplayType;
+                filteredProducts = filteredProductsElectronicsDisplayType;
             }
 
 
-            if (!electronicsCellularTechnologies.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getElectronicsCellularTechnologies().isEmpty()) {
 
                 List<Products> filteredProductsElectronicsCellularTechnologies = new ArrayList<>();
 
-                for (ElectronicsCellularTechnology cellularTechnology : electronicsCellularTechnologies) {
+                for (ElectronicsCellularTechnology cellularTechnology : productsFilterRequest.getOptions().getElectronicsCellularTechnologies()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ElectronicsCellularTechnology cellularTechnology2 : product.getElectronicsCellularTechnologies()) {
 
@@ -670,21 +659,21 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsElectronicsCellularTechnologies;
+                filteredProducts = filteredProductsElectronicsCellularTechnologies;
             }
 
 
-            if (!electronicsBatteries.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getElectronicsBatteries().isEmpty()) {
 
                 List<Products> filteredProductsElectronicsBatteries = new ArrayList<>();
 
-                for (ElectronicsBattery battery : electronicsBatteries) {
+                for (ElectronicsBatteryRange batteryRange : productsFilterRequest.getOptions().getElectronicsBatteries()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ElectronicsBattery battery2 : product.getElectronicsBatteries()) {
 
-                            if (battery.getBatteryId().equals(battery2.getBatteryId())) {
+                            if (batteryRange.getBatteryRangeId().equals(battery2.getElectronicsBatteryRange().getBatteryRangeId())) {
 
                                 filteredProductsElectronicsBatteries.add(product);
                             }
@@ -693,17 +682,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsElectronicsBatteries;
+                filteredProducts = filteredProductsElectronicsBatteries;
             }
 
 
-            if (!electronicsProcessors.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getElectronicsProcessors().isEmpty()) {
 
                 List<Products> filteredProductsElectronicsProcessors = new ArrayList<>();
 
-                for (ElectronicsProcessor processor : electronicsProcessors) {
+                for (ElectronicsProcessor processor : productsFilterRequest.getOptions().getElectronicsProcessors()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ElectronicsProcessor processor2 : product.getElectronicsProcessors()) {
 
@@ -716,17 +705,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsElectronicsProcessors;
+                filteredProducts = filteredProductsElectronicsProcessors;
             }
 
 
-            if (!electronicsRams.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getElectronicsRams().isEmpty()) {
 
                 List<Products> filteredProductsElectronicsRams = new ArrayList<>();
 
-                for (ElectronicsRam ram : electronicsRams) {
+                for (ElectronicsRam ram : productsFilterRequest.getOptions().getElectronicsRams()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ElectronicsRam ram2 : product.getElectronicsRams()) {
 
@@ -739,17 +728,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsElectronicsRams;
+                filteredProducts = filteredProductsElectronicsRams;
             }
 
 
-            if (!electronicsGraphicsCards.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getElectronicsGraphicsCards().isEmpty()) {
 
                 List<Products> filteredProductsElectronicsGraphicsCards = new ArrayList<>();
 
-                for (ElectronicsGraphicsCard graphicsCard : electronicsGraphicsCards) {
+                for (ElectronicsGraphicsCard graphicsCard : productsFilterRequest.getOptions().getElectronicsGraphicsCards()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ElectronicsGraphicsCard graphicsCard2 : product.getElectronicsGraphicsCards()) {
 
@@ -762,17 +751,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsElectronicsGraphicsCards;
+                filteredProducts = filteredProductsElectronicsGraphicsCards;
             }
 
 
-            if (!electronicsComputerTypes.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getElectronicsComputerTypes().isEmpty()) {
 
                 List<Products> filteredProductsElectronicsComputerTypes = new ArrayList<>();
 
-                for (ElectronicsComputerType computerType : electronicsComputerTypes) {
+                for (ElectronicsComputerType computerType : productsFilterRequest.getOptions().getElectronicsComputerTypes()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (ElectronicsComputerType computerType2 : product.getElectronicsComputerTypes()) {
 
@@ -785,17 +774,17 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsElectronicsComputerTypes;
+                filteredProducts = filteredProductsElectronicsComputerTypes;
             }
 
 
-            if (!musicInstruments.isEmpty()) {
+            if (!productsFilterRequest.getOptions().getMusicInstruments().isEmpty()) {
 
                 List<Products> filteredProductsMusicInstruments = new ArrayList<>();
 
-                for (MusicInstrument instrument : musicInstruments) {
+                for (MusicInstrument instrument : productsFilterRequest.getOptions().getMusicInstruments()) {
 
-                    for (Products product : productsList) {
+                    for (Products product : productsFilterRequest.getProducts()) {
 
                         for (MusicInstrument instrument2 : product.getMusicInstruments()) {
 
@@ -808,107 +797,100 @@ public class ImplServiceProducts implements ServiceProducts {
                     }
                 }
 
-                productsList = filteredProductsMusicInstruments;
+                filteredProducts = filteredProductsMusicInstruments;
             }
 
         }
 
-
-        return productsList;
-
-    }
-
-    @Override
-    public ResponseEntity<String> getProductRating(Long id) throws JSONException {
-
-        JSONObject ratings = new JSONObject();
-
-        Products product = repositoryProducts.findByProductId(id);
-
-        double rating = product.getProductRating() / product.getProductEvaluateCount();
-
-        Integer fiveStars = product.getProductFiveStars();
-        Integer fourStars = product.getProductFourStars();
-        Integer threeStars = product.getProductThreeStars();
-        Integer twoStars = product.getProductTwoStars();
-        Integer oneStar = product.getProductOneStar();
-
-
-        List<ProductReviewRequest> productReviewRequestList = new ArrayList<>();
-
-        for (ProductReviews review : product.getProductReviews()) {
-
-            productReviewRequestList.add(new ProductReviewRequest(review.getReviewTitle(),
-                    review.getReviewDescription(), review.getReviewRating(), review.getUser() != null ? review.getUser().getUserName() : review.getCompany().getCompanyName(), review.getReviewDate()));
+        if (Objects.equals(productsFilterRequest.getSortBy(), "Price: Low to High")){
+            filteredProducts.sort((a, b) -> (int) (a.getProductPrice() - b.getProductPrice()));
         }
 
-        ratings.put("rating", Math.round(rating));
-        ratings.put("fiveStars", fiveStars);
-        ratings.put("fourStars", fourStars);
-        ratings.put("threeStars", threeStars);
-        ratings.put("twoStars", twoStars);
-        ratings.put("oneStar", oneStar);
-        ratings.put("reviews", productReviewRequestList);
-
-        return new ResponseEntity<String>(ratings.toString(), HttpStatus.OK);
-    }
-
-
-    @Override
-    public void productEvaluate(Long id, Integer rating, String reviewTitle, String reviewDescription, String accountType, Long accountID) {
-
-        Products product = repositoryProducts.findByProductId(id);
-
-        product.setProductRating(product.getProductRating() + rating);
-        product.setProductEvaluateCount(product.getProductEvaluateCount() + 1);
-
-        if (rating == 5) {
-            product.setProductFiveStars(product.getProductFiveStars() + 1);
-        } else if (rating == 4) {
-            product.setProductFourStars(product.getProductFourStars() + 1);
-        } else if (rating == 3) {
-            product.setProductThreeStars(product.getProductThreeStars() + 1);
-        } else if (rating == 2) {
-            product.setProductTwoStars(product.getProductTwoStars() + 1);
-        } else {
-            product.setProductOneStar(product.getProductOneStar() + 1);
+        if (Objects.equals(productsFilterRequest.getSortBy(), "Price: High to Low")){
+            filteredProducts.sort((a, b) -> (int) (b.getProductPrice()  - a.getProductPrice()));
         }
 
-        LocalDateTime date = LocalDateTime.now();
+        if (Objects.equals(productsFilterRequest.getSortBy(), "Avg: Customer review")){
+            filteredProducts.sort((a, b) -> (int) (a.getRating()  - b.getRating()));
+        }
 
-        ProductReviews productReviews = new ProductReviews();
-        productReviews.setProduct(product);
-        productReviews.setReviewTitle(reviewTitle);
-        productReviews.setReviewDescription(reviewDescription);
-        productReviews.setReviewRating(rating);
-        productReviews.setReviewDate(date);
-
-        if (accountType.equals("user")) {
-
-            Users user = repositoryUser.findById(accountID).orElse(null);
-
-            productReviews.setUser(user);
-        } else {
-            Companies user = repositoryCompany.findById(accountID).orElse(null);
-            productReviews.setCompany(user);
         }
 
 
-        repositoryProductReviews.save(productReviews);
-
-        repositoryProducts.save(product);
+        return filteredProducts;
     }
-
 
     @Override
-    public void addProductRequestCount(Long id) {
+    public void productEvaluate(EvaluateProductRequest evaluateProductRequest) {
 
-        Products product = repositoryProducts.findByProductId(id);
-        product.setProductRequestCount(product.getProductRequestCount() + 1);
+        Products product = repositoryProducts.findById(evaluateProductRequest.getProductId()).orElse(null);
+
+        if (product != null) {
+
+            ProductReviews productReview = new ProductReviews();
+            productReview.setProduct(product);
+            productReview.setReviewTitle(evaluateProductRequest.getReviewTitle());
+            productReview.setReviewDescription(evaluateProductRequest.getReviewDescription());
+            productReview.setReviewRating(evaluateProductRequest.getReviewRating());
+            productReview.setReviewDate(evaluateProductRequest.getReviewDate());
+
+            Long evaluatedCount = product.getReviewCount();
+
+//            System.out.println("evaluatedCount --- " +evaluatedCount);
+
+            Float rating = product.getRating();
+
+//            System.out.println("rating --- " +rating);
+
+            Float topRating = evaluatedCount * rating;
+
+//            System.out.println("topRating --- " +topRating);
+
+            Float myRating = (topRating + evaluateProductRequest.getReviewRating()) / (evaluatedCount + 1);
+
+//            System.out.println("myRating --- " +myRating);
+
+            product.setReviewCount(evaluatedCount + 1);
+            product.setRating(myRating);
+
+            repositoryProducts.save(product);
+
+            if (evaluateProductRequest.getReviewPictures() != null) {
+
+                List<ProductReviewPictures> pics = new ArrayList<ProductReviewPictures>();
+
+                evaluateProductRequest.getReviewPictures()
+                        .stream().filter(p -> !p.getPicturePath().equals(""))
+                        .collect(Collectors.toSet()).forEach(pic -> {
+
+                            pic.setReview(productReview);
+
+                            pics.add(pic);
+                        });
+
+                productReview.setReviewPictures(pics);
+            }
+
+            if (product.getCompany() != null) {
+                Companies c = repositoryCompany.findById(product.getCompany().getCompanyId()).orElse(null);
+                c.setCompanyRatingsCount(c.getCompanyRatingsCount() + 1);
+                c.setCompanyRating(c.getCompanyRating() + evaluateProductRequest.getReviewRating());
+                repositoryCompany.save(c);
+            } else {
+                Users u = repositoryUser.findById(product.getUser().getUserId()).orElse(null);
+                u.setUserRatingsCount(u.getUserRatingsCount() + 1);
+                u.setUserRating(u.getUserRating() + evaluateProductRequest.getReviewRating());
+                repositoryUser.save(u);
+            }
+
+            repositoryProductReviews.save(productReview);
+        }
     }
+
 
     @Override
     public List<Products> getTopRequestProducts() {
+
 
         List<Products> listProducts = repositoryProducts.getTopRequestProducts();
 
@@ -920,6 +902,19 @@ public class ImplServiceProducts implements ServiceProducts {
     }
 
     @Override
+    public List<Products> getTopLikedProducts() {
+
+        List<Products> listProducts = repositoryProducts.getTopLikedProducts();
+
+        List<Products> filteredListProducts = new ArrayList<>();
+
+        filteredListProducts = listProducts.stream().limit(5).collect(Collectors.toList());
+
+        return filteredListProducts;
+    }
+
+
+    @Override
     public void addProduct(AddProductRequest addProductRequest) {
 
 
@@ -929,110 +924,120 @@ public class ImplServiceProducts implements ServiceProducts {
         product.setProductWeight(addProductRequest.getProductWeight());
         product.setProductShortDesc(addProductRequest.getProductShortDesc());
         product.setProductLongDesc(addProductRequest.getProductLongDesc());
-        product.setProductCoverPhoto(addProductRequest.getProductCoverPhoto());
-        product.setProductUpdateDate(addProductRequest.getProductUpdateDate());
-        product.setProductCreateDate(addProductRequest.getProductCreateDate());
         product.setProductStatus(addProductRequest.getProductStatus());
         product.setProductWarranty(addProductRequest.getProductWarranty());
         product.setProductDomesticShipping(addProductRequest.getProductDomesticShipping());
         product.setProductInternationalShipping(addProductRequest.getProductInternationalShipping());
         product.setProductYear(addProductRequest.getProductYear());
         product.setProductCurrency(addProductRequest.getProductCurrency());
-        product.setProductsPictures(addProductRequest.getProductsPictures());
 
-        if (addProductRequest.getUserID() != null) {
 
-            Users user = repositoryUser.findById(addProductRequest.getUserID()).orElse(null);
+        if (!addProductRequest.getProductsPictures().isEmpty()) {
 
-            product.setUser(user);
+            Set<ProductPictures> pics = new HashSet<ProductPictures>();
 
-        } else if (addProductRequest.getCompanyID() != null) {
+            addProductRequest.getProductsPictures()
+                    .stream().filter(p -> !p.getPicturePath().equals(""))
+                    .collect(Collectors.toSet()).forEach(pic -> {
 
-            Companies company = repositoryCompany.findById(addProductRequest.getCompanyID()).orElse(null);
+                        pic.setProduct(product);
 
-            product.setCompany(company);
+                        pics.add(pic);
+                    });
+
+            String coverPhoto = addProductRequest.getProductsPictures().stream().findFirst().get().getPicturePath();
+
+            product.setCoverPhoto(coverPhoto);
+
+            product.setProductsPictures(pics);
         }
 
-        product.setProductsJobOptions(addProductRequest.getProductsJobOptions());
-        product.setProductsHomeOptions(addProductRequest.getProductsHomeOptions());
+        product.setProductQuantity(addProductRequest.getProductQuantity());
+        product.setProductCreateDate(LocalDateTime.now());
 
 
-        product.setProductDepartment(repositoryDepartments.findById(addProductRequest.getProductDepartment().getDepartmentId()).orElse(null));
-        product.setProductCategory(repositoryCategory.findById(addProductRequest.getProductCategory().getCategoryId()).orElse(null));
+        if (addProductRequest.getProductsJobOptions() != null) {
+            product.setProductsJobOptions(addProductRequest.getProductsJobOptions());
+        }
 
-        product.setProductBrand(repositoryBrands.findById(addProductRequest.getProductBrand().getBrandId()).orElse(null));
+        if (addProductRequest.getProductsHomeOptions() != null) {
+            product.setProductsHomeOptions(addProductRequest.getProductsHomeOptions());
+        }
 
-        product.setProductModel(repositoryModels.findById(addProductRequest.getProductModel().getModelId()).orElse(null));
+
+        if (addProductRequest.getProductDepartment().getDepartmentId() != 0) {
+            product.setProductDepartment(repositoryDepartments.findById(addProductRequest.getProductDepartment().getDepartmentId()).orElse(null));
+        }
+
+        if (addProductRequest.getProductCategory().getCategoryId() != 0) {
+
+            product.setProductCategory(repositoryCategory.findById(addProductRequest.getProductCategory().getCategoryId()).orElse(null));
+        }
+        if (addProductRequest.getProductBrand().getBrandId() != 0) {
+
+            product.setProductBrand(repositoryBrands.findById(addProductRequest.getProductBrand().getBrandId()).orElse(null));
+        }
+
+        if (addProductRequest.getProductModel().getModelId() != 0) {
+            product.setProductModel(repositoryModels.findById(addProductRequest.getProductModel().getModelId()).orElse(null));
+        }
 
 
-        if(!addProductRequest.getApparelProductsColors().isEmpty()) {
+        if (addProductRequest.getProductsSubcategoriesType() != null) {
+            product.setProductsSubcategoriesType(repositorySubCategoriesTypes.findById(addProductRequest.getProductsSubcategoriesType().getSubCategoryTypeId()).orElse(null));
+        }
+
+        if (addProductRequest.getProductsSubcategories() != null) {
+            product.setProductsSubcategories(repositorySubCategories.findById(addProductRequest.getProductsSubcategories().getSubCategoryId()).orElse(null));
+        }
+
+        if (addProductRequest.getApparelProductsColors() != null) {
 
             Set<ProductsColors> productsColorsSet = new HashSet<>();
 
-            for(ProductsColors pc : addProductRequest.getApparelProductsColors()) {
+            for (ProductsColors pc : addProductRequest.getApparelProductsColors()) {
 
-                repositoryProductColors.findById(pc.getColorId()).ifPresent(productsColorsSet :: add);
+                repositoryProductColors.findById(pc.getColorId()).ifPresent(productsColorsSet::add);
             }
 
             product.setApparelProductsColors(productsColorsSet);
-
         }
 
 
-
-        if(!addProductRequest.getApparelGenderAgeRanges().isEmpty()) {
-
-            Set<ApparelGenderAgeRange> productsApparelGenderAgeRangeSet = new HashSet<ApparelGenderAgeRange>();
-
-            for(ApparelGenderAgeRange aga : addProductRequest.getApparelGenderAgeRanges()) {
-
-                repositoryApparelGenderAgeRange.findById(aga.getGenderId()).ifPresent(productsApparelGenderAgeRangeSet :: add);
-            }
-
-            product.setApparelGenderAgeRanges(productsApparelGenderAgeRangeSet);
-
-        }
-
-
-
-        if(!addProductRequest.getApparelSizes().isEmpty()) {
+        if (addProductRequest.getApparelSizes() != null) {
 
             Set<ApparelSize> productsApparelSizeSet = new HashSet<>();
 
-            for(ApparelSize as : addProductRequest.getApparelSizes()) {
+            for (ApparelSize as : addProductRequest.getApparelSizes()) {
 
-                repositoryApparelSizes.findById(as.getSizeId()).ifPresent(productsApparelSizeSet :: add);
+                repositoryApparelSizes.findById(as.getSizeId()).ifPresent(productsApparelSizeSet::add);
             }
 
             product.setApparelSizes(productsApparelSizeSet);
-
         }
 
-
-
-        if(!addProductRequest.getApparelFabricTypes().isEmpty()) {
+        if (addProductRequest.getApparelFabricTypes() != null) {
 
             Set<ApparelFabricType> productsApparelFabricTypeSet = new HashSet<>();
 
-            for(ApparelFabricType aft : addProductRequest.getApparelFabricTypes()) {
+            for (ApparelFabricType aft : addProductRequest.getApparelFabricTypes()) {
 
                 repositoryApparelFabricType.findById(aft.getFabricTypeId())
-                        .ifPresent(productsApparelFabricTypeSet :: add);
+                        .ifPresent(productsApparelFabricTypeSet::add);
             }
 
             product.setApparelFabricTypes(productsApparelFabricTypeSet);
-
         }
 
 
-        if(!addProductRequest.getAutomativeProductsColors().isEmpty()) {
+        if (addProductRequest.getAutomotiveProductsColors() != null) {
 
             Set<ProductsColors> productsAutomotiveProductsColorsSet = new HashSet<>();
 
-            for(ProductsColors pc : addProductRequest.getAutomativeProductsColors()) {
+            for (ProductsColors pc : addProductRequest.getAutomotiveProductsColors()) {
 
                 repositoryProductColors.findById(pc.getColorId())
-                        .ifPresent(productsAutomotiveProductsColorsSet :: add);
+                        .ifPresent(productsAutomotiveProductsColorsSet::add);
             }
 
             product.setAutomativeProductsColors(productsAutomotiveProductsColorsSet);
@@ -1040,14 +1045,14 @@ public class ImplServiceProducts implements ServiceProducts {
         }
 
 
-        if(!addProductRequest.getAutomotiveMaxSpeeds().isEmpty()) {
+        if (addProductRequest.getAutomotiveMaxSpeeds() != null) {
 
             Set<AutomotiveMaxSpeed> OptionSet = new HashSet<>();
 
-            for(AutomotiveMaxSpeed ams : addProductRequest.getAutomotiveMaxSpeeds()) {
+            for (AutomotiveMaxSpeed ams : addProductRequest.getAutomotiveMaxSpeeds()) {
 
                 repositoryAutomotiveMaxSpeed.findById(ams.getMaxSpeedId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setAutomotiveMaxSpeeds(OptionSet);
@@ -1055,315 +1060,439 @@ public class ImplServiceProducts implements ServiceProducts {
         }
 
 
-        if(!addProductRequest.getAutomotiveFuels().isEmpty()) {
+        if (addProductRequest.getAutomotiveFuels() != null) {
 
             Set<AutomotiveFuel> OptionSet = new HashSet<>();
 
-            for(AutomotiveFuel o : addProductRequest.getAutomotiveFuels()) {
+            for (AutomotiveFuel o : addProductRequest.getAutomotiveFuels()) {
 
                 repositoryAutomotiveFuel.findById(o.getFuelId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setAutomotiveFuels(OptionSet);
         }
 
 
-
-        if(!addProductRequest.getAutomotiveSeats().isEmpty()) {
+        if (addProductRequest.getAutomotiveSeats() != null) {
 
             Set<AutomotiveSeat> OptionSet = new HashSet<>();
 
-            for(AutomotiveSeat o : addProductRequest.getAutomotiveSeats()) {
+            for (AutomotiveSeat o : addProductRequest.getAutomotiveSeats()) {
 
                 repositoryAutomotiveSeat.findById(o.getSeatId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setAutomotiveSeats(OptionSet);
         }
 
 
-        if(!addProductRequest.getAutomotiveTypes().isEmpty()) {
+        if (addProductRequest.getAutomotiveTypes() != null) {
 
             Set<AutomotiveType> OptionSet = new HashSet<>();
 
-            for(AutomotiveType o : addProductRequest.getAutomotiveTypes()) {
+            for (AutomotiveType o : addProductRequest.getAutomotiveTypes()) {
 
                 repositoryAutomotiveType.findById(o.getTypeId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setAutomotiveTypes(OptionSet);
         }
 
 
-
-        if(!addProductRequest.getAutomotiveCrashes().isEmpty()) {
+        if (addProductRequest.getAutomotiveCrashes() != null) {
 
             Set<AutomotiveCrash> OptionSet = new HashSet<>();
 
-            for(AutomotiveCrash o : addProductRequest.getAutomotiveCrashes()) {
+            for (AutomotiveCrash o : addProductRequest.getAutomotiveCrashes()) {
 
                 repositoryAutomotiveCrash.findById(o.getCrashId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setAutomotiveCrashes(OptionSet);
         }
 
 
-        if(!addProductRequest.getAutomotiveDistanceTraveleds().isEmpty()) {
+        if (addProductRequest.getAutomotiveDistanceTraveleds() != null) {
 
             Set<AutomotiveDistanceTraveled> OptionSet = new HashSet<>();
 
-            for(AutomotiveDistanceTraveled o : addProductRequest.getAutomotiveDistanceTraveleds()) {
+            for (AutomotiveDistanceTraveled o : addProductRequest.getAutomotiveDistanceTraveleds()) {
 
-                repositoryAutomotiveDistanceTraveleds.findById(o.getDistanceTraveledId())
-                        .ifPresent(OptionSet :: add);
+                List<AutomotiveDistanceTraveledRange> aDTR = repositoryAutomotiveDistanceTraveledsRange.getDistanceTraveledRangeWithCategory(addProductRequest.getProductCategory().getCategoryId());
+
+                if (o.getDistanceTraveled() > -1 && o.getDistanceTraveled() <= 30000) {
+                    o.setDistanceTraveledRange(aDTR.get(0));
+                } else if (o.getDistanceTraveled() > 30000 && o.getDistanceTraveled() <= 50000) {
+                    o.setDistanceTraveledRange(aDTR.get(1));
+                } else if (o.getDistanceTraveled() > 50000 && o.getDistanceTraveled() <= 80000) {
+                    o.setDistanceTraveledRange(aDTR.get(2));
+                } else if (o.getDistanceTraveled() > 80000 && o.getDistanceTraveled() <= 100000) {
+                    o.setDistanceTraveledRange(aDTR.get(3));
+                } else if (o.getDistanceTraveled() > 100000 && o.getDistanceTraveled() <= 130000) {
+                    o.setDistanceTraveledRange(aDTR.get(4));
+                } else if (o.getDistanceTraveled() > 130000 && o.getDistanceTraveled() <= 150000) {
+                    o.setDistanceTraveledRange(aDTR.get(5));
+                } else if (o.getDistanceTraveled() > 150000 && o.getDistanceTraveled() <= 180000) {
+                    o.setDistanceTraveledRange(aDTR.get(6));
+                } else if (o.getDistanceTraveled() > 180000 && o.getDistanceTraveled() <= 200000) {
+                    o.setDistanceTraveledRange(aDTR.get(7));
+                } else {
+                    o.setDistanceTraveledRange(aDTR.get(8));
+                }
+
+                o.setProduct(product);
+                repositoryAutomotiveDistanceTraveleds.save(o);
+                OptionSet.add(o);
             }
-
             product.setAutomotiveDistanceTraveleds(OptionSet);
         }
 
 
-        if(!addProductRequest.getAutomotiveEngines().isEmpty()) {
+        if (addProductRequest.getAutomotiveEngines() != null) {
 
             Set<AutomotiveEngine> OptionSet = new HashSet<>();
 
-            for(AutomotiveEngine o : addProductRequest.getAutomotiveEngines()) {
+            for (AutomotiveEngine o : addProductRequest.getAutomotiveEngines()) {
 
                 repositoryAutomotiveEngine.findById(o.getEngineId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setAutomotiveEngines(OptionSet);
         }
 
 
-        if(!addProductRequest.getElectronicsProductsColors().isEmpty()) {
+        if (addProductRequest.getElectronicsProductsColors() != null) {
 
             Set<ProductsColors> OptionSet = new HashSet<>();
 
-            for(ProductsColors o : addProductRequest.getElectronicsProductsColors()) {
+            for (ProductsColors o : addProductRequest.getElectronicsProductsColors()) {
 
                 repositoryProductColors.findById(o.getColorId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setElectronicsProductsColors(OptionSet);
         }
 
 
-        if(!addProductRequest.getElectronicsMemories().isEmpty()) {
+        if (addProductRequest.getElectronicsMemories() != null) {
 
             Set<ElectronicsMemory> OptionSet = new HashSet<>();
 
-            for(ElectronicsMemory o : addProductRequest.getElectronicsMemories()) {
+            for (ElectronicsMemory o : addProductRequest.getElectronicsMemories()) {
 
                 repositoryElectronicsMemory.findById(o.getMemoryId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setElectronicsMemories(OptionSet);
         }
 
 
-
-        if(!addProductRequest.getElectronicsCameras().isEmpty()) {
+        if (addProductRequest.getElectronicsCameras() != null) {
 
             Set<ElectronicsCamera> OptionSet = new HashSet<>();
 
-            for(ElectronicsCamera o : addProductRequest.getElectronicsCameras()) {
+            for (ElectronicsCamera o : addProductRequest.getElectronicsCameras()) {
 
                 repositoryElectronicsCamera.findById(o.getCameraId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setElectronicsCameras(OptionSet);
         }
 
 
-
-        if(!addProductRequest.getElectronicsFrontCameras().isEmpty()) {
+        if (addProductRequest.getElectronicsFrontCameras() != null) {
 
             Set<ElectronicsFrontCamera> OptionSet = new HashSet<>();
 
-            for(ElectronicsFrontCamera o : addProductRequest.getElectronicsFrontCameras()) {
+            for (ElectronicsFrontCamera o : addProductRequest.getElectronicsFrontCameras()) {
 
                 repositoryElectronicsFrontCamera.findById(o.getFrontCameraId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setElectronicsFrontCameras(OptionSet);
         }
 
 
-        if(!addProductRequest.getElectronicsWirelessCarriers().isEmpty()) {
-
-            Set<ElectronicsWirelessCarrier> OptionSet = new HashSet<>();
-
-            for(ElectronicsWirelessCarrier o : addProductRequest.getElectronicsWirelessCarriers()) {
-
-                repositoryElectronicsWirelessCarrier.findById(o.getWirelessCarrierId())
-                        .ifPresent(OptionSet :: add);
-            }
-
-            product.setElectronicsWirelessCarriers(OptionSet);
-        }
-
-
-
-        if(!addProductRequest.getElectronicsOperatingSystems().isEmpty()) {
+        if (addProductRequest.getElectronicsOperatingSystems() != null) {
 
             Set<ElectronicsOperatingSystem> OptionSet = new HashSet<>();
 
-            for(ElectronicsOperatingSystem o : addProductRequest.getElectronicsOperatingSystems()) {
+            for (ElectronicsOperatingSystem o : addProductRequest.getElectronicsOperatingSystems()) {
 
                 repositoryElectronicsOperatingSystem.findById(o.getOperatingSystemId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setElectronicsOperatingSystems(OptionSet);
         }
 
-
-        if(!addProductRequest.getElectronicsScreenSizes().isEmpty()) {
-
-            Set<ElectronicsScreenSize> OptionSet = new HashSet<>();
-
-            for(ElectronicsScreenSize o : addProductRequest.getElectronicsScreenSizes()) {
-
-                repositoryElectronicsScreenSize.findById(o.getScreenSizeId())
-                        .ifPresent(OptionSet :: add);
-            }
-
-            product.setElectronicsScreenSizes(OptionSet);
-        }
-
-
-        if(!addProductRequest.getElectronicsDisplayTypes().isEmpty()) {
+        if (addProductRequest.getElectronicsDisplayTypes() != null) {
 
             Set<ElectronicsDisplayType> OptionSet = new HashSet<>();
 
-            for(ElectronicsDisplayType o : addProductRequest.getElectronicsDisplayTypes()) {
+            for (ElectronicsDisplayType o : addProductRequest.getElectronicsDisplayTypes()) {
 
                 repositoryElectronicsDisplayTypes.findById(o.getDisplayTypeId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setElectronicsDisplayTypes(OptionSet);
         }
 
 
-
-
-        if(!addProductRequest.getElectronicsCellularTechnologies().isEmpty()) {
+        if (addProductRequest.getElectronicsCellularTechnologies() != null) {
 
             Set<ElectronicsCellularTechnology> OptionSet = new HashSet<>();
 
-            for(ElectronicsCellularTechnology o : addProductRequest.getElectronicsCellularTechnologies()) {
+            for (ElectronicsCellularTechnology o : addProductRequest.getElectronicsCellularTechnologies()) {
 
                 repositoryElectronicsCellularTechnology.findById(o.getCellularTechnologyId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setElectronicsCellularTechnologies(OptionSet);
         }
 
 
+        if (addProductRequest.getElectronicsScreenSizes() != null) {
 
-        if(!addProductRequest.getElectronicsBatteries().isEmpty()) {
+            Set<ElectronicsScreenSize> OptionSet = new HashSet<>();
+
+            for (ElectronicsScreenSize o : addProductRequest.getElectronicsScreenSizes()) {
+
+                List<ElectronicsScreenSizeRange> aDTR = repositoryElectronicsScreenSizeRange.getElectronicsScreenSizeRangesByCategoryId(addProductRequest.getProductCategory().getCategoryId());
+
+                if (addProductRequest.getProductCategory().getCategoryId() == 87 || addProductRequest.getProductCategory().getCategoryId() == 94) {
+                    if (o.getScreenSize() <= 4) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(0));
+                    } else if (o.getScreenSize() > 4 && o.getScreenSize() <= 4.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(1));
+                    } else if (o.getScreenSize() > 4.9 && o.getScreenSize() <= 5.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(2));
+                    } else if (o.getScreenSize() > 5.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(3));
+                    }
+                } else {
+
+                    if (o.getScreenSize() <= 4) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(0));
+                    } else if (o.getScreenSize() > 4 && o.getScreenSize() <= 4.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(1));
+                    } else if (o.getScreenSize() > 4.9 && o.getScreenSize() <= 5.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(2));
+                    } else if (o.getScreenSize() > 5.9 && o.getScreenSize() <= 6.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(3));
+                    } else if (o.getScreenSize() > 6.9 && o.getScreenSize() <= 7.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(4));
+                    } else if (o.getScreenSize() > 7.9 && o.getScreenSize() <= 8.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(5));
+                    } else if (o.getScreenSize() > 8.9 && o.getScreenSize() <= 9.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(6));
+                    } else if (o.getScreenSize() > 9.9 && o.getScreenSize() <= 10.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(7));
+                    } else if (o.getScreenSize() > 10.9 && o.getScreenSize() <= 11.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(8));
+                    } else if (o.getScreenSize() > 11.9 && o.getScreenSize() <= 12.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(9));
+                    } else if (o.getScreenSize() > 12.9 && o.getScreenSize() <= 13.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(10));
+                    } else if (o.getScreenSize() > 13.9 && o.getScreenSize() <= 14.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(11));
+                    } else if (o.getScreenSize() > 14.9 && o.getScreenSize() <= 15.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(12));
+                    } else if (o.getScreenSize() > 15.9 && o.getScreenSize() <= 16.9) {
+                        o.setElectronicsScreenSizeRange(aDTR.get(13));
+                    } else {
+                        o.setElectronicsScreenSizeRange(aDTR.get(14));
+                    }
+                }
+                o.setProduct(product);
+                repositoryElectronicsScreenSize.save(o);
+                OptionSet.add(o);
+
+            }
+
+            product.setElectronicsScreenSizes(OptionSet);
+        }
+
+
+        if (addProductRequest.getElectronicsBatteries() != null) {
 
             Set<ElectronicsBattery> OptionSet = new HashSet<>();
 
-            for(ElectronicsBattery o : addProductRequest.getElectronicsBatteries()) {
+            for (ElectronicsBattery o : addProductRequest.getElectronicsBatteries()) {
 
-                repositoryElectronicsBattery.findById(o.getBatteryId())
-                        .ifPresent(OptionSet :: add);
+                List<ElectronicsBatteryRange> aDTR = repositoryElectronicsBatteryRange.getElectronicsBatteryRangesByCategoryId(addProductRequest.getProductCategory().getCategoryId());
+
+                if (o.getBattery() > -1 && o.getBattery() <= 500) {
+                    o.setElectronicsBatteryRange(aDTR.get(0));
+                } else if (o.getBattery() > 500 && o.getBattery() <= 1000) {
+                    o.setElectronicsBatteryRange(aDTR.get(1));
+                } else if (o.getBattery() > 1000 && o.getBattery() <= 1500) {
+                    o.setElectronicsBatteryRange(aDTR.get(2));
+                } else if (o.getBattery() > 1500 && o.getBattery() <= 2000) {
+                    o.setElectronicsBatteryRange(aDTR.get(3));
+                } else if (o.getBattery() > 2000 && o.getBattery() <= 2500) {
+                    o.setElectronicsBatteryRange(aDTR.get(4));
+                } else if (o.getBattery() > 2500 && o.getBattery() <= 3000) {
+                    o.setElectronicsBatteryRange(aDTR.get(5));
+                } else if (o.getBattery() > 3000 && o.getBattery() <= 3500) {
+                    o.setElectronicsBatteryRange(aDTR.get(6));
+                } else if (o.getBattery() > 3500 && o.getBattery() <= 4000) {
+                    o.setElectronicsBatteryRange(aDTR.get(7));
+                } else if (o.getBattery() > 4000 && o.getBattery() <= 4500) {
+                    o.setElectronicsBatteryRange(aDTR.get(8));
+                } else if (o.getBattery() > 4500 && o.getBattery() <= 5000) {
+                    o.setElectronicsBatteryRange(aDTR.get(9));
+                } else if (o.getBattery() > 5000 && o.getBattery() <= 5500) {
+                    o.setElectronicsBatteryRange(aDTR.get(10));
+                } else if (o.getBattery() > 5500 && o.getBattery() <= 6000) {
+                    o.setElectronicsBatteryRange(aDTR.get(11));
+                } else {
+                    o.setElectronicsBatteryRange(aDTR.get(12));
+                }
+
+                o.setProduct(product);
+                repositoryElectronicsBattery.save(o);
+                OptionSet.add(o);
             }
 
             product.setElectronicsBatteries(OptionSet);
         }
 
 
-
-        if(!addProductRequest.getElectronicsProcessors().isEmpty()) {
+        if (addProductRequest.getElectronicsProcessors() != null) {
 
             Set<ElectronicsProcessor> OptionSet = new HashSet<>();
 
-            for(ElectronicsProcessor o : addProductRequest.getElectronicsProcessors()) {
+            for (ElectronicsProcessor o : addProductRequest.getElectronicsProcessors()) {
 
                 repositoryElectronicsProcessor.findById(o.getProcessorId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setElectronicsProcessors(OptionSet);
         }
 
 
-
-        if(!addProductRequest.getElectronicsRams().isEmpty()) {
+        if (addProductRequest.getElectronicsRams() != null) {
 
             Set<ElectronicsRam> OptionSet = new HashSet<>();
 
-            for(ElectronicsRam o : addProductRequest.getElectronicsRams()) {
+            for (ElectronicsRam o : addProductRequest.getElectronicsRams()) {
 
                 repositoryElectronicsRam.findById(o.getRamId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setElectronicsRams(OptionSet);
         }
 
 
-        if(!addProductRequest.getElectronicsGraphicsCards().isEmpty()) {
+        if (addProductRequest.getElectronicsGraphicsCards() != null) {
 
             Set<ElectronicsGraphicsCard> OptionSet = new HashSet<>();
 
-            for(ElectronicsGraphicsCard o : addProductRequest.getElectronicsGraphicsCards()) {
+            for (ElectronicsGraphicsCard o : addProductRequest.getElectronicsGraphicsCards()) {
 
                 repositoryElectronicsGraphicsCard.findById(o.getGraphicsCardId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setElectronicsGraphicsCards(OptionSet);
         }
 
 
-        if(!addProductRequest.getElectronicsComputerTypes().isEmpty()) {
+        if (addProductRequest.getElectronicsComputerTypes() != null) {
 
             Set<ElectronicsComputerType> OptionSet = new HashSet<>();
 
-            for(ElectronicsComputerType o : addProductRequest.getElectronicsComputerTypes()) {
+            for (ElectronicsComputerType o : addProductRequest.getElectronicsComputerTypes()) {
 
                 repositoryElectronicsComputerType.findById(o.getTypeId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setElectronicsComputerTypes(OptionSet);
         }
 
 
-
-        if(!addProductRequest.getMusicInstruments().isEmpty()) {
+        if (addProductRequest.getMusicInstruments() != null) {
 
             Set<MusicInstrument> OptionSet = new HashSet<>();
 
-            for(MusicInstrument o : addProductRequest.getMusicInstruments()) {
+            for (MusicInstrument o : addProductRequest.getMusicInstruments()) {
 
                 repositoryMusicInstruments.findById(o.getInstrumentId())
-                        .ifPresent(OptionSet :: add);
+                        .ifPresent(OptionSet::add);
             }
 
             product.setMusicInstruments(OptionSet);
         }
 
+        if (addProductRequest.getAccountEmail() != null) {
 
+            Users user = repositoryUser.findByUserEmail(addProductRequest.getAccountEmail());
 
+            Companies company = repositoryCompany.findByCompanyEmail(addProductRequest.getAccountEmail());
 
+            if (user != null) {
+
+                Set<Products> products = new HashSet<Products>();
+                products.add(product);
+
+                user.setProducts(products);
+
+                product.setUser(user);
+
+//            repositoryUser.save(user);
+
+            } else if (company != null) {
+
+                Set<Products> products = new HashSet<Products>();
+                products.add(product);
+
+                company.setProducts(products);
+
+                product.setCompany(company);
+
+//            repositoryCompany.save(company);
+            }
+
+        }
 
         repositoryProducts.save(product);
+    }
+
+    @Override
+    public Set<Products> getUserProductsInStock(String email) {
+
+        Users user = repositoryUser.findByUserEmail(email);
+
+        return user.getProducts();
+    }
+
+    @Override
+    public Set<Products> getCompanyProductsInStock(String email) {
+
+        Companies company = repositoryCompany.findByCompanyEmail(email);
+
+        return company.getProducts();
+    }
+
+    @Override
+    @Async
+    public void removeProductById(Long id) {
+        repositoryProducts.deleteById(id);
     }
 
 }

@@ -1,0 +1,202 @@
+[
+  {
+    "maxSpeedId": 1,
+    "maxSpeed": "100",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 2,
+    "maxSpeed": "120",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 3,
+    "maxSpeed": "150",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 4,
+    "maxSpeed": "180",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 5,
+    "maxSpeed": "200",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 6,
+    "maxSpeed": "220",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 7,
+    "maxSpeed": "250",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 8,
+    "maxSpeed": "280",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 9,
+    "maxSpeed": "300",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 10,
+    "maxSpeed": "320",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 11,
+    "maxSpeed": "350",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 12,
+    "maxSpeed": "380",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 13,
+    "maxSpeed": "400",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 14,
+    "maxSpeed": "420",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 15,
+    "maxSpeed": "450",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 16,
+    "maxSpeed": "480",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 17,
+    "maxSpeed": "500",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 18,
+    "maxSpeed": "100",
+    "categoryId": 116
+  },
+  {
+    "maxSpeedId": 19,
+    "maxSpeed": "120",
+    "categoryId": 116
+  },
+  {
+    "maxSpeedId": 20,
+    "maxSpeed": "150",
+    "categoryId": 116
+  },
+  {
+    "maxSpeedId": 21,
+    "maxSpeed": "180",
+    "categoryId": 116
+  },
+  {
+    "maxSpeedId": 22,
+    "maxSpeed": "200",
+    "categoryId": 116
+  },
+  {
+    "maxSpeedId": 23,
+    "maxSpeed": "220",
+    "categoryId": 116
+  },
+  {
+    "maxSpeedId": 24,
+    "maxSpeed": "250",
+    "categoryId": 116
+  },
+  {
+    "maxSpeedId": 25,
+    "maxSpeed": "280",
+    "categoryId": 116
+  },
+  {
+    "maxSpeedId": 26,
+    "maxSpeed": "300",
+    "categoryId": 116
+  },
+  {
+    "maxSpeedId": 27,
+    "maxSpeed": "100",
+    "categoryId": 352
+  },
+  {
+    "maxSpeedId": 28,
+    "maxSpeed": "120",
+    "categoryId": 352
+  },
+  {
+    "maxSpeedId": 29,
+    "maxSpeed": "150",
+    "categoryId": 352
+  },
+  {
+    "maxSpeedId": 30,
+    "maxSpeed": "100",
+    "categoryId": 353
+  },
+  {
+    "maxSpeedId": 31,
+    "maxSpeed": "120",
+    "categoryId": 353
+  },
+  {
+    "maxSpeedId": 32,
+    "maxSpeed": "150",
+    "categoryId": 353
+  },
+  {
+    "maxSpeedId": 33,
+    "maxSpeed": "100",
+    "categoryId": 354
+  },
+  {
+    "maxSpeedId": 34,
+    "maxSpeed": "120",
+    "categoryId": 354
+  },
+  {
+    "maxSpeedId": 35,
+    "maxSpeed": "150",
+    "categoryId": 354
+  },
+  {
+    "maxSpeedId": 36,
+    "maxSpeed": "Other",
+    "categoryId": 114
+  },
+  {
+    "maxSpeedId": 37,
+    "maxSpeed": "Other",
+    "categoryId": 116
+  },
+  {
+    "maxSpeedId": 38,
+    "maxSpeed": "Other",
+    "categoryId": 352
+  },
+  {
+    "maxSpeedId": 39,
+    "maxSpeed": "Other",
+    "categoryId": 353
+  },
+  {
+    "maxSpeedId": 40,
+    "maxSpeed": "Other",
+    "categoryId": 354
+  }
+]

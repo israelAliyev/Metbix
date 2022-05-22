@@ -1,10 +1,21 @@
 package com.backend.pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Table(name = "electronics_screen_size_range")
-public class ElectronicsScreenSizeRange {
+@Getter
+@Setter
+public class ElectronicsScreenSizeRange implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Screen_Size_Range_ID")
     private Long screenSizeRangeId;
@@ -15,27 +26,9 @@ public class ElectronicsScreenSizeRange {
     @Column(name = "Category_ID")
     private Long categoryId;
 
-    public Long getScreenSizeRangeId() {
-        return this.screenSizeRangeId;
-    }
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = ElectronicsScreenSize.class, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH , CascadeType.REMOVE})
+    @JoinColumn(name = "Screen_Size_Range_ID")
+    @JsonIgnore
+    private List<ElectronicsScreenSize> electronicsScreenSize;
 
-    public void setScreenSizeRangeId(Long screenSizeRangeId) {
-        this.screenSizeRangeId = screenSizeRangeId;
-    }
-
-    public String getScreenSizeRange() {
-        return this.screenSizeRange;
-    }
-
-    public void setScreenSizeRange(String screenSizeRange) {
-        this.screenSizeRange = screenSizeRange;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
 }

@@ -1,10 +1,20 @@
 package com.backend.pojos;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "apparel_fabric_type")
-public class ApparelFabricType {
+@Getter
+@Setter
+public class ApparelFabricType implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
+
     @Id
     @Column(name = "Fabric_Type_ID")
     private Long fabricTypeId;
@@ -12,30 +22,6 @@ public class ApparelFabricType {
     @Column(name = "Fabric_Type")
     private String fabricType;
 
-    @Column(name = "SubCategory_ID")
+    @Column(name = "Sub_Category_ID")
     private Long subCategoryId;
-
-    public Long getFabricTypeId() {
-        return this.fabricTypeId;
-    }
-
-    public void setFabricTypeId(Long fabricTypeId) {
-        this.fabricTypeId = fabricTypeId;
-    }
-
-    public String getFabricType() {
-        return this.fabricType;
-    }
-
-    public void setFabricType(String fabricType) {
-        this.fabricType = fabricType;
-    }
-
-    public Long getSubCategoryId() {
-        return this.subCategoryId;
-    }
-
-    public void setSubCategoryId(Long subCategoryId) {
-        this.subCategoryId = subCategoryId;
-    }
 }
