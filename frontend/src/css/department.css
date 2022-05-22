@@ -96,9 +96,9 @@
 
 
 .main-departments-categories .categories {
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
-    /*background-color: white;*/
+    /*background-color: #b35555;*/
 }
 
 @font-face {
@@ -107,52 +107,66 @@
 }
 
 .main-departments-categories .categories .item {
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: white;
-    padding: 2rem 2rem 2.8rem 1.8rem !important;
     cursor: pointer;
     font-weight: 600;
-    font-family: "AntipastoPro-Bold_trial", sans-serif;
-    width: 176px;
-    height: 11rem;
+    font-family: DejaVu Sans Mono, monospace;
+    /*width: 11rem;*/
+    height: 3rem;
     text-align: center;
     letter-spacing: 0.8px;
     font-size: 18px;
     margin-top: 1rem;
     margin-left: 1rem;
-    transition: all 400ms ease;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: #505253;
+    width: 30% !important;
 }
 
 .main-departments-categories .categories .item:hover {
-    color: white;
     box-shadow: 0 0 0 rgb(0 0 0) !important;
-    background-color: #2574b5;
-    transition: all 400ms ease;
 }
 
 
 .main-departments-categories .categories .item i {
     font-size: 2.5rem;
-    color: #78838c;
+    color: #78838c !important;
+    /*margin-top: 2rem;*/
 }
 
 .main-departments-categories .categories .item:hover i {
     color: #cecfcf;
 }
 
+
+@media only screen and (max-width: 1025px) {
+    .main-departments-categories .categories {
+        width: 95% !important;
+    }
+
+    .main-departments-categories .categories .item{
+        width: 46% !important;
+    }
+}
+
 @media only screen and (max-width: 576px) {
     .main-departments-categories {
         margin-top: 25rem;
     }
-}
 
-@media only screen and (max-width: 1025px) {
-    .main-departments-categories .categories .item {
-        width: 166px;
-        padding: 2rem 2rem 2rem 1.8rem !important;
+    .main-departments-categories .categories {
+        width: 95% !important;
+        justify-content: center;
+    }
+
+    .main-departments-categories .categories .item{
+        width: 95% !important;
+        margin-left: 0;
     }
 }
+
+
 
 @media only screen and (max-width: 365px) {
     .main-departments-categories .categories .item {

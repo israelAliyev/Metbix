@@ -1,0 +1,227 @@
+[
+  {
+    "cameraId": 1,
+    "cameraMp": "2",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 2,
+    "cameraMp": "5",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 3,
+    "cameraMp": "6",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 4,
+    "cameraMp": "8",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 5,
+    "cameraMp": "9",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 6,
+    "cameraMp": "12",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 7,
+    "cameraMp": "16",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 8,
+    "cameraMp": "32",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 9,
+    "cameraMp": "48",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 10,
+    "cameraMp": "64",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 11,
+    "cameraMp": "80",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 12,
+    "cameraMp": "96",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 13,
+    "cameraMp": "112",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 14,
+    "cameraMp": "128",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 15,
+    "cameraMp": "2",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 16,
+    "cameraMp": "5",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 17,
+    "cameraMp": "6",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 18,
+    "cameraMp": "8",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 19,
+    "cameraMp": "9",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 20,
+    "cameraMp": "12",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 21,
+    "cameraMp": "16",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 22,
+    "cameraMp": "32",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 23,
+    "cameraMp": "48",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 24,
+    "cameraMp": "64",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 25,
+    "cameraMp": "80",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 26,
+    "cameraMp": "96",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 27,
+    "cameraMp": "112",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 28,
+    "cameraMp": "128",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 29,
+    "cameraMp": "2",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 30,
+    "cameraMp": "5",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 31,
+    "cameraMp": "6",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 32,
+    "cameraMp": "8",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 33,
+    "cameraMp": "9",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 34,
+    "cameraMp": "12",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 35,
+    "cameraMp": "16",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 36,
+    "cameraMp": "32",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 37,
+    "cameraMp": "48",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 38,
+    "cameraMp": "64",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 39,
+    "cameraMp": "80",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 40,
+    "cameraMp": "96",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 41,
+    "cameraMp": "112",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 42,
+    "cameraMp": "128",
+    "categoryId": 94
+  },
+  {
+    "cameraId": 43,
+    "cameraMp": "Other",
+    "categoryId": 87
+  },
+  {
+    "cameraId": 44,
+    "cameraMp": "Other",
+    "categoryId": 88
+  },
+  {
+    "cameraId": 45,
+    "cameraMp": "Other",
+    "categoryId": 94
+  }
+]

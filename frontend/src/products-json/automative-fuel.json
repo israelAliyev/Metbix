@@ -1,0 +1,152 @@
+[
+  {
+    "fuelId": 1,
+    "fuel": "Electricity",
+    "categoryId": 114
+  },
+  {
+    "fuelId": 2,
+    "fuel": "Gasoline",
+    "categoryId": 114
+  },
+  {
+    "fuelId": 3,
+    "fuel": "Diesel",
+    "categoryId": 114
+  },
+  {
+    "fuelId": 4,
+    "fuel": "Lpg",
+    "categoryId": 114
+  },
+  {
+    "fuelId": 5,
+    "fuel": "Boron",
+    "categoryId": 114
+  },
+  {
+    "fuelId": 6,
+    "fuel": "Electricity",
+    "categoryId": 116
+  },
+  {
+    "fuelId": 7,
+    "fuel": "Gasoline",
+    "categoryId": 116
+  },
+  {
+    "fuelId": 8,
+    "fuel": "Diesel",
+    "categoryId": 116
+  },
+  {
+    "fuelId": 9,
+    "fuel": "Lpg",
+    "categoryId": 116
+  },
+  {
+    "fuelId": 10,
+    "fuel": "Boron",
+    "categoryId": 116
+  },
+  {
+    "fuelId": 11,
+    "fuel": "Electricity",
+    "categoryId": 352
+  },
+  {
+    "fuelId": 12,
+    "fuel": "Gasoline",
+    "categoryId": 352
+  },
+  {
+    "fuelId": 13,
+    "fuel": "Diesel",
+    "categoryId": 352
+  },
+  {
+    "fuelId": 14,
+    "fuel": "Lpg",
+    "categoryId": 352
+  },
+  {
+    "fuelId": 15,
+    "fuel": "Boron",
+    "categoryId": 352
+  },
+  {
+    "fuelId": 16,
+    "fuel": "Electricity",
+    "categoryId": 353
+  },
+  {
+    "fuelId": 17,
+    "fuel": "Gasoline",
+    "categoryId": 353
+  },
+  {
+    "fuelId": 18,
+    "fuel": "Diesel",
+    "categoryId": 353
+  },
+  {
+    "fuelId": 19,
+    "fuel": "Lpg",
+    "categoryId": 353
+  },
+  {
+    "fuelId": 20,
+    "fuel": "Boron",
+    "categoryId": 353
+  },
+  {
+    "fuelId": 21,
+    "fuel": "Electricity",
+    "categoryId": 354
+  },
+  {
+    "fuelId": 22,
+    "fuel": "Gasoline",
+    "categoryId": 354
+  },
+  {
+    "fuelId": 23,
+    "fuel": "Diesel",
+    "categoryId": 354
+  },
+  {
+    "fuelId": 24,
+    "fuel": "Lpg",
+    "categoryId": 354
+  },
+  {
+    "fuelId": 25,
+    "fuel": "Boron",
+    "categoryId": 354
+  },
+  {
+    "fuelId": 26,
+    "fuel": "Other",
+    "categoryId": 114
+  },
+  {
+    "fuelId": 27,
+    "fuel": "Other",
+    "categoryId": 116
+  },
+  {
+    "fuelId": 28,
+    "fuel": "Other",
+    "categoryId": 352
+  },
+  {
+    "fuelId": 29,
+    "fuel": "Other",
+    "categoryId": 353
+  },
+  {
+    "fuelId": 30,
+    "fuel": "Other",
+    "categoryId": 354
+  }
+]

@@ -30,11 +30,11 @@ textarea, textarea:before, textarea:after {
     outline: 0px !important;
     -webkit-appearance: none;
     box-shadow: none !important;
-    border: 0;
+    border: 1px solid white;
 }
 
 .account-register input {
-    border: 0;
+    border: 1px solid white;
 }
 
 .account-register .pp-forms {
@@ -48,71 +48,129 @@ textarea, textarea:before, textarea:after {
     overflow: hidden;
 }
 
-.account-register .pp-forms img:first-of-type {
+.account-register .pp-forms .profile-photo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9efef;
     position: absolute;
+    overflow: hidden;
     top: 35%;
     left: 3%;
     width: 11rem;
     height: 11rem;
-    object-fit: cover;
     border-radius: 50%;
     border: 5px solid white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.account-register .pp-forms img:last-of-type {
+.account-register .pp-forms .profile-photo img {
+    width: 4rem;
+    height: 4rem ;
+    cursor: pointer;
+}
+
+.account-register .pp-forms .profile-photo .buttons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.account-register .pp-forms .profile-photo .buttons > label {
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.account-register .pp-forms .profile-photo:hover .buttons {
+    display: flex !important;
+}
+
+.account-register .pp-forms .profile-photo .buttons > i {
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.account-register .pp-forms .profile-photo .profile-photo-image{
+    width: 100%;
+    height: 100%;
+}
+
+.account-register .pp-forms .back-photo {
+    width: 100%;
+    height: 100%;
+}
+
+.account-register .pp-forms .back-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 
-.account-register .buttons {
-    height: auto;
-    width: 100%;
-    border-right: 2px solid #c3c2c2;
+.account-register .pp-forms .back-photo i {
+    position: absolute;
+    top: 6%;
+    right: 2%;
+    color: #0066ff;
     background-color: white;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 
-.account-register .buttons input[type="radio"] {
+.account-register .buttons-account-type {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+
+.account-register .buttons-account-type input[type="radio"] {
     appearance: none;
     outline: none;
     transition: 1s all ease;
 }
 
-.account-register .buttons label {
+.account-register .buttons-account-type label {
 
     display: inline-block;
     text-align: center;
-    width: 50%;
+    width: 25%;
     text-decoration: none;
     position: relative;
-    color: #817f7f;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-transform: uppercase;
-    border-bottom: 2px solid #c3c2c2;
-    border-left: 2px solid #c3c2c2;
     transition: 0.2s all ease;
+    background-color: #e8edf5;
+    border-radius: 5px;
+    margin-top: 1rem;
 }
 
-
-.account-register .buttons input[type="radio"]:first-of-type:checked ~ label:first-of-type {
-    color: #f8a627;
-    text-decoration: none;
-    border-bottom: 2px solid #f8a627;
-    transition: 0.2s all ease;
-
-}
-
-.account-register .buttons input[type="radio"]:last-of-type:checked ~ label:last-of-type {
-    color: #f8a627;
-    text-decoration: none;
-    border-bottom: 2px solid #f8a627;
-    transition: 0.2s all ease;
-}
 
 .account-register .text-forms {
     padding: 2rem 3rem;
@@ -158,6 +216,28 @@ textarea, textarea:before, textarea:after {
     -webkit-rtl-ordering: logical;
     cursor: text;
     box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+}
+
+.account-register .text-forms .item-form-group .item-form {
+    color: red;
+    font-size: 0.85rem;
+}
+
+.account-register .text-forms .item-form-group .form-location .dropdown-menu {
+
+    max-height: 18rem;
+    overflow: auto;
+}
+
+.account-register .text-forms .item-form-group .form-location .dropdown-toggle {
+
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08) !important;
+    background-color: #fafafa;
+}
+
+.account-register .text-forms .item-form-group .form-location .dropdown-toggle:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .account-register .text-forms .item-form-group .item-form .zip {
@@ -235,11 +315,40 @@ textarea, textarea:before, textarea:after {
     border: 0.5px solid #f8a627;
 }
 
+.account-register .text-forms .item-form-group .continents .active-continent {
+    color: #e29318;
+    border: 0.5px solid #f8a627;
+}
+
 .account-register .text-forms .item-form-group .continents {
     margin-left: 0 !important;
 }
 
 .account-register .text-forms .item-form-group .continents label:not(:first-of-type) {
+    margin-left: 3rem;
+}
+
+
+.account-register .text-forms .item-form-group .phone-continents label {
+    color: #676767;
+    background-color: whitesmoke;
+    padding: 0.5rem 1rem !important;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0.5px solid #bcbbbb;
+}
+
+
+.account-register .text-forms .item-form-group .phone-continents .active-continent {
+    color: #e29318;
+    border: 0.5px solid #f8a627;
+}
+
+.account-register .text-forms .item-form-group .phone-continents {
+    margin-left: 0 !important;
+}
+
+.account-register .text-forms .item-form-group .phone-continents label:not(:first-of-type) {
     margin-left: 3rem;
 }
 
@@ -265,24 +374,56 @@ textarea, textarea:before, textarea:after {
     width: 70%;
 }
 
-.account-register .text-forms .images-upload > label {
+.account-register .text-forms .images-upload > h5 {
     width: 100%;
+    color: #666666;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    font-weight: 380;
+    font-size: 1rem;
+
+}
+
+.account-register .text-forms .images-upload .photo i {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.3rem;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a58ca;
+    cursor: pointer;
+}
+
+.account-register .text-forms .images-upload .photo i:hover {
+    color: red;
 }
 
 .account-register .text-forms .images-upload .photo {
     margin-left: 3rem;
     margin-top: 0.5rem;
+    width: 19rem !important;
+    height: 9rem !important;
+    position: relative;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .account-register .text-forms .images-upload .photo img {
     object-fit: contain;
     width: 19rem !important;
     height: 9rem !important;
-    position: relative;
-    border: 1px solid #e0e0e0;
+    cursor: pointer;
 }
 
-.account-register .text-forms .images-upload .photo input {
+.account-register input[type="file"] {
     display: none;
     visibility: hidden;
 }
@@ -320,13 +461,20 @@ textarea, textarea:before, textarea:after {
     object-fit: contain;
     width: 5rem;
     height: 6rem;
+    cursor: pointer;
 }
 
 .account-register .text-forms .certificate-upload table td input {
     background-color: whitesmoke;
     height: 2rem;
-    color: #9d9c9c;
+    color: #3f4041;
     width: 8rem;
+}
+
+.account-register .text-forms .certificate-upload table td i {
+    color: red;
+    background-color: whitesmoke;
+    padding: 0.3rem;
 }
 
 .account-register .text-forms .submit button {
@@ -341,6 +489,14 @@ textarea, textarea:before, textarea:after {
 
 .account-register .text-forms .submit button:hover {
     background-color: #074ab0;
+}
+
+.account-register .text-forms .submit .disabled-signup-button {
+    background-color: #2b68bc;
+}
+
+.account-register .text-forms .submit .disabled-signup-button:hover {
+    background-color: #2b68bc;
 }
 
 .account-register .text-forms .submit p {
@@ -444,6 +600,7 @@ textarea, textarea:before, textarea:after {
 }
 
 @media only screen and (max-width: 1025px) {
+
     .account-register {
         margin-top: 0;
         padding: 0 0 !important;
@@ -465,16 +622,16 @@ textarea, textarea:before, textarea:after {
 
     .account-register .text-forms .form-3 div:last-of-type {
         margin-top: 2rem;
-        margin-left: 0.9rem !important;
+        margin-left: 0.9rem;
     }
 
-    .account-register .text-forms .form-4{
+    .account-register .text-forms .form-4 {
         flex-wrap: wrap;
     }
 
     .account-register .text-forms .form-4 div:nth-last-of-type(2) {
         margin-top: 2rem;
-        margin-left: 0.9rem !important;
+        margin-left: 0.9rem;
     }
 
     .account-register .text-forms .form-4 div:nth-last-of-type(1) {
@@ -483,25 +640,26 @@ textarea, textarea:before, textarea:after {
 
     .account-register .text-forms .form-5 div:nth-last-of-type(2) {
         margin-top: 2rem;
-        margin-left: 0.9rem !important;
+        margin-left: 0.9rem;
     }
 
     .account-register .text-forms .form-5 div:nth-last-of-type(1) {
         margin-top: 2rem;
     }
 
-    .account-register .text-forms .item-form-group .continents label:last-of-type {
+    .account-register .text-forms .item-form-group .continents {
+        display: none !important;
+    }
+
+    .account-register .text-forms .item-form-group .phone-continents {
+        display: block !important;
+    }
+
+    .account-register .text-forms .item-form-group .phone-continents label:last-of-type {
         margin-top: 1rem;
         margin-left: 0;
     }
 
-    .account-register .text-forms .images-upload .photo img {
-        object-fit: contain;
-        width: 15rem !important;
-        height: 7rem !important;
-        position: relative;
-        border: 1px solid #e0e0e0;
-    }
 
 }
 
@@ -516,26 +674,53 @@ textarea, textarea:before, textarea:after {
     .account-register .text-forms .item-form-group .item-form {
         margin-left: 0rem !important;
         margin-top: 2rem !important;
+        width: 100% !important;
+    }
+
+    .account-register .text-forms .item-form-group .item-form > label {
+        width: 100% !important;
+    }
+
+    .account-register .text-forms .item-form-group .item-form > label > a {
+        display: block !important;
+    }
+
+    .account-register .text-forms .have {
+        display: none;
+    }
+
+    .account-register .text-forms .item-form-group .item-form .dropdown-toggle {
+        width: 100% !important;
+    }
+
+    .account-register .text-forms .item-form-group .item-form .zip {
+        width: 100% !important;
     }
 
     .account-register .text-forms .item-form-group .phone .phone-input {
         display: flex;
         flex-direction: column;
     }
-    .account-register .text-forms .item-form-group .phone .phone-input p{
+
+    .account-register .text-forms .item-form-group .phone .phone-input p {
         margin-top: 0.5rem;
     }
 
-    .account-register .text-forms .item-form-group .phone label{
-        width: 100%;
+    .account-register .text-forms .item-form-group .phone label {
+        width: 100% !important;
     }
 
-    .account-register .text-forms .item-form-group .continents{
+    .account-register .text-forms .item-form-group .continents {
         display: flex;
         flex-direction: column !important;
     }
 
-    .account-register .text-forms .item-form-group label{
+    .account-register .text-forms .item-form-group .phone-continents {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .account-register .text-forms .item-form-group label {
         width: 6.5rem;
     }
 
@@ -548,8 +733,23 @@ textarea, textarea:before, textarea:after {
         margin-left: 0;
     }
 
-    .account-register .text-forms .item-form-group .images-upload > label{
-         width: 100%;
+
+    .account-register .text-forms .item-form-group .phone-continents label:not(:first-of-type) {
+        margin-left: 0rem;
+    }
+
+    .account-register .text-forms .item-form-group .phone-continents label:last-of-type {
+        margin-top: 0rem;
+        margin-left: 0;
+    }
+
+    .account-register .text-forms .item-form-group .images-upload label {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .account-register .text-forms .images-upload .photo img {
+        width: 100% !important;
     }
 
     .account-register .text-forms .item-form-group textarea {
@@ -557,29 +757,47 @@ textarea, textarea:before, textarea:after {
         width: 100%;
     }
 
-    .account-register .text-forms .submit{
+    .account-register .text-forms .submit {
         width: 100%;
         display: block !important;
     }
 
-    .account-register .text-forms .submit button{
-      margin-left: 7rem;
+    .account-register .text-forms .submit button {
+        margin-left: 7rem;
     }
 
-    .account-register .text-forms .submit p:first-of-type{
+    .account-register .text-forms .submit p:first-of-type {
         margin-left: 10rem;
     }
 
-    .account-register .text-forms .submit .social-media-buttons{
+    .account-register .text-forms .submit .social-media-buttons {
         justify-content: start !important;
     }
-    .account-register .text-forms .submit .social-media-buttons div:not(:first-of-type){
+
+    .account-register .text-forms .submit .social-media-buttons div:not(:first-of-type) {
         margin-left: 0.7rem;
     }
 
-    .account-register .text-forms .images-upload{
+    .account-register .text-forms .submit .social-media-buttons .item {
+        width: 7rem;
+        transition: all 0.5s;
+    }
+
+
+    .account-register .text-forms .images-upload {
         display: flex;
         flex-direction: column;
     }
 
+    .account-register .text-forms .item-form-group .form-location .dropdown-toggle {
+        width: 13rem;
     }
+
+    .account-register .text-forms .item-form-group .item-form:nth-child(3) {
+        margin-left: 0 !important;
+    }
+
+    .account-register .buttons-account-type label {
+        width: 11rem !important;
+    }
+}

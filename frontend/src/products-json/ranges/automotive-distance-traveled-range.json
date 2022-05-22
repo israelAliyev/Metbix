@@ -1,0 +1,227 @@
+[
+  {
+    "distanceTraveledRangeId": 1,
+    "distanceTraveledRange": "0,000 - 30,000",
+    "categoryId": 114
+  },
+  {
+    "distanceTraveledRangeId": 2,
+    "distanceTraveledRange": "30,000 - 50,000",
+    "categoryId": 114
+  },
+  {
+    "distanceTraveledRangeId": 3,
+    "distanceTraveledRange": "50,000 - 80,000",
+    "categoryId": 114
+  },
+  {
+    "distanceTraveledRangeId": 4,
+    "distanceTraveledRange": "80,000 - 100,000",
+    "categoryId": 114
+  },
+  {
+    "distanceTraveledRangeId": 5,
+    "distanceTraveledRange": "100,000 - 130,000",
+    "categoryId": 114
+  },
+  {
+    "distanceTraveledRangeId": 6,
+    "distanceTraveledRange": "130,000 - 150,000",
+    "categoryId": 114
+  },
+  {
+    "distanceTraveledRangeId": 7,
+    "distanceTraveledRange": "150,000 - 180,000",
+    "categoryId": 114
+  },
+  {
+    "distanceTraveledRangeId": 8,
+    "distanceTraveledRange": "180,000 - 200,000",
+    "categoryId": 114
+  },
+  {
+    "distanceTraveledRangeId": 9,
+    "distanceTraveledRange": "200,000 - *",
+    "categoryId": 114
+  },
+  {
+    "distanceTraveledRangeId": 10,
+    "distanceTraveledRange": "0,000 - 30,000",
+    "categoryId": 116
+  },
+  {
+    "distanceTraveledRangeId": 11,
+    "distanceTraveledRange": "30,000 - 50,000",
+    "categoryId": 116
+  },
+  {
+    "distanceTraveledRangeId": 12,
+    "distanceTraveledRange": "50,000 - 80,000",
+    "categoryId": 116
+  },
+  {
+    "distanceTraveledRangeId": 13,
+    "distanceTraveledRange": "80,000 - 100,000",
+    "categoryId": 116
+  },
+  {
+    "distanceTraveledRangeId": 14,
+    "distanceTraveledRange": "100,000 - 130,000",
+    "categoryId": 116
+  },
+  {
+    "distanceTraveledRangeId": 15,
+    "distanceTraveledRange": "130,000 - 150,000",
+    "categoryId": 116
+  },
+  {
+    "distanceTraveledRangeId": 16,
+    "distanceTraveledRange": "150,000 - 180,000",
+    "categoryId": 116
+  },
+  {
+    "distanceTraveledRangeId": 17,
+    "distanceTraveledRange": "180,000 - 200,000",
+    "categoryId": 116
+  },
+  {
+    "distanceTraveledRangeId": 18,
+    "distanceTraveledRange": "200,000 - *",
+    "categoryId": 116
+  },
+  {
+    "distanceTraveledRangeId": 19,
+    "distanceTraveledRange": "0,000 - 30,000",
+    "categoryId": 352
+  },
+  {
+    "distanceTraveledRangeId": 20,
+    "distanceTraveledRange": "30,000 - 50,000",
+    "categoryId": 352
+  },
+  {
+    "distanceTraveledRangeId": 21,
+    "distanceTraveledRange": "50,000 - 80,000",
+    "categoryId": 352
+  },
+  {
+    "distanceTraveledRangeId": 22,
+    "distanceTraveledRange": "80,000 - 100,000",
+    "categoryId": 352
+  },
+  {
+    "distanceTraveledRangeId": 23,
+    "distanceTraveledRange": "100,000 - 130,000",
+    "categoryId": 352
+  },
+  {
+    "distanceTraveledRangeId": 24,
+    "distanceTraveledRange": "130,000 - 150,000",
+    "categoryId": 352
+  },
+  {
+    "distanceTraveledRangeId": 25,
+    "distanceTraveledRange": "150,000 - 180,000",
+    "categoryId": 352
+  },
+  {
+    "distanceTraveledRangeId": 26,
+    "distanceTraveledRange": "180,000 - 200,000",
+    "categoryId": 352
+  },
+  {
+    "distanceTraveledRangeId": 27,
+    "distanceTraveledRange": "200,000 - *",
+    "categoryId": 352
+  },
+  {
+    "distanceTraveledRangeId": 28,
+    "distanceTraveledRange": "0,000 - 30,000",
+    "categoryId": 353
+  },
+  {
+    "distanceTraveledRangeId": 29,
+    "distanceTraveledRange": "30,000 - 50,000",
+    "categoryId": 353
+  },
+  {
+    "distanceTraveledRangeId": 30,
+    "distanceTraveledRange": "50,000 - 80,000",
+    "categoryId": 353
+  },
+  {
+    "distanceTraveledRangeId": 31,
+    "distanceTraveledRange": "80,000 - 100,000",
+    "categoryId": 353
+  },
+  {
+    "distanceTraveledRangeId": 32,
+    "distanceTraveledRange": "100,000 - 130,000",
+    "categoryId": 353
+  },
+  {
+    "distanceTraveledRangeId": 33,
+    "distanceTraveledRange": "130,000 - 150,000",
+    "categoryId": 353
+  },
+  {
+    "distanceTraveledRangeId": 34,
+    "distanceTraveledRange": "150,000 - 180,000",
+    "categoryId": 353
+  },
+  {
+    "distanceTraveledRangeId": 35,
+    "distanceTraveledRange": "180,000 - 200,000",
+    "categoryId": 353
+  },
+  {
+    "distanceTraveledRangeId": 36,
+    "distanceTraveledRange": "200,000 - *",
+    "categoryId": 353
+  },
+  {
+    "distanceTraveledRangeId": 37,
+    "distanceTraveledRange": "0,000 - 30,000",
+    "categoryId": 354
+  },
+  {
+    "distanceTraveledRangeId": 38,
+    "distanceTraveledRange": "30,000 - 50,000",
+    "categoryId": 354
+  },
+  {
+    "distanceTraveledRangeId": 39,
+    "distanceTraveledRange": "50,000 - 80,000",
+    "categoryId": 354
+  },
+  {
+    "distanceTraveledRangeId": 40,
+    "distanceTraveledRange": "80,000 - 100,000",
+    "categoryId": 354
+  },
+  {
+    "distanceTraveledRangeId": 41,
+    "distanceTraveledRange": "100,000 - 130,000",
+    "categoryId": 354
+  },
+  {
+    "distanceTraveledRangeId": 42,
+    "distanceTraveledRange": "130,000 - 150,000",
+    "categoryId": 354
+  },
+  {
+    "distanceTraveledRangeId": 43,
+    "distanceTraveledRange": "150,000 - 180,000",
+    "categoryId": 354
+  },
+  {
+    "distanceTraveledRangeId": 44,
+    "distanceTraveledRange": "180,000 - 200,000",
+    "categoryId": 354
+  },
+  {
+    "distanceTraveledRangeId": 45,
+    "distanceTraveledRange": "200,000 - *",
+    "categoryId": 354
+  }
+]

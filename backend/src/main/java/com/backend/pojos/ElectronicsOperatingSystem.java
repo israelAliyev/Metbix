@@ -1,10 +1,19 @@
 package com.backend.pojos;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "electronics_operating_system")
-public class ElectronicsOperatingSystem {
+@Getter
+@Setter
+public class ElectronicsOperatingSystem implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Operating_System_ID")
     private Long operatingSystemId;
@@ -15,27 +24,4 @@ public class ElectronicsOperatingSystem {
     @Column(name = "Category_ID")
     private Long categoryId;
 
-    public Long getOperatingSystemId() {
-        return this.operatingSystemId;
-    }
-
-    public void setOperatingSystemId(Long operatingSystemId) {
-        this.operatingSystemId = operatingSystemId;
-    }
-
-    public String getOperatingSystem() {
-        return this.operatingSystem;
-    }
-
-    public void setOperatingSystem(String operatingSystem) {
-        this.operatingSystem = operatingSystem;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
 }

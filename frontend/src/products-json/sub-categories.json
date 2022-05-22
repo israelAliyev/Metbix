@@ -1,0 +1,210 @@
+[
+  {
+    "subCategoryId": 1,
+    "subCategoryName": "Clothing",
+    "productsCategory": [
+      {
+        "categoryId": 328,
+        "categoryName": "Baby Apparel"
+      },
+      {
+        "categoryId": 329,
+        "categoryName": "Boys' Apparel & Fashion"
+      },
+      {
+        "categoryId": 330,
+        "categoryName": "Girls' Apparel & Fashion"
+      },
+      {
+        "categoryId": 331,
+        "categoryName": "Men's Apparel & Fashion"
+      },
+      {
+        "categoryId": 332,
+        "categoryName": "Women's Apparel & Fashion"
+      }
+    ]
+  },
+  {
+    "subCategoryId": 2,
+    "subCategoryName": "Shoes",
+    "productsCategory": [
+      {
+        "categoryId": 328,
+        "categoryName": "Baby Apparel"
+      },
+      {
+        "categoryId": 329,
+        "categoryName": "Boys' Apparel & Fashion"
+      },
+      {
+        "categoryId": 330,
+        "categoryName": "Girls' Apparel & Fashion"
+      },
+      {
+        "categoryId": 331,
+        "categoryName": "Men's Apparel & Fashion"
+      },
+      {
+        "categoryId": 332,
+        "categoryName": "Women's Apparel & Fashion"
+      }
+    ]
+  },
+  {
+    "subCategoryId": 3,
+    "subCategoryName": "Watches",
+    "productsCategory": [
+      {
+        "categoryId": 328,
+        "categoryName": "Baby Apparel"
+      },
+      {
+        "categoryId": 329,
+        "categoryName": "Boys' Apparel & Fashion"
+      },
+      {
+        "categoryId": 330,
+        "categoryName": "Girls' Apparel & Fashion"
+      },
+      {
+        "categoryId": 331,
+        "categoryName": "Men's Apparel & Fashion"
+      },
+      {
+        "categoryId": 332,
+        "categoryName": "Women's Apparel & Fashion"
+      }
+    ]
+  },
+  {
+    "subCategoryId": 4,
+    "subCategoryName": "Accessories",
+    "productsCategory": [
+      {
+        "categoryId": 328,
+        "categoryName": "Baby Apparel"
+      },
+      {
+        "categoryId": 329,
+        "categoryName": "Boys' Apparel & Fashion"
+      },
+      {
+        "categoryId": 330,
+        "categoryName": "Girls' Apparel & Fashion"
+      },
+      {
+        "categoryId": 331,
+        "categoryName": "Men's Apparel & Fashion"
+      },
+      {
+        "categoryId": 332,
+        "categoryName": "Women's Apparel & Fashion"
+      }
+    ]
+  },
+  {
+    "subCategoryId": 5,
+    "subCategoryName": "Jewelry",
+    "productsCategory": [
+      {
+        "categoryId": 328,
+        "categoryName": "Baby Apparel"
+      },
+      {
+        "categoryId": 329,
+        "categoryName": "Boys' Apparel & Fashion"
+      },
+      {
+        "categoryId": 330,
+        "categoryName": "Girls' Apparel & Fashion"
+      },
+      {
+        "categoryId": 331,
+        "categoryName": "Men's Apparel & Fashion"
+      },
+      {
+        "categoryId": 332,
+        "categoryName": "Women's Apparel & Fashion"
+      }
+    ]
+  },
+  {
+    "subCategoryId": 6,
+    "subCategoryName": "Handbags & Wallets",
+    "productsCategory": [
+      {
+        "categoryId": 328,
+        "categoryName": "Baby Apparel"
+      },
+      {
+        "categoryId": 329,
+        "categoryName": "Boys' Apparel & Fashion"
+      },
+      {
+        "categoryId": 330,
+        "categoryName": "Girls' Apparel & Fashion"
+      },
+      {
+        "categoryId": 331,
+        "categoryName": "Men's Apparel & Fashion"
+      },
+      {
+        "categoryId": 332,
+        "categoryName": "Women's Apparel & Fashion"
+      }
+    ]
+  },
+  {
+    "subCategoryId": 7,
+    "subCategoryName": "Uniforms",
+    "productsCategory": [
+      {
+        "categoryId": 328,
+        "categoryName": "Baby Apparel"
+      },
+      {
+        "categoryId": 329,
+        "categoryName": "Boys' Apparel & Fashion"
+      },
+      {
+        "categoryId": 330,
+        "categoryName": "Girls' Apparel & Fashion"
+      },
+      {
+        "categoryId": 331,
+        "categoryName": "Men's Apparel & Fashion"
+      },
+      {
+        "categoryId": 332,
+        "categoryName": "Women's Apparel & Fashion"
+      }
+    ]
+  },
+  {
+    "subCategoryId": 8,
+    "subCategoryName": "Other",
+    "productsCategory": [
+      {
+        "categoryId": 328,
+        "categoryName": "Baby Apparel"
+      },
+      {
+        "categoryId": 329,
+        "categoryName": "Boys' Apparel & Fashion"
+      },
+      {
+        "categoryId": 330,
+        "categoryName": "Girls' Apparel & Fashion"
+      },
+      {
+        "categoryId": 331,
+        "categoryName": "Men's Apparel & Fashion"
+      },
+      {
+        "categoryId": 332,
+        "categoryName": "Women's Apparel & Fashion"
+      }
+    ]
+  }
+]

@@ -1,16 +1,23 @@
 package com.backend.pojos;
 
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "email_confirmation_token")
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
-public class EmailConfirmationToken {
+public class EmailConfirmationToken implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
 
     @Id
     @Column(name = "id")

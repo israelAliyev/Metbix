@@ -1,23 +1,21 @@
 package com.backend.services;
 
-import com.backend.dtos.RegistrationCompanyRequest;
+import com.backend.dtos.request.RegistrationCompanyRequest;
 import com.backend.mail.EmailValidator;
-import com.backend.dtos.RegistrationUserRequest;
+import com.backend.dtos.request.RegistrationUserRequest;
 import com.backend.pojos.*;
 import com.backend.repositories.RepositoryContinents;
 import com.backend.repositories.RepositoryRole;
 import com.backend.security.AccountDetailsServiceImpl;
 import com.backend.mail.EmailSender;
 import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
@@ -47,9 +45,7 @@ public class ServiceRegistration {
         user.setUserCountry(request.getUserCountry());
         user.setUserZip(request.getUserZip());
         user.setUserRegistrationDate(LocalDateTime.now());
-        user.setUserIp(request.getUserIp());
         user.setUserAddress(request.getUserAddress());
-        user.setUserAddress2(request.getUserAddress2());
         user.setUserPhone(request.getUserPhone());
         user.setUserPhoto(request.getUserPhoto());
         user.setUserProfileBack(request.getUserProfileBack());
@@ -71,27 +67,38 @@ public class ServiceRegistration {
 
         user.setUserRole(role);
 
-        String token = accountDetailsServiceImpl.signUpUser(user);
+        user.setUserEmailVerified(request.getUserEmail().endsWith("--social-login"));
 
+        String token = null;
 
-        String link = "http://localhost:8080/registration/confirm?token=" + token;
-        emailSender.send(
-                request.getUserEmail(),
-                buildEmail(request.getUserName(), link));
+        if (!request.getUserEmail().startsWith("undefined")) {
+
+            token = accountDetailsServiceImpl.signUpUser(user);
+
+        if (!token.contains("taken") && !request.getUserEmail().endsWith("--social-login")) {
+
+            String link = "http://localhost:3000/confirm-account?oop-01-is=" + token + "&n47Frt-l=" + request.getEncodedUserEmail();
+
+            emailSender.send(
+                    request.getUserEmail(),
+                    buildEmail(request.getUserName(), link));
+        }
+        }
 
         return token;
-
     }
 
 
     public String registerCompany(RegistrationCompanyRequest request) {
+
+        System.out.println(request);
+
         boolean isValidEmail = emailValidator.
                 test(request.getCompanyEmail());
 
         if (!isValidEmail) {
             throw new IllegalStateException("email not valid");
         }
-
 
         Companies company = new Companies();
         company.setCompanyEmail(request.getCompanyEmail());
@@ -103,26 +110,57 @@ public class ServiceRegistration {
         company.setCompanyBusinessType(request.getCompanyBusinessType());
         company.setCompanyTotalAnnualRevenue(request.getCompanyTotalAnnualRevenue());
         company.setCompanyYearEstablished(request.getCompanyYearEstablished());
-        company.setCompanyRegistrationDate(LocalDateTime.now());
-        company.setCompanyIp(request.getCompanyIp());
+        company.setCompanyRegistrationDate(request.getCompanyRegistrationDate());
         company.setCompanyAddress(request.getCompanyAddress());
         company.setCompanyProfilePhoto(request.getCompanyProfilePhoto());
         company.setCompanyPhone(request.getCompanyPhone());
         company.setCompanyEmployees(request.getCompanyEmployees());
         company.setCompanyDesc(request.getCompanyDesc());
         company.setCompanyProfileBack(request.getCompanyProfileBack());
-        company.setCompanyOtherAddress(request.getCompanyOtherAddress());
-        company.setCompaniesDetailsImagesAndVideos(request.getCompaniesDetailsImagesAndVideos());
-        company.setCompaniesDetailsProductionCertifications(request.getCompaniesDetailsProductionCertifications());
+        company.setCompanyType(request.getCompanyType());
+        company.setCompanyWebsite(request.getCompanyWebSite());
 
 
-        if(request.getCompaniesDetailsContinents() != null){
+        if (request.getCompaniesDetailsProductionCertifications() != null) {
+
+
+            Set<CompaniesDetailsProductionCertifications> certifications = request.getCompaniesDetailsProductionCertifications();
+
+            Set<CompaniesDetailsProductionCertifications> certifications2 = new HashSet<CompaniesDetailsProductionCertifications>();
+
+            for (CompaniesDetailsProductionCertifications c : certifications) {
+                c.setCompany(company);
+                certifications2.add(c);
+            }
+
+            company.setCompaniesDetailsProductionCertifications(certifications2);
+        }
+
+
+        if (request.getCompaniesDetailsImagesAndVideos() != null) {
+            Set<CompaniesDetailsImagesAndVideo> photos = request.getCompaniesDetailsImagesAndVideos().stream().filter(p -> !p.getCompanyDetailImageMedia().equals("")).collect(Collectors.toSet());
+
+            Set<CompaniesDetailsImagesAndVideo> photos2 = new HashSet<CompaniesDetailsImagesAndVideo>();
+
+            for (CompaniesDetailsImagesAndVideo m : photos) {
+                m.setCompany(company);
+                photos2.add(m);
+
+            }
+
+            company.setCompaniesDetailsImagesAndVideos(photos2);
+
+        }
+
+        if (request.getCompaniesDetailsContinents() != null) {
 
             Set<Continents> continentsList = new HashSet<Continents>();
 
-            for(Continents c : request.getCompaniesDetailsContinents()){
+            for (Continents c : request.getCompaniesDetailsContinents()) {
 
-                repositoryContinents.findById(c.getContinentId()).ifPresent(continentsList :: add);
+                if (c.getContinentId() != 0) {
+                    repositoryContinents.findById(c.getContinentId()).ifPresent(continentsList::add);
+                }
             }
 
             company.setCompaniesDetailsContinents(continentsList);
@@ -151,10 +189,13 @@ public class ServiceRegistration {
         String token = accountDetailsServiceImpl.signUpCompany(company);
 
 
-        String link = "http://localhost:8080/registration/confirm?token=" + token;
-        emailSender.send(
-                request.getCompanyEmail(),
-                buildEmail(request.getCompanyName(), link));
+        if (!token.contains("taken")) {
+
+            String link = "http://localhost:3000/confirm-account?oop-01-is=" + token + "&n47Frt-l=" + request.getEncodedCompanyEmail();
+            emailSender.send(
+                    request.getCompanyEmail(),
+                    buildEmail(request.getCompanyName(), link));
+        }
 
         return token;
     }
@@ -165,21 +206,25 @@ public class ServiceRegistration {
 
         EmailConfirmationToken confirmationToken = confirmationTokenService
                 .getToken(token)
-                .orElseThrow(() ->
-                        new IllegalStateException("token not found"));
+                .orElse(null);
+
+        if(confirmationToken == null){
+            return "Token not found";
+        }
 
         if (confirmationToken.getConfirmedDate() != null) {
-            throw new IllegalStateException("email already confirmed");
+            return "Token already confirmed";
+        }else{
+
+            confirmationTokenService.setConfirmedDate(token);
         }
 
 
-        confirmationTokenService.setConfirmedDate(token);
-
-
-        if (confirmationToken.getUser() != null) {
+        if (confirmationToken.getUser() != null && confirmationToken.getConfirmedDate() == null) {
 
             accountDetailsServiceImpl.enableAppUser(confirmationToken.getUser().getUserEmail());
-        } else {
+
+        } else if (confirmationToken.getCompany() != null && confirmationToken.getConfirmedDate() == null) {
 
             accountDetailsServiceImpl.enableAppCompany(confirmationToken.getCompany().getCompanyEmail());
         }

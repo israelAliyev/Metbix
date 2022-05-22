@@ -1,10 +1,19 @@
 package com.backend.pojos;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "electronics_front_camera")
-public class ElectronicsFrontCamera {
+@Getter
+@Setter
+public class ElectronicsFrontCamera implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Front_Camera_ID")
     private Long frontCameraId;
@@ -15,27 +24,4 @@ public class ElectronicsFrontCamera {
     @Column(name = "Category_ID")
     private Long categoryId;
 
-    public Long getFrontCameraId() {
-        return this.frontCameraId;
-    }
-
-    public void setFrontCameraId(Long frontCameraId) {
-        this.frontCameraId = frontCameraId;
-    }
-
-    public String getFrontCamera() {
-        return this.frontCamera;
-    }
-
-    public void setFrontCamera(String frontCamera) {
-        this.frontCamera = frontCamera;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
 }

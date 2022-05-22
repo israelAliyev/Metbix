@@ -1,0 +1,7 @@
+GET https://jsonplaceholder.typicode.com/posts
+Accept: application/json
+
+<> 2021-11-27T144545.200.json
+
+###
+

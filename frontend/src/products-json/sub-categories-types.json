@@ -1,0 +1,447 @@
+[
+  {
+    "subCategoryTypeId": 1,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Dresses"
+  },
+  {
+    "subCategoryTypeId": 2,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Tops, Tees & Blouses"
+  },
+  {
+    "subCategoryTypeId": 3,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Sweaters"
+  },
+  {
+    "subCategoryTypeId": 4,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Fashion Hoodies & Sweatshirts"
+  },
+  {
+    "subCategoryTypeId": 5,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Jeans"
+  },
+  {
+    "subCategoryTypeId": 6,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Pants"
+  },
+  {
+    "subCategoryTypeId": 7,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Skirts"
+  },
+  {
+    "subCategoryTypeId": 8,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Shorts"
+  },
+  {
+    "subCategoryTypeId": 9,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Leggings"
+  },
+  {
+    "subCategoryTypeId": 10,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Active"
+  },
+  {
+    "subCategoryTypeId": 11,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Swimsuits & Cover Ups"
+  },
+  {
+    "subCategoryTypeId": 12,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Lingerie, Sleep & Lounge"
+  },
+  {
+    "subCategoryTypeId": 13,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Jumpsuits, Rompers & Overalls"
+  },
+  {
+    "subCategoryTypeId": 14,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Coats, Jackets & Vests"
+  },
+  {
+    "subCategoryTypeId": 15,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Suiting & Blazers"
+  },
+  {
+    "subCategoryTypeId": 16,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Socks & Hosiery"
+  },
+  {
+    "subCategoryTypeId": 17,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Shirts"
+  },
+  {
+    "subCategoryTypeId": 18,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Jackets & Coats"
+  },
+  {
+    "subCategoryTypeId": 19,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Swim"
+  },
+  {
+    "subCategoryTypeId": 20,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Suits & Sport Coats"
+  },
+  {
+    "subCategoryTypeId": 21,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Underwear"
+  },
+  {
+    "subCategoryTypeId": 23,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Sleep & Lounge"
+  },
+  {
+    "subCategoryTypeId": 24,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "T-Shirts & Tanks"
+  },
+  {
+    "subCategoryTypeId": 49,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Athletic"
+  },
+  {
+    "subCategoryTypeId": 50,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Boots"
+  },
+  {
+    "subCategoryTypeId": 51,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Fashion Sneakers"
+  },
+  {
+    "subCategoryTypeId": 52,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Flats"
+  },
+  {
+    "subCategoryTypeId": 53,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Loafers & Slip-Ons"
+  },
+  {
+    "subCategoryTypeId": 54,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Mules & Clogs"
+  },
+  {
+    "subCategoryTypeId": 55,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Outdoor"
+  },
+  {
+    "subCategoryTypeId": 56,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Oxfords"
+  },
+  {
+    "subCategoryTypeId": 57,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Pumps"
+  },
+  {
+    "subCategoryTypeId": 58,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Sandals"
+  },
+  {
+    "subCategoryTypeId": 59,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Slippers"
+  },
+  {
+    "subCategoryTypeId": 60,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Sneakers"
+  },
+  {
+    "subCategoryTypeId": 61,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Work & Safety"
+  },
+  {
+    "subCategoryTypeId": 62,
+    "subCategoryId": 3,
+    "subCategoryTypeName": "Sport Watches"
+  },
+  {
+    "subCategoryTypeId": 63,
+    "subCategoryId": 3,
+    "subCategoryTypeName": "Wrist Watches"
+  },
+  {
+    "subCategoryTypeId": 64,
+    "subCategoryId": 3,
+    "subCategoryTypeName": "Watch Bands"
+  },
+  {
+    "subCategoryTypeId": 65,
+    "subCategoryId": 3,
+    "subCategoryTypeName": "Pocket Watches"
+  },
+  {
+    "subCategoryTypeId": 66,
+    "subCategoryId": 3,
+    "subCategoryTypeName": "Smartwatches"
+  },
+  {
+    "subCategoryTypeId": 67,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Belts"
+  },
+  {
+    "subCategoryTypeId": 68,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Earmuffs"
+  },
+  {
+    "subCategoryTypeId": 69,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Gloves & Mittens"
+  },
+  {
+    "subCategoryTypeId": 70,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Hand Fans"
+  },
+  {
+    "subCategoryTypeId": 71,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Handbag Accessories"
+  },
+  {
+    "subCategoryTypeId": 72,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Hats & Caps"
+  },
+  {
+    "subCategoryTypeId": 73,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Keyrings & Keychains"
+  },
+  {
+    "subCategoryTypeId": 74,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Scarves & Wraps"
+  },
+  {
+    "subCategoryTypeId": 75,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Special Occasion Accessories"
+  },
+  {
+    "subCategoryTypeId": 76,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Sunglasses & Eyewear Accessories"
+  },
+  {
+    "subCategoryTypeId": 77,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Wallets, Card Cases & Money Organizers"
+  },
+  {
+    "subCategoryTypeId": 78,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Collar Stays"
+  },
+  {
+    "subCategoryTypeId": 79,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Cuff Links, Shirt Studs & Tie Clips"
+  },
+  {
+    "subCategoryTypeId": 80,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Handkerchiefs"
+  },
+  {
+    "subCategoryTypeId": 81,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Suspenders"
+  },
+  {
+    "subCategoryTypeId": 82,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Ties, Cummerbunds & Pocket Squares"
+  },
+  {
+    "subCategoryTypeId": 83,
+    "subCategoryId": 5,
+    "subCategoryTypeName": "Anklets"
+  },
+  {
+    "subCategoryTypeId": 84,
+    "subCategoryId": 5,
+    "subCategoryTypeName": "Bracelets"
+  },
+  {
+    "subCategoryTypeId": 85,
+    "subCategoryId": 5,
+    "subCategoryTypeName": "Brooches & Pins"
+  },
+  {
+    "subCategoryTypeId": 86,
+    "subCategoryId": 5,
+    "subCategoryTypeName": "Earrings"
+  },
+  {
+    "subCategoryTypeId": 87,
+    "subCategoryId": 5,
+    "subCategoryTypeName": "Jewelry Sets"
+  },
+  {
+    "subCategoryTypeId": 88,
+    "subCategoryId": 5,
+    "subCategoryTypeName": "Necklaces"
+  },
+  {
+    "subCategoryTypeId": 89,
+    "subCategoryId": 5,
+    "subCategoryTypeName": "Pendants & Coins"
+  },
+  {
+    "subCategoryTypeId": 90,
+    "subCategoryId": 5,
+    "subCategoryTypeName": "Rings"
+  },
+  {
+    "subCategoryTypeId": 91,
+    "subCategoryId": 5,
+    "subCategoryTypeName": "Wedding & Engagement"
+  },
+  {
+    "subCategoryTypeId": 92,
+    "subCategoryId": 5,
+    "subCategoryTypeName": "Body Jewelry"
+  },
+  {
+    "subCategoryTypeId": 93,
+    "subCategoryId": 6,
+    "subCategoryTypeName": "Clutches & Evening Bags"
+  },
+  {
+    "subCategoryTypeId": 94,
+    "subCategoryId": 6,
+    "subCategoryTypeName": "Crossbody Bags"
+  },
+  {
+    "subCategoryTypeId": 95,
+    "subCategoryId": 6,
+    "subCategoryTypeName": "Fashion Backpacks"
+  },
+  {
+    "subCategoryTypeId": 96,
+    "subCategoryId": 6,
+    "subCategoryTypeName": "Hobo Bags"
+  },
+  {
+    "subCategoryTypeId": 97,
+    "subCategoryId": 6,
+    "subCategoryTypeName": "Satchels"
+  },
+  {
+    "subCategoryTypeId": 98,
+    "subCategoryId": 6,
+    "subCategoryTypeName": "Shoulder Bags"
+  },
+  {
+    "subCategoryTypeId": 99,
+    "subCategoryId": 6,
+    "subCategoryTypeName": "Top-Handle Bags"
+  },
+  {
+    "subCategoryTypeId": 100,
+    "subCategoryId": 6,
+    "subCategoryTypeName": "Totes"
+  },
+  {
+    "subCategoryTypeId": 101,
+    "subCategoryId": 6,
+    "subCategoryTypeName": "Wallets"
+  },
+  {
+    "subCategoryTypeId": 102,
+    "subCategoryId": 6,
+    "subCategoryTypeName": "Wristlets"
+  },
+  {
+    "subCategoryTypeId": 103,
+    "subCategoryId": 7,
+    "subCategoryTypeName": "School uniforms"
+  },
+  {
+    "subCategoryTypeId": 104,
+    "subCategoryId": 7,
+    "subCategoryTypeName": "Doctor uniforms"
+  },
+  {
+    "subCategoryTypeId": 105,
+    "subCategoryId": 7,
+    "subCategoryTypeName": "Police uniforms"
+  },
+  {
+    "subCategoryTypeId": 106,
+    "subCategoryId": 7,
+    "subCategoryTypeName": "Fireman uniforms"
+  },
+  {
+    "subCategoryTypeId": 107,
+    "subCategoryId": 7,
+    "subCategoryTypeName": "Sports uniforms"
+  },
+  {
+    "subCategoryTypeId": 108,
+    "subCategoryId": 1,
+    "subCategoryTypeName": "Other"
+  },
+  {
+    "subCategoryTypeId": 109,
+    "subCategoryId": 2,
+    "subCategoryTypeName": "Other"
+  },
+  {
+    "subCategoryTypeId": 110,
+    "subCategoryId": 3,
+    "subCategoryTypeName": "Other"
+  },
+  {
+    "subCategoryTypeId": 111,
+    "subCategoryId": 4,
+    "subCategoryTypeName": "Other"
+  },
+  {
+    "subCategoryTypeId": 112,
+    "subCategoryId": 5,
+    "subCategoryTypeName": "Other"
+  },
+  {
+    "subCategoryTypeId": 113,
+    "subCategoryId": 6,
+    "subCategoryTypeName": "Other"
+  },
+  {
+    "subCategoryTypeId": 114,
+    "subCategoryId": 7,
+    "subCategoryTypeName": "Other"
+  }
+]

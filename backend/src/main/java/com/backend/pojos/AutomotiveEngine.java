@@ -1,10 +1,20 @@
 package com.backend.pojos;
 
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "automotive_engine")
-public class AutomotiveEngine {
+@Getter
+@Setter
+public class AutomotiveEngine implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Engine_ID")
     private Long engineId;
@@ -15,27 +25,4 @@ public class AutomotiveEngine {
     @Column(name = "Category_ID")
     private Long categoryId;
 
-    public Long getEngineId() {
-        return this.engineId;
-    }
-
-    public void setEngineId(Long engineId) {
-        this.engineId = engineId;
-    }
-
-    public String getEngine() {
-        return this.engine;
-    }
-
-    public void setEngine(String engine) {
-        this.engine = engine;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
 }

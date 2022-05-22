@@ -1,14 +1,14 @@
 package com.backend.controller;
 
 
-import com.backend.dtos.RegistrationCompanyRequest;
-import com.backend.dtos.RegistrationUserRequest;
+import com.backend.dtos.request.RegistrationCompanyRequest;
+import com.backend.dtos.request.RegistrationUserRequest;
 import com.backend.services.ServiceRegistration;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/registration")
+@RequestMapping("api/registration")
 @CrossOrigin("*")
 @AllArgsConstructor
 public class ControllerRegistration {
@@ -27,7 +27,7 @@ public class ControllerRegistration {
     }
 
 
-    @GetMapping(path = "confirm")
+    @GetMapping(path = "/confirm")
     public String confirm(@RequestParam("token") String token) {
         return serviceRegistration.confirmToken(token);
     }

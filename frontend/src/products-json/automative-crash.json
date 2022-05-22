@@ -1,0 +1,52 @@
+[
+  {
+    "crashId": 4,
+    "crash": "Yes",
+    "categoryId": 114
+  },
+  {
+    "crashId": 5,
+    "crash": "No",
+    "categoryId": 114
+  },
+  {
+    "crashId": 6,
+    "crash": "Yes",
+    "categoryId": 116
+  },
+  {
+    "crashId": 7,
+    "crash": "No",
+    "categoryId": 116
+  },
+  {
+    "crashId": 8,
+    "crash": "Yes",
+    "categoryId": 352
+  },
+  {
+    "crashId": 9,
+    "crash": "No",
+    "categoryId": 352
+  },
+  {
+    "crashId": 10,
+    "crash": "Yes",
+    "categoryId": 353
+  },
+  {
+    "crashId": 11,
+    "crash": "No",
+    "categoryId": 353
+  },
+  {
+    "crashId": 12,
+    "crash": "Yes",
+    "categoryId": 354
+  },
+  {
+    "crashId": 13,
+    "crash": "No",
+    "categoryId": 354
+  }
+]

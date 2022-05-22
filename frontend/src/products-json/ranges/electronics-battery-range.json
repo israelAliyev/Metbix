@@ -1,0 +1,262 @@
+[
+  {
+    "batteryRangeId": 1,
+    "batteryRange": "00 - 500",
+    "categoryId": 87
+  },
+  {
+    "batteryRangeId": 2,
+    "batteryRange": "500 - 1000",
+    "categoryId": 87
+  },
+  {
+    "batteryRangeId": 3,
+    "batteryRange": "1000 - 1500 ",
+    "categoryId": 87
+  },
+  {
+    "batteryRangeId": 4,
+    "batteryRange": "1500 - 2000",
+    "categoryId": 87
+  },
+  {
+    "batteryRangeId": 5,
+    "batteryRange": "2000 - 2500",
+    "categoryId": 87
+  },
+  {
+    "batteryRangeId": 6,
+    "batteryRange": "2500 - 3000",
+    "categoryId": 87
+  },
+  {
+    "batteryRangeId": 7,
+    "batteryRange": "3000 - 3500",
+    "categoryId": 87
+  },
+  {
+    "batteryRangeId": 8,
+    "batteryRange": "3500 - 4000",
+    "categoryId": 87
+  },
+  {
+    "batteryRangeId": 9,
+    "batteryRange": "4000 - 4500",
+    "categoryId": 87
+  },
+  {
+    "batteryRangeId": 10,
+    "batteryRange": "4500 - 5000",
+    "categoryId": 87
+  },
+  {
+    "batteryRangeId": 11,
+    "batteryRange": "5000 - 5500",
+    "categoryId": 87
+  },
+  {
+    "batteryRangeId": 12,
+    "batteryRange": "5500 - 6000",
+    "categoryId": 87
+  },
+  {
+    "batteryRangeId": 13,
+    "batteryRange": "6000 - *",
+    "categoryId": 87
+  },
+  {
+    "batteryRangeId": 14,
+    "batteryRange": "00 - 500",
+    "categoryId": 88
+  },
+  {
+    "batteryRangeId": 15,
+    "batteryRange": "500 - 1000",
+    "categoryId": 88
+  },
+  {
+    "batteryRangeId": 16,
+    "batteryRange": "1000 - 1500 ",
+    "categoryId": 88
+  },
+  {
+    "batteryRangeId": 17,
+    "batteryRange": "1500 - 2000",
+    "categoryId": 88
+  },
+  {
+    "batteryRangeId": 18,
+    "batteryRange": "2000 - 2500",
+    "categoryId": 88
+  },
+  {
+    "batteryRangeId": 19,
+    "batteryRange": "2500 - 3000",
+    "categoryId": 88
+  },
+  {
+    "batteryRangeId": 20,
+    "batteryRange": "3000 - 3500",
+    "categoryId": 88
+  },
+  {
+    "batteryRangeId": 21,
+    "batteryRange": "3500 - 4000",
+    "categoryId": 88
+  },
+  {
+    "batteryRangeId": 22,
+    "batteryRange": "4000 - 4500",
+    "categoryId": 88
+  },
+  {
+    "batteryRangeId": 23,
+    "batteryRange": "4500 - 5000",
+    "categoryId": 88
+  },
+  {
+    "batteryRangeId": 24,
+    "batteryRange": "5000 - 5500",
+    "categoryId": 88
+  },
+  {
+    "batteryRangeId": 25,
+    "batteryRange": "5500 - 6000",
+    "categoryId": 88
+  },
+  {
+    "batteryRangeId": 26,
+    "batteryRange": "6000 - *",
+    "categoryId": 88
+  },
+  {
+    "batteryRangeId": 27,
+    "batteryRange": "00 - 500",
+    "categoryId": 94
+  },
+  {
+    "batteryRangeId": 28,
+    "batteryRange": "500 - 1000",
+    "categoryId": 94
+  },
+  {
+    "batteryRangeId": 29,
+    "batteryRange": "1000 - 1500 ",
+    "categoryId": 94
+  },
+  {
+    "batteryRangeId": 30,
+    "batteryRange": "1500 - 2000",
+    "categoryId": 94
+  },
+  {
+    "batteryRangeId": 31,
+    "batteryRange": "2000 - 2500",
+    "categoryId": 94
+  },
+  {
+    "batteryRangeId": 32,
+    "batteryRange": "2500 - 3000",
+    "categoryId": 94
+  },
+  {
+    "batteryRangeId": 33,
+    "batteryRange": "3000 - 3500",
+    "categoryId": 94
+  },
+  {
+    "batteryRangeId": 34,
+    "batteryRange": "3500 - 4000",
+    "categoryId": 94
+  },
+  {
+    "batteryRangeId": 35,
+    "batteryRange": "4000 - 4500",
+    "categoryId": 94
+  },
+  {
+    "batteryRangeId": 36,
+    "batteryRange": "4500 - 5000",
+    "categoryId": 94
+  },
+  {
+    "batteryRangeId": 37,
+    "batteryRange": "5000 - 5500",
+    "categoryId": 94
+  },
+  {
+    "batteryRangeId": 38,
+    "batteryRange": "5500 - 6000",
+    "categoryId": 94
+  },
+  {
+    "batteryRangeId": 39,
+    "batteryRange": "6000 - *",
+    "categoryId": 94
+  },
+  {
+    "batteryRangeId": 40,
+    "batteryRange": "00 - 500",
+    "categoryId": 355
+  },
+  {
+    "batteryRangeId": 41,
+    "batteryRange": "500 - 1000",
+    "categoryId": 355
+  },
+  {
+    "batteryRangeId": 42,
+    "batteryRange": "1000 - 1500 ",
+    "categoryId": 355
+  },
+  {
+    "batteryRangeId": 43,
+    "batteryRange": "1500 - 2000",
+    "categoryId": 355
+  },
+  {
+    "batteryRangeId": 44,
+    "batteryRange": "2000 - 2500",
+    "categoryId": 355
+  },
+  {
+    "batteryRangeId": 45,
+    "batteryRange": "2500 - 3000",
+    "categoryId": 355
+  },
+  {
+    "batteryRangeId": 46,
+    "batteryRange": "3000 - 3500",
+    "categoryId": 355
+  },
+  {
+    "batteryRangeId": 47,
+    "batteryRange": "3500 - 4000",
+    "categoryId": 355
+  },
+  {
+    "batteryRangeId": 48,
+    "batteryRange": "4000 - 4500",
+    "categoryId": 355
+  },
+  {
+    "batteryRangeId": 49,
+    "batteryRange": "4500 - 5000",
+    "categoryId": 355
+  },
+  {
+    "batteryRangeId": 50,
+    "batteryRange": "5000 - 5500",
+    "categoryId": 355
+  },
+  {
+    "batteryRangeId": 51,
+    "batteryRange": "5500 - 6000",
+    "categoryId": 355
+  },
+  {
+    "batteryRangeId": 52,
+    "batteryRange": "6000 - *",
+    "categoryId": 355
+  }
+]

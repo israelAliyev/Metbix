@@ -1,0 +1,42 @@
+[
+  {
+    "typeId": 1,
+    "type": "PC",
+    "categoryId": 88
+  },
+  {
+    "typeId": 2,
+    "type": "Notebook",
+    "categoryId": 88
+  },
+  {
+    "typeId": 3,
+    "type": "Mac",
+    "categoryId": 88
+  },
+  {
+    "typeId": 4,
+    "type": "Mini Notebook",
+    "categoryId": 88
+  },
+  {
+    "typeId": 5,
+    "type": "Hand-held computer",
+    "categoryId": 88
+  },
+  {
+    "typeId": 6,
+    "type": "Laptop",
+    "categoryId": 88
+  },
+  {
+    "typeId": 7,
+    "type": "Super Computer",
+    "categoryId": 88
+  },
+  {
+    "typeId": 8,
+    "type": "Other",
+    "categoryId": 88
+  }
+]

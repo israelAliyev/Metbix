@@ -1,52 +1,40 @@
 package com.backend.pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "electronics_screen_size")
-public class ElectronicsScreenSize {
+@Getter
+@Setter
+public class ElectronicsScreenSize implements Serializable {
+
+    private static final long serialVersionUID = 214321321421L;
+
     @Id
     @Column(name = "Screen_Size_ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long screenSizeId;
 
     @Column(name = "Screen_Size")
-    private String screenSize;
+    private Float screenSize;
 
-    @Column(name = "Category_ID")
-    private Long categoryId;
 
-    @Column(name = "Screen_Size_Range_ID")
-    private Long screenSizeRangeId;
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = ElectronicsScreenSizeRange.class, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH , CascadeType.REMOVE})
+    @JoinColumn(name = "Screen_Size_Range_ID")
+    private ElectronicsScreenSizeRange electronicsScreenSizeRange;
 
-    public Long getScreenSizeId() {
-        return this.screenSizeId;
-    }
 
-    public void setScreenSizeId(Long screenSizeId) {
-        this.screenSizeId = screenSizeId;
-    }
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Products.class, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH , CascadeType.REMOVE} )
+    @JoinTable(name = "II_PRODUCTS_ELECTRONICS_OPTIONS",
+            joinColumns = {@JoinColumn(name = "Screen_Size_ID")},
+            inverseJoinColumns = {@JoinColumn(name = "Product_ID")}
+    )
+    @JsonIgnore
+    private Products product;
 
-    public String getScreenSize() {
-        return this.screenSize;
-    }
-
-    public void setScreenSize(String screenSize) {
-        this.screenSize = screenSize;
-    }
-
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
-
-    public Long getScreenSizeRangeId() {
-        return this.screenSizeRangeId;
-    }
-
-    public void setScreenSizeRangeId(Long screenSizeRangeId) {
-        this.screenSizeRangeId = screenSizeRangeId;
-    }
 }

@@ -1,0 +1,337 @@
+[
+  {
+    "fabricTypeId": 2,
+    "fabricType": "Cotton",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 3,
+    "fabricType": "Silk",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 4,
+    "fabricType": "Linen",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 5,
+    "fabricType": "Wool",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 6,
+    "fabricType": "Leather",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 7,
+    "fabricType": "Georgette",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 8,
+    "fabricType": "Chiffon",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 9,
+    "fabricType": "Nylon",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 10,
+    "fabricType": "Polyester",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 11,
+    "fabricType": "Velvet",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 12,
+    "fabricType": "Denim",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 13,
+    "fabricType": "Rayon",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 14,
+    "fabricType": "Viscose",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 15,
+    "fabricType": "Satin",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 16,
+    "fabricType": "Crepe",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 17,
+    "fabricType": "Lycra",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 18,
+    "fabricType": "Net or Lace",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 19,
+    "fabricType": "Leather",
+    "subCategoryId": 2
+  },
+  {
+    "fabricTypeId": 20,
+    "fabricType": "Textiles",
+    "subCategoryId": 2
+  },
+  {
+    "fabricTypeId": 21,
+    "fabricType": "Synthetics",
+    "subCategoryId": 2
+  },
+  {
+    "fabricTypeId": 22,
+    "fabricType": "Rubber",
+    "subCategoryId": 2
+  },
+  {
+    "fabricTypeId": 23,
+    "fabricType": "Foam",
+    "subCategoryId": 2
+  },
+  {
+    "fabricTypeId": 24,
+    "fabricType": "Silver",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 25,
+    "fabricType": "Gold",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 26,
+    "fabricType": "Platinum",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 27,
+    "fabricType": "Titanium",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 28,
+    "fabricType": "Base Metals",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 29,
+    "fabricType": "Stainless Steel",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 30,
+    "fabricType": "Aluminum",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 31,
+    "fabricType": "Seeds and Nuts",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 32,
+    "fabricType": "Wood",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 33,
+    "fabricType": "Shell",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 34,
+    "fabricType": "Stone",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 35,
+    "fabricType": "Glass",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 36,
+    "fabricType": "Clay: Ceramic, Porcelain",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 37,
+    "fabricType": "Pearl",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 38,
+    "fabricType": "Leather",
+    "subCategoryId": 6
+  },
+  {
+    "fabricTypeId": 39,
+    "fabricType": "Cotton Canvas",
+    "subCategoryId": 6
+  },
+  {
+    "fabricTypeId": 40,
+    "fabricType": "Nylon",
+    "subCategoryId": 6
+  },
+  {
+    "fabricTypeId": 41,
+    "fabricType": "Cordura",
+    "subCategoryId": 6
+  },
+  {
+    "fabricTypeId": 42,
+    "fabricType": "Denim",
+    "subCategoryId": 6
+  },
+  {
+    "fabricTypeId": 43,
+    "fabricType": "Straw",
+    "subCategoryId": 6
+  },
+  {
+    "fabricTypeId": 44,
+    "fabricType": "Neoprene (Synthetic Rubbers)",
+    "subCategoryId": 6
+  },
+  {
+    "fabricTypeId": 45,
+    "fabricType": "Mesh",
+    "subCategoryId": 6
+  },
+  {
+    "fabricTypeId": 46,
+    "fabricType": "Vegan Leather",
+    "subCategoryId": 6
+  },
+  {
+    "fabricTypeId": 47,
+    "fabricType": "Cotton",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 48,
+    "fabricType": "Silk",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 49,
+    "fabricType": "Linen",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 50,
+    "fabricType": "Wool",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 51,
+    "fabricType": "Leather",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 52,
+    "fabricType": "Georgette",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 53,
+    "fabricType": "Chiffon",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 54,
+    "fabricType": "Nylon",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 55,
+    "fabricType": "Polyester",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 56,
+    "fabricType": "Velvet",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 57,
+    "fabricType": "Denim",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 58,
+    "fabricType": "Rayon",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 59,
+    "fabricType": "Viscose",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 60,
+    "fabricType": "Satin",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 61,
+    "fabricType": "Crepe",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 62,
+    "fabricType": "Lycra",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 63,
+    "fabricType": "Net or Lace",
+    "subCategoryId": 7
+  },
+  {
+    "fabricTypeId": 64,
+    "fabricType": "Other",
+    "subCategoryId": 1
+  },
+  {
+    "fabricTypeId": 65,
+    "fabricType": "Other",
+    "subCategoryId": 2
+  },
+  {
+    "fabricTypeId": 66,
+    "fabricType": "Other",
+    "subCategoryId": 5
+  },
+  {
+    "fabricTypeId": 67,
+    "fabricType": "Other",
+    "subCategoryId": 6
+  },
+  {
+    "fabricTypeId": 68,
+    "fabricType": "Other",
+    "subCategoryId": 7
+  }
+]
