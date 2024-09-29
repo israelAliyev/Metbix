@@ -19,7 +19,7 @@ function ConfirmToken(props) {
     const [error, setError] = useState(false);
 
     // redux
-    const getAccountFirestoreRes = useSelector(state => state.get_account_firestore);
+    // const getAccountFirestoreRes = useSelector(state => state.get_account_firestore);
     const login = useSelector(state => state.login);
     const confirm = useSelector(state => state.confirm_token);
 
@@ -30,103 +30,83 @@ function ConfirmToken(props) {
     let email = query.get("n47Frt-l");
 
     useEffect(() => {
-
         if (name) {
-
             setAccountName(atob(name))
-
         } else if (email && token) {
-
             dispatch(confirmToken(token));
             setAccountEmail(atob(email.substring(36)));
-
         } else {
             window.location.href = "/";
         }
-
     }, [])
 
     useEffect(() => {
-
-            if (confirm.response) {
-
-                dispatch(getAccountFirestore(atob(email.substring(36))))
-
-            } else {
-                if (email && token) {
-                    setTimeout(() => {
-                        // window.location.href = "/";
-                    }, 3000)
-                }
+        if (confirm.response) {
+            dispatch(getAccountFirestore(atob(email.substring(36))))
+        } else {
+            if (email && token) {
+                setTimeout(() => {
+                    // window.location.href = "/";
+                }, 3000)
             }
-
+        }
     }, [confirm])
 
+    //
+    // useEffect(() => {
+    //
+    //
+    //         if (getAccountFirestoreRes.response) {
+    //
+    //             const accountLogin = {
+    //
+    //                 email: getAccountFirestoreRes.response.email,
+    //                 password: getAccountFirestoreRes.response.password,
+    //                 deviceInfo: {
+    //                     deviceId: uuid(),
+    //                     deviceType: browserName,
+    //                 }
+    //             }
+    //
+    //             setAccountLoginForDispatch(accountLogin);
+    //
+    //             dispatch(loginAccountSocial(accountLogin));
+    //
+    //         } else {
+    //
+    //             if (email && token) {
+    //                 setTimeout(() => {
+    //                     // window.location.href = "/";
+    //                 }, 3000)
+    //             }
+    //         }
+    //
+    //
+    // }, [getAccountFirestoreRes]);
 
     useEffect(() => {
-
-
-            if (getAccountFirestoreRes.response) {
-
-                const accountLogin = {
-
-                    email: getAccountFirestoreRes.response.email,
-                    password: getAccountFirestoreRes.response.password,
-                    deviceInfo: {
-                        deviceId: uuid(),
-                        deviceType: browserName,
-                    }
-                }
-
-                setAccountLoginForDispatch(accountLogin);
-
-                dispatch(loginAccountSocial(accountLogin));
-
-            } else {
+        if (login.response) {
+            let deviceInfo = {
+                zxcvbs: accountLoginForDispatch.deviceInfo.deviceId,
+                qasder: browserName,
+            }
+            localStorage.setItem("__|^|__", JSON.stringify({
+                rtoyui: btoa(login.response.accessToken),
+                wsxcde: login.response.refreshToken,
+                nhytgb: new Date(new Date().getTime() + 3600000),
+                sdergt: deviceInfo,
+                iiasrl: atob(email.substring(36))
+            }))
+            if (localStorage.getItem("__|^|__")) {
 
                 if (email && token) {
                     setTimeout(() => {
-                        // window.location.href = "/";
+                        window.location.href = "/";
                     }, 3000)
                 }
             }
-
-
-    }, [getAccountFirestoreRes]);
-
-
-    useEffect(() => {
-
-
-            if (login.response) {
-
-                let deviceInfo = {
-                    zxcvbs: accountLoginForDispatch.deviceInfo.deviceId,
-                    qasder: browserName,
-                }
-
-                localStorage.setItem("__|^|__", JSON.stringify({
-                    rtoyui: btoa(login.response.accessToken),
-                    wsxcde: login.response.refreshToken,
-                    nhytgb: new Date(new Date().getTime() + 3600000),
-                    sdergt: deviceInfo,
-                    iiasrl:atob(email.substring(36))
-                }))
-
-                if (localStorage.getItem("__|^|__")) {
-
-                    if (email && token) {
-                        setTimeout(() => {
-                            window.location.href = "/";
-                        }, 3000)
-                    }
-                }
-            }
-
-
-
+        }
     }, [login]);
-
 
 
     return (
